@@ -144,8 +144,11 @@ function nihilnovi_bibliography_callback( $post ) {
 
 function nihilnovi_save_lesson_meta( $post_id ) {
     if ( ! isset( $_POST['nihilnovi_meta_nonce'] ) ) return;
-    if ( ! wp_verify_nonce( $_POST['nihilnovi_meta_nonce'], 'nihilnovi_save_meta' ) ) return;
+    if ( ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST['nihilnovi_meta_nonce'] ) ), 'nihilnovi_save_meta' ) ) return;
     if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) return;
+    if ( ! current_user_can( 'edit_post', $post_id ) ) {
+        return;
+    }
     $fields = [
         'nihilnovi_lesson_code'     => '_lesson_code',
         'nihilnovi_article_num'     => '_article_num',
@@ -155,12 +158,14 @@ function nihilnovi_save_lesson_meta( $post_id ) {
         'nihilnovi_bibliography'    => '_bibliography',
     ];
     foreach ( $fields as $post_key => $meta_key ) {
-        if ( isset( $_POST[ $post_key ] ) ) {
-            // Textarea fields use sanitize_textarea_field
-            $sanitizer = in_array( $post_key, ['nihilnovi_lesson_essentials','nihilnovi_bibliography','nihilnovi_post_subtitle'] )
-                ? 'sanitize_textarea_field' : 'sanitize_text_field';
-            update_post_meta( $post_id, $meta_key, $sanitizer( $_POST[ $post_key ] ) );
+        if ( ! isset( $_POST[ $post_key ] ) ) {
+            continue;
         }
+        // Textarea fields use sanitize_textarea_field.
+        $value     = wp_unslash( $_POST[ $post_key ] );
+        $sanitizer = in_array( $post_key, ['nihilnovi_lesson_essentials','nihilnovi_bibliography','nihilnovi_post_subtitle'], true )
+            ? 'sanitize_textarea_field' : 'sanitize_text_field';
+        update_post_meta( $post_id, $meta_key, $sanitizer( $value ) );
     }
 }
 add_action( 'save_post', 'nihilnovi_save_lesson_meta' );
