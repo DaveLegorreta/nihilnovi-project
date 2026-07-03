@@ -13,7 +13,7 @@ $subtitle   = get_post_meta( $page_id, '_post_subtitle', true );
 ?>
 
 <!-- ══════════ PAGE HERO ══════════ -->
-<section class="post-hero page-hero" aria-label="Encabezado de página">
+<section class="post-hero page-hero" aria-label="<?php echo esc_attr__( 'Encabezado de página', 'nihilnovi' ); ?>">
   <div class="blob blob-1" aria-hidden="true"></div>
   <div class="hero-grid" aria-hidden="true"></div>
 

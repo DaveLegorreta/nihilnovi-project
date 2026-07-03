@@ -21,7 +21,7 @@ $is_lesson = ! empty( $lesson_code ) || has_category( 'leccion' );
 // Categoría + clase de disciplina
 $cats       = get_the_category();
 $cat        = $cats ? $cats[0] : null;
-$cat_name   = $cat ? $cat->name : ( $is_lesson ? 'Lección' : 'El Viaje' );
+$cat_name   = $cat ? $cat->name : ( $is_lesson ? __( 'Lección', 'nihilnovi' ) : __( 'El Viaje', 'nihilnovi' ) );
 $disc_class = nihilnovi_get_disc_class( $post_id );
 
 // Código visible (lección o número de artículo)
@@ -29,7 +29,7 @@ $display_code = $lesson_code ?: ( $article_num ? str_pad( $article_num, 2, '0', 
 ?>
 
 <!-- ══════════ POST HERO ══════════ -->
-<section class="post-hero" aria-label="Encabezado del artículo">
+<section class="post-hero" aria-label="<?php echo esc_attr__( 'Encabezado del artículo', 'nihilnovi' ); ?>">
 
   <!-- Partículas de fondo -->
   <div class="blob blob-1" aria-hidden="true"></div>
@@ -38,7 +38,7 @@ $display_code = $lesson_code ?: ( $article_num ? str_pad( $article_num, 2, '0', 
   <div class="post-hero-inner">
 
     <!-- Migas de pan -->
-    <nav class="breadcrumb" aria-label="Migas de pan">
+    <nav class="breadcrumb" aria-label="<?php echo esc_attr__( 'Migas de pan', 'nihilnovi' ); ?>">
       <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php echo esc_html__( 'Inicio', 'nihilnovi' ); ?></a>
       <span aria-hidden="true">/</span>
       <?php if ( $cat ) : ?>
@@ -100,8 +100,8 @@ $display_code = $lesson_code ?: ( $article_num ? str_pad( $article_num, 2, '0', 
       $points = array_filter( array_map( 'trim', explode( "\n", $essentials ) ) );
       if ( ! empty( $points ) ) :
     ?>
-    <aside class="lesson-essentials" aria-label="Lo esencial de esta lección">
-      <h4>Lo esencial</h4>
+    <aside class="lesson-essentials" aria-label="<?php echo esc_attr__( 'Lo esencial de esta lección', 'nihilnovi' ); ?>">
+      <h4><?php echo esc_html__( 'Lo esencial', 'nihilnovi' ); ?></h4>
       <ul>
         <?php foreach ( $points as $point ) : ?>
           <li><?php echo esc_html( $point ); ?></li>
@@ -118,7 +118,7 @@ $display_code = $lesson_code ?: ( $article_num ? str_pad( $article_num, 2, '0', 
     <!-- Paginación de contenido largo (nextpage) -->
     <?php
     wp_link_pages([
-      'before'      => '<div class="post-page-links"><span>Páginas:</span>',
+      'before'      => '<div class="post-page-links"><span>' . esc_html__( 'Páginas:', 'nihilnovi' ) . '</span>',
       'after'       => '</div>',
       'link_before' => '<span>',
       'link_after'  => '</span>',
@@ -137,8 +137,8 @@ $display_code = $lesson_code ?: ( $article_num ? str_pad( $article_num, 2, '0', 
       $refs = array_filter( array_map( 'trim', explode( "\n", $bibliography ) ) );
       if ( ! empty( $refs ) ) :
     ?>
-    <div class="post-bibliography" aria-label="Bibliografía">
-      <h4>Bibliografía y fuentes</h4>
+    <div class="post-bibliography" aria-label="<?php echo esc_attr__( 'Bibliografía', 'nihilnovi' ); ?>">
+      <h4><?php echo esc_html__( 'Bibliografía y fuentes', 'nihilnovi' ); ?></h4>
       <ul>
         <?php foreach ( $refs as $ref ) : ?>
           <li><?php echo esc_html( $ref ); ?></li>
@@ -171,10 +171,16 @@ $display_code = $lesson_code ?: ( $article_num ? str_pad( $article_num, 2, '0', 
       <span>DL</span>
     </div>
     <div>
-      <div class="post-author-label">Escrito por</div>
-      <div class="post-author-name">David Legorreta</div>
+      <div class="post-author-label"><?php echo esc_html__( 'Escrito por', 'nihilnovi' ); ?></div>
+      <div class="post-author-name"><?php echo esc_html__( 'David Legorreta', 'nihilnovi' ); ?></div>
       <p class="post-author-bio">
-        Filósofo de formación, operador de oficio. Estudiando economía en público en <a href="<?php echo esc_url(home_url('/')); ?>">nihilnovi.xyz</a>.
+        <?php
+        printf(
+          /* translators: %s: home URL */
+          esc_html__( 'Filósofo de formación, operador de oficio. Estudiando economía en público en %s.', 'nihilnovi' ),
+          '<a href="' . esc_url( home_url('/') ) . '">nihilnovi.xyz</a>'
+        );
+        ?>
       </p>
     </div>
   </div>
@@ -187,26 +193,26 @@ $prev = get_previous_post( true, '', 'category' );
 $next = get_next_post( true, '', 'category' );
 if ( $prev || $next ) :
 ?>
-<nav class="post-nav" aria-label="Navegación entre artículos">
+<nav class="post-nav" aria-label="<?php echo esc_attr__( 'Navegación entre artículos', 'nihilnovi' ); ?>">
   <div class="post-nav-item prev">
     <?php if ( $prev ) : ?>
       <a href="<?php echo esc_url( get_permalink( $prev ) ); ?>">
-        <span class="post-nav-label">← Anterior</span>
+        <span class="post-nav-label"><?php echo esc_html__( '← Anterior', 'nihilnovi' ); ?></span>
         <span class="post-nav-title"><?php echo esc_html( get_the_title( $prev ) ); ?></span>
       </a>
     <?php else : ?>
-      <span class="post-nav-label disabled">← Inicio de serie</span>
+      <span class="post-nav-label disabled"><?php echo esc_html__( '← Inicio de serie', 'nihilnovi' ); ?></span>
     <?php endif; ?>
   </div>
 
   <div class="post-nav-item next">
     <?php if ( $next ) : ?>
       <a href="<?php echo esc_url( get_permalink( $next ) ); ?>">
-        <span class="post-nav-label">Siguiente →</span>
+        <span class="post-nav-label"><?php echo esc_html__( 'Siguiente →', 'nihilnovi' ); ?></span>
         <span class="post-nav-title"><?php echo esc_html( get_the_title( $next ) ); ?></span>
       </a>
     <?php else : ?>
-      <span class="post-nav-label disabled">Continúa pronto →</span>
+      <span class="post-nav-label disabled"><?php echo esc_html__( 'Continúa pronto →', 'nihilnovi' ); ?></span>
     <?php endif; ?>
   </div>
 </nav>
@@ -224,9 +230,9 @@ $related = new WP_Query([
 
 if ( $related->have_posts() ) :
 ?>
-<section class="related-posts" aria-label="Artículos relacionados">
+<section class="related-posts" aria-label="<?php echo esc_attr__( 'Artículos relacionados', 'nihilnovi' ); ?>">
   <div class="related-posts-inner">
-    <div class="s-eyebrow">Seguir leyendo</div>
+    <div class="s-eyebrow"><?php echo esc_html__( 'Seguir leyendo', 'nihilnovi' ); ?></div>
     <div class="articles-row">
       <?php while ( $related->have_posts() ) : $related->the_post();
         $r_code = get_post_meta(get_the_ID(),'_lesson_code',true) ?: get_post_meta(get_the_ID(),'_article_num',true);
@@ -241,7 +247,7 @@ if ( $related->have_posts() ) :
         </div>
         <a href="<?php the_permalink(); ?>" class="art-title"><?php the_title(); ?></a>
         <p class="art-excerpt"><?php echo wp_trim_words(get_the_excerpt(),16); ?></p>
-        <a href="<?php the_permalink(); ?>" class="art-cta">Leer</a>
+        <a href="<?php the_permalink(); ?>" class="art-cta"><?php echo esc_html__( 'Leer', 'nihilnovi' ); ?></a>
       </article>
       <?php endwhile; wp_reset_postdata(); ?>
     </div>
