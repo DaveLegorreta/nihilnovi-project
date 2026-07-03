@@ -788,3 +788,45 @@ button { cursor: pointer; font-family: inherit; }
 .alignleft { float: left; margin-right: 1.5em; }
 .alignright { float: right; margin-left: 1.5em; }
 .aligncenter { display: block; margin: 0 auto; }
+
+/* ════════════════════════════════════════
+   REDUCED MOTION
+════════════════════════════════════════ */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .nn-global-bg,
+  .nn-bg-blob,
+  .nn-bg-blob-1,
+  .nn-bg-blob-2,
+  .nn-bg-blob-3,
+  .blob,
+  .blob-1,
+  .blob-2,
+  .blob-3,
+  .hero-grid,
+  .hero-graphic,
+  .hero-graphic-2,
+  .nn-geometry-svg,
+  .geo-ring-1,
+  .geo-ring-2,
+  .geo-ring-3 {
+    animation: none !important;
+  }
+}
+
+/* Touch devices: keep reduced motion overrides for heavy decorative animations.
+   The `enableEffects` flag in main.js disables JS parallax/mousemove on touch. */
+@media (pointer: coarse) {
+  .nn-global-bg,
+  .nn-bg-blob,
+  .nn-bg-blob-1,
+  .nn-bg-blob-2,
+  .nn-bg-blob-3 {
+    animation: none !important;
+  }
+}

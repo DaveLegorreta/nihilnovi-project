@@ -16,6 +16,10 @@
 (function () {
     'use strict';
 
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const isTouch              = window.matchMedia('(pointer: coarse)').matches;
+    const enableEffects        = !prefersReducedMotion && !isTouch;
+
     /* =========================================================
      * 1. SCROLL PROGRESS BAR
      * Updates the width of #nn-progress as the user scrolls.
@@ -55,6 +59,7 @@
         // ─── HERO BLUR EFFECT ────────────────────────────────────
     // Applies dynamic blur filters to the Hero graphic elements based on scroll position.
     function updateHeroParallax() {
+        if ( ! enableEffects ) return;
         /* solo actualiza el blur inmediato al hacer scroll — no la posición */
         var scrollTop = window.scrollY || 0;
         var heroGraphic  = document.querySelector('.hero-graphic');
@@ -96,38 +101,40 @@
      * Dos capas se desplazan a velocidades distintas con
      * interpolación suave para movimiento fluido e inercial.
      * ========================================================= */
-    (function initDotParallax() {
-        var dotSharp   = document.querySelector('.nn-bg-dot-matrix');
-        var dotBlurred = document.querySelector('.nn-bg-dot-matrix-blurred');
-        var dotHeavy   = document.querySelector('.nn-bg-dot-matrix-heavy');
-        if (!dotSharp && !dotBlurred && !dotHeavy) return;
+    if ( enableEffects ) {
+        (function initDotParallax() {
+            var dotSharp   = document.querySelector('.nn-bg-dot-matrix');
+            var dotBlurred = document.querySelector('.nn-bg-dot-matrix-blurred');
+            var dotHeavy   = document.querySelector('.nn-bg-dot-matrix-heavy');
+            if (!dotSharp && !dotBlurred && !dotHeavy) return;
 
-        var scrollY    = 0;
-        var posSharp   = 0;
-        var posBlurred = 0;
-        var posHeavy   = 0;
+            var scrollY    = 0;
+            var posSharp   = 0;
+            var posBlurred = 0;
+            var posHeavy   = 0;
 
-        window.addEventListener('scroll', function () {
-            scrollY = window.scrollY || 0;
-        }, { passive: true });
+            window.addEventListener('scroll', function () {
+                scrollY = window.scrollY || 0;
+            }, { passive: true });
 
-        function tick() {
-            /* Tres capas, tres profundidades, tres velocidades distintas.
-               Sharp (capa 1): más rápida — siente como el fondo lejano.
-               Blurred (capa 2): media — zona de transición de profundidad.
-               Heavy (capa 3): la más lenta — siente como niebla en primer plano. */
-            posSharp   += (scrollY * -0.12 - posSharp)   * 0.030;
-            posBlurred += (scrollY * -0.06 - posBlurred) * 0.020;
-            posHeavy   += (scrollY * -0.02 - posHeavy)   * 0.008;
+            function tick() {
+                /* Tres capas, tres profundidades, tres velocidades distintas.
+                   Sharp (capa 1): más rápida — siente como el fondo lejano.
+                   Blurred (capa 2): media — zona de transición de profundidad.
+                   Heavy (capa 3): la más lenta — siente como niebla en primer plano. */
+                posSharp   += (scrollY * -0.12 - posSharp)   * 0.030;
+                posBlurred += (scrollY * -0.06 - posBlurred) * 0.020;
+                posHeavy   += (scrollY * -0.02 - posHeavy)   * 0.008;
 
-            if (dotSharp)   dotSharp.style.backgroundPositionY   = posSharp.toFixed(2)   + 'px';
-            if (dotBlurred) dotBlurred.style.backgroundPositionY = posBlurred.toFixed(2) + 'px';
-            if (dotHeavy)   dotHeavy.style.backgroundPositionY   = posHeavy.toFixed(2)   + 'px';
+                if (dotSharp)   dotSharp.style.backgroundPositionY   = posSharp.toFixed(2)   + 'px';
+                if (dotBlurred) dotBlurred.style.backgroundPositionY = posBlurred.toFixed(2) + 'px';
+                if (dotHeavy)   dotHeavy.style.backgroundPositionY   = posHeavy.toFixed(2)   + 'px';
 
+                requestAnimationFrame(tick);
+            }
             requestAnimationFrame(tick);
-        }
-        requestAnimationFrame(tick);
-    }());
+        }());
+    }
 
 
     /* =========================================================
@@ -136,42 +143,44 @@
      * suavizado de resorte, igual que los puntos.
      * En pantallas < 1100px el posicionamiento lo controla CSS.
      * ========================================================= */
-    (function initHeroParallax() {
-        var graphic1 = document.querySelector('.hero-graphic');   /* círculo  */
-        var graphic2 = document.querySelector('.hero-graphic-2'); /* icosaedro */
-        if (!graphic1 && !graphic2) return;
+    if ( enableEffects ) {
+        (function initHeroParallax() {
+            var graphic1 = document.querySelector('.hero-graphic');   /* círculo  */
+            var graphic2 = document.querySelector('.hero-graphic-2'); /* icosaedro */
+            if (!graphic1 && !graphic2) return;
 
-        var scrollY = 0;
-        var pos1    = 0; 
-        var pos2    = 0; 
+            var scrollY = 0;
+            var pos1    = 0;
+            var pos2    = 0;
 
-        window.addEventListener('scroll', function () {
-            scrollY = window.scrollY || 0;
-        }, { passive: true });
+            window.addEventListener('scroll', function () {
+                scrollY = window.scrollY || 0;
+            }, { passive: true });
 
-        function tickHero() {
-            var isDesktop = window.innerWidth > 1100;
+            function tickHero() {
+                var isDesktop = window.innerWidth > 1100;
 
-            pos1 += (scrollY * 0.08 - pos1) * 0.03;
-            pos2 += (scrollY * 0.06 - pos2) * 0.02;
+                pos1 += (scrollY * 0.08 - pos1) * 0.03;
+                pos2 += (scrollY * 0.06 - pos2) * 0.02;
 
-            if (isDesktop) {
-                if (graphic1) {
-                    graphic1.style.transform = 'translateY(calc(-50% + ' + pos1.toFixed(2) + 'px))';
+                if (isDesktop) {
+                    if (graphic1) {
+                        graphic1.style.transform = 'translateY(calc(-50% + ' + pos1.toFixed(2) + 'px))';
+                    }
+                    if (graphic2) {
+                        graphic2.style.transform = 'translateY(calc(-50% + ' + pos2.toFixed(2) + 'px))';
+                    }
+                } else {
+                    // Let CSS handle coordinates and animations on mobile/tablet
+                    if (graphic1) graphic1.style.transform = 'translate(-50%, calc(-50% + ' + pos1.toFixed(2) + 'px))';
+                    if (graphic2) graphic2.style.transform = 'translate(-50%, calc(-50% + ' + pos2.toFixed(2) + 'px))';
                 }
-                if (graphic2) {
-                    graphic2.style.transform = 'translateY(calc(-50% + ' + pos2.toFixed(2) + 'px))';
-                }
-            } else {
-                // Let CSS handle coordinates and animations on mobile/tablet
-                if (graphic1) graphic1.style.transform = 'translate(-50%, calc(-50% + ' + pos1.toFixed(2) + 'px))';
-                if (graphic2) graphic2.style.transform = 'translate(-50%, calc(-50% + ' + pos2.toFixed(2) + 'px))';
+
+                requestAnimationFrame(tickHero);
             }
-
             requestAnimationFrame(tickHero);
-        }
-        requestAnimationFrame(tickHero);
-    }());
+        }());
+    }
 
 
 
@@ -384,7 +393,7 @@
     /* =========================================================
      * GSAP SCROLLTRIGGERS AND ACTIONS
      * ========================================================= */
-    if (typeof gsap !== 'undefined') {
+    if ( enableEffects && typeof gsap !== 'undefined' ) {
         gsap.registerPlugin(ScrollTrigger);
 
         // Hero entrance timeline
