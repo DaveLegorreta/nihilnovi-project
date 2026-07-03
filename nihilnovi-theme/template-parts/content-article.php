@@ -52,7 +52,7 @@ $disc_class = nihilnovi_get_disc_class( $post_id );
         <?php echo wp_trim_words( get_the_excerpt(), 22 ); ?>
       </p>
 
-      <a href="<?php the_permalink(); ?>" class="art-cta">Leer</a>
+      <a href="<?php the_permalink(); ?>" class="art-cta"><?php echo esc_html__( 'Leer', 'nihilnovi' ); ?></a>
     </div>
 
   </div>

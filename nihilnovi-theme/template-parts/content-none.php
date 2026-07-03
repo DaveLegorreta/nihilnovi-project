@@ -9,17 +9,17 @@
   <div style="font-family:'Playfair Display',serif;font-size:4rem;color:var(--gold);opacity:0.15;margin-bottom:1.5rem;" aria-hidden="true">
     ∅
   </div>
-  <div class="s-eyebrow" style="justify-content:center;margin-bottom:1rem;">Todavía no hay contenido aquí</div>
+  <div class="s-eyebrow" style="justify-content:center;margin-bottom:1rem;"><?php echo esc_html__( 'Todavía no hay contenido aquí', 'nihilnovi' ); ?></div>
   <p style="font-family:'Source Serif 4',serif;font-size:0.98rem;color:var(--ivory-3);line-height:1.8;max-width:440px;margin:0 auto 2rem;">
     <?php
     if ( is_search() ) {
-      echo 'No se encontraron resultados para "' . esc_html( get_search_query() ) . '". Prueba con otras palabras.';
+      printf( esc_html__( 'No se encontraron resultados para "%s". Prueba con otras palabras.', 'nihilnovi' ), esc_html( get_search_query() ) );
     } elseif ( is_category() ) {
-      echo 'Esta sección está en construcción. El contenido llega pronto — semana a semana.';
+      echo esc_html__( 'Esta sección está en construcción. El contenido llega pronto — semana a semana.', 'nihilnovi' );
     } else {
-      echo 'El contenido de esta sección llegará pronto. El viaje empieza.';
+      echo esc_html__( 'El contenido de esta sección llegará pronto. El viaje empieza.', 'nihilnovi' );
     }
     ?>
   </p>
-  <a href="<?php echo esc_url( home_url('/') ); ?>" class="btn btn-outline">Volver al inicio</a>
+  <a href="<?php echo esc_url( home_url('/') ); ?>" class="btn btn-outline"><?php echo esc_html__( 'Volver al inicio', 'nihilnovi' ); ?></a>
 </div>
