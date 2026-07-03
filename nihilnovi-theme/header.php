@@ -28,7 +28,7 @@
 <div id="nn-progress"></div>
 
 <!-- ══════════ NAVIGATION ══════════ -->
-<nav class="nn-nav" id="nn-nav" role="navigation" aria-label="Navegación principal">
+<nav class="nn-nav" id="nn-nav" role="navigation" aria-label="<?php echo esc_attr__( 'Navegación principal', 'nihilnovi' ); ?>">
 
   <div class="nav-left">
     <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="nav-logo" aria-label="<?php echo esc_attr__( 'Nihil Novi — Inicio', 'nihilnovi' ); ?>">
@@ -48,18 +48,24 @@
   ?>
 
   <div class="nav-right">
-    <!-- Selector de idioma: marcador visual por ahora. Se conectará con Polylang en fase 2. -->
-    <div class="lang-switch" aria-label="Selector de idioma">
-      <a href="#" class="lang-btn active" aria-disabled="true">ES</a>
+    <!--
+      Selector de idioma: marcador visual por ahora.
+      Se conectará con Polylang en fase 2; conserva los botones deshabilitados
+      para que el CSS/JS no cambie, pero los nombres ya son traducibles.
+    -->
+    <div class="lang-switch" aria-label="<?php echo esc_attr__( 'Selector de idioma', 'nihilnovi' ); ?>">
+      <a href="#" class="lang-btn active" aria-disabled="true"><?php echo esc_html__( 'ES', 'nihilnovi' ); ?></a>
       <span class="lang-sep" aria-hidden="true">·</span>
-      <a href="#" class="lang-btn" aria-disabled="true">EN</a>
+      <a href="#" class="lang-btn" aria-disabled="true"><?php echo esc_html__( 'EN', 'nihilnovi' ); ?></a>
       <span class="lang-sep" aria-hidden="true">·</span>
-      <a href="#" class="lang-btn" aria-disabled="true">IT</a>
+      <a href="#" class="lang-btn" aria-disabled="true"><?php echo esc_html__( 'IT', 'nihilnovi' ); ?></a>
+      <span class="lang-sep" aria-hidden="true">·</span>
+      <a href="#" class="lang-btn" aria-disabled="true"><?php echo esc_html__( 'DE', 'nihilnovi' ); ?></a>
     </div>
-    <a href="<?php echo esc_url( home_url( '/el-viaje' ) ); ?>" class="nav-cta">Explorar</a>
+    <a href="<?php echo esc_url( home_url( '/el-viaje' ) ); ?>" class="nav-cta"><?php echo esc_html__( 'Explorar', 'nihilnovi' ); ?></a>
   </div>
 
-  <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+  <button class="nav-toggle" id="nav-toggle" aria-label="<?php echo esc_attr__( 'Abrir menú', 'nihilnovi' ); ?>" aria-expanded="false">
     <span></span><span></span><span></span>
   </button>
 

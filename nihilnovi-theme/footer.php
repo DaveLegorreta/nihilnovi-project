@@ -23,7 +23,7 @@
       $socials = nihilnovi_social_links();
       if ( ! empty($socials) ) :
     ?>
-    <div class="footer-socials" aria-label="Redes sociales">
+    <div class="footer-socials" aria-label="<?php echo esc_attr__( 'Redes sociales', 'nihilnovi' ); ?>">
       <?php foreach ( $socials as $key => $s ) : ?>
         <a href="<?php echo esc_url($s['url']); ?>"
            target="_blank" rel="noopener noreferrer"
