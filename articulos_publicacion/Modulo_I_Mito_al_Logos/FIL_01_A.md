@@ -178,65 +178,107 @@ Este fragmento muestra la distancia crítica que empieza a tomarse respecto a la
 <!-- wp:html -->
 <style>
     .geo-widget-box { background-color: #0b0c10; border-radius: 8px; padding: 20px; border: 1px solid rgba(255,255,255,0.02); display: flex; flex-direction: column; align-items: center; gap: 15px; }
-    .geo-viewport { width: 100%; height: 200px; background: radial-gradient(circle at center, #151821 0%, #0d0e12 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center; position: relative; border: 1px solid rgba(255,255,255,0.02); }
+    .geo-viewport { width: 100%; height: 260px; background: radial-gradient(circle at center, #151821 0%, #0d0e12 100%); border-radius: 8px; display: flex; align-items: center; justify-content: center; position: relative; border: 1px solid rgba(255,255,255,0.02); overflow: hidden; }
     
     .geo-node { cursor: pointer; transition: all 0.3s ease; }
-    .geo-node:hover { filter: drop-shadow(0 0 8px #c5a059); }
+    .geo-node:hover circle { fill: #ffffff; stroke: #c5a059; filter: drop-shadow(0 0 6px #c5a059); }
+    .geo-node text { font-size: 10px; font-family: 'Inter', sans-serif; font-weight: bold; fill: #ffffff; }
     
-    #geo-region-jonia, #geo-region-magna {
-        transition: opacity 0.5s ease;
+    #interactive-geo-svg {
+        transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+    
+    .map-btn {
+        background: #1c1d24;
+        border: 1px solid rgba(255,255,255,0.05);
+        color: #ffffff;
+        padding: 8px 16px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 0.85rem;
+        transition: all 0.2s ease;
+    }
+    .map-btn:hover {
+        border-color: #c5a059;
+        background: rgba(197, 160, 89, 0.05);
+    }
+    .map-btn.active {
+        background: rgba(197, 160, 89, 0.15);
+        border-color: #c5a059;
+        color: #c5a059;
     }
 </style>
 
 <div class="mitologos-widget-container">
     <div class="mitologos-widget">
         <h3>La Geografía del Origen (Las Colonias de Frontera)</h3>
-        <p style="font-size:0.88rem; margin-bottom:12px;">Descubre por qué la filosofía racional no nació en la Grecia continental metropolitana, sino en las colonias periféricas del Mar Egeo y el Sur de Italia. Presiona las regiones del mapa.</p>
+        <p style="font-size:0.88rem; margin-bottom:12px;">Descubre por qué la filosofía racional no nació en la Grecia continental metropolitana, sino en las colonias periféricas del Mar Egeo y el Sur de Italia. Presiona los botones para hacer zoom en las regiones.</p>
         
         <div class="geo-widget-box">
             <div class="geo-viewport">
-                <svg viewBox="0 0 500 200" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-                    <!-- Sea / Water background -->
-                    <rect x="10" y="10" width="480" height="180" fill="none" stroke="rgba(255,255,255,0.05)" />
+                <!-- SVG map with accurate Mediterranean Coastlines -->
+                <svg id="interactive-geo-svg" viewBox="0 0 500 240" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Sea grid lines -->
+                    <line x1="50" y1="0" x2="50" y2="240" stroke="rgba(255,255,255,0.02)" />
+                    <line x1="150" y1="0" x2="150" y2="240" stroke="rgba(255,255,255,0.02)" />
+                    <line x1="250" y1="0" x2="250" y2="240" stroke="rgba(255,255,255,0.02)" />
+                    <line x1="350" y1="0" x2="350" y2="240" stroke="rgba(255,255,255,0.02)" />
+                    <line x1="450" y1="0" x2="450" y2="240" stroke="rgba(255,255,255,0.02)" />
                     
-                    <!-- Simplified map shapes -->
-                    <!-- Italy / Magna Grecia shape -->
-                    <path d="M 60,30 L 100,50 L 90,110 L 120,150 L 100,160 L 60,110 Z" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.1)" stroke-width="1.5" />
-                    <!-- Greece mainland shape -->
-                    <path d="M 200,40 L 260,30 L 250,90 L 210,120 L 180,90 Z" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.1)" stroke-width="1.5" />
-                    <!-- Jonia (Asia Minor coast) shape -->
-                    <path d="M 380,20 L 440,30 L 420,130 L 370,160 Z" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.1)" stroke-width="1.5" />
+                    <!-- LAND MASSES (Accurate approximations of coastlines) -->
                     
-                    <!-- Region Glows -->
-                    <path id="geo-region-magna" d="M 60,30 L 100,50 L 90,110 L 120,150 L 100,160 L 60,110 Z" fill="rgba(197, 160, 89, 0.08)" opacity="0" />
-                    <path id="geo-region-jonia" d="M 380,20 L 440,30 L 420,130 L 370,160 Z" fill="rgba(197, 160, 89, 0.08)" opacity="0" />
+                    <!-- Italy Peninsula & Sicily -->
+                    <path d="M 10,20 L 70,30 L 110,65 L 125,90 L 140,110 L 155,130 L 175,145 L 165,155 L 130,140 L 105,140 L 95,160 L 75,170 L 60,155 L 75,145 L 100,130 L 80,95 L 45,55 L 20,40 Z" fill="#1b212f" stroke="rgba(255,255,255,0.12)" stroke-width="1.2" />
+                    <!-- Sicily Island -->
+                    <path d="M 85,175 L 120,170 L 105,195 Z" fill="#1b212f" stroke="rgba(255,255,255,0.12)" stroke-width="1.2" />
                     
-                    <!-- Cities / Nodes -->
-                    <!-- Jonia: Mileto & Efeso -->
+                    <!-- Greece mainland & Peloponnese -->
+                    <path d="M 230,40 L 290,30 L 305,55 L 305,80 L 295,95 L 285,115 L 265,130 L 255,145 L 235,140 L 230,125 L 250,110 L 255,95 L 240,75 L 225,65 Z" fill="#1b212f" stroke="rgba(255,255,255,0.12)" stroke-width="1.2" />
+                    
+                    <!-- Crete Island -->
+                    <path d="M 290,185 L 340,185 L 345,192 L 295,192 Z" fill="#1b212f" stroke="rgba(255,255,255,0.12)" stroke-width="1.2" />
+                    
+                    <!-- Anatolia / Asia Minor Coast (Jonia) -->
+                    <path d="M 390,20 L 460,20 L 490,40 L 490,140 L 460,165 L 445,150 L 435,160 L 415,145 L 420,110 L 405,95 L 415,75 L 390,55 Z" fill="#1b212f" stroke="rgba(255,255,255,0.12)" stroke-width="1.2" />
+
+                    <!-- REGIONAL LABELS (Hidden at extreme zoom, shown at map view) -->
+                    <text x="30" y="35" fill="rgba(255,255,255,0.2)" font-size="8">Mar Tirreno</text>
+                    <text x="180" y="160" fill="rgba(255,255,255,0.2)" font-size="8">Mar Jónico</text>
+                    <text x="325" y="100" fill="rgba(255,255,255,0.2)" font-size="8">Mar Egeo</text>
+
+                    <!-- REGIONAL HIGHLIGHT SHAPES (Transparent overlays) -->
+                    <circle id="glow-magna" cx="130" cy="115" r="45" fill="rgba(197, 160, 89, 0.08)" stroke="rgba(197,160,89,0.3)" stroke-width="1" stroke-dasharray="3" opacity="0" />
+                    <circle id="glow-jonia" cx="420" cy="100" r="40" fill="rgba(197, 160, 89, 0.08)" stroke="rgba(197,160,89,0.3)" stroke-width="1" stroke-dasharray="3" opacity="0" />
+
+                    <!-- NODES (Cities of philosophy) -->
+                    
+                    <!-- Atenas Node -->
+                    <circle cx="282" cy="104" r="3.5" fill="#4a5568" />
+                    <text x="270" y="98" fill="rgba(255,255,255,0.3)" font-size="8">Atenas</text>
+                    
+                    <!-- Jonia Node: Mileto & Éfeso -->
                     <g class="geo-node" onclick="selectGeoRegion('jonia')">
-                        <circle cx="390" cy="90" r="8" fill="#c5a059" />
-                        <text x="402" y="94" fill="#ffffff" font-size="10" font-family="sans-serif" font-weight="bold">Jonia (Mileto/Éfeso)</text>
+                        <circle cx="418" cy="108" r="6" fill="#c5a059" />
+                        <text x="428" y="112">Mileto / Éfeso</text>
                     </g>
                     
-                    <!-- Magna Grecia: Elea / Crotona -->
+                    <!-- Magna Grecia Node: Elea / Crotona -->
                     <g class="geo-node" onclick="selectGeoRegion('magna')">
-                        <circle cx="95" cy="120" r="8" fill="#c5a059" />
-                        <text x="110" y="124" fill="#ffffff" font-size="10" font-family="sans-serif" font-weight="bold">Magna Grecia (Elea)</text>
+                        <circle cx="128" cy="112" r="6" fill="#c5a059" />
+                        <text x="65" y="116">Elea (Magna Grecia)</text>
                     </g>
-                    
-                    <!-- Mainland Greece: Atenas (Locked / Dark) -->
-                    <circle cx="230" cy="80" r="6" fill="#4a5568" />
-                    <text x="210" y="70" fill="rgba(255,255,255,0.3)" font-size="9" font-family="sans-serif">Atenas</text>
                 </svg>
             </div>
             
-            <div style="display:flex; gap:15px; width:100%;">
-                <button class="pytha-ratio-btn" id="btn-geo-jonia" onclick="selectGeoRegion('jonia')" style="flex:1;">🌅 Costa Jónica</button>
-                <button class="pytha-ratio-btn" id="btn-geo-magna" onclick="selectGeoRegion('magna')" style="flex:1;">⛰️ Sur de Italia</button>
+            <div style="display:flex; gap:10px; width:100%;">
+                <button class="map-btn" id="btn-geo-global" onclick="selectGeoRegion('global')" style="flex:1;">🌍 Mapa Global</button>
+                <button class="map-btn" id="btn-geo-jonia" onclick="selectGeoRegion('jonia')" style="flex:1;">🌅 Zoom: Costa Jónica</button>
+                <button class="map-btn" id="btn-geo-magna" onclick="selectGeoRegion('magna')" style="flex:1;">⛰️ Zoom: Magna Grecia</button>
             </div>
             
             <div class="anaxi-verdict-banner" id="geo-verdict" style="width:100%; min-height:65px;">
-                <strong>Geografía de la Razón</strong><br>Presiona una colonia jónica o itálica en el mapa para explorar las causas sociopolíticas.
+                <strong>Geografía del Logos</strong><br>Elige una colonia o región en los botones para hacer un acercamiento y ver su localización exacta.
             </div>
         </div>
     </div>
@@ -255,24 +297,55 @@ Este fragmento muestra la distancia crítica que empieza a tomarse respecto a la
     window.selectGeoRegion = function(region) {
         initAudio();
         
-        var joniaGlow = document.getElementById('geo-region-jonia');
-        var magnaGlow = document.getElementById('geo-region-magna');
+        var svg = document.getElementById('interactive-geo-svg');
+        var glowMagna = document.getElementById('glow-magna');
+        var glowJonia = document.getElementById('glow-jonia');
         var verdict = document.getElementById('geo-verdict');
         
-        if (!joniaGlow || !magnaGlow || !verdict) return;
+        var btnGlobal = document.getElementById('btn-geo-global');
+        var btnJonia = document.getElementById('btn-geo-jonia');
+        var btnMagna = document.getElementById('btn-geo-magna');
         
-        joniaGlow.style.opacity = '0';
-        magnaGlow.style.opacity = '0';
+        if (!svg || !verdict || !btnGlobal || !btnJonia || !btnMagna) return;
         
-        if (region === 'jonia') {
-            joniaGlow.style.opacity = '1';
-            verdict.innerHTML = "<strong>🌅 Foco Jónico (Mileto, Éfeso, Colofón)</strong><br>Colonias portuarias e intercambiadores culturales. El contacto constante con las ciencias astronómicas de Babilonia y las técnicas de Egipto, sumado al debilitamiento de los mitos homéricos locales, impulsó explicaciones naturales inmanentes.";
+        // Clear active states
+        btnGlobal.classList.remove('active');
+        btnJonia.classList.remove('active');
+        btnMagna.classList.remove('active');
+        if (glowMagna) glowMagna.style.opacity = '0';
+        if (glowJonia) glowJonia.style.opacity = '0';
+        
+        if (region === 'global') {
+            btnGlobal.classList.add('active');
+            // Reset to global view
+            svg.setAttribute('viewBox', '0 0 500 240');
+            verdict.innerHTML = "<strong>Focos Geográficos Clásicos</strong><br>La filosofía nace en la periferia de habla griega. Al este (Jonia) y al oeste (Magna Grecia), en zonas de fuerte intercambio cultural mercantil.";
             
             if(audioCtx) {
                 var osc = audioCtx.createOscillator();
                 var gain = audioCtx.createGain();
                 osc.type = 'sine';
-                osc.frequency.setValueAtTime(293.66, audioCtx.currentTime); // Re (Do armónico)
+                osc.frequency.setValueAtTime(220, audioCtx.currentTime); // La grave
+                gain.gain.setValueAtTime(0.1, audioCtx.currentTime);
+                gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.5);
+                osc.connect(gain);
+                gain.connect(audioCtx.destination);
+                osc.start();
+                osc.stop(audioCtx.currentTime + 0.5);
+            }
+        } 
+        else if (region === 'jonia') {
+            btnJonia.classList.add('active');
+            if (glowJonia) glowJonia.style.opacity = '1';
+            // Zoom to Jonia area (Right coast of Egeo)
+            svg.setAttribute('viewBox', '340 40 160 140');
+            verdict.innerHTML = "<strong>🌅 Costa Jónica (Mileto, Éfeso)</strong><br>Costa de Asia Menor (actual Turquía). Mileto fue la metrópolis portuaria más rica del siglo VI a.C. Sus marineros comerciaban con Egipto y Babilonia, importando astronomía y geometría que secularizaron para dar origen al <i>logos</i>.";
+            
+            if(audioCtx) {
+                var osc = audioCtx.createOscillator();
+                var gain = audioCtx.createGain();
+                osc.type = 'sine';
+                osc.frequency.setValueAtTime(293.66, audioCtx.currentTime); // Re
                 gain.gain.setValueAtTime(0.2, audioCtx.currentTime);
                 gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.8);
                 osc.connect(gain);
@@ -280,15 +353,19 @@ Este fragmento muestra la distancia crítica que empieza a tomarse respecto a la
                 osc.start();
                 osc.stop(audioCtx.currentTime + 0.8);
             }
-        } else {
-            magnaGlow.style.opacity = '1';
-            verdict.innerHTML = "<strong>⛰️ Foco Itálico (Elea, Crotona, Tarento)</strong><br>Colonias de refugiados jónicos occidentales. El desarraigo y el choque cultural forjaron una atmósfera marcadamente teórica y especulativa, dando luz al misticismo matemático pitagórico y a la ontología deductiva del ser eleático.";
+        } 
+        else if (region === 'magna') {
+            btnMagna.classList.add('active');
+            if (glowMagna) glowMagna.style.opacity = '1';
+            // Zoom to Magna Grecia area (South of Italy)
+            svg.setAttribute('viewBox', '50 40 160 140');
+            verdict.innerHTML = "<strong>⛰️ Magna Grecia (Elea, Crotona)</strong><br>Sur de la península Itálica y Sicilia. Colonias fundadas por refugiados jónicos occidentales. El desarraigo y la lejanía militar favorecieron un clima intelectual teórico, de donde brotaron las matemáticas místicas de Pitágoras y la ontología lógica pura de Parménides y Zenón.";
             
             if(audioCtx) {
                 var osc = audioCtx.createOscillator();
                 var gain = audioCtx.createGain();
                 osc.type = 'sine';
-                osc.frequency.setValueAtTime(329.63, audioCtx.currentTime); // Mi (Tono reflexivo)
+                osc.frequency.setValueAtTime(329.63, audioCtx.currentTime); // Mi
                 gain.gain.setValueAtTime(0.2, audioCtx.currentTime);
                 gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.8);
                 osc.connect(gain);
