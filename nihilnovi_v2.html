@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Filosofía, economía, matemáticas, historia y ciencia. El mapa del pensamiento humano reconstruido en público por David Legorreta." />
+  <meta property="og:title" content="Nihil Novi — David Legorreta" />
+  <meta property="og:description" content="La historia del pensamiento humano, reconstruida semana a semana." />
+  <meta property="og:type" content="website" />
+  <title>Nihil Novi — La historia del pensamiento, reconstruida en público.</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;1,8..60,300&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ════════════════════════════════════════
+       DESIGN TOKENS
+    ════════════════════════════════════════ */
+    :root {
+      --black:       #09090F;
+      --black-2:     #0D0D1A;
+      --black-3:     #111120;
+      --card:        #0F0F1C;
+      --card-2:      #131324;
+      --ivory:       #EDE8DF;
+      --ivory-2:     #C8C3BB;
+      --ivory-3:     #9A9490;
+      --gold:        #C4973A;
+      --gold-light:  #D4A840;
+      --gold-dim:    rgba(196,151,58,0.10);
+      --gold-border: rgba(196,151,58,0.22);
+      --gold-glow:   rgba(196,151,58,0.06);
+      --blue:        #2D5A8E;
+      --blue-dim:    rgba(45,90,142,0.14);
+      --violet:      rgba(44,50,130,0.13);
+      --border:      #16162A;
+      --border-2:    #20203A;
+
+      /* Discipline colors */
+      --fil:   #7B6FA0;
+      --eco:   #C4973A;
+      --mat:   #4A8E6E;
+      --his:   #8E4A4A;
+      --cie:   #4A6E8E;
+    }
+
+    /* ════════════════════════════════════════
+       RESET & BASE
+    ════════════════════════════════════════ */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      background: var(--black);
+      color: var(--ivory);
+      font-family: 'Source Serif 4', Georgia, serif;
+      line-height: 1.8;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+    button { cursor: pointer; font-family: inherit; }
+
+    /* ════════════════════════════════════════
+       SCROLL PROGRESS
+    ════════════════════════════════════════ */
+    #progress {
+      position: fixed; top: 0; left: 0; z-index: 9999;
+      height: 2px; width: 0%;
+      background: linear-gradient(90deg, var(--gold), #E8C060, var(--gold));
+      transition: width 0.08s linear;
+    }
+
+    /* ════════════════════════════════════════
+       NAVIGATION
+    ════════════════════════════════════════ */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.3rem 4rem;
+      background: rgba(9,9,15,0.90);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+      transition: padding 0.35s ease;
+    }
+    nav.compact { padding: 0.85rem 4rem; }
+
+    .nav-left { display: flex; align-items: center; gap: 0.7rem; }
+    .nav-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 0.95rem; letter-spacing: 0.25em;
+      text-transform: uppercase; color: var(--gold);
+    }
+    .nav-dot { width: 3px; height: 3px; border-radius: 50%; background: var(--gold); opacity: 0.5; }
+
+    .nav-links { display: flex; gap: 2.2rem; list-style: none; }
+    .nav-links a {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.7rem; font-weight: 400;
+      letter-spacing: 0.13em; text-transform: uppercase;
+      color: var(--ivory-3); position: relative;
+      transition: color 0.3s;
+    }
+    .nav-links a::after {
+      content: ''; position: absolute; bottom: -4px; left: 0;
+      width: 0; height: 1px; background: var(--gold);
+      transition: width 0.3s ease;
+    }
+    .nav-links a:hover { color: var(--ivory); }
+    .nav-links a:hover::after { width: 100%; }
+
+    .nav-right { display: flex; align-items: center; gap: 1.5rem; }
+    .lang-switch {
+      display: flex; gap: 0.4rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.65rem; letter-spacing: 0.1em;
+    }
+    .lang-btn {
+      background: none; border: none;
+      color: var(--ivory-3); padding: 0.2rem 0.4rem;
+      transition: color 0.2s;
+    }
+    .lang-btn.active { color: var(--gold); border-bottom: 1px solid var(--gold); }
+    .lang-btn:hover { color: var(--ivory); }
+    .lang-sep { color: var(--border-2); display: flex; align-items: center; }
+
+    .nav-cta {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.68rem; letter-spacing: 0.13em; text-transform: uppercase;
+      color: var(--black); background: var(--gold);
+      padding: 0.5rem 1.3rem;
+      transition: background 0.25s, transform 0.2s;
+    }
+    .nav-cta:hover { background: var(--gold-light); transform: translateY(-1px); }
+
+    /* Mobile nav toggle */
+    .nav-toggle {
+      display: none; background: none; border: none;
+      color: var(--ivory); padding: 0.4rem;
+    }
+    .nav-toggle span {
+      display: block; width: 22px; height: 1px;
+      background: var(--ivory); margin: 5px 0;
+      transition: all 0.3s;
+    }
+
+    /* ════════════════════════════════════════
+       HERO
+    ════════════════════════════════════════ */
+    .hero {
+      position: relative; min-height: 100vh;
+      display: flex; align-items: center;
+      padding: 9rem 4rem 7rem;
+      overflow: hidden;
+    }
+
+    /* Multi-layer dark gradient */
+    .hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background:
+        linear-gradient(155deg, var(--black) 0%, var(--black-2) 45%, #0A0A18 100%);
+    }
+
+    /* Atmospheric blobs */
+    .blob {
+      position: absolute; border-radius: 50%;
+      pointer-events: none; filter: blur(1px);
+    }
+    .blob-1 {
+      width: 60vw; height: 60vw; max-width: 800px; max-height: 800px;
+      top: -10%; left: -15%;
+      background: radial-gradient(ellipse, var(--violet) 0%, transparent 65%);
+      animation: drift 14s ease-in-out infinite;
+    }
+    .blob-2 {
+      width: 40vw; height: 40vw; max-width: 560px; max-height: 560px;
+      bottom: 0; right: -8%;
+      background: radial-gradient(ellipse, rgba(196,151,58,0.07) 0%, transparent 68%);
+      animation: drift 18s ease-in-out infinite reverse 2s;
+    }
+    .blob-3 {
+      width: 35vw; height: 35vw; max-width: 480px; max-height: 480px;
+      top: 55%; left: 38%;
+      background: radial-gradient(ellipse, rgba(30,40,110,0.10) 0%, transparent 70%);
+      animation: drift 22s ease-in-out infinite 4s;
+    }
+    @keyframes drift {
+      0%, 100% { transform: translate(0,0) scale(1); }
+      33%  { transform: translate(1.5%, -2%) scale(1.04); }
+      66%  { transform: translate(-1%, 1.5%) scale(0.96); }
+    }
+
+    /* Gold dot grid */
+    .hero-grid {
+      position: absolute; top: 0; right: 0;
+      width: 45%; height: 100%;
+      background-image: radial-gradient(circle, rgba(196,151,58,0.14) 1px, transparent 1px);
+      background-size: 30px 30px;
+      mask-image: linear-gradient(to left, rgba(0,0,0,0.5) 0%, transparent 75%);
+      -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,0.5) 0%, transparent 75%);
+    }
+
+    .hero-content { position: relative; z-index: 1; max-width: 900px; }
+
+    .hero-eyebrow {
+      display: flex; align-items: center; gap: 1rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 2.4rem;
+    }
+    .hero-eyebrow::before {
+      content: ''; width: 40px; height: 1px; background: var(--gold);
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.8rem, 6.5vw, 6.2rem);
+      font-weight: 400; line-height: 1.1;
+      letter-spacing: -0.02em; color: var(--ivory);
+      margin-bottom: 1.8rem;
+    }
+    .hero h1 .line-2 { display: block; }
+    .hero h1 em { font-style: italic; color: var(--gold); }
+
+    .hero-sub {
+      font-family: 'Source Serif 4', serif;
+      font-size: clamp(0.95rem, 1.7vw, 1.15rem);
+      color: var(--ivory-3); line-height: 1.8;
+      max-width: 580px; margin-bottom: 1.5rem;
+    }
+
+    /* Discipline pills */
+    .hero-disciplines {
+      display: flex; flex-wrap: wrap; gap: 0.6rem;
+      margin-bottom: 3rem;
+    }
+    .disc-pill {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.63rem; letter-spacing: 0.1em; text-transform: uppercase;
+      padding: 0.35rem 0.9rem;
+      border: 1px solid var(--border-2);
+      color: var(--ivory-3);
+      transition: all 0.3s;
+    }
+    .disc-pill:hover { border-color: var(--gold); color: var(--gold); }
+    .disc-pill.fil { border-color: rgba(123,111,160,0.3); color: var(--fil); }
+    .disc-pill.eco { border-color: rgba(196,151,58,0.3); color: var(--eco); }
+    .disc-pill.mat { border-color: rgba(74,142,110,0.3); color: var(--mat); }
+    .disc-pill.his { border-color: rgba(142,74,74,0.3); color: var(--his); }
+    .disc-pill.cie { border-color: rgba(74,110,142,0.3); color: var(--cie); }
+
+    .hero-ctas { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .btn {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.73rem; letter-spacing: 0.13em; text-transform: uppercase;
+      padding: 0.95rem 2.2rem; display: inline-block;
+      transition: all 0.28s ease;
+    }
+    .btn-gold { color: var(--black); background: var(--gold); }
+    .btn-gold:hover { background: var(--gold-light); transform: translateY(-2px); }
+    .btn-outline {
+      color: var(--ivory-2); background: transparent;
+      border: 1px solid var(--border-2);
+    }
+    .btn-outline:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-2px); }
+
+    .hero-scroll {
+      position: absolute; bottom: 2.5rem; left: 50%;
+      transform: translateX(-50%);
+      display: flex; flex-direction: column; align-items: center; gap: 0.6rem;
+      font-family: 'Inter', sans-serif; font-size: 0.58rem;
+      letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--ivory-3);
+      animation: scrollBounce 2.8s ease-in-out infinite;
+    }
+    .hero-scroll::after {
+      content: ''; width: 1px; height: 40px;
+      background: linear-gradient(to bottom, var(--ivory-3), transparent);
+    }
+    @keyframes scrollBounce {
+      0%, 100% { transform: translateX(-50%) translateY(0); }
+      50%       { transform: translateX(-50%) translateY(7px); }
+    }
+
+    /* ════════════════════════════════════════
+       SECTION SYSTEM
+    ════════════════════════════════════════ */
+    .section {
+      padding: 7rem 4rem;
+      border-top: 1px solid var(--border);
+    }
+    .section-inner { max-width: 1240px; margin: 0 auto; }
+
+    .s-eyebrow {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.65rem; letter-spacing: 0.22em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.8rem;
+    }
+    .s-eyebrow::before { content: ''; width: 24px; height: 1px; background: var(--gold); }
+
+    .s-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+      font-weight: 400; line-height: 1.22; color: var(--ivory);
+    }
+    .s-title em { font-style: italic; color: var(--gold); }
+
+    .s-desc {
+      font-family: 'Source Serif 4', serif;
+      font-size: 0.98rem; color: var(--ivory-3);
+      line-height: 1.8; max-width: 520px; margin-top: 0.8rem;
+    }
+
+    .s-header {
+      display: flex; justify-content: space-between;
+      align-items: flex-end; margin-bottom: 3.5rem;
+      flex-wrap: wrap; gap: 1.5rem;
+    }
+
+    .s-link {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--gold); border-bottom: 1px solid var(--gold-border);
+      padding-bottom: 2px; transition: border-color 0.3s;
+      white-space: nowrap;
+    }
+    .s-link:hover { border-color: var(--gold); }
+
+    /* ════════════════════════════════════════
+       MANIFESTO
+    ════════════════════════════════════════ */
+    .manifesto {
+      padding: 6rem 4rem;
+      border-top: 1px solid var(--border);
+      background: linear-gradient(180deg, var(--black) 0%, var(--black-2) 100%);
+    }
+    .manifesto-inner {
+      max-width: 800px; margin: 0 auto; text-align: center;
+    }
+    .gold-bar { width: 52px; height: 1px; background: var(--gold); margin: 0 auto 1.8rem; }
+    .manifesto blockquote {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.1rem, 2.2vw, 1.5rem);
+      font-style: italic; line-height: 1.95;
+      color: var(--ivory-2); margin-bottom: 1.8rem;
+    }
+    .manifesto blockquote strong { font-style: normal; color: var(--ivory); }
+    .manifesto cite {
+      font-family: 'Inter', sans-serif; font-size: 0.68rem;
+      letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold);
+    }
+
+    /* ════════════════════════════════════════
+       DISCIPLINES (5 portals)
+    ════════════════════════════════════════ */
+    .disciplines-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      border: 1px solid var(--border);
+      background: var(--border);
+      gap: 1px;
+    }
+
+    .disc-card {
+      background: var(--card);
+      padding: 2.8rem 2rem 2.2rem;
+      position: relative; overflow: hidden;
+      transition: background 0.4s ease;
+      display: flex; flex-direction: column;
+    }
+    .disc-card::before {
+      content: ''; position: absolute; top: 0; left: 0; right: 0;
+      height: 2px; opacity: 0; transition: opacity 0.4s;
+    }
+    .disc-card:hover { background: var(--card-2); }
+    .disc-card:hover::before { opacity: 1; }
+
+    .disc-card.fil::before { background: linear-gradient(90deg, transparent, var(--fil), transparent); }
+    .disc-card.eco::before { background: linear-gradient(90deg, transparent, var(--eco), transparent); }
+    .disc-card.mat::before { background: linear-gradient(90deg, transparent, var(--mat), transparent); }
+    .disc-card.his::before { background: linear-gradient(90deg, transparent, var(--his), transparent); }
+    .disc-card.cie::before { background: linear-gradient(90deg, transparent, var(--cie), transparent); }
+
+    .disc-bg-num {
+      position: absolute; bottom: -1rem; right: 0.5rem;
+      font-family: 'Playfair Display', serif; font-size: 7rem;
+      font-weight: 400; line-height: 1; color: var(--gold);
+      opacity: 0.06; pointer-events: none; user-select: none;
+    }
+
+    .disc-icon {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.65rem; letter-spacing: 0.15em;
+      margin-bottom: 1.5rem; opacity: 0.7;
+    }
+    .disc-card.fil .disc-icon { color: var(--fil); }
+    .disc-card.eco .disc-icon { color: var(--eco); }
+    .disc-card.mat .disc-icon { color: var(--mat); }
+    .disc-card.his .disc-icon { color: var(--his); }
+    .disc-card.cie .disc-icon { color: var(--cie); }
+
+    .disc-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem; font-weight: 400;
+      color: var(--ivory); margin-bottom: 0.7rem;
+      line-height: 1.35;
+    }
+    .disc-tagline {
+      font-family: 'Source Serif 4', serif;
+      font-size: 0.82rem; color: var(--ivory-3);
+      line-height: 1.7; margin-bottom: 1.5rem; flex: 1;
+    }
+    .disc-meta {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.62rem; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--ivory-3);
+      display: flex; align-items: center; gap: 0.6rem;
+    }
+    .disc-count {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem; color: var(--gold);
+    }
+    .disc-arrow {
+      margin-left: auto; font-size: 0.8rem; color: var(--gold);
+      transition: transform 0.3s;
+    }
+    .disc-card:hover .disc-arrow { transform: translateX(4px); }
+
+    /* ════════════════════════════════════════
+       CONTENT TABS (Articles + Lessons)
+    ════════════════════════════════════════ */
+    .tabs-header {
+      display: flex; align-items: center; gap: 0;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 2.5rem;
+    }
+    .tab-btn {
+      font-family: 'Inter', sans-serif;
+      font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--ivory-3); background: none; border: none;
+      padding: 0.9rem 1.8rem;
+      border-bottom: 2px solid transparent;
+      margin-bottom: -1px;
+      transition: all 0.3s;
+    }
+    .tab-btn.active { color: var(--gold); border-bottom-color: var(--gold); }
+    .tab-btn:hover:not(.active) { color: var(--ivory); }
+
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+
+    /* Article cards */
+    .articles-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      border-top: 1px solid var(--border);
+    }
+    .art-card {
+      padding: 2.4rem 0;
+      padding-right: 3rem;
+      border-bottom: 1px solid var(--border);
+      transition: all 0.3s;
+    }
+    .art-card:not(:last-child) { border-right: 1px solid var(--border); }
+    .art-card:not(:first-child) { padding-left: 3rem; padding-right: 0; }
+    .art-card:last-child { padding-right: 0; }
+
+    .art-meta {
+      display: flex; align-items: center; gap: 0.8rem;
+      margin-bottom: 0.9rem; flex-wrap: wrap;
+    }
+    .art-num {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.65rem; color: var(--gold); opacity: 0.75;
+    }
+    .art-cat {
+      font-family: 'Inter', sans-serif; font-size: 0.6rem;
+      letter-spacing: 0.1em; text-transform: uppercase; color: var(--blue);
+    }
+    .art-date { font-family: 'Inter', sans-serif; font-size: 0.6rem; color: var(--ivory-3); margin-left: auto; }
+    .art-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem; font-weight: 400; line-height: 1.4;
+      color: var(--ivory); margin-bottom: 0.75rem;
+      display: block; transition: color 0.3s;
+    }
+    .art-card:hover .art-title { color: var(--gold); }
+    .art-excerpt { font-family: 'Source Serif 4', serif; font-size: 0.85rem; color: var(--ivory-3); line-height: 1.75; margin-bottom: 1.3rem; }
+    .art-cta {
+      font-family: 'Inter', sans-serif; font-size: 0.67rem;
+      letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold);
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: gap 0.3s;
+    }
+    .art-cta::after { content: '→'; }
+    .art-cta:hover { gap: 0.7rem; }
+
+    /* Lesson cards */
+    .lessons-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1px; background: var(--border);
+      border: 1px solid var(--border);
+    }
+    .lesson-card {
+      background: var(--card); padding: 2rem 1.8rem;
+      transition: background 0.35s; position: relative; overflow: hidden;
+    }
+    .lesson-card:hover { background: var(--card-2); }
+    .lesson-top {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: 1.2rem;
+    }
+    .lesson-code {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.68rem; color: var(--gold);
+      background: var(--gold-dim); border: 1px solid var(--gold-border);
+      padding: 0.25rem 0.65rem;
+    }
+    .lesson-time {
+      font-family: 'Inter', sans-serif; font-size: 0.6rem;
+      letter-spacing: 0.08em; text-transform: uppercase; color: var(--ivory-3);
+    }
+    .lesson-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem; font-weight: 400; line-height: 1.4;
+      color: var(--ivory); margin-bottom: 0.5rem;
+      display: block; transition: color 0.3s;
+    }
+    .lesson-card:hover .lesson-title { color: var(--gold); }
+    .lesson-summary {
+      font-family: 'Source Serif 4', serif;
+      font-size: 0.8rem; color: var(--ivory-3); line-height: 1.65;
+    }
+    .lesson-arrow {
+      position: absolute; bottom: 1.5rem; right: 1.8rem;
+      font-size: 0.9rem; color: var(--gold); opacity: 0.5;
+      transition: opacity 0.3s, transform 0.3s;
+    }
+    .lesson-card:hover .lesson-arrow { opacity: 1; transform: translateX(3px); }
+
+    /* ════════════════════════════════════════
+       EL VIAJE — Featured Series
+    ════════════════════════════════════════ */
+    .viaje {
+      padding: 7rem 4rem;
+      border-top: 1px solid var(--border);
+      background: linear-gradient(135deg, var(--black-2) 0%, var(--black-3) 100%);
+      position: relative; overflow: hidden;
+    }
+    .viaje-blob {
+      position: absolute; top: -20%; right: -10%;
+      width: 55vw; height: 55vw; max-width: 680px; max-height: 680px;
+      background: radial-gradient(ellipse, rgba(44,70,150,0.09) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .viaje-inner {
+      max-width: 1240px; margin: 0 auto;
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 6rem; align-items: center; position: relative; z-index: 1;
+    }
+    .viaje-num {
+      position: absolute; top: -5rem; left: -3rem;
+      font-family: 'Playfair Display', serif;
+      font-size: 20rem; color: var(--gold); opacity: 0.025;
+      line-height: 1; pointer-events: none; user-select: none;
+    }
+    .viaje h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 3vw, 2.6rem); font-weight: 400;
+      line-height: 1.25; color: var(--ivory); margin-bottom: 1.4rem;
+    }
+    .viaje h2 em { font-style: italic; color: var(--gold); }
+    .viaje p {
+      font-family: 'Source Serif 4', serif;
+      font-size: 0.98rem; color: var(--ivory-3);
+      line-height: 1.85; margin-bottom: 1.8rem;
+    }
+    .steps { display: flex; flex-direction: column; gap: 1.4rem; }
+    .step { display: flex; gap: 1.4rem; align-items: flex-start; }
+    .step-badge {
+      font-family: 'JetBrains Mono', monospace; font-size: 0.65rem;
+      color: var(--gold); background: var(--gold-dim);
+      border: 1px solid var(--gold-border); padding: 0.3rem 0.6rem;
+      white-space: nowrap; margin-top: 0.2rem; flex-shrink: 0;
+    }
+    .step-body { font-family: 'Source Serif 4', serif; font-size: 0.88rem; color: var(--ivory-2); line-height: 1.65; }
+    .step-body strong { display: block; font-family: 'Playfair Display', serif; font-size: 0.95rem; color: var(--ivory); font-weight: 400; margin-bottom: 0.15rem; }
+
+    /* ════════════════════════════════════════
+       ABOUT
+    ════════════════════════════════════════ */
+    .about-inner {
+      max-width: 1240px; margin: 0 auto;
+      display: grid; grid-template-columns: 1fr 2fr;
+      gap: 5rem; align-items: start;
+    }
+    .about-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.4rem; font-weight: 400;
+      color: var(--ivory); line-height: 1.2; margin-top: 0.8rem;
+    }
+    .about-name em { display: block; font-style: italic; color: var(--gold); }
+    .fact-list { margin-top: 2rem; display: flex; flex-direction: column; gap: 0.7rem; }
+    .fact {
+      display: flex; gap: 1rem;
+      font-family: 'Inter', sans-serif; font-size: 0.72rem;
+    }
+    .fact-k { color: var(--gold); letter-spacing: 0.1em; text-transform: uppercase; min-width: 90px; }
+    .fact-v { color: var(--ivory-3); }
+    .about-text {
+      font-family: 'Source Serif 4', serif;
+      font-size: 0.98rem; color: var(--ivory-3);
+      line-height: 1.9; margin-bottom: 1.4rem;
+    }
+    .about-text:last-of-type { margin-bottom: 2rem; }
+
+    /* ════════════════════════════════════════
+       NEWSLETTER
+    ════════════════════════════════════════ */
+    .newsletter {
+      padding: 7rem 4rem;
+      border-top: 1px solid var(--border);
+      background: linear-gradient(170deg, var(--black) 0%, var(--black-2) 100%);
+    }
+    .newsletter-inner { max-width: 580px; margin: 0 auto; text-align: center; }
+    .newsletter h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 400;
+      line-height: 1.3; color: var(--ivory); margin-bottom: 0.9rem;
+    }
+    .newsletter h2 em { font-style: italic; color: var(--gold); }
+    .newsletter p {
+      font-family: 'Source Serif 4', serif;
+      font-size: 0.95rem; color: var(--ivory-3);
+      line-height: 1.8; margin-bottom: 2.4rem;
+    }
+    .form-row {
+      display: flex; border: 1px solid var(--border-2);
+      transition: border-color 0.3s;
+    }
+    .form-row:focus-within { border-color: var(--gold); }
+    .form-row input {
+      flex: 1; background: transparent; border: none; outline: none;
+      padding: 1rem 1.4rem; font-family: 'Inter', sans-serif;
+      font-size: 0.85rem; color: var(--ivory); min-width: 0;
+    }
+    .form-row input::placeholder { color: var(--ivory-3); }
+    .form-row button {
+      background: var(--gold); border: none; padding: 1rem 1.6rem;
+      font-family: 'Inter', sans-serif; font-size: 0.68rem;
+      letter-spacing: 0.13em; text-transform: uppercase;
+      color: var(--black); white-space: nowrap;
+      transition: background 0.25s;
+    }
+    .form-row button:hover { background: var(--gold-light); }
+    .form-note {
+      margin-top: 1rem; font-family: 'Inter', sans-serif;
+      font-size: 0.65rem; color: var(--ivory-3); letter-spacing: 0.05em;
+    }
+
+    /* ════════════════════════════════════════
+       FOOTER
+    ════════════════════════════════════════ */
+    footer {
+      padding: 2.2rem 4rem; border-top: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 1.2rem;
+    }
+    .footer-brand {
+      font-family: 'Playfair Display', serif;
+      font-size: 0.82rem; letter-spacing: 0.22em;
+      text-transform: uppercase; color: var(--gold);
+    }
+    .footer-nav { display: flex; gap: 1.8rem; list-style: none; }
+    .footer-nav a {
+      font-family: 'Inter', sans-serif; font-size: 0.65rem;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--ivory-3); transition: color 0.3s;
+    }
+    .footer-nav a:hover { color: var(--gold); }
+    .footer-copy { font-family: 'Inter', sans-serif; font-size: 0.65rem; color: var(--ivory-3); }
+
+    /* ════════════════════════════════════════
+       FADE ANIMATIONS
+    ════════════════════════════════════════ */
+    .fade {
+      opacity: 0; transform: translateY(26px);
+      transition: opacity 0.75s ease, transform 0.75s ease;
+    }
+    .fade.in { opacity: 1; transform: translateY(0); }
+    .fade:nth-child(2) { transition-delay: 0.08s; }
+    .fade:nth-child(3) { transition-delay: 0.16s; }
+    .fade:nth-child(4) { transition-delay: 0.24s; }
+    .fade:nth-child(5) { transition-delay: 0.32s; }
+
+    /* ════════════════════════════════════════
+       RESPONSIVE
+    ════════════════════════════════════════ */
+    @media (max-width: 1100px) {
+      .disciplines-grid { grid-template-columns: repeat(3, 1fr); }
+      .viaje-inner { grid-template-columns: 1fr; gap: 3.5rem; }
+      .viaje-num { display: none; }
+    }
+    @media (max-width: 768px) {
+      nav { padding: 1.1rem 1.6rem; }
+      .nav-links, .nav-right { display: none; }
+      .nav-toggle { display: block; }
+      .hero, .section, .manifesto, .viaje, .newsletter { padding: 5rem 1.6rem; }
+      .disciplines-grid { grid-template-columns: 1fr 1fr; }
+      .about-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+      .art-card:not(:first-child) { padding-left: 0; }
+      .art-card:not(:last-child) { border-right: none; padding-right: 0; }
+      footer { padding: 2rem 1.6rem; flex-direction: column; align-items: center; text-align: center; }
+      .footer-nav { flex-wrap: wrap; justify-content: center; }
+    }
+    @media (max-width: 480px) {
+      .disciplines-grid { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 2.4rem; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- PROGRESS BAR -->
+  <div id="progress"></div>
+
+  <!-- ══════════ NAVIGATION ══════════ -->
+  <nav id="nav">
+    <div class="nav-left">
+      <a href="#" class="nav-logo">Nihil Novi</a>
+      <div class="nav-dot"></div>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="#disciplinas">Disciplinas</a></li>
+      <li><a href="#contenido">Lecciones</a></li>
+      <li><a href="#viaje">El Viaje</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#biblioteca">Biblioteca</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <div class="lang-switch">
+        <button class="lang-btn active">ES</button>
+        <span class="lang-sep">·</span>
+        <button class="lang-btn">EN</button>
+        <span class="lang-sep">·</span>
+        <button class="lang-btn">IT</button>
+      </div>
+      <a href="#contenido" class="nav-cta">Explorar</a>
+    </div>
+
+    <button class="nav-toggle" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ══════════ HERO ══════════ -->
+  <section class="hero" id="inicio">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="hero-grid"></div>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow">David Legorreta — nihilnovi.xyz</div>
+
+      <h1>
+        La historia del pensamiento,
+        <span class="line-2">reconstruida <em>en público.</em></span>
+      </h1>
+
+      <p class="hero-sub">
+        Filosofía. Economía. Matemáticas. Historia. Ciencia.
+        El mapa de 3,000 años de intentar entender cómo funciona el mundo —
+        con todo el material, la bibliografía y las preguntas sin resolver incluidos.
+      </p>
+
+      <div class="hero-disciplines">
+        <span class="disc-pill fil">Filosofía</span>
+        <span class="disc-pill eco">Economía</span>
+        <span class="disc-pill mat">Matemáticas</span>
+        <span class="disc-pill his">Historia</span>
+        <span class="disc-pill cie">Ciencia</span>
+      </div>
+
+      <div class="hero-ctas">
+        <a href="#disciplinas" class="btn btn-gold">Explorar las disciplinas</a>
+        <a href="#viaje" class="btn btn-outline">El Viaje del Economista</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll">Scroll</div>
+  </section>
+
+  <!-- ══════════ MANIFESTO ══════════ -->
+  <section class="manifesto">
+    <div class="manifesto-inner">
+      <div class="gold-bar"></div>
+      <blockquote>
+        "Los humanos llevamos tres mil años intentando entender cómo funciona el mundo.<br>
+        Este sitio es el <strong>mapa de ese intento.</strong><br>
+        No el destino. El camino."
+      </blockquote>
+      <div class="gold-bar"></div>
+      <cite>— David Legorreta, nihilnovi.xyz — 2026</cite>
+    </div>
+  </section>
+
+  <!-- ══════════ DISCIPLINES ══════════ -->
+  <section class="section" id="disciplinas">
+    <div class="section-inner">
+      <div class="s-header">
+        <div>
+          <div class="s-eyebrow">Los territorios</div>
+          <h2 class="s-title">Cinco disciplinas.<br>Un solo proyecto.</h2>
+          <p class="s-desc">Cada disciplina tiene su propia ruta de estudio, sus lecciones y su bibliografía. Todas convergen en la misma pregunta: ¿cómo funciona el mundo?</p>
+        </div>
+      </div>
+
+      <div class="disciplines-grid">
+        <!-- FILOSOFÍA -->
+        <a href="#" class="disc-card fil fade">
+          <div class="disc-bg-num">I</div>
+          <div class="disc-icon">FIL ·</div>
+          <h3 class="disc-name">Filosofía</h3>
+          <p class="disc-tagline">Las preguntas que ninguna otra disciplina se atreve a hacer. El origen de todo lo demás.</p>
+          <div class="disc-meta">
+            <span class="disc-count">FIL-01 →</span>
+            <span class="disc-arrow">→</span>
+          </div>
+        </a>
+
+        <!-- ECONOMÍA -->
+        <a href="#" class="disc-card eco fade">
+          <div class="disc-bg-num">II</div>
+          <div class="disc-icon">ECO ·</div>
+          <h3 class="disc-name">Economía</h3>
+          <p class="disc-tagline">Las consecuencias materiales de las ideas. Cómo se distribuye lo que se produce y por qué.</p>
+          <div class="disc-meta">
+            <span class="disc-count">ECO-01 →</span>
+            <span class="disc-arrow">→</span>
+          </div>
+        </a>
+
+        <!-- MATEMÁTICAS -->
+        <a href="#" class="disc-card mat fade">
+          <div class="disc-bg-num">III</div>
+          <div class="disc-icon">MAT ·</div>
+          <h3 class="disc-name">Matemáticas</h3>
+          <p class="disc-tagline">El lenguaje de la precisión. No para calcular — para pensar sin margen de ambigüedad.</p>
+          <div class="disc-meta">
+            <span class="disc-count">MAT-01 →</span>
+            <span class="disc-arrow">→</span>
+          </div>
+        </a>
+
+        <!-- HISTORIA -->
+        <a href="#" class="disc-card his fade">
+          <div class="disc-bg-num">IV</div>
+          <div class="disc-icon">HIS ·</div>
+          <h3 class="disc-name">Historia</h3>
+          <p class="disc-tagline">El contexto sin el cual las ideas parecen naturales. Nada en el presente es inevitable.</p>
+          <div class="disc-meta">
+            <span class="disc-count">HIS-01 →</span>
+            <span class="disc-arrow">→</span>
+          </div>
+        </a>
+
+        <!-- CIENCIA -->
+        <a href="#" class="disc-card cie fade">
+          <div class="disc-bg-num">V</div>
+          <div class="disc-icon">CIE ·</div>
+          <h3 class="disc-name">Ciencia</h3>
+          <p class="disc-tagline">El método. Cómo se construye conocimiento que resiste el error y la ideología.</p>
+          <div class="disc-meta">
+            <span class="disc-count">CIE-01 →</span>
+            <span class="disc-arrow">→</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ CONTENT (Articles + Lessons tabs) ══════════ -->
+  <section class="section" id="contenido">
+    <div class="section-inner">
+      <div class="s-header">
+        <div>
+          <div class="s-eyebrow">Lo más reciente</div>
+          <h2 class="s-title">Artículos y <em>Lecciones</em></h2>
+        </div>
+        <a href="#" class="s-link">Ver todo el archivo</a>
+      </div>
+
+      <!-- Tabs -->
+      <div class="tabs-header">
+        <button class="tab-btn active" data-tab="articulos">Artículos</button>
+        <button class="tab-btn" data-tab="lecciones">Lecciones</button>
+      </div>
+
+      <!-- Articles Tab -->
+      <div class="tab-content active" id="tab-articulos">
+        <div class="articles-row">
+          <div class="art-card">
+            <div class="art-meta">
+              <span class="art-num">00</span>
+              <span class="art-cat">El Viaje</span>
+              <span class="art-date">25 mayo 2026</span>
+            </div>
+            <a href="#" class="art-title">25 de mayo de 2026. Hoy empieza.</a>
+            <p class="art-excerpt">No el día en que llegué a algún destino. El día en que decidí hacer el camino en público — con los 7 elementos que nadie te dice que necesitas para pensar como economista.</p>
+            <a href="#" class="art-cta">Leer</a>
+          </div>
+
+          <div class="art-card">
+            <div class="art-meta">
+              <span class="art-num">01</span>
+              <span class="art-cat">Economía</span>
+              <span class="art-date">25 mayo 2026</span>
+            </div>
+            <a href="#" class="art-title">Si te dijeron que la economía es la ciencia de la oferta y la demanda, te timaron.</a>
+            <p class="art-excerpt">La economía no empezó con Adam Smith en 1776. Empezó con los griegos. Y alguien, en algún momento, decidió olvidar eso.</p>
+            <a href="#" class="art-cta">Leer</a>
+          </div>
+
+          <div class="art-card">
+            <div class="art-meta">
+              <span class="art-num">02</span>
+              <span class="art-cat" style="color:var(--ivory-3)">Próximamente</span>
+              <span class="art-date">Jun 2026</span>
+            </div>
+            <a href="#" class="art-title" style="color:var(--ivory-3);pointer-events:none;">Las tres preguntas que toda economía tiene que responder.</a>
+            <p class="art-excerpt">Qué producir. Cómo producirlo. Para quién. Antes de cualquier modelo, estas tres preguntas. La forma en que una sociedad las responde lo dice todo.</p>
+            <span class="art-cta" style="color:var(--ivory-3);pointer-events:none;">Próximamente</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Lessons Tab -->
+      <div class="tab-content" id="tab-lecciones">
+        <div class="lessons-grid">
+          <a href="#" class="lesson-card">
+            <div class="lesson-top">
+              <span class="lesson-code">ECO-01</span>
+              <span class="lesson-time">3 min</span>
+            </div>
+            <span class="lesson-title">¿Qué estudia realmente la economía?</span>
+            <p class="lesson-summary">No es la ciencia del dinero. Es la ciencia de las decisiones bajo escasez. Esa diferencia importa más de lo que parece.</p>
+            <span class="lesson-arrow">→</span>
+          </a>
+
+          <a href="#" class="lesson-card">
+            <div class="lesson-top">
+              <span class="lesson-code">FIL-01</span>
+              <span class="lesson-time">4 min</span>
+            </div>
+            <span class="lesson-title">¿Qué es la filosofía y para qué sirve?</span>
+            <p class="lesson-summary">No es especulación abstracta. Es el único instrumento para cuestionar los supuestos que todas las demás disciplinas dan por sentados.</p>
+            <span class="lesson-arrow">→</span>
+          </a>
+
+          <a href="#" class="lesson-card">
+            <div class="lesson-top">
+              <span class="lesson-code">MAT-01</span>
+              <span class="lesson-time">3 min</span>
+            </div>
+            <span class="lesson-title">Las matemáticas son un lenguaje, no un cálculo.</span>
+            <p class="lesson-summary">La mayoría aprende a calcular y cree que eso es matemáticas. No lo es. Las matemáticas son una forma de pensar con precisión absoluta.</p>
+            <span class="lesson-arrow">→</span>
+          </a>
+
+          <a href="#" class="lesson-card">
+            <div class="lesson-top">
+              <span class="lesson-code">HIS-01</span>
+              <span class="lesson-time">4 min</span>
+            </div>
+            <span class="lesson-title">Cómo leer la historia sin que te manipulen.</span>
+            <p class="lesson-summary">Toda historia es una selección. Alguien decidió qué incluir, qué omitir y desde qué perspectiva narrar. Esa persona tiene intereses.</p>
+            <span class="lesson-arrow">→</span>
+          </a>
+
+          <a href="#" class="lesson-card">
+            <div class="lesson-top">
+              <span class="lesson-code">CIE-01</span>
+              <span class="lesson-time">3 min</span>
+            </div>
+            <span class="lesson-title">El método científico de verdad.</span>
+            <p class="lesson-summary">No es el diagrama de tu libro de secundaria. Es un conjunto de prácticas para reducir el error sistemático del pensamiento humano.</p>
+            <span class="lesson-arrow">→</span>
+          </a>
+
+          <a href="#" class="lesson-card" style="background:var(--black-2);border:1px dashed var(--border-2);">
+            <div class="lesson-top">
+              <span class="lesson-code" style="opacity:0.4;">ECO-02</span>
+              <span class="lesson-time">Próximo</span>
+            </div>
+            <span class="lesson-title" style="color:var(--ivory-3);">El mercado: qué es y qué no es.</span>
+            <p class="lesson-summary" style="opacity:0.5;">Viene en junio 2026.</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ EL VIAJE ══════════ -->
+  <section class="viaje" id="viaje">
+    <div class="viaje-blob"></div>
+    <div class="viaje-inner">
+      <div style="position:relative;">
+        <div class="viaje-num">∞</div>
+        <div class="s-eyebrow">La serie principal</div>
+        <h2>El Viaje del<br><em>Economista</em></h2>
+        <p>Una ruta de estudio construida en público. Semana a semana, materia a materia. Con el material real, la bibliografía completa y las preguntas que cada tema genera — sin pretender que ya tengo las respuestas.</p>
+        <p>No es un curso. No hay certificado al final. Es el camino que estoy recorriendo.</p>
+        <a href="#" class="btn btn-gold">Ver el mapa completo</a>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <span class="step-badge">I</span>
+          <div class="step-body">
+            <strong>Historia del Pensamiento Económico</strong>
+            Antes de los modelos, la genealogía. Quién construyó las herramientas y por qué. De Aristóteles a la MMT.
+          </div>
+        </div>
+        <div class="step">
+          <span class="step-badge">II</span>
+          <div class="step-body">
+            <strong>Microeconomía</strong>
+            La lógica de las decisiones individuales. El lenguaje base sin el que no se puede leer ningún paper.
+          </div>
+        </div>
+        <div class="step">
+          <span class="step-badge">III</span>
+          <div class="step-body">
+            <strong>Macroeconomía</strong>
+            Lo que pasa cuando las decisiones individuales se suman y producen algo que nadie quiso.
+          </div>
+        </div>
+        <div class="step">
+          <span class="step-badge">IV</span>
+          <div class="step-body">
+            <strong>Estadística y Econometría</strong>
+            Sin esto, la economía es filosofía con gráficas. El lenguaje de la evidencia.
+          </div>
+        </div>
+        <div class="step">
+          <span class="step-badge">V–VII</span>
+          <div class="step-body">
+            <strong>Matemáticas · Economía Política · Filosofía de la Ciencia</strong>
+            Los pilares que los programas universitarios no enseñan bien. Los que más hacen falta.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ ABOUT ══════════ -->
+  <section class="section" id="sobre">
+    <div class="about-inner">
+      <div>
+        <div class="s-eyebrow">Quién escribe</div>
+        <h2 class="about-name">David<br><em>Legorreta</em></h2>
+        <div class="fact-list">
+          <div class="fact"><span class="fact-k">Base</span><span class="fact-v">México / LATAM</span></div>
+          <div class="fact"><span class="fact-k">Formación</span><span class="fact-v">Filosofía · Economía</span></div>
+          <div class="fact"><span class="fact-k">Experiencia</span><span class="fact-v">BPO · Retail · Tech</span></div>
+          <div class="fact"><span class="fact-k">Idiomas</span><span class="fact-v">ES · EN · IT (en curso)</span></div>
+        </div>
+      </div>
+      <div>
+        <p class="about-text">Estudié filosofía. Después trabajé catorce años en operaciones — BPO, retail, logística, tecnología. Cash App, TikTok, Walmart, Avis. Gestión de equipos, entrega de resultados, problemas estructurales disfrazados de problemas personales.</p>
+        <p class="about-text">En algún momento me di cuenta de que las preguntas que me importaban no eran preguntas filosóficas. Eran preguntas económicas. La filosofía me enseñó a preguntar. La economía, si se estudia en serio, enseña a responder con evidencia.</p>
+        <p class="about-text">Nihil Novi es donde hago eso en público. Sin pretender que ya llegué. Sin vender certezas que no tengo. El sitio es el proyecto.</p>
+        <a href="#" class="btn btn-outline">Leer más sobre el proyecto</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ NEWSLETTER ══════════ -->
+  <section class="newsletter" id="newsletter">
+    <div class="newsletter-inner">
+      <div class="s-eyebrow" style="justify-content:center;margin-bottom:1.4rem;">El viaje, en tu correo</div>
+      <h2>Una entrega por semana.<br><em>Sin algoritmos.</em></h2>
+      <p>Artículos, lecciones y el material de estudio de esa semana. Directo. Sin curation de plataforma. Sin spam.</p>
+      <div class="form-row">
+        <input type="email" placeholder="tu@correo.com" />
+        <button type="submit">Suscribirme</button>
+      </div>
+      <p class="form-note">Sin spam · Sin venta de datos · Baja cuando quieras</p>
+    </div>
+  </section>
+
+  <!-- ══════════ FOOTER ══════════ -->
+  <footer>
+    <span class="footer-brand">Nihil Novi</span>
+    <ul class="footer-nav">
+      <li><a href="#">Disciplinas</a></li>
+      <li><a href="#">El Viaje</a></li>
+      <li><a href="#">Lecciones</a></li>
+      <li><a href="#">Biblioteca</a></li>
+      <li><a href="#">Sobre</a></li>
+    </ul>
+    <span class="footer-copy">© 2026 David Legorreta · nihilnovi.xyz</span>
+  </footer>
+
+  <!-- ══════════ JAVASCRIPT ══════════ -->
+  <script>
+    // Scroll progress
+    const prog = document.getElementById('progress');
+    const onScroll = () => {
+      const pct = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight);
+      prog.style.width = Math.min(pct * 100, 100) + '%';
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+    // Compact nav
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('compact', window.scrollY > 80);
+    }, { passive: true });
+
+    // Fade-in on scroll
+    const fadeEls = document.querySelectorAll('.fade');
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.10 });
+    fadeEls.forEach(el => io.observe(el));
+
+    // Tabs
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+        btn.classList.add('active');
+        document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+      });
+    });
+
+    // Lang switch
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      });
+    });
+
+    // Smooth scroll for nav links
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+      });
+    });
+  </script>
+
+</body>
+</html>
