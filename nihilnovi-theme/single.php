@@ -59,7 +59,7 @@ $display_code = $lesson_code ?: ( $article_num ? str_pad( $article_num, 2, '0', 
         </span>
       <?php endif; ?>
 
-      <time class="post-date" datetime="<?php echo get_the_date('c'); ?>">
+      <time class="post-date" datetime="<?php echo esc_attr( get_the_date('c') ); ?>">
         <?php echo get_the_date('j \d\e F, Y'); ?>
       </time>
     </div>
@@ -81,7 +81,7 @@ $display_code = $lesson_code ?: ( $article_num ? str_pad( $article_num, 2, '0', 
 <article class="post-body" id="lectura" itemscope itemtype="https://schema.org/Article">
 
   <meta itemprop="author" content="David Legorreta" />
-  <meta itemprop="datePublished" content="<?php echo get_the_date('c'); ?>" />
+  <meta itemprop="datePublished" content="<?php echo esc_attr( get_the_date('c') ); ?>" />
 
   <div class="post-body-inner">
 

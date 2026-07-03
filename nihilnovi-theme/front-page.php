@@ -236,12 +236,12 @@ $nl_note    = get_field('nl_note')    ?: 'Sin spam · Sin venta de datos · Baja
         if ( $art_query->have_posts() ) :
           while ( $art_query->have_posts() ) : $art_query->the_post();
             $num = get_post_meta(get_the_ID(),'_article_num',true) ?: str_pad($i,2,'0',STR_PAD_LEFT);
-            $cat = get_the_category(); $cat_name = $cat ? esc_html($cat[0]->name) : 'El Viaje';
+            $cat = get_the_category(); $cat_name = $cat ? $cat[0]->name : 'El Viaje';
         ?>
         <article class="art-card">
           <div class="art-meta">
             <span class="art-num"><?php echo esc_html($num); ?></span>
-            <span class="art-cat"><?php echo $cat_name; ?></span>
+            <span class="art-cat"><?php echo esc_html( $cat_name ); ?></span>
             <span class="art-date"><?php echo get_the_date('j M Y'); ?></span>
           </div>
           <a href="<?php the_permalink(); ?>" class="art-title"><?php the_title(); ?></a>

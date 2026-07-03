@@ -39,7 +39,7 @@ get_header();
             $num = get_post_meta( get_the_ID(), '_article_num', true );
             $lesson_code = get_post_meta( get_the_ID(), '_lesson_code', true );
             $read_time = get_post_meta( get_the_ID(), '_read_time', true ) ?: nihilnovi_estimate_read_time( get_the_content() );
-            $cat = get_the_category(); $cat_name = $cat ? esc_html( $cat[0]->name ) : '';
+            $cat = get_the_category(); $cat_name = $cat ? $cat[0]->name : '';
             $cat_url  = $cat ? get_category_link( $cat[0]->term_id ) : '';
             $disc_class = nihilnovi_get_disc_class( get_the_ID() );
             $display_code = $lesson_code ?: ( $num ? str_pad($num,2,'0',STR_PAD_LEFT) : '' );
@@ -65,7 +65,7 @@ get_header();
                 <?php if ($cat_name) : ?>
                   <a href="<?php echo esc_url($cat_url); ?>"
                      style="font-family:'Inter',sans-serif;font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--<?php echo esc_attr($disc_class); ?>);">
-                    <?php echo $cat_name; ?>
+                    <?php echo esc_html( $cat_name ); ?>
                   </a>
                 <?php endif; ?>
                 <time style="font-family:'Inter',sans-serif;font-size:.6rem;color:var(--ivory-3);margin-left:auto;"

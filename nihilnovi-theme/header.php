@@ -29,7 +29,7 @@
 <nav class="nn-nav" id="nn-nav" role="navigation" aria-label="Navegación principal">
 
   <div class="nav-left">
-    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="nav-logo" aria-label="Nihil Novi — Inicio">
+    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="nav-logo" aria-label="<?php echo esc_attr__( 'Nihil Novi — Inicio', 'nihilnovi' ); ?>">
       Nihil Novi
     </a>
     <div class="nav-dot" aria-hidden="true"></div>
