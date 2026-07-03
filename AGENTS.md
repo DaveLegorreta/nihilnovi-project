@@ -39,8 +39,38 @@ El objetivo editorial es publicar contenido riguroso con citación clásica (Ste
 
 - **Advanced Custom Fields (ACF):** opcional pero recomendado. Define los campos editables del homepage (`inc/acf-fields.php`). Si no está activo, el tema usa valores por defecto.
 - **Mailchimp for WordPress (mc4wp_show_form):** opcional para el formulario de newsletter. Si no está, se muestra un formulario HTML estático.
+- **Polylang (gratuito):** recomendado para la versión multilingüe. Gestiona los idiomas, las traducciones de contenido y el selector de idioma.
 
-### 2.3. Herramientas locales (Python)
+### 2.3. Multilingüe e internacionalización (i18n)
+
+El tema está preparado para soportar varios idiomas mediante el mecanismo estándar de WordPress:
+
+- **Textdomain:** `nihilnovi`.
+- **Carpeta de traducciones:** `nihilnovi-theme/languages/`.
+- **Idiomas objetivo:** español (idioma base), inglés, italiano y alemán.
+- **Plugin recomendado:** [Polylang](https://wordpress.org/plugins/polylang/) (versión gratuita).
+
+#### Añadir nuevas cadenas traducibles
+
+1. En PHP, envuelve cualquier string visible con las funciones de WordPress y el textdomain `nihilnovi`:
+   - `__( 'Texto', 'nihilnovi' )` o `esc_html__( 'Texto', 'nihilnovi' )` para salida HTML.
+   - `esc_attr__( 'Texto', 'nihilnovi' )` para atributos HTML.
+   - `wp_kses_post( __( 'Texto con <em>HTML</em>', 'nihilnovi' ) )` cuando el string contenga markup permitido.
+   - `_n( 'singular', 'plural', $count, 'nihilnovi' )` para cadenas con pluralización.
+2. En ACF (`inc/acf-fields.php`), aplica `__()` a `label`, `instructions` y `default_value`.
+3. En el Customizer (`inc/customizer.php`), aplica `__()` a títulos, descripciones y valores por defecto.
+
+#### Dónde van las traducciones
+
+- La plantilla maestra de cadenas está en `nihilnovi-theme/languages/nihilnovi.pot`.
+- Los archivos `.po` y `.mo` de cada idioma (p. ej. `nihilnovi-en_US.po`, `nihilnovi-it_IT.po`, `nihilnovi-de_DE.po`) deben guardarse en `nihilnovi-theme/languages/`.
+- Polylang también gestiona las traducciones de posts, páginas, categorías y menús desde el panel de administración de WordPress.
+
+#### Selector de idioma
+
+El `header.php` incluye un marcador visual deshabilitado con los códigos de idioma (`ES`, `EN`, `IT`, `DE`). Cuando Polylang esté activo, se puede reemplazar por `pll_the_languages()` o por un widget de Polylang; mientras tanto, los textos ya son traducibles y el CSS permanece intacto.
+
+### 2.4. Herramientas locales (Python)
 
 - **Python:** ≥ 3.9.
 - **Dependencias declaradas** en metadatos inline PEP 723 dentro de cada script:
@@ -72,6 +102,8 @@ El objetivo editorial es publicar contenido riguroso con citación clásica (Ste
 │   │   ├── content-article.php
 │   │   ├── content-lesson.php
 │   │   └── content-none.php
+│   ├── languages/                ← Traducciones del tema (.pot, .po, .mo)
+│   │   └── nihilnovi.pot         ← Plantilla de cadenas traducibles
 │   └── js/main.js                ← Interacciones vanilla + GSAP
 │
 ├── articulos_publicacion/        ← Contenidos listos para publicar en WP
