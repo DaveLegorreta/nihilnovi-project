@@ -83,8 +83,45 @@ function nihilnovi_scripts() {
         $js_ver,
         true
     );
+
+    // Presocratics Widgets JS (Dynamic cache busting)
+    $widgets_ver = file_exists( get_template_directory() . '/js/widgets-presocraticos.js' ) 
+        ? filemtime( get_template_directory() . '/js/widgets-presocraticos.js' ) 
+        : '1.0.0';
+    wp_enqueue_script(
+        'nihilnovi-widgets-presocraticos',
+        get_template_directory_uri() . '/js/widgets-presocraticos.js',
+        [],
+        $widgets_ver,
+        true
+    );
 }
 add_action( 'wp_enqueue_scripts', 'nihilnovi_scripts' );
+
+/* ─── ASSET ATTRIBUTES: INTEGRITY & CROSSORIGIN ─ */
+// Añade SRI (Subresource Integrity) y crossorigin a scripts de terceros cargados desde CDN.
+function nihilnovi_script_loader_attributes( $tag, $handle, $src ) {
+    $attributes = [
+        'gsap'               => [
+            'integrity'   => 'sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==',
+            'crossorigin' => 'anonymous',
+        ],
+        'gsap-scrolltrigger' => [
+            'integrity'   => 'sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==',
+            'crossorigin' => 'anonymous',
+        ],
+    ];
+
+    if ( ! isset( $attributes[ $handle ] ) ) {
+        return $tag;
+    }
+
+    $attrs = $attributes[ $handle ];
+    $tag   = str_replace( ' src=', ' integrity="' . esc_attr( $attrs['integrity'] ) . '" crossorigin="' . esc_attr( $attrs['crossorigin'] ) . '" src=', $tag );
+
+    return $tag;
+}
+add_filter( 'script_loader_tag', 'nihilnovi_script_loader_attributes', 10, 3 );
 
 /* ─── EXCERPT LENGTH ─────────────────────────── */
 // ─── EXCERPT CONFIGURATION ───────────────────────────────────
