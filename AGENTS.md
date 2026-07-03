@@ -304,10 +304,61 @@ git push -u origin main --tags
 4. Antes de desplegar, etiquetar la versión del tema: `git tag -a theme-v2.0.1-YYYY-MM-DD -m "Descripción"`.
 5. Subir cambios y tags: `git push origin main --tags`.
 
+### Flujo editorial con Antigravity
+
+Antigravity es la herramienta usada para la **producción y revisión de artículos** y la generación de **widgets/snippets** del sitio. Para no mezclar el desarrollo del tema con la experimentación editorial, se usa una rama dedicada.
+
+- **Rama `editorial`:** trabajo en curso de artículos, prompts, protocolos y formatos de Antigravity.
+- **Rama `main`:** solo recibe contenido editorial revisado y listo para publicar.
+- **Tag `antigravity-vN`:** marca una versión estable del flujo editorial (prompts, protocolo y estructura de artículos).
+
+#### Crear o actualizar la rama editorial
+
+```bash
+git checkout -b editorial main
+# Trabaja en articulos_publicacion/, templates/, prompts, etc.
+git add .
+git commit -m "editorial: [descripción del cambio]"
+git push origin editorial
+```
+
+#### Publicar contenido revisado en main
+
+```bash
+git checkout main
+git merge --no-ff editorial -m "Publica contenido editorial revisado"
+git push origin main
+```
+
+#### Preparación para versión multilingüe
+
+Cuando el proyecto crezca a otros idiomas, se propone esta estructura dentro de `articulos_publicacion/`:
+
+```text
+articulos_publicacion/
+├── es/                       ← Español (idioma base)
+│   ├── Modulo_I_Mito_al_Logos/
+│   └── FIL_*.md
+├── en/                       ← Inglés
+│   ├── Module_I_Myth_to_Logo/
+│   └── PHI_*.md
+└── ...
+```
+
+La rama `editorial` es el lugar idóneo para desarrollar y validar traducciones antes de mergearlas a `main`.
+
+### Convención de nombres
+
+- **Ramas de tema:** `feature/nombre-corto` o `fix/descripcion`.
+- **Ramas editoriales:** `editorial` para la línea principal; `editorial/idioma-nuevo` para expansiones (ej. `editorial/en-traduccion`).
+- **Tags del tema:** `theme-VERSION-YYYY-MM-DD`.
+- **Tags editoriales:** `antigravity-vN` (ej. `antigravity-v1`, `antigravity-v2`).
+
 ## 10. Recursos y contexto adicional
 
 - `templates/philosophy_template.md` — estándares de citado y plantilla de artículo.
-- `templates/review_protocol.md` — flujo de edición de textos extraídos de PDF.
+- `templates/review_protocol.md` — flujo de edición de textos extraídos de PDF con Antigravity.
+- `nihilnovi-theme/preview_antigravity.html` — preview estática del diseño usada para validar artículos formateados.
 - `tiktok_scripts/TIKTOK_*.md` — ejemplos de formato y tono para contenido corto.
 - `data/gredos_pdfs_list.txt` — catálogo de fuentes disponibles para descarga.
 
