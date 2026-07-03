@@ -326,7 +326,7 @@
 
 
     /* =========================================================
-     * 7. SMOOTH SCROLL
+     * 6. SMOOTH SCROLL
      * Intercepts clicks on any anchor whose href contains '#'
      * and smoothly scrolls to the target element.
      * Respects prefers-reduced-motion.
