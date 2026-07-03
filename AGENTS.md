@@ -27,9 +27,10 @@ El objetivo editorial es publicar contenido riguroso con citación clásica (Ste
 - **CMS:** WordPress (tema requiere al menos WordPress 6.0; probado hasta 6.5).
 - **Lenguaje del servidor:** PHP 7.4+ (se recomienda 8.x).
 - **Tema activo:** `nihilnovi-theme/` (versión 2.0.0-2026-06-28).
-- **Snapshots/legado:**
-  - `nihilnovi-theme-v2.0-2026-06-27/` — versión anterior congelada.
-  - `nihilnovi-theme-legacy/` — versión 1.0.0, ya no se usa en producción.
+- **Snapshots/legado (guardados como tags de Git):**
+  - `theme-v2.0.0-2026-06-28` — estado inicial del tema activo en `main`.
+  - `theme-v2.0.0-2026-06-27` — versión anterior congelada.
+  - `theme-v1.0.0-legacy` — versión 1.0.0, ya no se usa en producción.
 - **JavaScript:** Vanilla JS (IIFE), GSAP 3.12.5 + ScrollTrigger vía CDN.
 - **CSS:** Hoja de estilos única (`style.css`) con variables CSS (design tokens) y media queries.
 - **Fuentes:** Google Fonts (Playfair Display, Source Serif 4, Inter, JetBrains Mono).
@@ -250,7 +251,60 @@ También se puede desplegar manualmente subiendo `Nihilnovi-theme.zip` o `nihiln
 
 ---
 
-## 9. Recursos y contexto adicional
+## 9. Control de versiones con Git
+
+El proyecto usa **Git** para rastrear cambios. La rama principal es `main` y contiene el estado de trabajo actual.
+
+### Tags de versiones del tema
+
+- `theme-v2.0.0-2026-06-28` — tema activo actual (`nihilnovi-theme/`).
+- `theme-v2.0.0-2026-06-27` — snapshot congelado de la versión anterior.
+- `theme-v1.0.0-legacy` — versión 1.0.0 del tema.
+
+Para ver todas las versiones:
+
+```bash
+git tag -l
+git log --oneline --all --decorate
+```
+
+Para recuperar una versión antigua del tema en una carpeta temporal:
+
+```bash
+mkdir /tmp/nihilnovi-legacy
+git archive theme-v1.0.0-legacy | tar -x -C /tmp/nihilnovi-legacy
+```
+
+### Qué NO se versiona
+
+El archivo `.gitignore` excluye:
+
+- `data/pdfs/` — PDFs académicos grandes (5.2 GB+).
+- `*.zip` — artefactos de despliegue.
+- `sftp_credentials.json` — credenciales de producción.
+- `__pycache__/`, `*.pyc`, `.env`, etc.
+
+### Conexión con GitHub
+
+Para vincular el repo local con un repositorio remoto de GitHub:
+
+```bash
+git remote add origin https://github.com/<usuario>/nihilnovi.git
+git branch -M main
+git push -u origin main --tags
+```
+
+> **Importante:** antes de hacer push, verifica que `sftp_credentials.json` y los PDFs no estén en el índice con `git ls-files | grep -E 'sftp_credentials|\.pdf$|\.zip$'`.
+
+### Flujo de trabajo recomendado
+
+1. Trabajar en `main` para cambios pequeños y probados.
+2. Para experimentos o funciones grandes, crear una rama: `git checkout -b feature/nueva-seccion`.
+3. Hacer commits atómicos con mensajes en español.
+4. Antes de desplegar, etiquetar la versión del tema: `git tag -a theme-v2.0.1-YYYY-MM-DD -m "Descripción"`.
+5. Subir cambios y tags: `git push origin main --tags`.
+
+## 10. Recursos y contexto adicional
 
 - `templates/philosophy_template.md` — estándares de citado y plantilla de artículo.
 - `templates/review_protocol.md` — flujo de edición de textos extraídos de PDF.
