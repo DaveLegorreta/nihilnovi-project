@@ -32,29 +32,27 @@ $display_code = $lesson_code ?: ( $article_num ? str_pad( $article_num, 2, '0', 
 <section class="post-hero" aria-label="Encabezado del artículo">
 
   <!-- Partículas de fondo -->
-  <div class="blob blob-1" style="opacity:0.4;" aria-hidden="true"></div>
-  <div class="hero-grid" style="opacity:0.4;" aria-hidden="true"></div>
+  <div class="blob blob-1" aria-hidden="true"></div>
+  <div class="hero-grid" aria-hidden="true"></div>
 
   <div class="post-hero-inner">
 
     <!-- Meta fila superior -->
     <div class="post-meta-row">
       <?php if ( $display_code ) : ?>
-        <span class="post-num <?php echo esc_attr( $is_lesson ? 'lesson-code' : '' ); ?>"
-              style="<?php echo $is_lesson ? 'background:var(--gold-dim);border:1px solid var(--gold-border);padding:0.25rem 0.65rem;font-family:JetBrains Mono,monospace;font-size:0.75rem;' : ''; ?>">
+        <span class="post-num <?php echo esc_attr( $is_lesson ? 'lesson-code' : '' ); ?>">
           <?php echo esc_html( $display_code ); ?>
         </span>
       <?php endif; ?>
 
       <?php if ( $cat ) : ?>
-        <a href="<?php echo esc_url( get_category_link( $cat->term_id ) ); ?>" class="post-cat <?php echo esc_attr( $disc_class ); ?>"
-           style="color:var(--<?php echo esc_attr( $disc_class ); ?>);border-color:rgba(var(--<?php echo esc_attr( $disc_class ); ?>-rgb,196,151,58),0.3);">
+        <a href="<?php echo esc_url( get_category_link( $cat->term_id ) ); ?>" class="post-cat <?php echo esc_attr( $disc_class ); ?>">
           <?php echo esc_html( $cat_name ); ?>
         </a>
       <?php endif; ?>
 
       <?php if ( $read_time ) : ?>
-        <span class="post-read-time" style="font-family:'Inter',sans-serif;font-size:0.62rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--ivory-3);">
+        <span class="post-read-time">
           <?php echo esc_html( $read_time ); ?>
         </span>
       <?php endif; ?>
@@ -143,11 +141,9 @@ $display_code = $lesson_code ?: ( $article_num ? str_pad( $article_num, 2, '0', 
     $tags = get_the_tags();
     if ( $tags ) :
     ?>
-    <div class="post-tags" style="margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border);display:flex;flex-wrap:wrap;gap:0.5rem;">
+    <div class="post-tags">
       <?php foreach ( $tags as $tag ) : ?>
-        <a href="<?php echo esc_url( get_tag_link( $tag->term_id ) ); ?>"
-           style="font-family:'JetBrains Mono',monospace;font-size:0.65rem;color:var(--ivory-3);border:1px solid var(--border-2);padding:0.25rem 0.65rem;transition:all 0.3s;"
-           class="post-tag">
+        <a href="<?php echo esc_url( get_tag_link( $tag->term_id ) ); ?>" class="post-tag">
           #<?php echo esc_html( $tag->name ); ?>
         </a>
       <?php endforeach; ?>
@@ -158,16 +154,16 @@ $display_code = $lesson_code ?: ( $article_num ? str_pad( $article_num, 2, '0', 
 </article>
 
 <!-- ══════════ AUTOR ══════════ -->
-<div style="padding:3rem 4rem;border-top:1px solid var(--border);background:var(--black-2);">
-  <div style="max-width:720px;margin:0 auto;display:flex;gap:1.5rem;align-items:flex-start;">
-    <div style="flex-shrink:0;width:48px;height:48px;background:var(--gold-dim);border:1px solid var(--gold-border);display:flex;align-items:center;justify-content:center;">
-      <span style="font-family:'Playfair Display',serif;font-size:1rem;color:var(--gold);">DL</span>
+<div class="post-author">
+  <div class="post-author-inner">
+    <div class="post-author-avatar">
+      <span>DL</span>
     </div>
     <div>
-      <div style="font-family:'Inter',sans-serif;font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-bottom:0.4rem;">Escrito por</div>
-      <div style="font-family:'Playfair Display',serif;font-size:1rem;color:var(--ivory);margin-bottom:0.4rem;">David Legorreta</div>
-      <p style="font-family:'Source Serif 4',serif;font-size:0.85rem;color:var(--ivory-3);line-height:1.7;margin:0;">
-        Filósofo de formación, operador de oficio. Estudiando economía en público en <a href="<?php echo esc_url(home_url('/')); ?>" style="color:var(--gold);border-bottom:1px solid var(--gold-border);">nihilnovi.xyz</a>.
+      <div class="post-author-label">Escrito por</div>
+      <div class="post-author-name">David Legorreta</div>
+      <p class="post-author-bio">
+        Filósofo de formación, operador de oficio. Estudiando economía en público en <a href="<?php echo esc_url(home_url('/')); ?>">nihilnovi.xyz</a>.
       </p>
     </div>
   </div>
@@ -183,23 +179,23 @@ if ( $prev || $next ) :
 <nav class="post-nav" aria-label="Navegación entre artículos">
   <div class="post-nav-item prev">
     <?php if ( $prev ) : ?>
-      <a href="<?php echo esc_url( get_permalink( $prev ) ); ?>" style="display:block;text-decoration:none;">
+      <a href="<?php echo esc_url( get_permalink( $prev ) ); ?>">
         <span class="post-nav-label">← Anterior</span>
         <span class="post-nav-title"><?php echo esc_html( get_the_title( $prev ) ); ?></span>
       </a>
     <?php else : ?>
-      <span class="post-nav-label" style="opacity:0.3;">← Inicio de serie</span>
+      <span class="post-nav-label disabled">← Inicio de serie</span>
     <?php endif; ?>
   </div>
 
   <div class="post-nav-item next">
     <?php if ( $next ) : ?>
-      <a href="<?php echo esc_url( get_permalink( $next ) ); ?>" style="display:block;text-decoration:none;text-align:right;">
+      <a href="<?php echo esc_url( get_permalink( $next ) ); ?>">
         <span class="post-nav-label">Siguiente →</span>
         <span class="post-nav-title"><?php echo esc_html( get_the_title( $next ) ); ?></span>
       </a>
     <?php else : ?>
-      <span class="post-nav-label" style="opacity:0.3;display:block;text-align:right;">Continúa pronto →</span>
+      <span class="post-nav-label disabled">Continúa pronto →</span>
     <?php endif; ?>
   </div>
 </nav>
@@ -217,10 +213,10 @@ $related = new WP_Query([
 
 if ( $related->have_posts() ) :
 ?>
-<section style="padding:5rem 4rem;border-top:1px solid var(--border);" aria-label="Artículos relacionados">
-  <div style="max-width:1240px;margin:0 auto;">
-    <div class="s-eyebrow" style="margin-bottom:2rem;">Seguir leyendo</div>
-    <div class="articles-row" style="grid-template-columns:repeat(3,1fr);">
+<section class="related-posts" aria-label="Artículos relacionados">
+  <div class="related-posts-inner">
+    <div class="s-eyebrow">Seguir leyendo</div>
+    <div class="articles-row">
       <?php while ( $related->have_posts() ) : $related->the_post();
         $r_code = get_post_meta(get_the_ID(),'_lesson_code',true) ?: get_post_meta(get_the_ID(),'_article_num',true);
         $r_cats = get_the_category();
@@ -241,47 +237,5 @@ if ( $related->have_posts() ) :
   </div>
 </section>
 <?php endif; ?>
-
-<!-- CSS específico del single -->
-<style>
-/* Estilos del contenido escrito en el editor WP */
-.post-content { font-family: 'Source Serif 4', serif; }
-.post-content p { font-size: 1.08rem; color: var(--ivory-2); line-height: 1.9; margin-bottom: 1.6rem; }
-.post-content h2 { font-family: 'Playfair Display', serif; font-size: 1.7rem; font-weight: 400; color: var(--ivory); margin: 3.5rem 0 1.2rem; line-height: 1.3; }
-.post-content h3 { font-family: 'Playfair Display', serif; font-size: 1.25rem; font-weight: 400; color: var(--ivory); margin: 2.5rem 0 0.8rem; }
-.post-content h4 { font-family: 'Inter', sans-serif; font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin: 2rem 0 0.8rem; }
-.post-content em { font-style: italic; color: var(--ivory); }
-.post-content strong { color: var(--ivory); font-weight: 500; }
-.post-content a { color: var(--gold); border-bottom: 1px solid var(--gold-border); transition: border-color 0.3s; }
-.post-content a:hover { border-color: var(--gold); }
-.post-content blockquote { border-left: 2px solid var(--gold); padding: 0.5rem 0 0.5rem 2rem; margin: 2.5rem 0; }
-.post-content blockquote p { font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.15rem; color: var(--ivory-2); }
-.post-content ul, .post-content ol { margin: 0 0 1.6rem 1.5rem; }
-.post-content li { font-size: 1.05rem; color: var(--ivory-2); line-height: 1.8; margin-bottom: 0.4rem; }
-.post-content img { max-width: 100%; margin: 2rem auto; }
-.post-content hr { border: none; border-top: 1px solid var(--border); margin: 3rem 0; }
-.post-content code { font-family: 'JetBrains Mono', monospace; font-size: 0.85em; background: var(--card); color: var(--gold); padding: 0.15em 0.4em; }
-.post-content pre { background: var(--card); border: 1px solid var(--border); padding: 1.5rem; margin: 2rem 0; overflow-x: auto; }
-.post-content pre code { background: none; padding: 0; }
-
-/* Categoría del post con color de disciplina */
-.post-cat { border: 1px solid; padding: 0.2rem 0.7rem; font-family: 'Inter', sans-serif; font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; }
-.post-cat.fil { color: var(--fil) !important; border-color: rgba(123,111,160,0.3) !important; }
-.post-cat.eco { color: var(--eco) !important; border-color: rgba(196,151,58,0.3) !important; }
-.post-cat.mat { color: var(--mat) !important; border-color: rgba(74,142,110,0.3) !important; }
-.post-cat.his { color: var(--his) !important; border-color: rgba(142,74,74,0.3) !important; }
-.post-cat.cie { color: var(--cie) !important; border-color: rgba(74,110,142,0.3) !important; }
-
-.post-tag:hover { border-color: var(--gold) !important; color: var(--gold) !important; }
-
-@media (max-width: 768px) {
-  .post-hero { padding: 8rem 1.6rem 4rem; }
-  .post-body { padding: 3rem 1.6rem; }
-  .post-body-inner { max-width: 100%; }
-  section[aria-label="Artículos relacionados"],
-  div[aria-label="Escrito por"] { padding-left: 1.6rem; padding-right: 1.6rem; }
-  .articles-row { grid-template-columns: 1fr !important; }
-}
-</style>
 
 <?php get_footer(); ?>
