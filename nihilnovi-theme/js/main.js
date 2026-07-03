@@ -275,32 +275,7 @@
 
 
     /* =========================================================
-     * 5. LANGUAGE SWITCHER
-     * .lang-btn elements toggle the 'active' class among
-     * siblings and update aria-pressed accordingly.
-     * ========================================================= */
-    (function initLangSwitcher() {
-        var langBtns = document.querySelectorAll('.lang-btn');
-        if (!langBtns.length) return;
-
-        langBtns.forEach(function (btn) {
-            btn.addEventListener('click', function () {
-                /* Remove active from all lang buttons */
-                langBtns.forEach(function (b) {
-                    b.classList.remove('active');
-                    b.setAttribute('aria-pressed', 'false');
-                });
-
-                /* Activate the clicked one */
-                btn.classList.add('active');
-                btn.setAttribute('aria-pressed', 'true');
-            });
-        });
-    }());
-
-
-    /* =========================================================
-     * 6. MOBILE MENU
+     * 5. MOBILE MENU
      * #nav-toggle  — hamburger / close button
      * #mobile-menu — the slide-in menu panel
      *

@@ -48,12 +48,13 @@
   ?>
 
   <div class="nav-right">
+    <!-- Selector de idioma: marcador visual por ahora. Se conectará con Polylang en fase 2. -->
     <div class="lang-switch" aria-label="Selector de idioma">
-      <button class="lang-btn active" aria-pressed="true">ES</button>
+      <a href="#" class="lang-btn active" aria-disabled="true">ES</a>
       <span class="lang-sep" aria-hidden="true">·</span>
-      <button class="lang-btn" aria-pressed="false">EN</button>
+      <a href="#" class="lang-btn" aria-disabled="true">EN</a>
       <span class="lang-sep" aria-hidden="true">·</span>
-      <button class="lang-btn" aria-pressed="false">IT</button>
+      <a href="#" class="lang-btn" aria-disabled="true">IT</a>
     </div>
     <a href="<?php echo esc_url( home_url( '/el-viaje' ) ); ?>" class="nav-cta">Explorar</a>
   </div>

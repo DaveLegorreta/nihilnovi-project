@@ -50,6 +50,14 @@ $disc_code = $is_lesson ? 'NN' : ( $disc_codes[ $disc_class ] ?? 'NN' );
   <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,<?php echo esc_attr($disc_color); ?>,transparent);"></div>
 
   <div class="post-hero-inner" style="padding-top:9rem;padding-bottom:3rem;">
+
+    <!-- Migas de pan -->
+    <nav class="breadcrumb" aria-label="Migas de pan">
+      <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php echo esc_html__( 'Inicio', 'nihilnovi' ); ?></a>
+      <span aria-hidden="true">/</span>
+      <span class="breadcrumb-current" aria-current="page"><?php echo esc_html( $cat_name ); ?></span>
+    </nav>
+
     <div class="post-meta-row" style="margin-bottom:1.4rem;">
       <span style="font-family:'JetBrains Mono',monospace;font-size:0.68rem;color:<?php echo esc_attr($disc_color); ?>;background:rgba(<?php
         list($r,$g,$b) = sscanf($disc_color,'#%02x%02x%02x');

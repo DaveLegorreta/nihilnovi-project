@@ -37,6 +37,17 @@ $display_code = $lesson_code ?: ( $article_num ? str_pad( $article_num, 2, '0', 
 
   <div class="post-hero-inner">
 
+    <!-- Migas de pan -->
+    <nav class="breadcrumb" aria-label="Migas de pan">
+      <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php echo esc_html__( 'Inicio', 'nihilnovi' ); ?></a>
+      <span aria-hidden="true">/</span>
+      <?php if ( $cat ) : ?>
+        <a href="<?php echo esc_url( get_category_link( $cat->term_id ) ); ?>"><?php echo esc_html( $cat_name ); ?></a>
+        <span aria-hidden="true">/</span>
+      <?php endif; ?>
+      <span class="breadcrumb-current" aria-current="page"><?php echo esc_html( get_the_title() ); ?></span>
+    </nav>
+
     <!-- Meta fila superior -->
     <div class="post-meta-row">
       <?php if ( $display_code ) : ?>
