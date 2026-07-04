@@ -116,7 +116,7 @@ function nihilnovi_customize_register( $wp_customize ) {
     ] );
 
     $wp_customize->add_setting( 'nihilnovi_footer_copy', [
-        'default'           => '© 2026 David Legorreta · nihilnovi.xyz',
+        'default'           => __( '© 2026 David Legorreta · nihilnovi.xyz', 'nihilnovi' ),
         'sanitize_callback' => 'sanitize_text_field',
         'transport'         => 'postMessage',
     ] );
@@ -224,10 +224,10 @@ function nihilnovi_social_links() {
     $links = [];
 
     $socials = [
-        'twitter'   => [ 'label' => 'X',  'icon' => 'X'  ],
-        'instagram' => [ 'label' => 'IG', 'icon' => 'IG' ],
-        'linkedin'  => [ 'label' => 'LI', 'icon' => 'LI' ],
-        'youtube'   => [ 'label' => 'YT', 'icon' => 'YT' ],
+        'twitter'   => [ 'label' => __( 'X', 'nihilnovi' ),  'icon' => 'X'  ],
+        'instagram' => [ 'label' => __( 'IG', 'nihilnovi' ), 'icon' => 'IG' ],
+        'linkedin'  => [ 'label' => __( 'LI', 'nihilnovi' ), 'icon' => 'LI' ],
+        'youtube'   => [ 'label' => __( 'YT', 'nihilnovi' ), 'icon' => 'YT' ],
     ];
 
     foreach ( $socials as $key => $data ) {

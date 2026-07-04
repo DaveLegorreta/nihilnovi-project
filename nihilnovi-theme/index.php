@@ -12,17 +12,17 @@ get_header();
   <!-- Blog Header -->
   <section class="blog-hero" style="padding: 8rem 4rem 4rem;">
     <div class="blog-hero-inner">
-      <div class="s-eyebrow">El archivo</div>
+      <div class="s-eyebrow"><?php echo esc_html__( 'El archivo', 'nihilnovi' ); ?></div>
       <h1 class="s-title">
         <?php
         if ( is_category() ) {
           single_cat_title();
         } elseif ( is_search() ) {
-          echo 'Resultados para: ' . esc_html( get_search_query() );
+          printf( esc_html__( 'Resultados para: %s', 'nihilnovi' ), '<span class="search-query">' . esc_html( get_search_query() ) . '</span>' );
         } elseif ( is_archive() ) {
           the_archive_title();
         } else {
-          echo 'Todos los <em>artículos</em>';
+          echo wp_kses_post( __( 'Todos los <em>artículos</em>', 'nihilnovi' ) );
         }
         ?>
       </h1>
@@ -39,7 +39,7 @@ get_header();
             $num = get_post_meta( get_the_ID(), '_article_num', true );
             $lesson_code = get_post_meta( get_the_ID(), '_lesson_code', true );
             $read_time = get_post_meta( get_the_ID(), '_read_time', true ) ?: nihilnovi_estimate_read_time( get_the_content() );
-            $cat = get_the_category(); $cat_name = $cat ? esc_html( $cat[0]->name ) : '';
+            $cat = get_the_category(); $cat_name = $cat ? $cat[0]->name : '';
             $cat_url  = $cat ? get_category_link( $cat[0]->term_id ) : '';
             $disc_class = nihilnovi_get_disc_class( get_the_ID() );
             $display_code = $lesson_code ?: ( $num ? str_pad($num,2,'0',STR_PAD_LEFT) : '' );
@@ -65,7 +65,7 @@ get_header();
                 <?php if ($cat_name) : ?>
                   <a href="<?php echo esc_url($cat_url); ?>"
                      style="font-family:'Inter',sans-serif;font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:var(--<?php echo esc_attr($disc_class); ?>);">
-                    <?php echo $cat_name; ?>
+                    <?php echo esc_html( $cat_name ); ?>
                   </a>
                 <?php endif; ?>
                 <time style="font-family:'Inter',sans-serif;font-size:.6rem;color:var(--ivory-3);margin-left:auto;"
@@ -79,7 +79,7 @@ get_header();
               <p class="art-excerpt" style="margin-top:.6rem;margin-bottom:1rem;">
                 <?php echo wp_trim_words( get_the_excerpt(), 24 ); ?>
               </p>
-              <a href="<?php the_permalink(); ?>" class="art-cta">Leer</a>
+              <a href="<?php the_permalink(); ?>" class="art-cta"><?php echo esc_html__( 'Leer', 'nihilnovi' ); ?></a>
             </div>
           </article>
           <?php endwhile; ?>
@@ -89,15 +89,15 @@ get_header();
         <div style="margin-top: 3rem; display: flex; justify-content: center;">
           <?php the_posts_pagination([
             'mid_size'  => 2,
-            'prev_text' => '← Anterior',
-            'next_text' => 'Siguiente →',
+            'prev_text' => esc_html__( '← Anterior', 'nihilnovi' ),
+            'next_text' => esc_html__( 'Siguiente →', 'nihilnovi' ),
           ]); ?>
         </div>
 
       <?php else : ?>
         <div style="text-align: center; padding: 5rem 0;">
-          <p class="s-desc">Aún no hay artículos publicados.<br>El viaje empieza pronto.</p>
-          <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="btn btn-gold" style="margin-top: 2rem; display: inline-block;">Volver al inicio</a>
+          <p class="s-desc"><?php echo wp_kses_post( __( 'Aún no hay artículos publicados.<br>El viaje empieza pronto.', 'nihilnovi' ) ); ?></p>
+          <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="btn btn-gold" style="margin-top: 2rem; display: inline-block;"><?php echo esc_html__( 'Volver al inicio', 'nihilnovi' ); ?></a>
         </div>
       <?php endif; ?>
 

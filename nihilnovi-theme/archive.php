@@ -42,7 +42,7 @@ $disc_code = $is_lesson ? 'NN' : ( $disc_codes[ $disc_class ] ?? 'NN' );
 ?>
 
 <!-- ══════════ ARCHIVE HERO ══════════ -->
-<section class="post-hero" style="min-height:42vh;" aria-label="Archivo de <?php echo esc_attr( $cat_name ); ?>">
+<section class="post-hero" style="min-height:42vh;" aria-label="<?php echo esc_attr( sprintf( __( 'Archivo de %s', 'nihilnovi' ), $cat_name ) ); ?>">
   <div class="blob blob-1" style="opacity:0.35;" aria-hidden="true"></div>
   <div class="hero-grid" style="opacity:0.35;" aria-hidden="true"></div>
 
@@ -50,6 +50,14 @@ $disc_code = $is_lesson ? 'NN' : ( $disc_codes[ $disc_class ] ?? 'NN' );
   <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,<?php echo esc_attr($disc_color); ?>,transparent);"></div>
 
   <div class="post-hero-inner" style="padding-top:9rem;padding-bottom:3rem;">
+
+    <!-- Migas de pan -->
+    <nav class="breadcrumb" aria-label="<?php echo esc_attr__( 'Migas de pan', 'nihilnovi' ); ?>">
+      <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php echo esc_html__( 'Inicio', 'nihilnovi' ); ?></a>
+      <span aria-hidden="true">/</span>
+      <span class="breadcrumb-current" aria-current="page"><?php echo esc_html( $cat_name ); ?></span>
+    </nav>
+
     <div class="post-meta-row" style="margin-bottom:1.4rem;">
       <span style="font-family:'JetBrains Mono',monospace;font-size:0.68rem;color:<?php echo esc_attr($disc_color); ?>;background:rgba(<?php
         list($r,$g,$b) = sscanf($disc_color,'#%02x%02x%02x');
@@ -58,7 +66,7 @@ $disc_code = $is_lesson ? 'NN' : ( $disc_codes[ $disc_class ] ?? 'NN' );
         <?php echo esc_html( $disc_code ); ?>
       </span>
       <span style="font-family:'Inter',sans-serif;font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--ivory-3);">
-        <?php echo $is_lesson ? 'Lecciones' : 'Disciplina'; ?>
+        <?php echo $is_lesson ? esc_html__( 'Lecciones', 'nihilnovi' ) : esc_html__( 'Disciplina', 'nihilnovi' ); ?>
       </span>
     </div>
 
@@ -76,14 +84,17 @@ $disc_code = $is_lesson ? 'NN' : ( $disc_codes[ $disc_class ] ?? 'NN' );
     <div style="margin-top:1.5rem;font-family:'Inter',sans-serif;font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--ivory-3);">
       <?php
       $count = $cat ? $cat->count : 0;
-      echo $count . ' ' . ( $is_lesson ? ( $count === 1 ? 'lección' : 'lecciones' ) : ( $count === 1 ? 'entrada' : 'entradas' ) );
+      echo esc_html( $count ) . ' ' . esc_html( $is_lesson
+        ? _n( 'lección', 'lecciones', $count, 'nihilnovi' )
+        : _n( 'entrada', 'entradas', $count, 'nihilnovi' )
+      );
       ?>
     </div>
   </div>
 </section>
 
 <!-- ══════════ ARCHIVE CONTENT ══════════ -->
-<section class="nn-section" aria-label="Listado de <?php echo esc_attr($cat_name); ?>">
+<section class="nn-section" aria-label="<?php echo esc_attr( sprintf( __( 'Listado de %s', 'nihilnovi' ), $cat_name ) ); ?>">
   <div class="section-inner">
 
     <?php if ( have_posts() ) : ?>
@@ -110,8 +121,8 @@ $disc_code = $is_lesson ? 'NN' : ( $disc_codes[ $disc_class ] ?? 'NN' );
         <?php
         the_posts_pagination([
           'mid_size'  => 2,
-          'prev_text' => '← Anterior',
-          'next_text' => 'Siguiente →',
+          'prev_text' => esc_html__( '← Anterior', 'nihilnovi' ),
+          'next_text' => esc_html__( 'Siguiente →', 'nihilnovi' ),
         ]);
         ?>
       </div>
@@ -126,7 +137,7 @@ $disc_code = $is_lesson ? 'NN' : ( $disc_codes[ $disc_class ] ?? 'NN' );
 <!-- Enlace de vuelta a todas las disciplinas -->
 <div style="padding:3rem 4rem;border-top:1px solid var(--border);text-align:center;">
   <a href="<?php echo esc_url( home_url('/#disciplinas') ); ?>" class="btn btn-outline">
-    ← Todas las disciplinas
+    <?php echo esc_html__( '← Todas las disciplinas', 'nihilnovi' ); ?>
   </a>
 </div>
 
