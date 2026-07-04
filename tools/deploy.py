@@ -76,7 +76,8 @@ def main():
             ftp = ftplib.FTP()
             ftp.connect(host, port, timeout=15)
             ftp.login(user, password)
-            print("Conexión FTP estándar establecida.")
+            ftp.set_pasv(True)
+            print("Conexión FTP estándar establecida (modo pasivo).")
         except Exception as err:
             print(f"Error crítico: No se pudo conectar al servidor: {err}")
             sys.exit(1)
@@ -88,10 +89,14 @@ def main():
         base_dir = '/'
     print(f"Directorio base de la cuenta FTP: {base_dir}")
 
-    # Auto-detect target root directory
-    ftp.cwd('/')
-    dirs = ftp.nlst()
-    
+    # Auto-detect target root directory from the current FTP working directory.
+    # Do NOT cwd('/') because some Hostgator FTP sub-accounts reset the connection.
+    try:
+        dirs = ftp.nlst()
+    except Exception as e:
+        print(f"Error al listar directorio actual: {e}")
+        dirs = []
+
     remote_theme_base = ""
     # Case 1: We are already mapped directly inside the theme directory
     if 'style.css' in dirs or 'functions.php' in dirs:
@@ -110,9 +115,11 @@ def main():
             dirs_themes = ftp.nlst()
             if 'nihilnovi-theme' in dirs_themes or 'twentytwentyfour' in dirs_themes:
                 remote_theme_base = '/wp-content/themes/nihilnovi-theme'
+            # Go back to the starting directory
+            ftp.cwd(base_dir)
         except Exception:
             pass
-            
+
     if not remote_theme_base:
         # If the root folder is empty or only contains '.ftpquota', assume the user mapped the FTP account directly to the theme folder.
         filtered_dirs = [d for d in dirs if d not in ('.', '..', '.ftpquota')]
@@ -127,9 +134,9 @@ def main():
         
     print(f"Carpeta destino detectada en servidor: {remote_theme_base}")
     
-    # Ensure remote theme directory exists
+    # Ensure remote theme directory exists (relative to base_dir)
     try:
-        ftp.cwd('/')
+        ftp.cwd(base_dir)
         parts = [p for p in remote_theme_base.split('/') if p]
         for part in parts:
             try:
