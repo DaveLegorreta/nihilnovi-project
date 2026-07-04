@@ -11,7 +11,12 @@ $cat         = get_queried_object();
 $cat_slug    = $cat ? $cat->slug : '';
 $cat_name    = $cat ? $cat->name : get_the_archive_title();
 $cat_desc    = $cat ? $cat->description : '';
+$cat_id      = $cat ? $cat->term_id : 0;
 $is_lesson   = ( $cat_slug === 'leccion' || $cat_slug === 'lecciones' );
+
+// Detectar si es categoría padre (tiene hijos)
+$child_cats = get_categories(['parent' => $cat_id, 'hide_empty' => false]);
+$is_parent  = !empty($child_cats);
 
 // Clase de disciplina para color
 $disc_map = [
@@ -93,12 +98,96 @@ $disc_code = $is_lesson ? 'NN' : ( $disc_codes[ $disc_class ] ?? 'NN' );
   </div>
 </section>
 
-<!-- ══════════ ARCHIVE CONTENT ══════════ -->
+<?php if ( $is_parent && ! $is_lesson ) : ?>
+<!-- ══════════ VISTA PADRE: GRID DE COLECCIONES ══════════ -->
+<section class="nn-section" aria-label="<?php echo esc_attr( sprintf( __( 'Colecciones de %s', 'nihilnovi' ), $cat_name ) ); ?>">
+  <div class="section-inner">
+    
+    <?php
+    // Separar subcategorías por tipo (épocas vs temas)
+    // Épocas: slugs predefinidos
+    $epoca_slugs = ['presocraticos', 'clasicos', 'helenisticos', 'medievales', 'modernos', 'contemporaneos', 'historia-antigua', 'historia-medieval', 'historia-moderna', 'historia-contemporanea'];
+    $epocas = [];
+    $temas = [];
+    
+    foreach ( $child_cats as $subcat ) {
+      if ( in_array( $subcat->slug, $epoca_slugs, true ) ) {
+        $epocas[] = $subcat;
+      } else {
+        $temas[] = $subcat;
+      }
+    }
+    
+    // Mostrar Épocas primero
+    if ( ! empty( $epocas ) ) : ?>
+      <div class="subcategory-group">
+        <h2 class="subcategory-group-title"><?php echo esc_html__( 'Por época', 'nihilnovi' ); ?></h2>
+        <?php foreach ( $epocas as $subcat ) :
+          $subcat_posts = new WP_Query([
+            'cat' => $subcat->term_id,
+            'posts_per_page' => 4,
+          ]);
+          if ( $subcat_posts->have_posts() ) :
+        ?>
+          <div class="subcategory-row">
+            <div class="subcategory-header">
+              <div class="subcategory-title-group">
+                <h3 class="subcategory-title"><?php echo esc_html( $subcat->name ); ?></h3>
+                <span class="subcategory-count"><?php echo esc_html( $subcat->count ); ?> <?php echo esc_html( _n( 'artículo', 'artículos', $subcat->count, 'nihilnovi' ) ); ?></span>
+              </div>
+              <a href="<?php echo esc_url( get_category_link( $subcat->term_id ) ); ?>" class="subcategory-link">
+                <?php echo esc_html__( 'Ver todos →', 'nihilnovi' ); ?>
+              </a>
+            </div>
+            <div class="playlist-grid">
+              <?php while ( $subcat_posts->have_posts() ) : $subcat_posts->the_post(); 
+                get_template_part( 'template-parts/card', 'playlist' );
+              endwhile; wp_reset_postdata(); ?>
+            </div>
+          </div>
+        <?php endif; endforeach; ?>
+      </div>
+    <?php endif;
+    
+    // Mostrar Temas después
+    if ( ! empty( $temas ) ) : ?>
+      <div class="subcategory-group">
+        <h2 class="subcategory-group-title"><?php echo esc_html__( 'Por tema', 'nihilnovi' ); ?></h2>
+        <?php foreach ( $temas as $subcat ) :
+          $subcat_posts = new WP_Query([
+            'cat' => $subcat->term_id,
+            'posts_per_page' => 4,
+          ]);
+          if ( $subcat_posts->have_posts() ) :
+        ?>
+          <div class="subcategory-row">
+            <div class="subcategory-header">
+              <div class="subcategory-title-group">
+                <h3 class="subcategory-title"><?php echo esc_html( $subcat->name ); ?></h3>
+                <span class="subcategory-count"><?php echo esc_html( $subcat->count ); ?> <?php echo esc_html( _n( 'artículo', 'artículos', $subcat->count, 'nihilnovi' ) ); ?></span>
+              </div>
+              <a href="<?php echo esc_url( get_category_link( $subcat->term_id ) ); ?>" class="subcategory-link">
+                <?php echo esc_html__( 'Ver todos →', 'nihilnovi' ); ?>
+              </a>
+            </div>
+            <div class="playlist-grid">
+              <?php while ( $subcat_posts->have_posts() ) : $subcat_posts->the_post(); 
+                get_template_part( 'template-parts/card', 'playlist' );
+              endwhile; wp_reset_postdata(); ?>
+            </div>
+          </div>
+        <?php endif; endforeach; ?>
+      </div>
+    <?php endif; ?>
+    
+  </div>
+</section>
+
+<?php else : ?>
+<!-- ══════════ VISTA HIJO O LECCIÓN: LISTADO EDITORIAL ══════════ -->
 <section class="nn-section" aria-label="<?php echo esc_attr( sprintf( __( 'Listado de %s', 'nihilnovi' ), $cat_name ) ); ?>">
   <div class="section-inner">
-
     <?php if ( have_posts() ) : ?>
-
       <?php if ( $is_lesson ) : ?>
         <!-- Vista de lecciones: grid con código -->
         <div class="lessons-grid" style="grid-template-columns:repeat(3,1fr);">
@@ -106,7 +195,6 @@ $disc_code = $is_lesson ? 'NN' : ( $disc_codes[ $disc_class ] ?? 'NN' );
             get_template_part( 'template-parts/content', 'lesson' );
           endwhile; ?>
         </div>
-
       <?php else : ?>
         <!-- Vista de artículos: listado editorial -->
         <div style="display:flex;flex-direction:column;border-top:1px solid var(--border);">
@@ -115,7 +203,6 @@ $disc_code = $is_lesson ? 'NN' : ( $disc_codes[ $disc_class ] ?? 'NN' );
           endwhile; ?>
         </div>
       <?php endif; ?>
-
       <!-- Paginación -->
       <div style="margin-top:4rem;display:flex;justify-content:center;gap:0.5rem;">
         <?php
@@ -126,13 +213,12 @@ $disc_code = $is_lesson ? 'NN' : ( $disc_codes[ $disc_class ] ?? 'NN' );
         ]);
         ?>
       </div>
-
     <?php else : ?>
       <?php get_template_part( 'template-parts/content', 'none' ); ?>
     <?php endif; ?>
-
   </div>
 </section>
+<?php endif; ?>
 
 <!-- Enlace de vuelta a todas las disciplinas -->
 <div style="padding:3rem 4rem;border-top:1px solid var(--border);text-align:center;">
