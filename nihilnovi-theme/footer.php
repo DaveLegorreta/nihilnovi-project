@@ -1,9 +1,6 @@
 <!-- ─── FOOTER SECTION ────────────────────────────────────────
      Renders the copyright, social media links, and footer menu.
 -->
-<!-- ══════════ NEWSLETTER ══════════ -->
-<?php get_template_part( 'template-parts/cta', 'newsletter' ); ?>
-
 <!-- ══════════ FOOTER ══════════ -->
 <footer class="nn-footer" role="contentinfo">
 
