@@ -1059,3 +1059,201 @@ button { cursor: pointer; font-family: inherit; }
     animation: none !important;
   }
 }
+
+/* ════════════════════════════════════════
+   MONETIZATION & CONVERSION
+════════════════════════════════════════ */
+
+/* Newsletter CTA */
+.nn-cta-newsletter {
+  padding: 4rem 2rem;
+  background: linear-gradient(180deg, rgba(196,151,58,0.03) 0%, transparent 100%);
+  border-top: 1px solid var(--gold-border);
+  border-bottom: 1px solid var(--gold-border);
+}
+.cta-newsletter-inner {
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+}
+.cta-newsletter-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: var(--ivory);
+  margin-bottom: 0.8rem;
+}
+.cta-newsletter-text {
+  color: var(--ivory-2);
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1.8rem;
+}
+.cta-newsletter-form {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.cta-newsletter-form input[type="email"] {
+  flex: 1 1 260px;
+  max-width: 360px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--gold-border);
+  border-radius: 8px;
+  padding: 0.85rem 1.1rem;
+  color: var(--ivory);
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+}
+.cta-newsletter-form input[type="email"]::placeholder { color: var(--ivory-3); }
+.cta-newsletter-form input[type="email"]:focus {
+  outline: none;
+  border-color: var(--gold);
+}
+.cta-newsletter-form .btn {
+  padding: 0.85rem 1.6rem;
+  white-space: nowrap;
+}
+.cta-newsletter-note {
+  font-size: 0.75rem;
+  color: var(--ivory-3);
+  margin-top: 1rem;
+}
+
+/* Consulting CTA */
+.nn-cta-consulting {
+  padding: 3rem 2rem;
+}
+.cta-consulting-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--gold-border);
+  border-radius: 16px;
+  padding: 2rem;
+}
+.cta-consulting-avatar {
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--gold-dim);
+  border: 1px solid var(--gold-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  color: var(--gold);
+}
+.cta-consulting-body { flex: 1; }
+.cta-consulting-title {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  color: var(--ivory);
+  margin-bottom: 0.6rem;
+}
+.cta-consulting-text {
+  color: var(--ivory-2);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+}
+.cta-consulting-link {
+  display: inline-flex;
+  padding: 0.75rem 1.4rem;
+  font-size: 0.85rem;
+}
+
+/* Affiliate books */
+.nn-affiliate-books {
+  padding: 3rem 2rem 5rem;
+}
+.affiliate-books-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.affiliate-books-title {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  color: var(--ivory);
+  margin-bottom: 0.5rem;
+}
+.affiliate-books-note {
+  font-size: 0.8rem;
+  color: var(--ivory-3);
+  margin-bottom: 1.5rem;
+}
+.affiliate-books-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+.affiliate-book-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--gold-border);
+  border-radius: 12px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  transition: transform 0.2s, border-color 0.2s;
+}
+.affiliate-book-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--gold);
+}
+.affiliate-book-cover {
+  aspect-ratio: 2 / 3;
+  background: rgba(255,255,255,0.05);
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.affiliate-book-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.affiliate-book-cover-placeholder {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  color: var(--gold);
+  opacity: 0.6;
+}
+.affiliate-book-name {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  color: var(--ivory);
+  margin-bottom: 0.3rem;
+  line-height: 1.35;
+}
+.affiliate-book-author {
+  font-size: 0.8rem;
+  color: var(--ivory-3);
+  margin-bottom: 1rem;
+}
+.affiliate-book-cta {
+  margin-top: auto;
+  padding: 0.6rem 1rem;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .cta-consulting-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .affiliate-books-grid { grid-template-columns: 1fr; }
+  .nn-cta-newsletter { padding: 3rem 1.6rem; }
+  .nn-cta-consulting { padding: 2rem 1.6rem; }
+  .nn-affiliate-books { padding: 2rem 1.6rem 4rem; }
+}

@@ -147,6 +147,8 @@ function nihilnovi_add_lesson_meta() {
     add_meta_box( 'nihilnovi_essentials', __( 'Lo esencial — Puntos clave (uno por línea)', 'nihilnovi' ), 'nihilnovi_essentials_callback', 'post', 'normal', 'default' );
     // Bibliografía
     add_meta_box( 'nihilnovi_bibliography', __( 'Bibliografía y fuentes (una por línea)', 'nihilnovi' ), 'nihilnovi_bibliography_callback', 'post', 'normal', 'default' );
+    // Contenido premium (preparación para futuro paywall)
+    add_meta_box( 'nihilnovi_premium', __( 'Contenido premium', 'nihilnovi' ), 'nihilnovi_premium_callback', 'post', 'side', 'default' );
 }
 add_action( 'add_meta_boxes', 'nihilnovi_add_lesson_meta' );
 
@@ -178,6 +180,14 @@ function nihilnovi_bibliography_callback( $post ) {
     echo '<p style="color:#9a9490;font-size:11px;margin-bottom:6px;">' . esc_html__( 'Una referencia por línea. Ej: Mankiw, N.G. (2012). Principles of Economics. Cengage Learning.', 'nihilnovi' ) . '</p>';
     echo '<textarea name="nihilnovi_bibliography" rows="5" style="width:100%;background:#1a1a2e;border:1px solid #20203a;color:#ede8df;padding:8px 10px;resize:vertical;" placeholder="' . esc_attr__( 'Un libro o fuente por línea...', 'nihilnovi' ) . '">' . esc_textarea( $val ) . '</textarea>';
 }
+function nihilnovi_premium_callback( $post ) {
+    $is_premium = get_post_meta( $post->ID, '_nihilnovi_is_premium', true );
+    echo '<label style="display:flex;align-items:center;gap:8px;cursor:pointer;">';
+    echo '<input type="checkbox" name="nihilnovi_is_premium" value="1" ' . checked( $is_premium, '1', false ) . ' />';
+    echo '<span>' . esc_html__( 'Marcar como contenido premium', 'nihilnovi' ) . '</span>';
+    echo '</label>';
+    echo '<p style="color:#9a9490;font-size:11px;margin-top:6px;">' . esc_html__( 'Preparación para paywall. No afecta la visualización pública todavía.', 'nihilnovi' ) . '</p>';
+}
 
 function nihilnovi_save_lesson_meta( $post_id ) {
     if ( ! isset( $_POST['nihilnovi_meta_nonce'] ) ) return;
@@ -194,6 +204,12 @@ function nihilnovi_save_lesson_meta( $post_id ) {
         'nihilnovi_lesson_essentials' => '_lesson_essentials',
         'nihilnovi_bibliography'    => '_bibliography',
     ];
+    // Campo premium (checkbox)
+    if ( isset( $_POST['nihilnovi_is_premium'] ) ) {
+        update_post_meta( $post_id, '_nihilnovi_is_premium', '1' );
+    } else {
+        delete_post_meta( $post_id, '_nihilnovi_is_premium' );
+    }
     foreach ( $fields as $post_key => $meta_key ) {
         if ( ! isset( $_POST[ $post_key ] ) ) {
             continue;

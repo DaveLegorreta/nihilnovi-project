@@ -147,6 +147,11 @@ $display_code = $lesson_code ?: ( $article_num ? str_pad( $article_num, 2, '0', 
     </div>
     <?php endif; endif; ?>
 
+    <?php /* TODO: implementar paywall - if ( get_post_meta( get_the_ID(), '_nihilnovi_is_premium', true ) ) { ... } */ ?>
+
+    <!-- CTA de consultoría -->
+    <?php get_template_part( 'template-parts/cta', 'consulting' ); ?>
+
     <!-- Tags -->
     <?php
     $tags = get_the_tags();
@@ -254,5 +259,11 @@ if ( $related->have_posts() ) :
   </div>
 </section>
 <?php endif; ?>
+
+<!-- CTA de newsletter -->
+<?php get_template_part( 'template-parts/cta', 'newsletter' ); ?>
+
+<!-- Libros recomendados (afiliados) -->
+<?php get_template_part( 'template-parts/affiliate', 'books' ); ?>
 
 <?php get_footer(); ?>
