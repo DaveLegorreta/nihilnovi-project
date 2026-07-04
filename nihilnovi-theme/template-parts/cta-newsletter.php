@@ -1,38 +1,35 @@
 <?php
 /**
- * Template part: CTA de newsletter.
+ * Template part: CTA de newsletter (diseño nativo de homepage).
+ *
+ * Usa el mismo estilo visual que la sección .nn-newsletter original de front-page.php.
+ * Ahora se usa en footer (global) y al final de artículos (single.php).
  *
  * @package Nihil Novi
  */
 ?>
-<section class="nn-cta-newsletter" aria-label="<?php echo esc_attr__( 'Newsletter', 'nihilnovi' ); ?>">
-	<div class="cta-newsletter-inner">
-		<h4 class="cta-newsletter-title"><?php echo esc_html__( 'Recibe el análisis antes que nadie', 'nihilnovi' ); ?></h4>
-		<p class="cta-newsletter-text">
-			<?php echo esc_html__( 'Un correo semanal con ideas de filosofía, economía y operaciones aplicadas a negocios reales. Sin ruido, sin spam.', 'nihilnovi' ); ?>
-		</p>
+<section class="nn-newsletter fade" aria-label="<?php echo esc_attr__( 'Suscripción', 'nihilnovi' ); ?>">
+	<div class="newsletter-inner">
+		<div class="s-eyebrow" style="justify-content:center;margin-bottom:1.4rem;"><?php echo esc_html__( 'El viaje, en tu correo', 'nihilnovi' ); ?></div>
+		<h2><?php echo esc_html__( 'Una entrega por semana.', 'nihilnovi' ); ?><br><em><?php echo esc_html__( 'Sin algoritmos.', 'nihilnovi' ); ?></em></h2>
+		<p><?php echo esc_html__( 'Artículos, lecciones y el material de estudio de esa semana. Directo. Sin curation de plataforma.', 'nihilnovi' ); ?></p>
 
 		<?php if ( function_exists( 'mc4wp_show_form' ) ) : ?>
 			<?php mc4wp_show_form(); ?>
 		<?php else : ?>
-			<form class="cta-newsletter-form" action="#" method="post" novalidate>
-				<label for="nn-newsletter-email" class="screen-reader-text">
-					<?php echo esc_html__( 'Correo electrónico', 'nihilnovi' ); ?>
-				</label>
+			<form class="form-row" method="post" novalidate>
 				<input
 					type="email"
-					id="nn-newsletter-email"
-					name="nn-newsletter-email"
-					placeholder="<?php echo esc_attr__( 'Tu correo electrónico', 'nihilnovi' ); ?>"
+					name="email"
+					placeholder="<?php echo esc_attr__( 'tu@correo.com', 'nihilnovi' ); ?>"
 					required
+					autocomplete="email"
+					aria-label="<?php echo esc_attr__( 'Tu correo', 'nihilnovi' ); ?>"
 				/>
-				<button type="submit" class="btn btn-gold">
-					<?php echo esc_html__( 'Suscribirme', 'nihilnovi' ); ?>
-				</button>
+				<button type="submit"><?php echo esc_html__( 'Suscribirme', 'nihilnovi' ); ?></button>
 			</form>
-			<p class="cta-newsletter-note">
-				<?php echo esc_html__( 'Formulario estático: conecta Mailchimp for WP para activar envíos.', 'nihilnovi' ); ?>
-			</p>
 		<?php endif; ?>
+
+		<p class="form-note"><?php echo esc_html__( 'Sin spam · Sin venta de datos · Baja cuando quieras', 'nihilnovi' ); ?></p>
 	</div>
 </section>

@@ -401,20 +401,4 @@ $nl_note    = get_field('nl_note')    ?: __( 'Sin spam · Sin venta de datos · 
   </div>
 </section>
 
-<!-- ══════════ NEWSLETTER ══════════ -->
-<section class="nn-newsletter fade" id="newsletter" aria-label="<?php echo esc_attr__( 'Suscripción', 'nihilnovi' ); ?>">
-  <div class="newsletter-inner">
-    <div class="s-eyebrow" style="justify-content:center;margin-bottom:1.4rem;"><?php echo esc_html__( 'El viaje, en tu correo', 'nihilnovi' ); ?></div>
-    <h2><?php echo esc_html( $nl_title_1 ); ?><br><em><?php echo esc_html( $nl_title_2 ); ?></em></h2>
-    <p><?php echo esc_html( $nl_body ); ?></p>
-    <?php if ( function_exists('mc4wp_show_form') ) : mc4wp_show_form(); else : ?>
-    <form class="form-row" method="post" novalidate>
-      <input type="email" name="email" placeholder="<?php echo esc_attr__( 'tu@correo.com', 'nihilnovi' ); ?>" required autocomplete="email" aria-label="<?php echo esc_attr__( 'Tu correo', 'nihilnovi' ); ?>" />
-      <button type="submit"><?php echo esc_html__( 'Suscribirme', 'nihilnovi' ); ?></button>
-    </form>
-    <?php endif; ?>
-    <p class="form-note"><?php echo esc_html( $nl_note ); ?></p>
-  </div>
-</section>
-
 <?php get_footer(); ?>

@@ -1064,63 +1064,7 @@ button { cursor: pointer; font-family: inherit; }
    MONETIZATION & CONVERSION
 ════════════════════════════════════════ */
 
-/* Newsletter CTA */
-.nn-cta-newsletter {
-  padding: 4rem 2rem;
-  background: linear-gradient(180deg, rgba(196,151,58,0.03) 0%, transparent 100%);
-  border-top: 1px solid var(--gold-border);
-  border-bottom: 1px solid var(--gold-border);
-}
-.cta-newsletter-inner {
-  max-width: 680px;
-  margin: 0 auto;
-  text-align: center;
-}
-.cta-newsletter-title {
-  font-family: var(--font-serif);
-  font-size: clamp(1.5rem, 3vw, 2rem);
-  color: var(--ivory);
-  margin-bottom: 0.8rem;
-}
-.cta-newsletter-text {
-  color: var(--ivory-2);
-  font-size: 1rem;
-  line-height: 1.7;
-  margin-bottom: 1.8rem;
-}
-.cta-newsletter-form {
-  display: flex;
-  gap: 0.75rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.cta-newsletter-form input[type="email"] {
-  flex: 1 1 260px;
-  max-width: 360px;
-  background: rgba(255,255,255,0.04);
-  border: 1px solid var(--gold-border);
-  border-radius: 8px;
-  padding: 0.85rem 1.1rem;
-  color: var(--ivory);
-  font-family: var(--font-sans);
-  font-size: 0.95rem;
-}
-.cta-newsletter-form input[type="email"]::placeholder { color: var(--ivory-3); }
-.cta-newsletter-form input[type="email"]:focus {
-  outline: none;
-  border-color: var(--gold);
-}
-.cta-newsletter-form .btn {
-  padding: 0.85rem 1.6rem;
-  white-space: nowrap;
-}
-.cta-newsletter-note {
-  font-size: 0.75rem;
-  color: var(--ivory-3);
-  margin-top: 1rem;
-}
 
-/* Consulting CTA */
 .nn-cta-consulting {
   padding: 3rem 2rem;
 }
@@ -1253,7 +1197,6 @@ button { cursor: pointer; font-family: inherit; }
     text-align: center;
   }
   .affiliate-books-grid { grid-template-columns: 1fr; }
-  .nn-cta-newsletter { padding: 3rem 1.6rem; }
   .nn-cta-consulting { padding: 2rem 1.6rem; }
   .nn-affiliate-books { padding: 2rem 1.6rem 4rem; }
 }
