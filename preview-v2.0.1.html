@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vista Previa — Nihil Novi v2.0.1</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --black: #06060E;
+      --surface: rgba(255,255,255,0.045);
+      --surface-hover: rgba(255,255,255,0.07);
+      --border: rgba(196,151,58,0.18);
+      --border-subtle: rgba(255,255,255,0.06);
+      --text-primary: #EDE8DF;
+      --text-muted: rgba(237,232,223,0.5);
+      --text-faint: rgba(237,232,223,0.28);
+      --gold: #C4973A;
+      --gold-light: rgba(196,151,58,0.7);
+      --gold-subtle: rgba(196,151,58,0.08);
+      --gold-dim: rgba(196,151,58,0.12);
+      --gold-border: rgba(196,151,58,0.25);
+      --ivory: #EDE8DF;
+      --ivory-2: rgba(237,232,223,0.7);
+      --ivory-3: #9A9490;
+      --font-serif: 'Playfair Display', Georgia, serif;
+      --font-sans: 'Inter', system-ui, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      --radius-lg: 20px;
+      --radius-md: 14px;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { background: var(--black); color: var(--text-primary); font-family: var(--font-sans); font-size: 16px; line-height: 1.6; overflow-x: hidden; }
+    a { color: var(--gold); text-decoration: none; }
+    a:hover { opacity: 0.85; }
+    .nn-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 900; display: flex; align-items: center; justify-content: space-between; padding: 0 clamp(1.5rem,4vw,3rem); height: 68px; background: rgba(6,6,14,0.7); backdrop-filter: blur(24px); border-bottom: 1px solid var(--border-subtle); }
+    .nav-logo { font-family: var(--font-serif); font-size: 1.25rem; font-weight: 700; color: var(--gold); letter-spacing: 0.02em; }
+    .nav-menu { display: flex; gap: 0.5rem; list-style: none; }
+    .nav-menu a { color: var(--text-muted); font-size: 0.875rem; font-weight: 500; letter-spacing: 0.04em; padding: 0.4rem 0.9rem; border-radius: 100px; transition: color 0.2s, background 0.2s; }
+    .nav-menu a:hover { color: var(--text-primary); background: var(--surface); }
+    .nav-cta { display: inline-flex; align-items: center; background: var(--gold); color: var(--black); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.06em; padding: 0.5rem 1.2rem; border-radius: 100px; }
+    .nn-hero { position: relative; z-index: 1; min-height: 100vh; display: flex; align-items: center; padding: 0 clamp(1.5rem,5vw,8rem); padding-top: 68px; overflow: hidden; }
+    .hero-content { max-width: 640px; }
+    .hero-eyebrow { font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.2rem; }
+    .nn-hero h1 { font-family: var(--font-serif); font-size: clamp(2.8rem, 6vw, 5rem); font-weight: 400; line-height: 1.05; color: var(--ivory); margin-bottom: 1.4rem; }
+    .nn-hero h1 em { font-style: italic; color: var(--gold); }
+    .hero-sub { font-size: 1.15rem; color: var(--ivory-2); line-height: 1.7; max-width: 520px; margin-bottom: 2.2rem; }
+    .hero-ctas { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .btn { display: inline-flex; align-items: center; padding: 0.85rem 1.8rem; border-radius: 100px; font-size: 0.85rem; font-weight: 600; letter-spacing: 0.06em; transition: all 0.25s; cursor: pointer; border: none; }
+    .btn-gold { background: var(--gold); color: var(--black); }
+    .btn-gold:hover { opacity: 0.9; transform: translateY(-2px); box-shadow: 0 8px 28px rgba(196,151,58,0.35); }
+    .btn-outline { background: transparent; color: var(--ivory); border: 1px solid var(--border); }
+    .btn-outline:hover { border-color: var(--gold); color: var(--gold); }
+    .nn-section { padding: 6rem clamp(1.5rem,5vw,8rem); }
+    .s-eyebrow { font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
+    .nn-section h2 { font-family: var(--font-serif); font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 400; color: var(--ivory); margin-bottom: 1.2rem; }
+    .nn-section p { color: var(--ivory-2); font-size: 1.05rem; line-height: 1.8; max-width: 640px; }
+    .disciplines-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1.2rem; margin-top: 3rem; }
+    .disc-card { background: var(--surface); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 2rem 1.4rem; text-align: center; transition: all 0.3s; cursor: pointer; }
+    .disc-card:hover { border-color: var(--gold); transform: translateY(-4px); }
+    .disc-icon { font-size: 2rem; margin-bottom: 0.8rem; }
+    .disc-name { font-family: var(--font-serif); font-size: 1.1rem; color: var(--ivory); margin-bottom: 0.3rem; }
+    .disc-desc { font-size: 0.8rem; color: var(--ivory-3); }
+    .nn-newsletter { padding: 7rem 4rem; border-top: 1px solid var(--border); background: transparent; }
+    .newsletter-inner { max-width: 580px; margin: 0 auto; text-align: center; }
+    .nn-newsletter h2 { font-family: var(--font-serif); font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 400; line-height: 1.3; color: var(--ivory); margin-bottom: 0.9rem; }
+    .nn-newsletter h2 em { font-style: italic; color: var(--gold); }
+    .nn-newsletter p { font-family: 'Source Serif 4', serif; font-size: 0.95rem; color: var(--ivory-3); line-height: 1.8; margin-bottom: 2.4rem; }
+    .form-row { display: flex; border: 1px solid var(--border-2); transition: border-color 0.3s; }
+    .form-row:focus-within { border-color: var(--gold); }
+    .form-row input { flex: 1; background: transparent; border: none; outline: none; padding: 1rem 1.4rem; font-family: var(--font-sans); font-size: 0.85rem; color: var(--ivory); min-width: 0; }
+    .form-row input::placeholder { color: var(--ivory-3); }
+    .form-row button { background: var(--gold); border: none; padding: 1rem 1.6rem; font-family: var(--font-sans); font-size: 0.68rem; letter-spacing: 0.13em; text-transform: uppercase; color: var(--black); white-space: nowrap; transition: background 0.25s; }
+    .form-row button:hover { background: var(--gold-light); }
+    .form-note { margin-top: 1rem; font-family: var(--font-sans); font-size: 0.65rem; color: var(--ivory-3); }
+    .nn-footer { padding: 3rem clamp(1.5rem,5vw,3rem); display: flex; flex-direction: column; align-items: center; gap: 1.2rem; border-top: 1px solid var(--border-subtle); }
+    .footer-brand { font-family: var(--font-serif); font-size: 1.4rem; color: var(--gold); }
+    .footer-copy { font-size: 0.8rem; color: var(--ivory-3); }
+    /* Breadcrumb */
+    .breadcrumb { font-family: var(--font-sans); font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ivory-3); margin-bottom: 1.5rem; }
+    .breadcrumb a { color: var(--ivory-3); }
+    .breadcrumb a:hover { color: var(--gold); }
+    .breadcrumb-current { color: var(--gold); }
+    /* CTA Consulting */
+    .nn-cta-consulting { padding: 3rem 2rem; }
+    .cta-consulting-inner { max-width: 720px; margin: 0 auto; display: flex; gap: 1.5rem; align-items: flex-start; background: var(--surface); border: 1px solid var(--gold-border); border-radius: 16px; padding: 2rem; }
+    .cta-consulting-avatar { flex-shrink: 0; width: 64px; height: 64px; border-radius: 50%; background: var(--gold-dim); border: 1px solid var(--gold-border); display: flex; align-items: center; justify-content: center; font-family: var(--font-serif); font-size: 1.4rem; color: var(--gold); }
+    .cta-consulting-body { flex: 1; }
+    .cta-consulting-title { font-family: var(--font-serif); font-size: 1.35rem; color: var(--ivory); margin-bottom: 0.6rem; }
+    .cta-consulting-text { color: var(--ivory-2); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1.2rem; }
+    /* Affiliate Books */
+    .nn-affiliate-books { padding: 3rem 2rem 5rem; }
+    .affiliate-books-inner { max-width: 720px; margin: 0 auto; }
+    .affiliate-books-title { font-family: var(--font-serif); font-size: 1.35rem; color: var(--ivory); margin-bottom: 0.5rem; }
+    .affiliate-books-note { font-size: 0.8rem; color: var(--ivory-3); margin-bottom: 1.5rem; }
+    .affiliate-books-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+    .affiliate-book-card { background: var(--surface); border: 1px solid var(--gold-border); border-radius: 12px; padding: 1.25rem; display: flex; flex-direction: column; text-align: center; transition: transform 0.2s, border-color 0.2s; }
+    .affiliate-book-card:hover { transform: translateY(-3px); border-color: var(--gold); }
+    .affiliate-book-cover { aspect-ratio: 2 / 3; background: rgba(255,255,255,0.05); border-radius: 6px; margin-bottom: 1rem; display: flex; align-items: center; justify-content: center; font-family: var(--font-serif); font-size: 2.5rem; color: var(--gold); opacity: 0.6; }
+    .affiliate-book-name { font-family: var(--font-serif); font-size: 1rem; color: var(--ivory); margin-bottom: 0.3rem; }
+    .affiliate-book-author { font-size: 0.8rem; color: var(--ivory-3); margin-bottom: 1rem; }
+    .affiliate-book-cta { margin-top: auto; padding: 0.6rem 1rem; font-size: 0.8rem; text-align: center; }
+    /* Post content */
+    .post-hero { padding: 10rem clamp(1.5rem,5vw,8rem) 4rem; }
+    .post-hero-inner { max-width: 780px; margin: 0 auto; }
+    .post-title { font-family: var(--font-serif); font-size: clamp(2.2rem, 5vw, 3.8rem); font-weight: 400; color: var(--ivory); margin-bottom: 1rem; }
+    .post-meta { display: flex; gap: 1rem; color: var(--ivory-3); font-size: 0.85rem; margin-bottom: 2rem; }
+    .post-body { padding: 3rem clamp(1.5rem,5vw,8rem); }
+    .post-body-inner { max-width: 720px; margin: 0 auto; }
+    .post-body h2 { font-family: var(--font-serif); font-size: 1.8rem; color: var(--ivory); margin: 2.5rem 0 1rem; }
+    .post-body p { color: var(--ivory-2); font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.2rem; }
+    .post-body blockquote { border-left: 3px solid var(--gold); padding-left: 1.5rem; margin: 2rem 0; font-style: italic; color: var(--ivory-2); }
+    /* Preview banner */
+    .preview-banner { position: fixed; bottom: 0; left: 0; right: 0; background: var(--gold); color: var(--black); padding: 0.8rem 1.5rem; text-align: center; font-size: 0.85rem; font-weight: 600; z-index: 1000; }
+    .preview-banner a { color: var(--black); text-decoration: underline; }
+    @media (max-width: 768px) {
+      .disciplines-grid { grid-template-columns: 1fr 1fr; }
+      .affiliate-books-grid { grid-template-columns: 1fr; }
+      .cta-consulting-inner { flex-direction: column; align-items: center; text-align: center; }
+      .nn-hero h1 { font-size: 2.4rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══════════ PREVIEW BANNER ══════════ -->
+<div class="preview-banner">
+  🔮 VISTA PREVIA — Nihil Novi v2.0.1 (no publicado) | 
+  <a href="#cambios">Ver cambios</a> | 
+  <a href="#homepage">Homepage</a> | 
+  <a href="#articulo">Artículo</a>
+</div>
+
+<!-- ══════════ HEADER ══════════ -->
+<nav class="nn-nav">
+  <a href="#" class="nav-logo">Nihil Novi</a>
+  <ul class="nav-menu">
+    <li><a href="#">Filosofía</a></li>
+    <li><a href="#">Economía</a></li>
+    <li><a href="#">Matemáticas</a></li>
+    <li><a href="#">Historia</a></li>
+    <li><a href="#">Ciencia</a></li>
+  </ul>
+  <a href="#" class="nav-cta">El Viaje</a>
+</nav>
+
+<!-- ══════════ HOMEPAGE ══════════ -->
+<section id="homepage" class="nn-hero">
+  <div class="hero-content">
+    <div class="hero-eyebrow">Nihil Novi — Hub Intelectual</div>
+    <h1>La historia del <em>pensamiento</em>,<br>reconstruida en público.</h1>
+    <p class="hero-sub">Filosofía, economía, matemáticas, historia y ciencia. Sin simplificaciones, sin prisa. Un proyecto de estudio a largo plazo.</p>
+    <div class="hero-ctas">
+      <a href="#" class="btn btn-gold">Explorar las disciplinas</a>
+      <a href="#" class="btn btn-outline">El Viaje del Economista</a>
+    </div>
+  </div>
+</section>
+
+<section class="nn-section">
+  <div class="s-eyebrow">Las Cinco Disciplinas</div>
+  <h2>Un mapa del conocimiento</h2>
+  <p>Cada disciplina es una puerta de entrada a un modo distinto de comprender el mundo. No están aisladas: se nutren, se critican y se transforman mutuamente.</p>
+  <div class="disciplines-grid">
+    <div class="disc-card">
+      <div class="disc-icon">🏛️</div>
+      <div class="disc-name">Filosofía</div>
+      <div class="disc-desc">Del mito al logos</div>
+    </div>
+    <div class="disc-card">
+      <div class="disc-icon">📈</div>
+      <div class="disc-name">Economía</div>
+      <div class="disc-desc">Cómo funciona el mundo</div>
+    </div>
+    <div class="disc-card">
+      <div class="disc-icon">🔢</div>
+      <div class="disc-name">Matemáticas</div>
+      <div class="disc-desc">Estructuras del pensamiento</div>
+    </div>
+    <div class="disc-card">
+      <div class="disc-icon">📜</div>
+      <div class="disc-name">Historia</div>
+      <div class="disc-desc">Memoria del tiempo</div>
+    </div>
+    <div class="disc-card">
+      <div class="disc-icon">🔬</div>
+      <div class="disc-name">Ciencia</div>
+      <div class="disc-desc">Interrogar la naturaleza</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ ARTÍCULO ══════════ -->
+<section id="articulo" class="post-hero">
+  <div class="post-hero-inner">
+    <!-- BREADCRUMB (NUEVO) -->
+    <nav class="breadcrumb">
+      <a href="#">Inicio</a>
+      <span aria-hidden="true"> / </span>
+      <a href="#">Filosofía</a>
+      <span aria-hidden="true"> / </span>
+      <span class="breadcrumb-current">Génesis y Conexión Histórica</span>
+    </nav>
+    <div class="post-meta">
+      <span>FIL-01-A</span>
+      <span>Filosofía</span>
+      <span>12 min de lectura</span>
+    </div>
+    <h1 class="post-title">Génesis y Conexión Histórica</h1>
+  </div>
+</section>
+
+<section class="post-body">
+  <div class="post-body-inner">
+    <blockquote>
+      «Los que primero filosofaron pensaron que los únicos principios de todas las cosas son de naturaleza material. [...] Y es necesario que haya alguna naturaleza, ya una, ya más de una, de la cual nazcan las demás cosas, conservándose ella.»<br>
+      — <strong>Aristóteles</strong>, <em>Metafísica</em>, Libro I, 983b6–18.
+    </blockquote>
+
+    <h2>La paradoja de la regularidad en el capricho divino</h2>
+    <p>¿Cómo se explica que el mar se calme o que el fuego queme si cada fenómeno depende del humor de Poseidón o de la voluntad de Zeus? Si la lluvia obedece al antojo de una deidad antropomórfica, el mundo es intrínsecamente impredecible; la ciencia y la predicción racional carecen de base bajo este supuesto.</p>
+    <p>El paso del mito al <em>logos</em> (λόγος) no consistió en un abandono repentino de lo sagrado o religioso, sino en la exigencia de postular leyes inmanentes al cosmos.</p>
+
+    <h2>La transición cognitiva</h2>
+    <p>Como señala <strong>Frederick Copleston</strong> en su <em>Historia de la Filosofía</em> (Vol. I), el pensamiento griego temprano no rompe con las inquietudes del origen absoluto, sino con el modo antropomórfico y caprichoso de explicarlo.</p>
+
+    <!-- CTA DE CONSULTORÍA (NUEVO) -->
+    <div class="nn-cta-consulting">
+      <div class="cta-consulting-inner">
+        <div class="cta-consulting-avatar">DL</div>
+        <div class="cta-consulting-body">
+          <h4 class="cta-consulting-title">¿Necesitas aplicar esto a tu negocio?</h4>
+          <p class="cta-consulting-text">Diseño soluciones de análisis financiero, operaciones y cumplimiento normativo para MiPyMEs, con enfoque en el principio de Negocio en Marcha y herramientas de inteligencia artificial.</p>
+          <a href="#" class="btn btn-gold cta-consulting-link">Agenda una consultoría</a>
+        </div>
+      </div>
+    </div>
+
+    <h2>Bibliografía y fuentes</h2>
+    <p>Aristóteles. <em>Metafísica</em>. Traducción de Tomás Calvo Martínez. Madrid: Gredos, 1998.<br>
+    Copleston, Frederick. <em>Historia de la Filosofía</em>. Vol. I. Barcelona: Ariel, 1999.</p>
+  </div>
+</section>
+
+<!-- NEWSLETTER (NUEVO, después del artículo) -->
+<section class="nn-newsletter">
+  <div class="newsletter-inner">
+    <h3>Recibe el análisis antes que nadie</h3>
+    <p>Un correo semanal con ideas de filosofía, economía y operaciones aplicadas a negocios reales.</p>
+    <form class="newsletter-form">
+      <input type="email" placeholder="Tu correo electrónico">
+      <button type="submit" class="btn btn-gold">Suscribirme</button>
+    </form>
+  </div>
+</section>
+
+<!-- LIBROS RECOMENDADOS (NUEVO) -->
+<section class="nn-affiliate-books">
+  <div class="affiliate-books-inner">
+    <h4 class="affiliate-books-title">Libros recomendados</h4>
+    <p class="affiliate-books-note">Enlaces de afiliado: si compras a través de ellos, el proyecto recibe una pequeña comisión sin costo extra para ti.</p>
+    <div class="affiliate-books-grid">
+      <div class="affiliate-book-card">
+        <div class="affiliate-book-cover">R</div>
+        <h5 class="affiliate-book-name">La República</h5>
+        <p class="affiliate-book-author">Platón</p>
+        <a href="#" class="btn btn-gold affiliate-book-cta">Ver en Amazon</a>
+      </div>
+      <div class="affiliate-book-card">
+        <div class="affiliate-book-cover">E</div>
+        <h5 class="affiliate-book-name">Ética a Nicómaco</h5>
+        <p class="affiliate-book-author">Aristóteles</p>
+        <a href="#" class="btn btn-gold affiliate-book-cta">Ver en Amazon</a>
+      </div>
+      <div class="affiliate-book-card">
+        <div class="affiliate-book-cover">C</div>
+        <h5 class="affiliate-book-name">Crítica de la Razón Pura</h5>
+        <p class="affiliate-book-author">Immanuel Kant</p>
+        <a href="#" class="btn btn-gold affiliate-book-cta">Ver en Amazon</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer class="nn-footer">
+  <a href="#" class="footer-brand">Nihil Novi</a>
+  <span class="footer-copy">© 2026 David Legorreta · nihilnovi.xyz</span>
+</footer>
+
+<!-- ══════════ CAMBIOS v2.0.2 ══════════ -->
+<section id="cambios" style="padding: 4rem 2rem; max-width: 800px; margin: 0 auto;">
+  <h2 style="font-family: var(--font-serif); font-size: 2rem; color: var(--ivory); margin-bottom: 2rem;">🆕 Cambios en v2.0.2</h2>
+  
+  <div style="background: var(--surface); border: 1px solid var(--gold-border); border-radius: 16px; padding: 2rem; margin-bottom: 1.5rem;">
+    <h3 style="font-family: var(--font-serif); color: var(--gold); margin-bottom: 1rem;">📬 Newsletter unificado</h3>
+    <ul style="color: var(--ivory-2); line-height: 1.8;">
+      <li>El CTA de newsletter ahora es global: aparece en el footer de <strong>todas las páginas</strong></li>
+      <li>Diseño unificado con el estilo nativo de la homepage: eyebrow dorado, título con énfasis en <em>itálica dorada</em>, formulario <code>.form-row</code> con borde sutil</li>
+      <li>Eliminada la sección duplicada de newsletter en la homepage</li>
+      <li>CSS limpio: removidas reglas obsoletas de <code>.nn-cta-newsletter</code></li>
+    </ul>
+  </div>
+
+  <h2 style="font-family: var(--font-serif); font-size: 2rem; color: var(--ivory); margin-bottom: 2rem; margin-top: 3rem;">🆕 Cambios en v2.0.1</h2>
+  
+  <div style="background: var(--surface); border: 1px solid var(--gold-border); border-radius: 16px; padding: 2rem; margin-bottom: 1.5rem;">
+    <h3 style="font-family: var(--font-serif); color: var(--gold); margin-bottom: 1rem;">🔒 Seguridad</h3>
+    <ul style="color: var(--ivory-2); line-height: 1.8;">
+      <li>Verificación de permisos en meta boxes (save_post)</li>
+      <li>Escapes de salida mejorados en todas las plantillas</li>
+    </ul>
+  </div>
+
+  <div style="background: var(--surface); border: 1px solid var(--gold-border); border-radius: 16px; padding: 2rem; margin-bottom: 1.5rem;">
+    <h3 style="font-family: var(--font-serif); color: var(--gold); margin-bottom: 1rem;">♿ Accesibilidad</h3>
+    <ul style="color: var(--ivory-2); line-height: 1.8;">
+      <li>Respeta <code>prefers-reduced-motion</code> (sin animaciones para usuarios sensibles)</li>
+      <li>Reducción de animaciones en dispositivos táctiles</li>
+      <li>Breadcrumb de navegación en artículos</li>
+    </ul>
+  </div>
+
+  <div style="background: var(--surface); border: 1px solid var(--gold-border); border-radius: 16px; padding: 2rem; margin-bottom: 1.5rem;">
+    <h3 style="font-family: var(--font-serif); color: var(--gold); margin-bottom: 1rem;">🌍 Multilingüe</h3>
+    <ul style="color: var(--ivory-2); line-height: 1.8;">
+      <li>Textdomain configurado para español, inglés, italiano y alemán</li>
+      <li>Todos los strings internacionalizados con <code>__()</code> / <code>esc_html__()</code></li>
+      <li>Plantilla POT inicial creada</li>
+      <li>Preparado para Polylang (plugin gratuito)</li>
+    </ul>
+  </div>
+
+  <div style="background: var(--surface); border: 1px solid var(--gold-border); border-radius: 16px; padding: 2rem; margin-bottom: 1.5rem;">
+    <h3 style="font-family: var(--font-serif); color: var(--gold); margin-bottom: 1rem;">💰 Monetización</h3>
+    <ul style="color: var(--ivory-2); line-height: 1.8;">
+      <li><strong>CTA de newsletter</strong> en footer y final de artículos</li>
+      <li><strong>CTA de consultoría</strong> dentro de artículos ("Trabaja conmigo")</li>
+      <li><strong>Bloque de afiliados</strong> Amazon Associates con libros recomendados</li>
+      <li>Meta box de "Contenido premium" preparado para futuro paywall</li>
+    </ul>
+  </div>
+
+  <div style="background: var(--surface); border: 1px solid var(--gold-border); border-radius: 16px; padding: 2rem; margin-bottom: 1.5rem;">
+    <h3 style="font-family: var(--font-serif); color: var(--gold); margin-bottom: 1rem;">⚡ Rendimiento</h3>
+    <ul style="color: var(--ivory-2); line-height: 1.8;">
+      <li>Preconnect a fuentes de Google y CDN</li>
+      <li>Integrity y crossorigin en scripts de terceros</li>
+      <li>CSS inline movido a style.css</li>
+      <li>Archivos experimentales movidos a <code>prototypes/</code></li>
+    </ul>
+  </div>
+
+  <div style="background: var(--surface); border: 1px solid var(--gold-border); border-radius: 16px; padding: 2rem;">
+    <h3 style="font-family: var(--font-serif); color: var(--gold); margin-bottom: 1rem;">📄 Contenido</h3>
+    <ul style="color: var(--ivory-2); line-height: 1.8;">
+      <li>Script de importación WXR generado (36 artículos listos para WordPress)</li>
+      <li>12 lecciones del Módulo I + 24 artículos sueltos</li>
+    </ul>
+  </div>
+</section>
+
+<div style="height: 60px;"></div>
+
+</body>
+</html>
