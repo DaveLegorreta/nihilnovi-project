@@ -19,16 +19,16 @@ def load_credentials():
     print("Error: No se encontró sftp_credentials.json")
     sys.exit(1)
 
-def upload_file_ftp(ftp, local_path, remote_path):
+def upload_file_ftp(ftp, local_path, remote_path, base_dir):
     print(f"Subiendo: {local_path} -> {remote_path}")
     try:
         # Create remote directories if they don't exist
         remote_dir = os.path.dirname(remote_path)
         parts = [p for p in remote_dir.split('/') if p]
-        
-        # Go to root
-        ftp.cwd('/')
-        
+
+        # Start from the account's home/base directory
+        ftp.cwd(base_dir)
+
         for part in parts:
             try:
                 ftp.cwd(part)
@@ -36,12 +36,13 @@ def upload_file_ftp(ftp, local_path, remote_path):
                 print(f"Creando directorio remoto: {part}")
                 ftp.mkd(part)
                 ftp.cwd(part)
-                
+
         # Upload file in binary mode
         with open(local_path, 'rb') as f:
             ftp.storbinary(f'STOR {os.path.basename(remote_path)}', f)
     except Exception as e:
         print(f"Error al subir {local_path}: {e}")
+        raise
 
 def main():
     creds = load_credentials()
@@ -80,6 +81,13 @@ def main():
             print(f"Error crítico: No se pudo conectar al servidor: {err}")
             sys.exit(1)
             
+    # Remember the account's initial working directory (FTP sub-accounts often map here).
+    try:
+        base_dir = ftp.pwd()
+    except Exception:
+        base_dir = '/'
+    print(f"Directorio base de la cuenta FTP: {base_dir}")
+
     # Auto-detect target root directory
     ftp.cwd('/')
     dirs = ftp.nlst()
@@ -169,7 +177,7 @@ def main():
                 remote_file_path = f"{remote_theme_base}/{rel_path}"
             
             try:
-                upload_file_ftp(ftp, local_file_path, remote_file_path)
+                upload_file_ftp(ftp, local_file_path, remote_file_path, base_dir)
                 success_count += 1
             except Exception as ex:
                 print(f"Error al procesar archivo {file}: {ex}")
