@@ -17,6 +17,14 @@
     <wp:base_blog_url>https://nihilnovi.xyz</wp:base_blog_url>
   <wp:category><wp:category_nicename>filosofia</wp:category_nicename><wp:cat_name><![CDATA[Filosofía]]></wp:cat_name></wp:category>
   <wp:category><wp:category_nicename>lecciones</wp:category_nicename><wp:cat_name><![CDATA[Lecciones]]></wp:cat_name></wp:category>
+  <wp:category><wp:category_nicename>presocraticos</wp:category_nicename><wp:cat_name><![CDATA[Presocráticos]]></wp:cat_name><wp:category_parent>filosofia</wp:category_parent></wp:category>
+  <wp:category><wp:category_nicename>clasicos</wp:category_nicename><wp:cat_name><![CDATA[Clásicos]]></wp:cat_name><wp:category_parent>filosofia</wp:category_parent></wp:category>
+  <wp:category><wp:category_nicename>metafisica</wp:category_nicename><wp:cat_name><![CDATA[Metafísica]]></wp:cat_name><wp:category_parent>filosofia</wp:category_parent></wp:category>
+  <wp:category><wp:category_nicename>etica</wp:category_nicename><wp:cat_name><![CDATA[Ética]]></wp:cat_name><wp:category_parent>filosofia</wp:category_parent></wp:category>
+  <wp:category><wp:category_nicename>politica</wp:category_nicename><wp:cat_name><![CDATA[Política]]></wp:cat_name><wp:category_parent>filosofia</wp:category_parent></wp:category>
+  <wp:category><wp:category_nicename>epistemologia</wp:category_nicename><wp:cat_name><![CDATA[Epistemología]]></wp:cat_name><wp:category_parent>filosofia</wp:category_parent></wp:category>
+  <wp:category><wp:category_nicename>logica</wp:category_nicename><wp:cat_name><![CDATA[Lógica]]></wp:cat_name><wp:category_parent>filosofia</wp:category_parent></wp:category>
+  <wp:category><wp:category_nicename>estetica</wp:category_nicename><wp:cat_name><![CDATA[Estética]]></wp:cat_name><wp:category_parent>filosofia</wp:category_parent></wp:category>
     <item>
       <title>Génesis y Conexión Histórica</title>
       <link>https://nihilnovi.xyz/génesis-y-conexión-histórica/</link>
