@@ -173,29 +173,24 @@ function nihilnovi_customizer_live_preview() {
     wp_enqueue_script( 'customize-preview' );
 
     $inline_js = "
-        ( function( $ ) {
-            /* --gold */
+        ( function() {
             wp.customize( 'nihilnovi_color_gold', function( value ) {
                 value.bind( function( newval ) {
                     document.documentElement.style.setProperty( '--gold', newval );
                     document.documentElement.style.setProperty( '--gold-light', newval + 'dd' );
                 } );
             } );
-
-            /* --black (background) */
             wp.customize( 'nihilnovi_color_bg', function( value ) {
                 value.bind( function( newval ) {
                     document.documentElement.style.setProperty( '--black', newval );
                 } );
             } );
-
-            /* --ivory (text) */
             wp.customize( 'nihilnovi_color_text', function( value ) {
                 value.bind( function( newval ) {
                     document.documentElement.style.setProperty( '--ivory', newval );
                 } );
             } );
-        } )( jQuery );
+        } )();
     ";
 
     wp_add_inline_script( 'customize-preview', $inline_js );

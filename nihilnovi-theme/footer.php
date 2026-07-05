@@ -22,21 +22,27 @@
   <div class="footer-socials-wrap">
     <?php
     // Redes sociales desde el Customizer
-    if ( function_exists('nihilnovi_social_links') ) :
-      $socials = nihilnovi_social_links();
-      if ( ! empty($socials) ) :
+    $socials = [
+        'twitter'   => [ 'label' => __( 'X', 'nihilnovi' ),  'icon' => 'X'  ],
+        'instagram' => [ 'label' => __( 'IG', 'nihilnovi' ), 'icon' => 'IG' ],
+        'linkedin'  => [ 'label' => __( 'LI', 'nihilnovi' ), 'icon' => 'LI' ],
+        'youtube'   => [ 'label' => __( 'YT', 'nihilnovi' ), 'icon' => 'YT' ],
+    ];
+    $has_social = false;
+    foreach ( $socials as $key => $data ) {
+        $url = get_theme_mod( 'nihilnovi_social_' . $key, '' );
+        if ( $url ) {
+            if ( ! $has_social ) {
+                echo '<div class="footer-socials" aria-label="' . esc_attr__( 'Redes sociales', 'nihilnovi' ) . '">';
+                $has_social = true;
+            }
+            echo '<a href="' . esc_url( $url ) . '" target="_blank" rel="noopener noreferrer" aria-label="' . esc_attr( $data['label'] ) . '" class="footer-social-link">' . esc_html( $data['icon'] ) . '</a>';
+        }
+    }
+    if ( $has_social ) {
+        echo '</div>';
+    }
     ?>
-    <div class="footer-socials" aria-label="<?php echo esc_attr__( 'Redes sociales', 'nihilnovi' ); ?>">
-      <?php foreach ( $socials as $key => $s ) : ?>
-        <a href="<?php echo esc_url($s['url']); ?>"
-           target="_blank" rel="noopener noreferrer"
-           aria-label="<?php echo esc_attr($s['label']); ?>"
-           class="footer-social-link">
-          <?php echo esc_html($s['icon']); ?>
-        </a>
-      <?php endforeach; ?>
-    </div>
-    <?php endif; endif; ?>
 
     <span class="footer-copy">
       <?php

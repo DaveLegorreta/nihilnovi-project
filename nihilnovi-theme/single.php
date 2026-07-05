@@ -97,7 +97,7 @@ $display_code = $lesson_code ?: ( $article_num ? str_pad( $article_num, 2, '0', 
     <?php
     // ── "Lo esencial" para LECCIONES (antes del contenido) ──
     if ( $is_lesson && $essentials ) :
-      $points = array_filter( array_map( 'trim', explode( "\n", $essentials ) ) );
+      $points = nihilnovi_lines( $essentials );
       if ( ! empty( $points ) ) :
     ?>
     <aside class="lesson-essentials" aria-label="<?php echo esc_attr__( 'Lo esencial de esta lección', 'nihilnovi' ); ?>">
@@ -134,7 +134,7 @@ $display_code = $lesson_code ?: ( $article_num ? str_pad( $article_num, 2, '0', 
     <?php
     // ── BIBLIOGRAFÍA ──
     if ( $bibliography ) :
-      $refs = array_filter( array_map( 'trim', explode( "\n", $bibliography ) ) );
+      $refs = nihilnovi_lines( $bibliography );
       if ( ! empty( $refs ) ) :
     ?>
     <div class="post-bibliography" aria-label="<?php echo esc_attr__( 'Bibliografía', 'nihilnovi' ); ?>">

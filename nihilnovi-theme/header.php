@@ -48,19 +48,18 @@
   ?>
 
   <div class="nav-right">
-    <!--
-      Selector de idioma: marcador visual por ahora.
-      Se conectará con Polylang en fase 2; conserva los botones deshabilitados
-      para que el CSS/JS no cambie, pero los nombres ya son traducibles.
-    -->
     <div class="lang-switch" aria-label="<?php echo esc_attr__( 'Selector de idioma', 'nihilnovi' ); ?>">
-      <a href="#" class="lang-btn active" aria-disabled="true"><?php echo esc_html__( 'ES', 'nihilnovi' ); ?></a>
-      <span class="lang-sep" aria-hidden="true">·</span>
-      <a href="#" class="lang-btn" aria-disabled="true"><?php echo esc_html__( 'EN', 'nihilnovi' ); ?></a>
-      <span class="lang-sep" aria-hidden="true">·</span>
-      <a href="#" class="lang-btn" aria-disabled="true"><?php echo esc_html__( 'IT', 'nihilnovi' ); ?></a>
-      <span class="lang-sep" aria-hidden="true">·</span>
-      <a href="#" class="lang-btn" aria-disabled="true"><?php echo esc_html__( 'DE', 'nihilnovi' ); ?></a>
+      <?php if ( function_exists( 'pll_the_languages' ) ) : ?>
+        <?php pll_the_languages( ['show_flags' => 0, 'show_names' => 1, 'dropdown' => 0] ); ?>
+      <?php else : ?>
+        <span class="lang-btn active"><?php echo esc_html__( 'ES', 'nihilnovi' ); ?></span>
+        <span class="lang-sep" aria-hidden="true">·</span>
+        <span class="lang-btn" style="opacity:0.4;cursor:default;"><?php echo esc_html__( 'EN', 'nihilnovi' ); ?></span>
+        <span class="lang-sep" aria-hidden="true">·</span>
+        <span class="lang-btn" style="opacity:0.4;cursor:default;"><?php echo esc_html__( 'IT', 'nihilnovi' ); ?></span>
+        <span class="lang-sep" aria-hidden="true">·</span>
+        <span class="lang-btn" style="opacity:0.4;cursor:default;"><?php echo esc_html__( 'DE', 'nihilnovi' ); ?></span>
+      <?php endif; ?>
     </div>
     <a href="<?php echo esc_url( home_url( '/el-viaje' ) ); ?>" class="nav-cta"><?php echo esc_html__( 'Explorar', 'nihilnovi' ); ?></a>
   </div>
@@ -82,4 +81,3 @@
   ]);
   ?>
 </div>
-

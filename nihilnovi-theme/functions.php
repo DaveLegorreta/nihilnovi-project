@@ -33,6 +33,13 @@ function nihilnovi_setup() {
 }
 add_action( 'after_setup_theme', 'nihilnovi_setup' );
 
+/* ─── ASSET VERSION HELPER ───────────────────── */
+// ponytail: cache-busting helper, avoids repeating file_exists+filemtime blocks
+function nihilnovi_asset_ver( $path ) {
+    $file = get_template_directory() . $path;
+    return file_exists( $file ) ? filemtime( $file ) : '1.0.0';
+}
+
 /* ─── ENQUEUE SCRIPTS & STYLES ───────────────── */
 // ─── ENQUEUE ASSETS (SCRIPTS & STYLES) ────────────────────────
 // Enqueues Google Fonts, CSS stylesheets, and the GSAP/ScrollTrigger libraries.
@@ -46,14 +53,11 @@ function nihilnovi_scripts() {
     );
 
     // Main stylesheet (Dynamic cache busting)
-    $css_ver = file_exists( get_stylesheet_directory() . '/style.css' ) 
-        ? filemtime( get_stylesheet_directory() . '/style.css' ) 
-        : '1.0.0';
     wp_enqueue_style(
         'nihilnovi-style',
         get_stylesheet_uri(),
         [ 'nihilnovi-fonts' ],
-        $css_ver
+        nihilnovi_asset_ver( '/style.css' )
     );
 
     // GSAP
@@ -73,55 +77,15 @@ function nihilnovi_scripts() {
     );
 
     // Main JS (Dynamic cache busting)
-    $js_ver = file_exists( get_template_directory() . '/js/main.js' ) 
-        ? filemtime( get_template_directory() . '/js/main.js' ) 
-        : '1.0.0';
     wp_enqueue_script(
         'nihilnovi-main',
         get_template_directory_uri() . '/js/main.js',
         [ 'gsap', 'gsap-scrolltrigger' ],
-        $js_ver,
-        true
-    );
-
-    // Presocratics Widgets JS (Dynamic cache busting)
-    $widgets_ver = file_exists( get_template_directory() . '/js/widgets-presocraticos.js' ) 
-        ? filemtime( get_template_directory() . '/js/widgets-presocraticos.js' ) 
-        : '1.0.0';
-    wp_enqueue_script(
-        'nihilnovi-widgets-presocraticos',
-        get_template_directory_uri() . '/js/widgets-presocraticos.js',
-        [],
-        $widgets_ver,
+        nihilnovi_asset_ver( '/js/main.js' ),
         true
     );
 }
 add_action( 'wp_enqueue_scripts', 'nihilnovi_scripts' );
-
-/* ─── ASSET ATTRIBUTES: INTEGRITY & CROSSORIGIN ─ */
-// Añade SRI (Subresource Integrity) y crossorigin a scripts de terceros cargados desde CDN.
-function nihilnovi_script_loader_attributes( $tag, $handle, $src ) {
-    $attributes = [
-        'gsap'               => [
-            'integrity'   => 'sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==',
-            'crossorigin' => 'anonymous',
-        ],
-        'gsap-scrolltrigger' => [
-            'integrity'   => 'sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==',
-            'crossorigin' => 'anonymous',
-        ],
-    ];
-
-    if ( ! isset( $attributes[ $handle ] ) ) {
-        return $tag;
-    }
-
-    $attrs = $attributes[ $handle ];
-    $tag   = str_replace( ' src=', ' integrity="' . esc_attr( $attrs['integrity'] ) . '" crossorigin="' . esc_attr( $attrs['crossorigin'] ) . '" src=', $tag );
-
-    return $tag;
-}
-add_filter( 'script_loader_tag', 'nihilnovi_script_loader_attributes', 10, 3 );
 
 /* ─── EXCERPT LENGTH ─────────────────────────── */
 // ─── EXCERPT CONFIGURATION ───────────────────────────────────
@@ -132,54 +96,69 @@ add_filter( 'excerpt_length', 'nihilnovi_excerpt_length' );
 function nihilnovi_excerpt_more( $more ) { return '&hellip;'; }
 add_filter( 'excerpt_more', 'nihilnovi_excerpt_more' );
 
+/* ─── META BOX HELPER ────────────────────────── */
+// ponytail: single callback for all meta fields, avoids 6 near-identical functions
+function nihilnovi_meta_field_callback( $post, $args ) {
+    $field = $args['args'];
+    $val   = get_post_meta( $post->ID, $field['meta_key'], true );
+    $name  = esc_attr( $field['post_key'] );
+    $style = 'width:100%;background:#1a1a2e;border:1px solid #20203a;color:#ede8df;';
+
+    if ( $field['type'] === 'textarea' ) {
+        $rows = $field['rows'] ?? 5;
+        $ph   = isset( $field['placeholder'] ) ? esc_attr( $field['placeholder'] ) : '';
+        if ( ! empty( $field['help'] ) ) {
+            echo '<p style="color:#9a9490;font-size:11px;margin-bottom:6px;">' . esc_html( $field['help'] ) . '</p>';
+        }
+        echo '<textarea name="' . $name . '" rows="' . $rows . '" style="' . $style . 'padding:8px 10px;resize:vertical;" placeholder="' . $ph . '">' . esc_textarea( $val ) . '</textarea>';
+    } else {
+        $ph = isset( $field['placeholder'] ) ? esc_attr( $field['placeholder'] ) : '';
+        echo '<input type="text" name="' . $name . '" value="' . esc_attr( $val ) . '" style="' . $style . 'padding:6px 10px;" placeholder="' . $ph . '" />';
+        if ( ! empty( $field['help'] ) ) {
+            echo '<p style="color:#9a9490;font-size:11px;margin-top:4px;">' . esc_html( $field['help'] ) . '</p>';
+        }
+    }
+    // Nonce solo en el primer campo
+    if ( ! empty( $field['nonce'] ) ) {
+        wp_nonce_field( 'nihilnovi_save_meta', 'nihilnovi_meta_nonce' );
+    }
+}
+
 /* ─── CUSTOM POST META: LESSON CODE ─────────── */
-// Agrega un campo "Código de lección" (ej: ECO-01, FIL-02) en el editor
+// Agrega campos personalizados en el editor
 function nihilnovi_add_lesson_meta() {
-    // Código de lección
-    add_meta_box( 'nihilnovi_lesson_code', __( 'Código de lección (ej: ECO-01)', 'nihilnovi' ), 'nihilnovi_lesson_code_callback', 'post', 'side', 'default' );
-    // Número de artículo
-    add_meta_box( 'nihilnovi_article_num', __( 'Número de artículo (ej: 00, 01, 02)', 'nihilnovi' ), 'nihilnovi_article_num_callback', 'post', 'side', 'default' );
-    // Tiempo de lectura
-    add_meta_box( 'nihilnovi_read_time', __( 'Tiempo de lectura (ej: 3 min)', 'nihilnovi' ), 'nihilnovi_read_time_callback', 'post', 'side', 'default' );
-    // Subtítulo / lede
-    add_meta_box( 'nihilnovi_subtitle', __( 'Subtítulo o frase de apertura', 'nihilnovi' ), 'nihilnovi_subtitle_callback', 'post', 'normal', 'high' );
-    // Lo esencial (lecciones)
-    add_meta_box( 'nihilnovi_essentials', __( 'Lo esencial — Puntos clave (uno por línea)', 'nihilnovi' ), 'nihilnovi_essentials_callback', 'post', 'normal', 'default' );
-    // Bibliografía
-    add_meta_box( 'nihilnovi_bibliography', __( 'Bibliografía y fuentes (una por línea)', 'nihilnovi' ), 'nihilnovi_bibliography_callback', 'post', 'normal', 'default' );
-    // Contenido premium (preparación para futuro paywall)
-    add_meta_box( 'nihilnovi_premium', __( 'Contenido premium', 'nihilnovi' ), 'nihilnovi_premium_callback', 'post', 'side', 'default' );
+    $fields = [
+        ['id' => 'nihilnovi_lesson_code', 'title' => __( 'Código de lección (ej: ECO-01)', 'nihilnovi' ), 'meta' => '_lesson_code', 'placeholder' => 'ECO-01', 'nonce' => true ],
+        ['id' => 'nihilnovi_article_num', 'title' => __( 'Número de artículo (ej: 00, 01, 02)', 'nihilnovi' ), 'meta' => '_article_num', 'placeholder' => '00' ],
+        ['id' => 'nihilnovi_read_time', 'title' => __( 'Tiempo de lectura (ej: 3 min)', 'nihilnovi' ), 'meta' => '_read_time', 'placeholder' => '3 min', 'help' => __( 'Si se deja vacío, se calcula automáticamente.', 'nihilnovi' ) ],
+        ['id' => 'nihilnovi_subtitle', 'title' => __( 'Subtítulo o frase de apertura', 'nihilnovi' ), 'meta' => '_post_subtitle', 'type' => 'textarea', 'rows' => 2, 'placeholder' => __( 'Frase o subtítulo que aparece bajo el título principal...', 'nihilnovi' ), 'context' => 'normal', 'priority' => 'high' ],
+        ['id' => 'nihilnovi_essentials', 'title' => __( 'Lo esencial — Puntos clave (uno por línea)', 'nihilnovi' ), 'meta' => '_lesson_essentials', 'type' => 'textarea', 'rows' => 5, 'help' => __( 'Escribe un punto por línea. Aparecen en la caja dorada "Lo esencial" dentro de la lección.', 'nihilnovi' ), 'placeholder' => "El mercado no es natural, es una institución.\nLos precios son señales, no verdades.\nEscasez no significa pobreza.", 'context' => 'normal' ],
+        ['id' => 'nihilnovi_bibliography', 'title' => __( 'Bibliografía y fuentes (una por línea)', 'nihilnovi' ), 'meta' => '_bibliography', 'type' => 'textarea', 'rows' => 5, 'help' => __( 'Una referencia por línea. Ej: Mankiw, N.G. (2012). Principles of Economics. Cengage Learning.', 'nihilnovi' ), 'placeholder' => __( 'Un libro o fuente por línea...', 'nihilnovi' ), 'context' => 'normal' ],
+        ['id' => 'nihilnovi_premium', 'title' => __( 'Contenido premium', 'nihilnovi' ), 'meta' => '_nihilnovi_is_premium', 'type' => 'checkbox', 'help' => __( 'Preparación para paywall. No afecta la visualización pública todavía.', 'nihilnovi' ) ],
+    ];
+
+    foreach ( $fields as $f ) {
+        $type = $f['type'] ?? 'text';
+        if ( $type === 'checkbox' ) {
+            add_meta_box( $f['id'], $f['title'], 'nihilnovi_premium_callback', 'post', $f['context'] ?? 'side', $f['priority'] ?? 'default' );
+            continue;
+        }
+        $callback = 'nihilnovi_meta_field_callback';
+        $context  = $f['context'] ?? 'side';
+        $priority = $f['priority'] ?? 'default';
+        add_meta_box( $f['id'], $f['title'], $callback, 'post', $context, $priority, [
+            'meta_key'    => $f['meta'],
+            'post_key'    => $f['id'],
+            'type'        => $type,
+            'rows'        => $f['rows'] ?? 2,
+            'placeholder' => $f['placeholder'] ?? '',
+            'help'        => $f['help'] ?? '',
+            'nonce'       => ! empty( $f['nonce'] ),
+        ] );
+    }
 }
 add_action( 'add_meta_boxes', 'nihilnovi_add_lesson_meta' );
 
-function nihilnovi_lesson_code_callback( $post ) {
-    $code = get_post_meta( $post->ID, '_lesson_code', true );
-    echo '<input type="text" name="nihilnovi_lesson_code" value="' . esc_attr( $code ) . '" style="width:100%;background:#1a1a2e;border:1px solid #20203a;color:#ede8df;padding:6px 10px;" placeholder="' . esc_attr__( 'ECO-01', 'nihilnovi' ) . '" />';
-    wp_nonce_field( 'nihilnovi_save_meta', 'nihilnovi_meta_nonce' );
-}
-function nihilnovi_article_num_callback( $post ) {
-    $num = get_post_meta( $post->ID, '_article_num', true );
-    echo '<input type="text" name="nihilnovi_article_num" value="' . esc_attr( $num ) . '" style="width:100%;background:#1a1a2e;border:1px solid #20203a;color:#ede8df;padding:6px 10px;" placeholder="' . esc_attr__( '00', 'nihilnovi' ) . '" />';
-}
-function nihilnovi_read_time_callback( $post ) {
-    $val = get_post_meta( $post->ID, '_read_time', true );
-    echo '<input type="text" name="nihilnovi_read_time" value="' . esc_attr( $val ) . '" style="width:100%;background:#1a1a2e;border:1px solid #20203a;color:#ede8df;padding:6px 10px;" placeholder="' . esc_attr__( '3 min', 'nihilnovi' ) . '" />';
-    echo '<p style="color:#9a9490;font-size:11px;margin-top:4px;">' . esc_html__( 'Si se deja vacío, se calcula automáticamente.', 'nihilnovi' ) . '</p>';
-}
-function nihilnovi_subtitle_callback( $post ) {
-    $val = get_post_meta( $post->ID, '_post_subtitle', true );
-    echo '<textarea name="nihilnovi_post_subtitle" rows="2" style="width:100%;background:#1a1a2e;border:1px solid #20203a;color:#ede8df;padding:8px 10px;resize:vertical;" placeholder="' . esc_attr__( 'Frase o subtítulo que aparece bajo el título principal...', 'nihilnovi' ) . '">' . esc_textarea( $val ) . '</textarea>';
-}
-function nihilnovi_essentials_callback( $post ) {
-    $val = get_post_meta( $post->ID, '_lesson_essentials', true );
-    echo '<p style="color:#9a9490;font-size:11px;margin-bottom:6px;">' . esc_html__( 'Escribe un punto por línea. Aparecen en la caja dorada "Lo esencial" dentro de la lección.', 'nihilnovi' ) . '</p>';
-    echo '<textarea name="nihilnovi_lesson_essentials" rows="5" style="width:100%;background:#1a1a2e;border:1px solid #20203a;color:#ede8df;padding:8px 10px;resize:vertical;" placeholder="' . esc_attr__( "El mercado no es natural, es una institución.\nLos precios son señales, no verdades.\nEscasez no significa pobreza.", 'nihilnovi' ) . '">' . esc_textarea( $val ) . '</textarea>';
-}
-function nihilnovi_bibliography_callback( $post ) {
-    $val = get_post_meta( $post->ID, '_bibliography', true );
-    echo '<p style="color:#9a9490;font-size:11px;margin-bottom:6px;">' . esc_html__( 'Una referencia por línea. Ej: Mankiw, N.G. (2012). Principles of Economics. Cengage Learning.', 'nihilnovi' ) . '</p>';
-    echo '<textarea name="nihilnovi_bibliography" rows="5" style="width:100%;background:#1a1a2e;border:1px solid #20203a;color:#ede8df;padding:8px 10px;resize:vertical;" placeholder="' . esc_attr__( 'Un libro o fuente por línea...', 'nihilnovi' ) . '">' . esc_textarea( $val ) . '</textarea>';
-}
 function nihilnovi_premium_callback( $post ) {
     $is_premium = get_post_meta( $post->ID, '_nihilnovi_is_premium', true );
     echo '<label style="display:flex;align-items:center;gap:8px;cursor:pointer;">';
@@ -224,6 +203,7 @@ function nihilnovi_save_lesson_meta( $post_id ) {
 add_action( 'save_post', 'nihilnovi_save_lesson_meta' );
 
 /* ─── HELPER: Get discipline from category ───── */
+// ponytail: direct array lookup instead of foreach+strpos
 function nihilnovi_get_disc_class( $post_id ) {
     $cats = get_the_category( $post_id );
     if ( ! $cats ) return 'eco';
@@ -235,12 +215,16 @@ function nihilnovi_get_disc_class( $post_id ) {
         'historia'    => 'his',
         'ciencia'     => 'cie',
         'leccion'     => 'eco',
+        'lecciones'   => 'eco',
         'el-viaje'    => 'eco',
     ];
-    foreach ( $map as $key => $class ) {
-        if ( strpos( $slug, $key ) !== false ) return $class;
-    }
-    return 'eco';
+    return $map[ $slug ] ?? 'eco';
+}
+
+/* ─── HELPER: Split text into lines ─────────── */
+// ponytail: reused in single.php for essentials and bibliography
+function nihilnovi_lines( $text ) {
+    return array_filter( array_map( 'trim', explode( "\n", $text ) ) );
 }
 
 /* ─── HELPER: Estimate reading time ─────────── */
@@ -249,19 +233,6 @@ function nihilnovi_estimate_read_time( $content ) {
     $minutes     = max( 1, (int) ceil( $word_count / 200 ) ); // 200 palabras/min
     return $minutes . ' min';
 }
-
-/* ─── WIDGETIZED SIDEBAR (optional) ─────────── */
-function nihilnovi_widgets_init() {
-    register_sidebar([
-        'name'          => __( 'Barra lateral del blog', 'nihilnovi' ),
-        'id'            => 'sidebar-1',
-        'before_widget' => '<section id="%1$s" class="widget %2$s">',
-        'after_widget'  => '</section>',
-        'before_title'  => '<h2 class="widget-title">',
-        'after_title'   => '</h2>',
-    ]);
-}
-add_action( 'widgets_init', 'nihilnovi_widgets_init' );
 
 /* ─── ACF FIELDS ─────────────────────────────── */
 add_action( 'acf/init', function() {
@@ -284,17 +255,4 @@ function nihilnovi_fallback_nav() {
     echo '<li><a href="' . esc_url( home_url( '/biblioteca' ) ) . '">' . esc_html__( 'Biblioteca', 'nihilnovi' ) . '</a></li>';
     echo '<li><a href="' . esc_url( home_url( '/sobre' ) ) . '">' . esc_html__( 'Sobre', 'nihilnovi' ) . '</a></li>';
     echo '</ul>';
-}
-
-/**
- * Helper to get a discipline's URL dynamically.
- * Priority: ACF Custom field URL > WordPress Category Archive URL > Hardcoded Fallback.
- */
-function nihilnovi_get_discipline_url( $slug, $acf_field ) {
-    $url = function_exists( 'get_field' ) ? get_field( $acf_field ) : '';
-    if ( ! empty( $url ) ) {
-        return $url;
-    }
-    $cat = get_term_by( 'slug', $slug, 'category' );
-    return $cat ? get_term_link( $cat ) : home_url( '/categoria/' . $slug );
 }

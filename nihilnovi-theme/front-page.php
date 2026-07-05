@@ -26,31 +26,31 @@ $disciplines = [
     'name'    => get_field('disc_1_name')    ?: __( 'Filosofía', 'nihilnovi' ),
     'tagline' => get_field('disc_1_tagline') ?: __( 'Las preguntas que ninguna otra disciplina se atreve a hacer. El origen de todo lo demás.', 'nihilnovi' ),
     'code'    => get_field('disc_1_code')    ?: 'FIL-01',
-    'url'     => nihilnovi_get_discipline_url( 'filosofia', 'disc_1_url' ),
+    'url'     => ( function_exists( 'get_field' ) && get_field( 'disc_1_url' ) ) ? get_field( 'disc_1_url' ) : ( get_term_by( 'slug', 'filosofia', 'category' ) ? get_term_link( get_term_by( 'slug', 'filosofia', 'category' ) ) : home_url( '/categoria/filosofia' ) ),
   ],
   [ 'class'=>'eco','numeral'=>'II', 'code_prefix'=>'ECO',
     'name'    => get_field('disc_2_name')    ?: __( 'Economía', 'nihilnovi' ),
     'tagline' => get_field('disc_2_tagline') ?: __( 'Las consecuencias materiales de las ideas. Cómo se distribuye lo que se produce y por qué.', 'nihilnovi' ),
     'code'    => get_field('disc_2_code')    ?: 'ECO-01',
-    'url'     => nihilnovi_get_discipline_url( 'economia', 'disc_2_url' ),
+    'url'     => ( function_exists( 'get_field' ) && get_field( 'disc_2_url' ) ) ? get_field( 'disc_2_url' ) : ( get_term_by( 'slug', 'economia', 'category' ) ? get_term_link( get_term_by( 'slug', 'economia', 'category' ) ) : home_url( '/categoria/economia' ) ),
   ],
   [ 'class'=>'mat','numeral'=>'III','code_prefix'=>'MAT',
     'name'    => get_field('disc_3_name')    ?: __( 'Matemáticas', 'nihilnovi' ),
     'tagline' => get_field('disc_3_tagline') ?: __( 'El lenguaje de la precisión. No para calcular — para pensar sin margen de ambigüedad.', 'nihilnovi' ),
     'code'    => get_field('disc_3_code')    ?: 'MAT-01',
-    'url'     => nihilnovi_get_discipline_url( 'matematicas', 'disc_3_url' ),
+    'url'     => ( function_exists( 'get_field' ) && get_field( 'disc_3_url' ) ) ? get_field( 'disc_3_url' ) : ( get_term_by( 'slug', 'matematicas', 'category' ) ? get_term_link( get_term_by( 'slug', 'matematicas', 'category' ) ) : home_url( '/categoria/matematicas' ) ),
   ],
   [ 'class'=>'his','numeral'=>'IV', 'code_prefix'=>'HIS',
     'name'    => get_field('disc_4_name')    ?: __( 'Historia', 'nihilnovi' ),
     'tagline' => get_field('disc_4_tagline') ?: __( 'El contexto sin el cual las ideas parecen naturales. Nada en el presente es inevitable.', 'nihilnovi' ),
     'code'    => get_field('disc_4_code')    ?: 'HIS-01',
-    'url'     => nihilnovi_get_discipline_url( 'historia', 'disc_4_url' ),
+    'url'     => ( function_exists( 'get_field' ) && get_field( 'disc_4_url' ) ) ? get_field( 'disc_4_url' ) : ( get_term_by( 'slug', 'historia', 'category' ) ? get_term_link( get_term_by( 'slug', 'historia', 'category' ) ) : home_url( '/categoria/historia' ) ),
   ],
   [ 'class'=>'cie','numeral'=>'V',  'code_prefix'=>'CIE',
     'name'    => get_field('disc_5_name')    ?: __( 'Ciencia', 'nihilnovi' ),
     'tagline' => get_field('disc_5_tagline') ?: __( 'El método. Cómo se construye conocimiento que resiste el error y la ideología.', 'nihilnovi' ),
     'code'    => get_field('disc_5_code')    ?: 'CIE-01',
-    'url'     => nihilnovi_get_discipline_url( 'ciencia', 'disc_5_url' ),
+    'url'     => ( function_exists( 'get_field' ) && get_field( 'disc_5_url' ) ) ? get_field( 'disc_5_url' ) : ( get_term_by( 'slug', 'ciencia', 'category' ) ? get_term_link( get_term_by( 'slug', 'ciencia', 'category' ) ) : home_url( '/categoria/ciencia' ) ),
   ],
 ];
 
@@ -321,7 +321,7 @@ $nl_note    = get_field('nl_note')    ?: __( 'Sin spam · Sin venta de datos · 
     <div style="position:relative;">
       <div class="viaje-num" aria-hidden="true">∞</div>
       <div class="s-eyebrow"><?php echo esc_html__( 'La serie principal', 'nihilnovi' ); ?></div>
-      <h2><?php echo esc_html__( 'El Viaje del', 'nihilnovi' ); ?><br><em><?php echo esc_html( explode(' ', $viaje_title)[count(explode(' ', $viaje_title))-1] ); ?></em></h2>
+      <h2><?php echo esc_html__( 'El Viaje del', 'nihilnovi' ); ?><br><em><?php echo esc_html( array_pop( explode( ' ', $viaje_title ) ) ); ?></em></h2>
       <p><?php echo esc_html( $viaje_text1 ); ?></p>
       <p><?php echo esc_html( $viaje_text2 ); ?></p>
       <a href="<?php echo esc_url( $viaje_cta_url ); ?>" class="btn btn-gold"><?php echo esc_html( $viaje_cta_text ); ?></a>

@@ -8,9 +8,8 @@
  *  2. Compact Navigation
  *  3. Fade-in on Scroll (IntersectionObserver)
  *  4. Tab Switching
- *  5. Language Switcher
- *  6. Mobile Menu
- *  7. Smooth Scroll
+ *  5. Mobile Menu
+ *  6. Smooth Scroll (URL hash update only — CSS handles smooth scroll natively)
  */
 
 (function () {
@@ -96,11 +95,6 @@
      * velocidades distintas con interpolación suave (easing)
      * para que el movimiento sea fluido e inercial, no mecánico.
      * ========================================================= */
-    /* =========================================================
-     * DOT MATRIX — PARALLAX ORGÁNICO CON LERP (más sutil)
-     * Dos capas se desplazan a velocidades distintas con
-     * interpolación suave para movimiento fluido e inercial.
-     * ========================================================= */
     if ( enableEffects ) {
         (function initDotParallax() {
             var dotSharp   = document.querySelector('.nn-bg-dot-matrix');
@@ -181,7 +175,6 @@
             requestAnimationFrame(tickHero);
         }());
     }
-
 
 
 
@@ -326,35 +319,22 @@
 
 
     /* =========================================================
-     * 6. SMOOTH SCROLL
-     * Intercepts clicks on any anchor whose href contains '#'
-     * and smoothly scrolls to the target element.
-     * Respects prefers-reduced-motion.
+     * 6. SMOOTH SCROLL — URL HASH UPDATE ONLY
+     * CSS handles scroll-behavior: smooth natively.
+     * We only update the URL hash without triggering a jump.
      * ========================================================= */
-    (function initSmoothScroll() {
-        var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
+    (function initHashUpdate() {
         document.querySelectorAll('a[href*="#"]').forEach(function (anchor) {
             anchor.addEventListener('click', function (e) {
                 var href = anchor.getAttribute('href');
-                /* Only handle pure hash links or same-page hash links */
                 var hashIndex = href.indexOf('#');
                 if (hashIndex === -1) return;
 
                 var hash = href.slice(hashIndex);
-                /* Ignore lone '#' */
                 if (hash === '#') return;
 
                 var target = document.querySelector(hash);
                 if (!target) return;
-
-                e.preventDefault();
-
-                if (prefersReduced) {
-                    target.scrollIntoView();
-                } else {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
 
                 /* Update URL hash without triggering a jump */
                 if (history.pushState) {

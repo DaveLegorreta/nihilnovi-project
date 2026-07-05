@@ -4,7 +4,7 @@ Theme URI: https://nihilnovi.xyz
 Author: David Legorreta
 Author URI: https://nihilnovi.xyz
 Description: Hub intelectual sobre la Historia del Pensamiento Humano (Versión 2.0 con GSAP). Diseño editorial oscuro, tipografía serif, acentos en dorado. Filosofía, Economía, Matemáticas, Historia y Ciencia.
-Version: 2.0.0-2026-06-28
+Version: 2.0.3-2026-07-05
 Requires at least: 6.0
 Tested up to: 6.5
 License: GNU General Public License v2 or later
@@ -1059,10 +1059,6 @@ button { cursor: pointer; font-family: inherit; }
     animation: none !important;
   }
 }
-
-/* ════════════════════════════════════════
-   MONETIZATION & CONVERSION
-════════════════════════════════════════ */
 
 
 .nn-cta-consulting {

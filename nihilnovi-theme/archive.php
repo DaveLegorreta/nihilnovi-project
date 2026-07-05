@@ -118,11 +118,17 @@ $disc_code = $is_lesson ? 'NN' : ( $disc_codes[ $disc_class ] ?? 'NN' );
       }
     }
     
-    // Mostrar Épocas primero
-    if ( ! empty( $epocas ) ) : ?>
+    // Mostrar grupos de subcategorías
+    $groups = [
+        __( 'Por época', 'nihilnovi' )  => $epocas,
+        __( 'Por tema', 'nihilnovi' )   => $temas,
+    ];
+    foreach ( $groups as $group_label => $group_cats ) {
+        if ( empty( $group_cats ) ) continue;
+    ?>
       <div class="subcategory-group">
-        <h2 class="subcategory-group-title"><?php echo esc_html__( 'Por época', 'nihilnovi' ); ?></h2>
-        <?php foreach ( $epocas as $subcat ) :
+        <h2 class="subcategory-group-title"><?php echo esc_html( $group_label ); ?></h2>
+        <?php foreach ( $group_cats as $subcat ) :
           $subcat_posts = new WP_Query([
             'cat' => $subcat->term_id,
             'posts_per_page' => 4,
@@ -147,38 +153,7 @@ $disc_code = $is_lesson ? 'NN' : ( $disc_codes[ $disc_class ] ?? 'NN' );
           </div>
         <?php endif; endforeach; ?>
       </div>
-    <?php endif;
-    
-    // Mostrar Temas después
-    if ( ! empty( $temas ) ) : ?>
-      <div class="subcategory-group">
-        <h2 class="subcategory-group-title"><?php echo esc_html__( 'Por tema', 'nihilnovi' ); ?></h2>
-        <?php foreach ( $temas as $subcat ) :
-          $subcat_posts = new WP_Query([
-            'cat' => $subcat->term_id,
-            'posts_per_page' => 4,
-          ]);
-          if ( $subcat_posts->have_posts() ) :
-        ?>
-          <div class="subcategory-row">
-            <div class="subcategory-header">
-              <div class="subcategory-title-group">
-                <h3 class="subcategory-title"><?php echo esc_html( $subcat->name ); ?></h3>
-                <span class="subcategory-count"><?php echo esc_html( $subcat->count ); ?> <?php echo esc_html( _n( 'artículo', 'artículos', $subcat->count, 'nihilnovi' ) ); ?></span>
-              </div>
-              <a href="<?php echo esc_url( get_category_link( $subcat->term_id ) ); ?>" class="subcategory-link">
-                <?php echo esc_html__( 'Ver todos →', 'nihilnovi' ); ?>
-              </a>
-            </div>
-            <div class="playlist-grid">
-              <?php while ( $subcat_posts->have_posts() ) : $subcat_posts->the_post(); 
-                get_template_part( 'template-parts/card', 'playlist' );
-              endwhile; wp_reset_postdata(); ?>
-            </div>
-          </div>
-        <?php endif; endforeach; ?>
-      </div>
-    <?php endif; ?>
+    <?php } ?>
     
   </div>
 </section>
