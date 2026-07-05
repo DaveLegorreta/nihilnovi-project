@@ -112,6 +112,9 @@
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
       <category domain="category" nicename="filosofia"><![CDATA[Filosofía]]></category>
+      <category domain="category" nicename="clasicos"><![CDATA[Clásicos]]></category>
+      <category domain="category" nicename="epistemologia"><![CDATA[Epistemología]]></category>
+
       <wp:postmeta>
         <wp:meta_key>_nihilnovi_import_source</wp:meta_key>
         <wp:meta_value><![CDATA[FIL_02_A.md]]></wp:meta_value>
@@ -723,6 +726,9 @@
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
       <category domain="category" nicename="filosofia"><![CDATA[Filosofía]]></category>
+      <category domain="category" nicename="clasicos"><![CDATA[Clásicos]]></category>
+      <category domain="category" nicename="etica"><![CDATA[Ética]]></category>
+
       <wp:postmeta>
         <wp:meta_key>_nihilnovi_import_source</wp:meta_key>
         <wp:meta_value><![CDATA[FIL_03_01.md]]></wp:meta_value>
@@ -1247,6 +1253,10 @@
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
       <category domain="category" nicename="filosofia"><![CDATA[Filosofía]]></category>
+      <category domain="category" nicename="clasicos"><![CDATA[Clásicos]]></category>
+      <category domain="category" nicename="etica"><![CDATA[Ética]]></category>
+      <category domain="category" nicename="politica"><![CDATA[Política]]></category>
+
       <wp:postmeta>
         <wp:meta_key>_nihilnovi_import_source</wp:meta_key>
         <wp:meta_value><![CDATA[FIL_03_02.md]]></wp:meta_value>
@@ -1707,6 +1717,9 @@
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
       <category domain="category" nicename="filosofia"><![CDATA[Filosofía]]></category>
+      <category domain="category" nicename="clasicos"><![CDATA[Clásicos]]></category>
+      <category domain="category" nicename="politica"><![CDATA[Política]]></category>
+
       <wp:postmeta>
         <wp:meta_key>_nihilnovi_import_source</wp:meta_key>
         <wp:meta_value><![CDATA[FIL_03_03.md]]></wp:meta_value>
@@ -2289,6 +2302,9 @@
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
       <category domain="category" nicename="filosofia"><![CDATA[Filosofía]]></category>
+      <category domain="category" nicename="clasicos"><![CDATA[Clásicos]]></category>
+      <category domain="category" nicename="etica"><![CDATA[Ética]]></category>
+
       <wp:postmeta>
         <wp:meta_key>_nihilnovi_import_source</wp:meta_key>
         <wp:meta_value><![CDATA[FIL_03_04.md]]></wp:meta_value>
@@ -2886,6 +2902,9 @@
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
       <category domain="category" nicename="filosofia"><![CDATA[Filosofía]]></category>
+      <category domain="category" nicename="clasicos"><![CDATA[Clásicos]]></category>
+      <category domain="category" nicename="etica"><![CDATA[Ética]]></category>
+
       <wp:postmeta>
         <wp:meta_key>_nihilnovi_import_source</wp:meta_key>
         <wp:meta_value><![CDATA[FIL_03_05.md]]></wp:meta_value>
@@ -3496,6 +3515,9 @@
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
       <category domain="category" nicename="filosofia"><![CDATA[Filosofía]]></category>
+      <category domain="category" nicename="clasicos"><![CDATA[Clásicos]]></category>
+      <category domain="category" nicename="etica"><![CDATA[Ética]]></category>
+
       <wp:postmeta>
         <wp:meta_key>_nihilnovi_import_source</wp:meta_key>
         <wp:meta_value><![CDATA[FIL_03_06.md]]></wp:meta_value>
@@ -4099,6 +4121,9 @@
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
       <category domain="category" nicename="filosofia"><![CDATA[Filosofía]]></category>
+      <category domain="category" nicename="clasicos"><![CDATA[Clásicos]]></category>
+      <category domain="category" nicename="etica"><![CDATA[Ética]]></category>
+
       <wp:postmeta>
         <wp:meta_key>_nihilnovi_import_source</wp:meta_key>
         <wp:meta_value><![CDATA[FIL_03_07.md]]></wp:meta_value>
@@ -4706,6 +4731,10 @@
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
       <category domain="category" nicename="filosofia"><![CDATA[Filosofía]]></category>
+      <category domain="category" nicename="clasicos"><![CDATA[Clásicos]]></category>
+      <category domain="category" nicename="etica"><![CDATA[Ética]]></category>
+      <category domain="category" nicename="epistemologia"><![CDATA[Epistemología]]></category>
+
       <wp:postmeta>
         <wp:meta_key>_nihilnovi_import_source</wp:meta_key>
         <wp:meta_value><![CDATA[FIL_03_08.md]]></wp:meta_value>
@@ -5314,6 +5343,9 @@
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
       <category domain="category" nicename="filosofia"><![CDATA[Filosofía]]></category>
+      <category domain="category" nicename="clasicos"><![CDATA[Clásicos]]></category>
+      <category domain="category" nicename="estetica"><![CDATA[Estética]]></category>
+
       <wp:postmeta>
         <wp:meta_key>_nihilnovi_import_source</wp:meta_key>
         <wp:meta_value><![CDATA[FIL_03_09.md]]></wp:meta_value>
@@ -5890,6 +5922,9 @@
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
       <category domain="category" nicename="filosofia"><![CDATA[Filosofía]]></category>
+      <category domain="category" nicename="clasicos"><![CDATA[Clásicos]]></category>
+      <category domain="category" nicename="estetica"><![CDATA[Estética]]></category>
+
       <wp:postmeta>
         <wp:meta_key>_nihilnovi_import_source</wp:meta_key>
         <wp:meta_value><![CDATA[FIL_03_10.md]]></wp:meta_value>
@@ -5998,6 +6033,10 @@
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
       <category domain="category" nicename="filosofia"><![CDATA[Filosofía]]></category>
+      <category domain="category" nicename="clasicos"><![CDATA[Clásicos]]></category>
+      <category domain="category" nicename="metafisica"><![CDATA[Metafísica]]></category>
+      <category domain="category" nicename="logica"><![CDATA[Lógica]]></category>
+
       <wp:postmeta>
         <wp:meta_key>_nihilnovi_import_source</wp:meta_key>
         <wp:meta_value><![CDATA[FIL_03_14.md]]></wp:meta_value>
@@ -6105,6 +6144,9 @@ En la era actual, el gobernante ya no es un dios o pastor absoluto, sino un ser 
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
       <category domain="category" nicename="filosofia"><![CDATA[Filosofía]]></category>
+      <category domain="category" nicename="clasicos"><![CDATA[Clásicos]]></category>
+      <category domain="category" nicename="politica"><![CDATA[Política]]></category>
+
       <wp:postmeta>
         <wp:meta_key>_nihilnovi_import_source</wp:meta_key>
         <wp:meta_value><![CDATA[FIL_03_15.md]]></wp:meta_value>
@@ -6218,6 +6260,9 @@ Esta reducción geométrica permite a Platón explicar la transmutación de la m
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
       <category domain="category" nicename="filosofia"><![CDATA[Filosofía]]></category>
+      <category domain="category" nicename="clasicos"><![CDATA[Clásicos]]></category>
+      <category domain="category" nicename="metafisica"><![CDATA[Metafísica]]></category>
+
       <wp:postmeta>
         <wp:meta_key>_nihilnovi_import_source</wp:meta_key>
         <wp:meta_value><![CDATA[FIL_03_16.md]]></wp:meta_value>
@@ -6332,6 +6377,9 @@ Al observar esta degeneración en una estirpe originalmente excelente, Zeus deci
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
       <category domain="category" nicename="filosofia"><![CDATA[Filosofía]]></category>
+      <category domain="category" nicename="clasicos"><![CDATA[Clásicos]]></category>
+      <category domain="category" nicename="politica"><![CDATA[Política]]></category>
+
       <wp:postmeta>
         <wp:meta_key>_nihilnovi_import_source</wp:meta_key>
         <wp:meta_value><![CDATA[FIL_03_17.md]]></wp:meta_value>
@@ -6713,6 +6761,9 @@ Es el arte de intercambiar bienes con el único propósito de acumular dinero (<
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
       <category domain="category" nicename="filosofia"><![CDATA[Filosofía]]></category>
+      <category domain="category" nicename="clasicos"><![CDATA[Clásicos]]></category>
+      <category domain="category" nicename="politica"><![CDATA[Política]]></category>
+
       <wp:postmeta>
         <wp:meta_key>_nihilnovi_import_source</wp:meta_key>
         <wp:meta_value><![CDATA[FIL_04_01.md]]></wp:meta_value>
@@ -7050,6 +7101,9 @@ Aristóteles sorprende a su audiencia griega al elogiar el régimen político de
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
       <category domain="category" nicename="filosofia"><![CDATA[Filosofía]]></category>
+      <category domain="category" nicename="clasicos"><![CDATA[Clásicos]]></category>
+      <category domain="category" nicename="politica"><![CDATA[Política]]></category>
+
       <wp:postmeta>
         <wp:meta_key>_nihilnovi_import_source</wp:meta_key>
         <wp:meta_value><![CDATA[FIL_04_02.md]]></wp:meta_value>
@@ -7477,6 +7531,9 @@ Aristóteles refuta ambas posturas de forma contundente:
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
       <category domain="category" nicename="filosofia"><![CDATA[Filosofía]]></category>
+      <category domain="category" nicename="clasicos"><![CDATA[Clásicos]]></category>
+      <category domain="category" nicename="politica"><![CDATA[Política]]></category>
+
       <wp:postmeta>
         <wp:meta_key>_nihilnovi_import_source</wp:meta_key>
         <wp:meta_value><![CDATA[FIL_04_03.md]]></wp:meta_value>
@@ -7816,6 +7873,9 @@ El poder está completamente concentrado en manos de una sola familia o de unas 
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
       <category domain="category" nicename="filosofia"><![CDATA[Filosofía]]></category>
+      <category domain="category" nicename="clasicos"><![CDATA[Clásicos]]></category>
+      <category domain="category" nicename="politica"><![CDATA[Política]]></category>
+
       <wp:postmeta>
         <wp:meta_key>_nihilnovi_import_source</wp:meta_key>
         <wp:meta_value><![CDATA[FIL_04_04.md]]></wp:meta_value>
@@ -8111,6 +8171,9 @@ Aristóteles describe el método tradicional de los tiranos para perpetuarse: <s
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
       <category domain="category" nicename="filosofia"><![CDATA[Filosofía]]></category>
+      <category domain="category" nicename="clasicos"><![CDATA[Clásicos]]></category>
+      <category domain="category" nicename="politica"><![CDATA[Política]]></category>
+
       <wp:postmeta>
         <wp:meta_key>_nihilnovi_import_source</wp:meta_key>
         <wp:meta_value><![CDATA[FIL_04_05.md]]></wp:meta_value>
@@ -8376,6 +8439,9 @@ function toggleAri6Step(el) {
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
       <category domain="category" nicename="filosofia"><![CDATA[Filosofía]]></category>
+      <category domain="category" nicename="clasicos"><![CDATA[Clásicos]]></category>
+      <category domain="category" nicename="politica"><![CDATA[Política]]></category>
+
       <wp:postmeta>
         <wp:meta_key>_nihilnovi_import_source</wp:meta_key>
         <wp:meta_value><![CDATA[FIL_04_06.md]]></wp:meta_value>
@@ -8749,6 +8815,9 @@ function toggleAri6Step(el) {
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
       <category domain="category" nicename="filosofia"><![CDATA[Filosofía]]></category>
+      <category domain="category" nicename="clasicos"><![CDATA[Clásicos]]></category>
+      <category domain="category" nicename="politica"><![CDATA[Política]]></category>
+
       <wp:postmeta>
         <wp:meta_key>_nihilnovi_import_source</wp:meta_key>
         <wp:meta_value><![CDATA[FIL_04_07.md]]></wp:meta_value>
@@ -9009,6 +9078,10 @@ function toggleAri6Step(el) {
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
       <category domain="category" nicename="filosofia"><![CDATA[Filosofía]]></category>
+      <category domain="category" nicename="clasicos"><![CDATA[Clásicos]]></category>
+      <category domain="category" nicename="politica"><![CDATA[Política]]></category>
+      <category domain="category" nicename="estetica"><![CDATA[Estética]]></category>
+
       <wp:postmeta>
         <wp:meta_key>_nihilnovi_import_source</wp:meta_key>
         <wp:meta_value><![CDATA[FIL_04_08.md]]></wp:meta_value>
@@ -9247,6 +9320,9 @@ function toggleAri6Step(el) {
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
       <category domain="category" nicename="filosofia"><![CDATA[Filosofía]]></category>
+      <category domain="category" nicename="clasicos"><![CDATA[Clásicos]]></category>
+      <category domain="category" nicename="politica"><![CDATA[Política]]></category>
+
       <wp:postmeta>
         <wp:meta_key>_nihilnovi_import_source</wp:meta_key>
         <wp:meta_value><![CDATA[FIL_04_A.md]]></wp:meta_value>
@@ -9636,6 +9712,9 @@ function toggleAri6Step(el) {
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
       <category domain="category" nicename="filosofia"><![CDATA[Filosofía]]></category>
+      <category domain="category" nicename="presocraticos"><![CDATA[Presocráticos]]></category>
+      <category domain="category" nicename="epistemologia"><![CDATA[Epistemología]]></category>
+
       <category domain="category" nicename="lecciones"><![CDATA[Lecciones]]></category>
       <wp:postmeta>
         <wp:meta_key>_nihilnovi_import_source</wp:meta_key>
@@ -9978,6 +10057,9 @@ En contraste directo con la anécdota platónica, Aristóteles presenta en la <e
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
       <category domain="category" nicename="filosofia"><![CDATA[Filosofía]]></category>
+      <category domain="category" nicename="presocraticos"><![CDATA[Presocráticos]]></category>
+      <category domain="category" nicename="metafisica"><![CDATA[Metafísica]]></category>
+
       <category domain="category" nicename="lecciones"><![CDATA[Lecciones]]></category>
       <wp:postmeta>
         <wp:meta_key>_nihilnovi_import_source</wp:meta_key>
@@ -10613,6 +10695,9 @@ En la electrodinámica cuántica, el vacío no representa la ausencia absoluta d
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
       <category domain="category" nicename="filosofia"><![CDATA[Filosofía]]></category>
+      <category domain="category" nicename="presocraticos"><![CDATA[Presocráticos]]></category>
+      <category domain="category" nicename="metafisica"><![CDATA[Metafísica]]></category>
+
       <category domain="category" nicename="lecciones"><![CDATA[Lecciones]]></category>
       <wp:postmeta>
         <wp:meta_key>_nihilnovi_import_source</wp:meta_key>
@@ -11051,6 +11136,9 @@ En la electrodinámica cuántica, el vacío no representa la ausencia absoluta d
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
       <category domain="category" nicename="filosofia"><![CDATA[Filosofía]]></category>
+      <category domain="category" nicename="presocraticos"><![CDATA[Presocráticos]]></category>
+      <category domain="category" nicename="metafisica"><![CDATA[Metafísica]]></category>
+
       <category domain="category" nicename="lecciones"><![CDATA[Lecciones]]></category>
       <wp:postmeta>
         <wp:meta_key>_nihilnovi_import_source</wp:meta_key>
@@ -11550,6 +11638,9 @@ En la electrodinámica cuántica, el vacío no representa la ausencia absoluta d
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
       <category domain="category" nicename="filosofia"><![CDATA[Filosofía]]></category>
+      <category domain="category" nicename="presocraticos"><![CDATA[Presocráticos]]></category>
+      <category domain="category" nicename="metafisica"><![CDATA[Metafísica]]></category>
+
       <category domain="category" nicename="lecciones"><![CDATA[Lecciones]]></category>
       <wp:postmeta>
         <wp:meta_key>_nihilnovi_import_source</wp:meta_key>
@@ -11985,6 +12076,9 @@ En la electrodinámica cuántica, el vacío no representa la ausencia absoluta d
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
       <category domain="category" nicename="filosofia"><![CDATA[Filosofía]]></category>
+      <category domain="category" nicename="presocraticos"><![CDATA[Presocráticos]]></category>
+      <category domain="category" nicename="metafisica"><![CDATA[Metafísica]]></category>
+
       <category domain="category" nicename="lecciones"><![CDATA[Lecciones]]></category>
       <wp:postmeta>
         <wp:meta_key>_nihilnovi_import_source</wp:meta_key>
@@ -12429,6 +12523,9 @@ En la electrodinámica cuántica, el vacío no representa la ausencia absoluta d
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
       <category domain="category" nicename="filosofia"><![CDATA[Filosofía]]></category>
+      <category domain="category" nicename="presocraticos"><![CDATA[Presocráticos]]></category>
+      <category domain="category" nicename="metafisica"><![CDATA[Metafísica]]></category>
+
       <category domain="category" nicename="lecciones"><![CDATA[Lecciones]]></category>
       <wp:postmeta>
         <wp:meta_key>_nihilnovi_import_source</wp:meta_key>
@@ -13239,6 +13336,9 @@ En la electrodinámica cuántica, el vacío no representa la ausencia absoluta d
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
       <category domain="category" nicename="filosofia"><![CDATA[Filosofía]]></category>
+      <category domain="category" nicename="presocraticos"><![CDATA[Presocráticos]]></category>
+      <category domain="category" nicename="logica"><![CDATA[Lógica]]></category>
+
       <category domain="category" nicename="lecciones"><![CDATA[Lecciones]]></category>
       <wp:postmeta>
         <wp:meta_key>_nihilnovi_import_source</wp:meta_key>
@@ -13396,6 +13496,9 @@ graph TD
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
       <category domain="category" nicename="filosofia"><![CDATA[Filosofía]]></category>
+      <category domain="category" nicename="presocraticos"><![CDATA[Presocráticos]]></category>
+      <category domain="category" nicename="metafisica"><![CDATA[Metafísica]]></category>
+
       <category domain="category" nicename="lecciones"><![CDATA[Lecciones]]></category>
       <wp:postmeta>
         <wp:meta_key>_nihilnovi_import_source</wp:meta_key>
@@ -13520,6 +13623,9 @@ graph TD
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
       <category domain="category" nicename="filosofia"><![CDATA[Filosofía]]></category>
+      <category domain="category" nicename="presocraticos"><![CDATA[Presocráticos]]></category>
+      <category domain="category" nicename="metafisica"><![CDATA[Metafísica]]></category>
+
       <category domain="category" nicename="lecciones"><![CDATA[Lecciones]]></category>
       <wp:postmeta>
         <wp:meta_key>_nihilnovi_import_source</wp:meta_key>
@@ -13664,6 +13770,9 @@ graph TD
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
       <category domain="category" nicename="filosofia"><![CDATA[Filosofía]]></category>
+      <category domain="category" nicename="presocraticos"><![CDATA[Presocráticos]]></category>
+      <category domain="category" nicename="metafisica"><![CDATA[Metafísica]]></category>
+
       <category domain="category" nicename="lecciones"><![CDATA[Lecciones]]></category>
       <wp:postmeta>
         <wp:meta_key>_nihilnovi_import_source</wp:meta_key>
@@ -13784,6 +13893,9 @@ graph TD
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
       <category domain="category" nicename="filosofia"><![CDATA[Filosofía]]></category>
+      <category domain="category" nicename="presocraticos"><![CDATA[Presocráticos]]></category>
+      <category domain="category" nicename="epistemologia"><![CDATA[Epistemología]]></category>
+
       <category domain="category" nicename="lecciones"><![CDATA[Lecciones]]></category>
       <wp:postmeta>
         <wp:meta_key>_nihilnovi_import_source</wp:meta_key>
