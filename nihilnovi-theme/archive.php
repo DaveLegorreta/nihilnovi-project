@@ -47,14 +47,14 @@ $disc_code = $is_lesson ? 'NN' : ( $disc_codes[ $disc_class ] ?? 'NN' );
 ?>
 
 <!-- ══════════ ARCHIVE HERO ══════════ -->
-<section class="post-hero" style="min-height:42vh;" aria-label="<?php echo esc_attr( sprintf( __( 'Archivo de %s', 'nihilnovi' ), $cat_name ) ); ?>">
+<section class="post-hero" style="min-height:28vh;" aria-label="<?php echo esc_attr( sprintf( __( 'Archivo de %s', 'nihilnovi' ), $cat_name ) ); ?>">
   <div class="blob blob-1" style="opacity:0.35;" aria-hidden="true"></div>
   <div class="hero-grid" style="opacity:0.35;" aria-hidden="true"></div>
 
   <!-- Línea de color de la disciplina -->
   <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,<?php echo esc_attr($disc_color); ?>,transparent);"></div>
 
-  <div class="post-hero-inner" style="padding-top:9rem;padding-bottom:3rem;">
+  <div class="post-hero-inner" style="padding-top:6rem;padding-bottom:2rem;">
 
     <!-- Migas de pan -->
     <nav class="breadcrumb" aria-label="<?php echo esc_attr__( 'Migas de pan', 'nihilnovi' ); ?>">
@@ -171,11 +171,23 @@ $disc_code = $is_lesson ? 'NN' : ( $disc_codes[ $disc_class ] ?? 'NN' );
           endwhile; ?>
         </div>
       <?php else : ?>
-        <!-- Vista de artículos: listado editorial -->
-        <div style="display:flex;flex-direction:column;border-top:1px solid var(--border);">
+<!-- Vista de artículos: grid de tarjetas -->
+        <div class="articles-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);">
           <?php while ( have_posts() ) : the_post();
-            get_template_part( 'template-parts/content', 'article' );
-          endwhile; ?>
+            $art_num = get_post_meta(get_the_ID(),'_article_num',true);
+            $cat = get_the_category(); $cat_name = $cat ? $cat[0]->name : ''; $disc_class = nihilnovi_get_disc_class(get_the_ID());
+          ?>
+          <article class="art-card" style="background:var(--card);padding:2rem;transition:background .3s;">
+            <div class="art-meta" style="margin-bottom:0.8rem;">
+              <?php if ($art_num) : ?><span class="art-num"><?php echo str_pad(esc_html($art_num),2,'0',STR_PAD_LEFT); ?></span><?php endif; ?>
+              <?php if ($cat_name) : ?><span class="art-cat <?php echo esc_attr($disc_class); ?>" style="color:var(--<?php echo esc_attr($disc_class); ?>);"><?php echo esc_html($cat_name); ?></span><?php endif; ?>
+              <span class="art-date"><?php echo get_the_date('j M Y'); ?></span>
+            </div>
+            <a href="<?php the_permalink(); ?>" class="art-title" style="font-size:1.1rem;"><?php the_title(); ?></a>
+            <p class="art-excerpt" style="margin-top:0.6rem;"><?php echo wp_trim_words(get_the_excerpt(),18); ?></p>
+            <a href="<?php the_permalink(); ?>" class="art-cta" style="margin-top:1rem;display:inline-block;"><?php echo esc_html__( 'Leer', 'nihilnovi' ); ?></a>
+          </article>
+          <?php endwhile; ?>
         </div>
       <?php endif; ?>
       <!-- Paginación -->

@@ -260,9 +260,6 @@ if ( $related->have_posts() ) :
 </section>
 <?php endif; ?>
 
-<!-- CTA de newsletter -->
-<?php get_template_part( 'template-parts/cta', 'newsletter' ); ?>
-
 <!-- Libros recomendados (afiliados) -->
 <?php get_template_part( 'template-parts/affiliate', 'books' ); ?>
 
