@@ -1442,3 +1442,171 @@ button { cursor: pointer; font-family: inherit; }
     gap: 0.8rem;
   }
 }
+
+
+/* ════════════════════════════════════════
+   ARCHIVE HERO COMPACT + FLOATING SYMBOLS
+════════════════════════════════════════ */
+
+/* Hero de archivo: ultra-compacto, sin padding excesivo */
+.archive-hero {
+  position: relative;
+  overflow: hidden;
+  padding: 3rem 4rem 2rem;
+  border-bottom: 1px solid var(--border);
+  background: var(--black);
+  min-height: 0; /* Override del min-height del hero global */
+}
+
+/* Línea de color de la disciplina */
+.archive-hero-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  opacity: 0.6;
+}
+
+/* Contenedor de símbolos flotantes */
+.archive-symbols {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Contenedor de términos alemanes flotantes (segundo layer, más difuso) */
+.archive-terms {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+/* Cada símbolo flotante */
+.floating-symbol {
+  position: absolute;
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--ivory-3);
+  pointer-events: none;
+  user-select: none;
+  filter: blur(0.5px);
+  animation: floatDrift linear infinite;
+  will-change: transform, opacity;
+}
+
+/* Cada término alemán flotante */
+.floating-term {
+  position: absolute;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  color: var(--ivory-3);
+  pointer-events: none;
+  user-select: none;
+  filter: blur(2px);
+  animation: floatTerm linear infinite;
+  will-change: transform, opacity;
+  letter-spacing: 0.05em;
+}
+
+/* Animación de deriva orbital para símbolos */
+@keyframes floatDrift {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: var(--peak-opacity, 0.1);
+  }
+  25% {
+    transform: translate(20px, -30px) rotate(5deg);
+  }
+  50% {
+    transform: translate(-10px, -60px) rotate(-3deg);
+    opacity: var(--peak-opacity, 0.08);
+  }
+  75% {
+    transform: translate(30px, -40px) rotate(8deg);
+  }
+  90% {
+    opacity: var(--peak-opacity, 0.05);
+  }
+  100% {
+    transform: translate(0, -80px) rotate(0deg);
+    opacity: 0;
+  }
+}
+
+/* Animación de deriva lenta para términos alemanes (movimiento horizontal predominante) */
+@keyframes floatTerm {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0;
+  }
+  15% {
+    opacity: var(--peak-opacity, 0.08);
+  }
+  30% {
+    transform: translate(40px, -20px) scale(1.05);
+  }
+  50% {
+    transform: translate(-20px, -50px) scale(0.95);
+    opacity: var(--peak-opacity, 0.06);
+  }
+  70% {
+    transform: translate(60px, -30px) scale(1.02);
+  }
+  85% {
+    opacity: var(--peak-opacity, 0.04);
+  }
+  100% {
+    transform: translate(0, -90px) scale(1);
+    opacity: 0;
+  }
+}
+
+/* Inner del hero de archivo */
+.archive-hero-inner {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Migas de pan */
+.breadcrumb {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ivory-3);
+  margin-bottom: 1rem;
+}
+.breadcrumb a {
+  color: var(--ivory-3);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.breadcrumb a:hover {
+  color: var(--gold);
+}
+.breadcrumb span[aria-hidden="true"] {
+  margin: 0 0.5rem;
+  opacity: 0.4;
+}
+.breadcrumb-current {
+  color: var(--ivory);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .archive-hero {
+    padding: 2rem 1.5rem 1.5rem;
+  }
+  .floating-symbol {
+    display: none; /* Ocultar en móvil para rendimiento */
+  }
+}

@@ -44,17 +44,55 @@ $disc_codes = [
   'fil' => 'FIL', 'eco' => 'ECO', 'mat' => 'MAT', 'his' => 'HIS', 'cie' => 'CIE',
 ];
 $disc_code = $is_lesson ? 'NN' : ( $disc_codes[ $disc_class ] ?? 'NN' );
+
+// Símbolos filosóficos/griegos para animación de fondo
+$philosophy_symbols = ['α','β','γ','δ','ε','ζ','η','θ','λ','μ','ξ','π','ρ','σ','τ','φ','χ','ψ','ω','∴','∵','⊥','∧','∨','¬','∀','∃','∈','∉','⊂','⊃','∪','∩','∅','∞','∂','∇','∫','∑','∏','√','±','∓','×','÷','·','°','∠','∟','⊾','⊿','⋮','⋯','⋰','⋱','§','¶','†','‡','‖','‽','¿','¡','«','»','‹','›','„','"','"','\'','\'','‚','‘','’','…','–','—','‐','‑','‒','‾','_','·','•','◦','‣','⁃','-','*','†','‡','•','·','▪','▫','◾','◽','◆','◇','◈','▣','▤','▥','▦','▧','▨','▩','▬','▭','▮','▯','▰','▱','▲','△','▴','▵','▸','▹','►','▻','▼','▽','▾','▿','◀','◁','◂','◃','◄','◅','◆','◇','◈','◉','◊','○','◌','◍','◎','●','◐','◑','◒','◓','◔','◕','◖','◗','◘','◙','◚','◛','◜','◝','◞','◟','◠','◡','◢','◣','◤','◥','◦','◧','◨','◩','◪','◫','◬','◭','◮','◯','◰','◱','◲','◳','◴','◵','◶','◷','◸','◹','◺','◻','◼','◽','◾','◿'];
+
+// Términos filosóficos alemanes para segundo layer de animación
+$german_terms = ['Sein','Dasein','Weltanschauung','Erkenntnis','Vernunft','Aufhebung','Gestalt','Zeit','Raum','Ursache','Wirkung','Begriff','Wahrheit','Freiheit','Gewissen','Sittlichkeit','Schönheit','Erscheinung','Wesen','Grund','Existenz','Transzendenz','Immanenz','Ontologie','Phänomenologie','Hermeneutik','Dialektik','Subjekt','Objekt','Synthesis','Analyse','Thesis','Antithesis','Kategorisch','Apriori','Aposteriori','Synthetic','Analytisch','Deduktion','Induktion','Abduktion','Pragmatik','Semantik','Syntax','Logik','Ethik','Ästhetik','Metaphysik','Epistemologie','Teleologie','Kausalität','Noumenon','Phänomenon','Monadologie','Leibniz','Kant','Hegel','Heidegger','Husserl','Wittgenstein','Nietzsche','Schopenhauer','Fichte','Schelling','Marx','Engels','Adorno','Horkheimer','Marcuse','Habermas','Gadamer','Ricoeur','Derrida','Foucault','Deleuze','Guattari','Lyotard','Baudrillard','Vattimo','Agamben','Negri','Zizek','Badiou','Ranciere','Balibar','Laclau','Mouffe','Butler','Spivak','Said','Chakrabarty','Bhabha','Glissant','Césaire','Fanon','Memmi','Sartre','Camus','Merleau-Ponty','Beauvoir','Arendt','Strauss','Voegelin','Oakeshott','Berlin','Popper','Kuhn','Feyerabend','Lakatos','Laudan','Putnam','Quine','Davidson','Rawls','Nozick','Dworkin','Hart','Kelsen','Schmitt','Strauss','Voegelin','Oakeshott','Berlin','Popper','Kuhn','Feyerabend','Lakatos','Laudan','Putnam','Quine','Davidson','Rawls','Nozick','Dworkin','Hart','Kelsen','Schmitt'];
 ?>
 
 <!-- ══════════ ARCHIVE HERO ══════════ -->
-<section class="post-hero" style="min-height:18vh;" aria-label="<?php echo esc_attr( sprintf( __( 'Archivo de %s', 'nihilnovi' ), $cat_name ) ); ?>">
-  <div class="blob blob-1" style="opacity:0.15;" aria-hidden="true"></div>
-  <div class="hero-grid" style="opacity:0.15;" aria-hidden="true"></div>
+<section class="archive-hero" aria-label="<?php echo esc_attr( sprintf( __( 'Archivo de %s', 'nihilnovi' ), $cat_name ) ); ?>">
+  
+  <!-- Símbolos filosóficos flotantes (animación tipo sistema solar) -->
+  <div class="archive-symbols" aria-hidden="true">
+    <?php 
+    $total_symbols = count($philosophy_symbols);
+    for ($i = 0; $i < 24; $i++) : 
+      $symbol = $philosophy_symbols[$i % $total_symbols];
+      $left = rand(5, 95);
+      $top = rand(5, 90);
+      $size = rand(12, 28);
+      $delay = $i * 0.8;
+      $duration = rand(15, 35);
+      $opacity = rand(3, 12) / 100;
+    ?>
+      <span class="floating-symbol" style="left:<?php echo $left; ?>%;top:<?php echo $top; ?>%;font-size:<?php echo $size; ?>px;animation-delay:<?php echo $delay; ?>s;animation-duration:<?php echo $duration; ?>s;opacity:<?php echo $opacity; ?>;"><?php echo $symbol; ?></span>
+    <?php endfor; ?>
+  </div>
+
+  <!-- Términos filosóficos alemanes flotantes (segundo layer, más difuso) -->
+  <div class="archive-terms" aria-hidden="true">
+    <?php 
+    $total_terms = count($german_terms);
+    for ($i = 0; $i < 12; $i++) : 
+      $term = $german_terms[$i % $total_terms];
+      $left = rand(2, 98);
+      $top = rand(5, 85);
+      $size = rand(14, 22);
+      $delay = $i * 1.5 + 2;
+      $duration = rand(40, 70);
+      $opacity = rand(4, 10) / 100;
+    ?>
+      <span class="floating-term" style="left:<?php echo $left; ?>%;top:<?php echo $top; ?>%;font-size:<?php echo $size; ?>px;animation-delay:<?php echo $delay; ?>s;animation-duration:<?php echo $duration; ?>s;opacity:<?php echo $opacity; ?>;"><?php echo $term; ?></span>
+    <?php endfor; ?>
+  </div>
 
   <!-- Línea de color de la disciplina -->
-  <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,<?php echo esc_attr($disc_color); ?>,transparent);"></div>
+  <div class="archive-hero-line" style="background:linear-gradient(90deg,transparent,<?php echo esc_attr($disc_color); ?>,transparent);"></div>
 
-  <div class="post-hero-inner" style="padding-top:5rem;padding-bottom:1.5rem;">
+  <div class="archive-hero-inner">
 
     <!-- Migas de pan -->
     <nav class="breadcrumb" aria-label="<?php echo esc_attr__( 'Migas de pan', 'nihilnovi' ); ?>">
@@ -63,7 +101,7 @@ $disc_code = $is_lesson ? 'NN' : ( $disc_codes[ $disc_class ] ?? 'NN' );
       <span class="breadcrumb-current" aria-current="page"><?php echo esc_html( $cat_name ); ?></span>
     </nav>
 
-    <div class="post-meta-row" style="margin-bottom:1.4rem;">
+    <div class="post-meta-row" style="margin-bottom:1rem;">
       <span style="font-family:'JetBrains Mono',monospace;font-size:0.68rem;color:<?php echo esc_attr($disc_color); ?>;background:rgba(<?php
         list($r,$g,$b) = sscanf($disc_color,'#%02x%02x%02x');
         echo "$r,$g,$b";
@@ -75,7 +113,7 @@ $disc_code = $is_lesson ? 'NN' : ( $disc_codes[ $disc_class ] ?? 'NN' );
       </span>
     </div>
 
-    <h1 class="post-title" style="font-size:clamp(2rem,5vw,3.8rem);margin-bottom:<?php echo $cat_desc ? '1.2rem' : '0'; ?>;">
+    <h1 class="post-title" style="font-size:clamp(2rem,5vw,3.8rem);margin-bottom:<?php echo $cat_desc ? '1rem' : '0'; ?>;">
       <?php echo esc_html( $cat_name ); ?>
     </h1>
 
@@ -86,7 +124,7 @@ $disc_code = $is_lesson ? 'NN' : ( $disc_codes[ $disc_class ] ?? 'NN' );
     <?php endif; ?>
 
     <!-- Contador de entradas -->
-    <div style="margin-top:1.5rem;font-family:'Inter',sans-serif;font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--ivory-3);">
+    <div style="margin-top:1rem;font-family:'Inter',sans-serif;font-size:0.65rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--ivory-3);">
       <?php
       $count = $cat ? $cat->count : 0;
       echo esc_html( $count ) . ' ' . esc_html( $is_lesson
@@ -179,7 +217,7 @@ if ( ! $is_lesson ) {
           endwhile; ?>
         </div>
       <?php else : ?>
-<!-- Vista de artículos: grid de tarjetas -->
+        <!-- Vista de artículos: grid de tarjetas -->
         <div class="articles-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);">
           <?php while ( have_posts() ) : the_post();
             $art_num = get_post_meta(get_the_ID(),'_article_num',true);
