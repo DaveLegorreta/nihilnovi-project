@@ -1380,3 +1380,65 @@ button { cursor: pointer; font-family: inherit; }
 .playlist-card-cta:hover {
   opacity: 0.8;
 }
+/* ════════════════════════════════════════
+   ARCHIVE GRID CARD HOVER ANIMATION
+════════════════════════════════════════ */
+.articles-grid .art-card {
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+.articles-grid .art-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(196,151,58,0.08);
+  border-color: var(--gold-border) !important;
+}
+
+/* ════════════════════════════════════════
+   PAGINATION BUTTON STYLES
+════════════════════════════════════════ */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+.page-numbers {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  height: 44px;
+  padding: 0 0.8rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  color: var(--ivory-3);
+  border: 1px solid var(--border-2);
+  background: var(--card);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.page-numbers:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+.page-numbers.current {
+  background: var(--gold);
+  color: var(--black);
+  border-color: var(--gold);
+  font-weight: 500;
+}
+.page-numbers.dots {
+  border-color: transparent;
+  background: transparent;
+}
+
+/* Responsive pagination: hide numbers on mobile, keep prev/next/current */
+@media (max-width: 600px) {
+  .page-numbers:not(.prev):not(.next):not(.current) {
+    display: none;
+  }
+  .nav-links {
+    gap: 0.8rem;
+  }
+}

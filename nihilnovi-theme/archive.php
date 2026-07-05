@@ -47,14 +47,14 @@ $disc_code = $is_lesson ? 'NN' : ( $disc_codes[ $disc_class ] ?? 'NN' );
 ?>
 
 <!-- ══════════ ARCHIVE HERO ══════════ -->
-<section class="post-hero" style="min-height:28vh;" aria-label="<?php echo esc_attr( sprintf( __( 'Archivo de %s', 'nihilnovi' ), $cat_name ) ); ?>">
-  <div class="blob blob-1" style="opacity:0.35;" aria-hidden="true"></div>
-  <div class="hero-grid" style="opacity:0.35;" aria-hidden="true"></div>
+<section class="post-hero" style="min-height:18vh;" aria-label="<?php echo esc_attr( sprintf( __( 'Archivo de %s', 'nihilnovi' ), $cat_name ) ); ?>">
+  <div class="blob blob-1" style="opacity:0.15;" aria-hidden="true"></div>
+  <div class="hero-grid" style="opacity:0.15;" aria-hidden="true"></div>
 
   <!-- Línea de color de la disciplina -->
   <div style="position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,<?php echo esc_attr($disc_color); ?>,transparent);"></div>
 
-  <div class="post-hero-inner" style="padding-top:6rem;padding-bottom:2rem;">
+  <div class="post-hero-inner" style="padding-top:5rem;padding-bottom:1.5rem;">
 
     <!-- Migas de pan -->
     <nav class="breadcrumb" aria-label="<?php echo esc_attr__( 'Migas de pan', 'nihilnovi' ); ?>">
@@ -160,6 +160,14 @@ $disc_code = $is_lesson ? 'NN' : ( $disc_codes[ $disc_class ] ?? 'NN' );
 
 <?php else : ?>
 <!-- ══════════ VISTA HIJO O LECCIÓN: LISTADO EDITORIAL ══════════ -->
+<?php
+// Forzar 9 items por página para grid 3x3 sin espacios vacíos
+if ( ! $is_lesson ) {
+    global $wp_query;
+    $args = array_merge( $wp_query->query_vars, ['posts_per_page' => 9] );
+    query_posts( $args );
+}
+?>
 <section class="nn-section" aria-label="<?php echo esc_attr( sprintf( __( 'Listado de %s', 'nihilnovi' ), $cat_name ) ); ?>">
   <div class="section-inner">
     <?php if ( have_posts() ) : ?>
