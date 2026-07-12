@@ -1,0 +1,1119 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Nihil Novi 2.0.5\n"
+"Report-Msgid-Bugs-To: https://nihilnovi.xyz\n"
+"POT-Creation-Date: 2026-07-03 16:20:00-06:00\n"
+"PO-Revision-Date: 2026-07-05 05:42:00-06:00\n"
+"Last-Translator: David Legorreta <david@nihilnovi.xyz>\n"
+"Language-Team: English <en_US@nihilnovi.xyz>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: nihilnovi\n"
+"X-Generator: Nihil Novi Translation Tool (polib)\n"
+
+#: single.php:176
+msgid ""
+"Filósofo de formación, operador de oficio. Estudiando economía en público en"
+" %s."
+msgstr ""
+"Philosopher by training, operator by trade. Studying economics in public at "
+"%s."
+
+#: single.php:190
+msgid "Navegación entre artículos"
+msgstr "Article navigation"
+
+#: single.php:194
+msgid "← Anterior"
+msgstr "← Previous"
+
+#: single.php:198
+msgid "← Inicio de serie"
+msgstr "← Series start"
+
+#: single.php:205
+msgid "Siguiente →"
+msgstr "Next →"
+
+#: single.php:209
+msgid "Continúa pronto →"
+msgstr "Continues soon →"
+
+#: single.php:227
+msgid "Artículos relacionados"
+msgstr "Related articles"
+
+#: single.php:229
+msgid "Seguir leyendo"
+msgstr "Continue reading"
+
+#: template-parts/content-article.php:55 template-parts/content-none.php:24
+#: single.php:244 index.php:82
+msgid "Leer"
+msgstr "Read"
+
+#: header.php:31
+msgid "Navegación principal"
+msgstr "Main navigation"
+
+#: header.php:34
+msgid "Nihil Novi — Inicio"
+msgstr "Nihil Novi — Home"
+
+#: header.php:51
+msgid "Selector de idioma"
+msgstr "Language selector"
+
+#: header.php:52
+msgid "ES"
+msgstr "ES"
+
+#: header.php:54
+msgid "EN"
+msgstr "EN"
+
+#: header.php:56
+msgid "IT"
+msgstr "IT"
+
+#: header.php:58
+msgid "DE"
+msgstr "DE"
+
+#: header.php:60
+msgid "Explorar"
+msgstr "Explore"
+
+#: header.php:63
+msgid "Abrir menú"
+msgstr "Open menu"
+
+#: footer.php:26
+msgid "Redes sociales"
+msgstr "Social media"
+
+#: front-page.php:87
+msgid "Portada"
+msgstr "Homepage"
+
+#: front-page.php:167
+msgid "Scroll"
+msgstr "Scroll"
+
+#: front-page.php:171
+msgid "Manifiesto"
+msgstr "Manifesto"
+
+#: front-page.php:181
+msgid "Las cinco disciplinas"
+msgstr "The five disciplines"
+
+#: front-page.php:185
+msgid "Los territorios"
+msgstr "The territories"
+
+#: front-page.php:186
+msgid "Cinco disciplinas.<br>Un solo proyecto."
+msgstr "Five disciplines.<br>One project."
+
+#: front-page.php:187
+msgid ""
+"Cada disciplina tiene su propia ruta de estudio, sus lecciones y su "
+"bibliografía."
+msgstr "Each discipline has its own study path, lessons, and bibliography."
+
+#: front-page.php:209
+msgid "Artículos y lecciones recientes"
+msgstr "Recent articles and lessons"
+
+#: front-page.php:213
+msgid "Lo más reciente"
+msgstr "Latest"
+
+#: front-page.php:214
+msgid "Artículos y <em>Lecciones</em>"
+msgstr "Articles and <em>Lessons</em>"
+
+#: front-page.php:216
+msgid "Ver todo el archivo"
+msgstr "View all archives"
+
+#: front-page.php:220
+msgid "Artículos"
+msgstr "Articles"
+
+#: front-page.php:221
+msgid "Lecciones"
+msgstr "Lessons"
+
+#: front-page.php:239
+msgid "El Viaje"
+msgstr "The Journey"
+
+#: front-page.php:240
+msgid "25 de mayo de 2026. Hoy empieza."
+msgstr "May 25, 2026. Today begins."
+
+#: front-page.php:241
+msgid ""
+"No el día en que llegué a algún destino. El día en que decidí hacer el "
+"camino en público."
+msgstr ""
+"Not the day I reached some destination. The day I decided to walk the path "
+"in public."
+
+#: front-page.php:242 front-page.php:245 front-page.php:248 front-page.php:269
+msgid "Pronto"
+msgstr "Soon"
+
+#: front-page.php:243
+msgid "Economía"
+msgstr "Economics"
+
+#: front-page.php:244
+msgid ""
+"Si te dijeron que la economía es la ciencia de la oferta y la demanda, te "
+"timaron."
+msgstr ""
+"If they told you economics is the science of supply and demand, you were "
+"fooled."
+
+#: front-page.php:245
+msgid "La economía no empezó con Adam Smith en 1776. Empezó con los griegos."
+msgstr ""
+"Economics didn't start with Adam Smith in 1776. It started with the Greeks."
+
+#: front-page.php:246
+msgid "Próximamente"
+msgstr "Coming soon"
+
+#: front-page.php:246
+msgid "25 mayo 2026"
+msgstr "May 25 2026"
+
+#: front-page.php:246
+msgid "Jun 2026"
+msgstr "Jun 2026"
+
+#: front-page.php:247
+msgid "Las tres preguntas que toda economía tiene que responder."
+msgstr "The three questions every economy must answer."
+
+#: front-page.php:248
+msgid "Qué producir. Cómo producirlo. Para quién."
+msgstr "What to produce. How to produce it. For whom."
+
+#: front-page.php:255
+msgid "¿Qué estudia realmente la economía?"
+msgstr "What does economics really study?"
+
+#: front-page.php:255
+msgid ""
+"No es la ciencia del dinero. Es la ciencia de las decisiones bajo escasez."
+msgstr ""
+"It's not the science of money. It's the science of decisions under scarcity."
+
+#: front-page.php:256
+msgid "¿Qué es la filosofía y para qué sirve?"
+msgstr "What is philosophy and what is it for?"
+
+#: front-page.php:256
+msgid ""
+"El único instrumento para cuestionar los supuestos que todas las demás "
+"disciplinas dan por sentados."
+msgstr ""
+"The only instrument to question the assumptions all other disciplines take "
+"for granted."
+
+#: front-page.php:257
+msgid "Las matemáticas son un lenguaje, no un cálculo."
+msgstr "Mathematics is a language, not a calculation."
+
+#: front-page.php:257
+msgid "La mayoría aprende a calcular y cree que eso es matemáticas. No lo es."
+msgstr ""
+"Most people learn to calculate and think that's mathematics. It's not."
+
+#: front-page.php:258
+msgid "Cómo leer la historia sin que te manipulen."
+msgstr "How to read history without being manipulated."
+
+#: front-page.php:258
+msgid ""
+"Toda historia es una selección. Alguien decidió qué incluir y qué omitir."
+msgstr ""
+"All history is a selection. Someone decided what to include and what to "
+"omit."
+
+#: front-page.php:259
+msgid "El método científico de verdad."
+msgstr "The real scientific method."
+
+#: front-page.php:259
+msgid ""
+"No es el diagrama del libro de secundaria. Es reducir el error sistemático "
+"del pensamiento."
+msgstr ""
+"It's not the high school textbook diagram. It's reducing the systematic "
+"error of thought."
+
+#: front-page.php:318
+msgid "El Viaje del Pensamiento"
+msgstr "The Journey of Thought"
+
+#: front-page.php:323
+msgid "La serie principal"
+msgstr "The main series"
+
+#: front-page.php:324
+msgid "El Viaje del"
+msgstr "The Journey of the"
+
+#: front-page.php:333
+msgid "Lógica y Epistemología"
+msgstr "Logic and Epistemology"
+
+#: front-page.php:334
+msgid ""
+"Cálculo proposicional y de primer orden, falacias formales, la definición "
+"clásica de conocimiento, problemas de justificación (Gettier) y empirismo "
+"frente a racionalismo."
+msgstr ""
+"Propositional and first-order calculus, formal fallacies, the classical "
+"definition of knowledge, justification problems (Gettier), and empiricism "
+"vs. rationalism."
+
+#: front-page.php:340
+msgid "Historia de las Ideas y Sistemas Sociales"
+msgstr "History of Ideas and Social Systems"
+
+#: front-page.php:341
+msgid ""
+"Genealogía ética y política clásica, idealismo alemán (Hegel) y economía "
+"política basada en la teoría del valor-trabajo, plusvalía y acumulación de "
+"capital."
+msgstr ""
+"Classical ethical and political genealogy, German idealism (Hegel), and "
+"political economy based on labor theory of value, surplus value, and capital"
+" accumulation."
+
+#: front-page.php:347
+msgid "El Lenguaje Matemático y Rigor Formal"
+msgstr "The Mathematical Language and Formal Rigor"
+
+#: front-page.php:348
+msgid ""
+"Cálculo infinitesimal (diferencial e integral) multivariable, álgebra lineal"
+" (matrices y vectores), optimización estática y leyes de probabilidad "
+"aplicada."
+msgstr ""
+"Multivariable infinitesimal calculus (differential and integral), linear "
+"algebra (matrices and vectors), static optimization, and applied probability"
+" laws."
+
+#: front-page.php:354
+msgid "Economía y Sistemas Materiales"
+msgstr "Economics and Material Systems"
+
+#: front-page.php:355
+msgid ""
+"Teoría microeconómica del consumidor y la empresa (utilidad y costos), "
+"equilibrio general macroeconómico (modelos IS-LM y Solow) e inferencia "
+"empírica por Mínimos Cuadrados Ordinarios."
+msgstr ""
+"Microeconomic theory of consumer and firm (utility and costs), macroeconomic"
+" general equilibrium (IS-LM and Solow models), and empirical inference by "
+"Ordinary Least Squares."
+
+#: front-page.php:361
+msgid "Epistemología de la Ciencia"
+msgstr "Epistemology of Science"
+
+#: front-page.php:362
+msgid ""
+"El método de prueba científica, falsacionismo de Popper, paradigmas de Kuhn "
+"e investigación metodológica."
+msgstr ""
+"The scientific testing method, Popper's falsificationism, Kuhn's paradigms, "
+"and methodological research."
+
+#: front-page.php:368
+msgid "Computabilidad y Cómputo Formal"
+msgstr "Computability and Formal Computation"
+
+#: front-page.php:369
+msgid ""
+"Límites de decidibilidad de sistemas lógicos, máquinas de Turing, teoremas "
+"de Gödel y teoría de la información."
+msgstr ""
+"Limits of decidability of logical systems, Turing machines, Gödel's "
+"theorems, and information theory."
+
+#: front-page.php:375
+msgid "Síntesis y Fronteras de la IA"
+msgstr "Synthesis and Frontiers of AI"
+
+#: front-page.php:376
+msgid ""
+"Modelos de redes neuronales, el problema mente-cuerpo, implicaciones "
+"epistémicas del cómputo y la física contemporánea."
+msgstr ""
+"Neural network models, the mind-body problem, epistemic implications of "
+"computation, and contemporary physics."
+
+#: front-page.php:384
+msgid "Sobre el autor"
+msgstr "About the author"
+
+#: front-page.php:387
+msgid "Quién escribe"
+msgstr "Who writes"
+
+#: front-page.php:405
+msgid "Suscripción"
+msgstr "Subscription"
+
+#: front-page.php:407
+msgid "El viaje, en tu correo"
+msgstr "The journey, in your inbox"
+
+#: front-page.php:412
+msgid "tu@correo.com"
+msgstr "your@email.com"
+
+#: front-page.php:412
+msgid "Tu correo"
+msgstr "Your email"
+
+#: front-page.php:413
+msgid "Suscribirme"
+msgstr "Subscribe"
+
+#: archive.php:55
+msgid "Migas de pan"
+msgstr "Breadcrumbs"
+
+#: archive.php:56 single.php:42
+msgid "Inicio"
+msgstr "Home"
+
+#: archive.php:45
+msgid "Archivo de %s"
+msgstr ""
+
+#: archive.php:69
+msgid "Lecciones"
+msgstr "Lessons"
+
+#: archive.php:69
+msgid "Disciplina"
+msgstr "Discipline"
+
+#: archive.php:87
+msgid "lección"
+msgid_plural "lecciones"
+msgstr[0] "lesson"
+msgstr[1] "lessons"
+
+#: archive.php:87
+msgid "entrada"
+msgid_plural "entradas"
+msgstr[0] "entry"
+msgstr[1] "entries"
+
+#: archive.php:94
+msgid "Listado de %s"
+msgstr ""
+
+#: archive.php:121 index.php:92
+msgid "← Anterior"
+msgstr "← Previous"
+
+#: archive.php:122 index.php:93
+msgid "Siguiente →"
+msgstr "Next →"
+
+#: archive.php:137
+msgid "← Todas las disciplinas"
+msgstr "← All disciplines"
+
+#: index.php:15
+msgid "El archivo"
+msgstr "The archive"
+
+#: index.php:21
+msgid "Resultados para: %s"
+msgstr ""
+
+#: index.php:25
+msgid "Todos los <em>artículos</em>"
+msgstr "All <em>articles</em>"
+
+#: index.php:99
+msgid "Aún no hay artículos publicados.<br>El viaje empieza pronto."
+msgstr "No articles published yet.<br>The journey begins soon."
+
+#: index.php:100
+msgid "Volver al inicio"
+msgstr "Back to home"
+
+#: template-parts/content-none.php:12
+msgid "Todavía no hay contenido aquí"
+msgstr "No content here yet"
+
+#: template-parts/content-none.php:15
+msgid "No se encontraron resultados para \"%s\". Prueba con otras palabras."
+msgstr "No results found for \"%s\". Try other words."
+
+#: template-parts/content-none.php:17
+msgid ""
+"Esta sección está en construcción. El contenido llega pronto — semana a "
+"semana."
+msgstr ""
+"This section is under construction. Content arrives soon — week by week."
+
+#: template-parts/content-none.php:19
+msgid "El contenido de esta sección llegará pronto. El viaje empieza."
+msgstr "Content for this section will arrive soon. The journey begins."
+
+#: functions.php:29
+msgid "Navegación principal"
+msgstr "Main navigation"
+
+#: functions.php:30
+msgid "Pie de página"
+msgstr "Footer"
+
+#: functions.php:137
+msgid "Código de lección (ej: ECO-01)"
+msgstr "Lesson code (e.g. ECO-01)"
+
+#: functions.php:139
+msgid "Número de artículo (ej: 00, 01, 02)"
+msgstr "Article number (e.g. 00, 01, 02)"
+
+#: functions.php:141
+msgid "Tiempo de lectura (ej: 3 min)"
+msgstr "Reading time (e.g. 3 min)"
+
+#: functions.php:143
+msgid "Subtítulo o frase de apertura"
+msgstr "Subtitle or opening phrase"
+
+#: functions.php:145
+msgid "Lo esencial — Puntos clave (uno por línea)"
+msgstr "The essentials — Key points (one per line)"
+
+#: functions.php:147
+msgid "Bibliografía y fuentes (una por línea)"
+msgstr "Bibliography and sources (one per line)"
+
+#: functions.php:155
+msgid "ECO-01"
+msgstr ""
+
+#: functions.php:159
+msgid "00"
+msgstr ""
+
+#: functions.php:163
+msgid "3 min"
+msgstr ""
+
+#: functions.php:165
+msgid "Si se deja vacío, se calcula automáticamente."
+msgstr "If left empty, it will be calculated automatically."
+
+#: functions.php:169
+msgid "Frase o subtítulo que aparece bajo el título principal..."
+msgstr "Phrase or subtitle that appears under the main title..."
+
+#: functions.php:173
+msgid ""
+"Escribe un punto por línea. Aparecen en la caja dorada \"Lo esencial\" "
+"dentro de la lección."
+msgstr ""
+"Write one point per line. They appear in the gold \"The essentials\" box "
+"within the lesson."
+
+#: functions.php:175
+msgid ""
+"El mercado no es natural, es una institución.\n"
+"Los precios son señales, no verdades.\n"
+"Escasez no significa pobreza."
+msgstr ""
+
+#: functions.php:178
+msgid ""
+"Una referencia por línea. Ej: Mankiw, N.G. (2012). Principles of Economics. "
+"Cengage Learning."
+msgstr ""
+"One reference per line. E.g.: Mankiw, N.G. (2012). Principles of Economics. "
+"Cengage Learning."
+
+#: functions.php:180
+msgid "Un libro o fuente por línea..."
+msgstr "One book or source per line..."
+
+#: functions.php:239
+msgid "Barra lateral del blog"
+msgstr "Blog sidebar"
+
+#: inc/customizer.php:31
+msgid "Nihil Novi — Configuración"
+msgstr "Nihil Novi — Settings"
+
+#: inc/customizer.php:39
+msgid "Nihil Novi — Colores"
+msgstr "Nihil Novi — Colors"
+
+#: inc/customizer.php:51
+msgid "Color de acento (dorado)"
+msgstr "Accent color (gold)"
+
+#: inc/customizer.php:64
+msgid "Color de fondo"
+msgstr "Background color"
+
+#: inc/customizer.php:77
+msgid "Color de texto principal"
+msgstr "Main text color"
+
+#: inc/customizer.php:86
+msgid "Nihil Novi — Redes Sociales"
+msgstr "Nihil Novi — Social Media"
+
+#: inc/customizer.php:91
+msgid "Twitter / X"
+msgstr "Twitter / X"
+
+#: inc/customizer.php:92
+msgid "Instagram"
+msgstr "Instagram"
+
+#: inc/customizer.php:93
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: inc/customizer.php:94
+msgid "YouTube / NotebookLM"
+msgstr "YouTube / NotebookLM"
+
+#: inc/customizer.php:113
+msgid "Nihil Novi — Footer"
+msgstr "Nihil Novi — Footer"
+
+#: inc/customizer.php:119
+msgid "© 2026 David Legorreta · nihilnovi.xyz"
+msgstr "© 2026 David Legorreta · nihilnovi.xyz"
+
+#: inc/customizer.php:124
+msgid "Texto de copyright"
+msgstr "Copyright text"
+
+#: inc/customizer.php:227
+msgid "X"
+msgstr "X"
+
+#: inc/customizer.php:228
+msgid "IG"
+msgstr "IG"
+
+#: inc/customizer.php:229
+msgid "LI"
+msgstr "LI"
+
+#: inc/customizer.php:230
+msgid "YT"
+msgstr "YT"
+
+#: inc/acf-fields.php:18
+msgid "① Hero — Portada principal"
+msgstr "① Hero — Main homepage"
+
+#: inc/acf-fields.php:22
+msgid "Eyebrow (texto pequeño sobre el título)"
+msgstr "Eyebrow (small text above title)"
+
+#: inc/acf-fields.php:24 inc/acf-fields.php:25
+msgid "David Legorreta — nihilnovi.xyz"
+msgstr "David Legorreta — nihilnovi.xyz"
+
+#: inc/acf-fields.php:28
+msgid "Título — Línea 1"
+msgstr "Title — Line 1"
+
+#: inc/acf-fields.php:30 inc/acf-fields.php:31
+msgid "La historia del pensamiento,"
+msgstr "The history of thought,"
+
+#: inc/acf-fields.php:34
+msgid "Título — Línea 2 (en dorado e itálica)"
+msgstr "Title — Line 2 (gold and italic)"
+
+#: inc/acf-fields.php:36 inc/acf-fields.php:37
+msgid "reconstruida en público."
+msgstr "reconstructed in public."
+
+#: inc/acf-fields.php:40
+msgid "Subtítulo"
+msgstr "Subtitle"
+
+#: inc/acf-fields.php:42
+msgid "Texto descriptivo bajo el título principal."
+msgstr "Descriptive text under the main title."
+
+#: inc/acf-fields.php:43 inc/acf-fields.php:44
+msgid ""
+"Filosofía. Economía. Matemáticas. Historia. Ciencia. El mapa de 3,000 años "
+"de intentar entender cómo funciona el mundo — con todo el material, la "
+"bibliografía y las preguntas sin resolver incluidos."
+msgstr ""
+"Philosophy. Economics. Mathematics. History. Science. The map of 3,000 years"
+" of trying to understand how the world works — with all the material, "
+"bibliography, and unanswered questions included."
+
+#: inc/acf-fields.php:47
+msgid "Botón 1 — Texto (dorado)"
+msgstr "Button 1 — Text (gold)"
+
+#: inc/acf-fields.php:49 inc/acf-fields.php:50
+msgid "Explorar las disciplinas"
+msgstr "Explore the disciplines"
+
+#: inc/acf-fields.php:53
+msgid "Botón 1 — Link"
+msgstr "Button 1 — Link"
+
+#: inc/acf-fields.php:60
+msgid "Botón 2 — Texto (contorno)"
+msgstr "Button 2 — Text (outline)"
+
+#: inc/acf-fields.php:62 inc/acf-fields.php:63
+msgid "El Viaje del Economista"
+msgstr "The Journey of the Economist"
+
+#: inc/acf-fields.php:66
+msgid "Botón 2 — Link"
+msgstr "Button 2 — Link"
+
+#: inc/acf-fields.php:91
+msgid "② Manifiesto — La cita central"
+msgstr "② Manifesto — The central quote"
+
+#: inc/acf-fields.php:95
+msgid "Cita / Blockquote"
+msgstr "Quote / Blockquote"
+
+#: inc/acf-fields.php:98
+msgid ""
+"La cita central del sitio. Puedes usar <strong>texto</strong> para negritas "
+"y <br> para saltos de línea."
+msgstr ""
+"The site's central quote. You can use <strong>text</strong> for bold and "
+"<br> for line breaks."
+
+#: inc/acf-fields.php:99 inc/acf-fields.php:100
+msgid ""
+"Los humanos llevamos tres mil años intentando entender cómo funciona el "
+"mundo. Este sitio es el <strong>mapa de ese intento.</strong> No el destino."
+" El camino."
+msgstr ""
+"We humans have been trying to understand how the world works for three "
+"thousand years. This site is the <strong>map of that attempt.</strong> Not "
+"the destination. The path."
+
+#: inc/acf-fields.php:103
+msgid "Autor de la cita"
+msgstr "Quote author"
+
+#: inc/acf-fields.php:105 inc/acf-fields.php:106
+msgid "— David Legorreta, nihilnovi.xyz — 2026"
+msgstr "— David Legorreta, nihilnovi.xyz — 2026"
+
+#: inc/acf-fields.php:119
+msgid "③ Disciplinas — Las 5 tarjetas de portales"
+msgstr "③ Disciplines — The 5 portal cards"
+
+#: inc/acf-fields.php:125
+msgid "Instrucción"
+msgstr "Instruction"
+
+#: inc/acf-fields.php:128
+msgid ""
+"<strong>Edita el nombre, descripción y link de cada una de las 5 "
+"disciplinas.</strong><br>El color y código (FIL, ECO...) se asignan "
+"automáticamente por orden."
+msgstr ""
+"<strong>Edit the name, description, and link of each of the 5 "
+"disciplines.</strong><br>Color and code (FIL, ECO...) are assigned "
+"automatically by order."
+
+#: inc/acf-fields.php:131
+msgid "Disciplina 1 — Nombre"
+msgstr "Discipline 1 — Name"
+
+#: inc/acf-fields.php:131
+msgid "Filosofía"
+msgstr "Philosophy"
+
+#: inc/acf-fields.php:132
+msgid "Disciplina 1 — Descripción"
+msgstr "Discipline 1 — Description"
+
+#: inc/acf-fields.php:132
+msgid ""
+"Las preguntas que ninguna otra disciplina se atreve a hacer. El origen de "
+"todo lo demás."
+msgstr ""
+"The questions no other discipline dares to ask. The origin of everything "
+"else."
+
+#: inc/acf-fields.php:133
+msgid "Disciplina 1 — Código lección"
+msgstr "Discipline 1 — Lesson code"
+
+#: inc/acf-fields.php:134
+msgid "Disciplina 1 — Link"
+msgstr "Discipline 1 — Link"
+
+#: inc/acf-fields.php:137
+msgid "Disciplina 2 — Nombre"
+msgstr "Discipline 2 — Name"
+
+#: inc/acf-fields.php:137
+msgid "Economía"
+msgstr "Economics"
+
+#: inc/acf-fields.php:138
+msgid "Disciplina 2 — Descripción"
+msgstr "Discipline 2 — Description"
+
+#: inc/acf-fields.php:138
+msgid ""
+"Las consecuencias materiales de las ideas. Cómo se distribuye lo que se "
+"produce y por qué."
+msgstr ""
+"The material consequences of ideas. How what is produced is distributed and "
+"why."
+
+#: inc/acf-fields.php:139
+msgid "Disciplina 2 — Código lección"
+msgstr "Discipline 2 — Lesson code"
+
+#: inc/acf-fields.php:140
+msgid "Disciplina 2 — Link"
+msgstr "Discipline 2 — Link"
+
+#: inc/acf-fields.php:143
+msgid "Disciplina 3 — Nombre"
+msgstr "Discipline 3 — Name"
+
+#: inc/acf-fields.php:143
+msgid "Matemáticas"
+msgstr "Mathematics"
+
+#: inc/acf-fields.php:144
+msgid "Disciplina 3 — Descripción"
+msgstr "Discipline 3 — Description"
+
+#: inc/acf-fields.php:144
+msgid ""
+"El lenguaje de la precisión. No para calcular — para pensar sin margen de "
+"ambigüedad."
+msgstr ""
+"The language of precision. Not to calculate — to think without margin of "
+"ambiguity."
+
+#: inc/acf-fields.php:145
+msgid "Disciplina 3 — Código lección"
+msgstr "Discipline 3 — Lesson code"
+
+#: inc/acf-fields.php:146
+msgid "Disciplina 3 — Link"
+msgstr "Discipline 3 — Link"
+
+#: inc/acf-fields.php:149
+msgid "Disciplina 4 — Nombre"
+msgstr "Discipline 4 — Name"
+
+#: inc/acf-fields.php:149
+msgid "Historia"
+msgstr "History"
+
+#: inc/acf-fields.php:150
+msgid "Disciplina 4 — Descripción"
+msgstr "Discipline 4 — Description"
+
+#: inc/acf-fields.php:150
+msgid ""
+"El contexto sin el cual las ideas parecen naturales. Nada en el presente es "
+"inevitable."
+msgstr ""
+"The context without which ideas seem natural. Nothing in the present is "
+"inevitable."
+
+#: inc/acf-fields.php:151
+msgid "Disciplina 4 — Código lección"
+msgstr "Discipline 4 — Lesson code"
+
+#: inc/acf-fields.php:152
+msgid "Disciplina 4 — Link"
+msgstr "Discipline 4 — Link"
+
+#: inc/acf-fields.php:155
+msgid "Disciplina 5 — Nombre"
+msgstr "Discipline 5 — Name"
+
+#: inc/acf-fields.php:155
+msgid "Ciencia"
+msgstr "Science"
+
+#: inc/acf-fields.php:156
+msgid "Disciplina 5 — Descripción"
+msgstr "Discipline 5 — Description"
+
+#: inc/acf-fields.php:156
+msgid ""
+"El método. Cómo se construye conocimiento que resiste el error y la "
+"ideología."
+msgstr "The method. How knowledge that resists error and ideology is built."
+
+#: inc/acf-fields.php:157
+msgid "Disciplina 5 — Código lección"
+msgstr "Discipline 5 — Lesson code"
+
+#: inc/acf-fields.php:158
+msgid "Disciplina 5 — Link"
+msgstr "Discipline 5 — Link"
+
+#: inc/acf-fields.php:171
+msgid "④ El Viaje del Economista"
+msgstr "④ The Journey of the Economist"
+
+#: inc/acf-fields.php:175
+msgid "Título de la sección"
+msgstr "Section title"
+
+#: inc/acf-fields.php:177 inc/acf-fields.php:178
+msgid "El Viaje del Economista"
+msgstr "The Journey of the Economist"
+
+#: inc/acf-fields.php:181
+msgid "Párrafo 1"
+msgstr "Paragraph 1"
+
+#: inc/acf-fields.php:183 inc/acf-fields.php:184
+msgid ""
+"Una ruta de estudio construida en público. Semana a semana, materia a "
+"materia. Con el material real, la bibliografía completa y las preguntas que "
+"cada tema genera."
+msgstr ""
+"A study path built in public. Week by week, subject by subject. With real "
+"material, complete bibliography, and the questions each topic generates."
+
+#: inc/acf-fields.php:187
+msgid "Párrafo 2"
+msgstr "Paragraph 2"
+
+#: inc/acf-fields.php:189 inc/acf-fields.php:190
+msgid ""
+"No es un curso. No hay certificado al final. Es el camino que estoy "
+"recorriendo."
+msgstr ""
+"It's not a course. There's no certificate at the end. It's the path I'm "
+"walking."
+
+#: inc/acf-fields.php:193
+msgid "Texto del botón"
+msgstr "Button text"
+
+#: inc/acf-fields.php:195 inc/acf-fields.php:196
+msgid "Ver el mapa completo"
+msgstr "View the full map"
+
+#: inc/acf-fields.php:199
+msgid "Link del botón"
+msgstr "Button link"
+
+#: inc/acf-fields.php:220
+msgid "⑤ Sobre — Perfil de autor"
+msgstr "⑤ About — Author profile"
+
+#: inc/acf-fields.php:224
+msgid "Nombre — Línea 1"
+msgstr "Name — Line 1"
+
+#: inc/acf-fields.php:226 inc/acf-fields.php:227
+msgid "David"
+msgstr "David"
+
+#: inc/acf-fields.php:230
+msgid "Nombre — Línea 2 (en dorado)"
+msgstr "Name — Line 2 (gold)"
+
+#: inc/acf-fields.php:232 inc/acf-fields.php:233
+msgid "Legorreta"
+msgstr "Legorreta"
+
+#: inc/acf-fields.php:236
+msgid "Dato 1 — Etiqueta"
+msgstr "Data 1 — Label"
+
+#: inc/acf-fields.php:238 inc/acf-fields.php:239
+msgid "Base"
+msgstr "Base"
+
+#: inc/acf-fields.php:242
+msgid "Dato 1 — Valor"
+msgstr "Data 1 — Value"
+
+#: inc/acf-fields.php:244 inc/acf-fields.php:245
+msgid "México / LATAM"
+msgstr "Mexico / LATAM"
+
+#: inc/acf-fields.php:248
+msgid "Dato 2 — Etiqueta"
+msgstr "Data 2 — Label"
+
+#: inc/acf-fields.php:250 inc/acf-fields.php:251
+msgid "Formación"
+msgstr "Education"
+
+#: inc/acf-fields.php:254
+msgid "Dato 2 — Valor"
+msgstr "Data 2 — Value"
+
+#: inc/acf-fields.php:256 inc/acf-fields.php:257
+msgid "Filosofía · Economía"
+msgstr "Philosophy · Economics"
+
+#: inc/acf-fields.php:260
+msgid "Dato 3 — Etiqueta"
+msgstr "Data 3 — Label"
+
+#: inc/acf-fields.php:262 inc/acf-fields.php:263
+msgid "Experiencia"
+msgstr "Experience"
+
+#: inc/acf-fields.php:266
+msgid "Dato 3 — Valor"
+msgstr "Data 3 — Value"
+
+#: inc/acf-fields.php:268 inc/acf-fields.php:269
+msgid "BPO · Retail · Tech"
+msgstr "BPO · Retail · Tech"
+
+#: inc/acf-fields.php:272
+msgid "Dato 4 — Etiqueta"
+msgstr "Data 4 — Label"
+
+#: inc/acf-fields.php:274 inc/acf-fields.php:275
+msgid "Idiomas"
+msgstr "Languages"
+
+#: inc/acf-fields.php:278
+msgid "Dato 4 — Valor"
+msgstr "Data 4 — Value"
+
+#: inc/acf-fields.php:280 inc/acf-fields.php:281
+msgid "ES · EN · IT (en curso)"
+msgstr "ES · EN · IT (in progress)"
+
+#: inc/acf-fields.php:284
+msgid "Párrafo 1"
+msgstr "Paragraph 1"
+
+#: inc/acf-fields.php:286 inc/acf-fields.php:287
+msgid ""
+"Estudié filosofía. Después trabajé catorce años en operaciones — BPO, "
+"retail, logística, tecnología. Cash App, TikTok, Walmart, Avis. Gestión de "
+"equipos, entrega de resultados, problemas estructurales disfrazados de "
+"problemas personales."
+msgstr ""
+"I studied philosophy. Then I worked fourteen years in operations — BPO, "
+"retail, logistics, technology. Cash App, TikTok, Walmart, Avis. Team "
+"management, delivering results, structural problems disguised as personal "
+"problems."
+
+#: inc/acf-fields.php:290
+msgid "Párrafo 2"
+msgstr "Paragraph 2"
+
+#: inc/acf-fields.php:292 inc/acf-fields.php:293
+msgid ""
+"En algún momento me di cuenta de que las preguntas que me importaban eran "
+"preguntas económicas. La filosofía me enseñó a preguntar. La economía, si se"
+" estudia en serio, enseña a responder con evidencia."
+msgstr ""
+"At some point I realized the questions that mattered to me were economic "
+"questions. Philosophy taught me to ask. Economics, if studied seriously, "
+"teaches to answer with evidence."
+
+#: inc/acf-fields.php:296
+msgid "Párrafo 3"
+msgstr "Paragraph 3"
+
+#: inc/acf-fields.php:298 inc/acf-fields.php:299
+msgid ""
+"Nihil Novi es donde hago eso en público. Sin pretender que ya llegué. Sin "
+"vender certezas que no tengo."
+msgstr ""
+"Nihil Novi is where I do that in public. Without pretending I've already "
+"arrived. Without selling certainties I don't have."
+
+#: inc/acf-fields.php:302
+msgid "Botón — Texto"
+msgstr "Button — Text"
+
+#: inc/acf-fields.php:304 inc/acf-fields.php:305
+msgid "Leer más sobre el proyecto"
+msgstr "Read more about the project"
+
+#: inc/acf-fields.php:308
+msgid "Botón — Link"
+msgstr "Button — Link"
+
+#: inc/acf-fields.php:341
+msgid "⑥ Newsletter"
+msgstr "⑥ Newsletter"
+
+#: inc/acf-fields.php:345
+msgid "Título — Línea 1"
+msgstr "Title — Line 1"
+
+#: inc/acf-fields.php:347 inc/acf-fields.php:348
+msgid "Una entrega por semana."
+msgstr "One delivery per week."
+
+#: inc/acf-fields.php:351
+msgid "Título — Línea 2 (en dorado)"
+msgstr "Title — Line 2 (gold)"
+
+#: inc/acf-fields.php:353 inc/acf-fields.php:354
+msgid "Sin algoritmos."
+msgstr "No algorithms."
+
+#: inc/acf-fields.php:357
+msgid "Texto descriptivo"
+msgstr "Descriptive text"
+
+#: inc/acf-fields.php:359 inc/acf-fields.php:360
+msgid ""
+"Artículos, lecciones y el material de estudio de esa semana. Directo. Sin "
+"curation de plataforma."
+msgstr ""
+"Articles, lessons, and that week's study material. Direct. No platform "
+"curation."
+
+#: inc/acf-fields.php:363
+msgid "Nota pequeña bajo el formulario"
+msgstr "Small note under the form"
+
+#: inc/acf-fields.php:365 inc/acf-fields.php:366
+msgid "Sin spam · Sin venta de datos · Baja cuando quieras"
+msgstr "No spam · No data selling · Unsubscribe anytime"

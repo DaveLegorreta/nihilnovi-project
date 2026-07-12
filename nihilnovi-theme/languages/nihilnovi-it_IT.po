@@ -1,0 +1,1125 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Nihil Novi 2.0.5\n"
+"Report-Msgid-Bugs-To: https://nihilnovi.xyz\n"
+"POT-Creation-Date: 2026-07-03 16:20:00-06:00\n"
+"PO-Revision-Date: 2026-07-05 05:42:00-06:00\n"
+"Last-Translator: David Legorreta <david@nihilnovi.xyz>\n"
+"Language-Team: Italian <it_IT@nihilnovi.xyz>\n"
+"Language: it_IT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Domain: nihilnovi\n"
+"X-Generator: Nihil Novi Translation Tool (polib)\n"
+
+#: single.php:176
+msgid ""
+"Filósofo de formación, operador de oficio. Estudiando economía en público en"
+" %s."
+msgstr ""
+"Filosofo di formazione, operatore di mestiere. Studiando economia in "
+"pubblico su %s."
+
+#: single.php:190
+msgid "Navegación entre artículos"
+msgstr "Navigazione tra articoli"
+
+#: single.php:194
+msgid "← Anterior"
+msgstr "← Precedente"
+
+#: single.php:198
+msgid "← Inicio de serie"
+msgstr "← Inizio serie"
+
+#: single.php:205
+msgid "Siguiente →"
+msgstr "Successivo →"
+
+#: single.php:209
+msgid "Continúa pronto →"
+msgstr "Continua presto →"
+
+#: single.php:227
+msgid "Artículos relacionados"
+msgstr "Articoli correlati"
+
+#: single.php:229
+msgid "Seguir leyendo"
+msgstr "Continua a leggere"
+
+#: template-parts/content-article.php:55 template-parts/content-none.php:24
+#: single.php:244 index.php:82
+msgid "Leer"
+msgstr "Leggi"
+
+#: header.php:31
+msgid "Navegación principal"
+msgstr "Navigazione principale"
+
+#: header.php:34
+msgid "Nihil Novi — Inicio"
+msgstr "Nihil Novi — Home"
+
+#: header.php:51
+msgid "Selector de idioma"
+msgstr "Selettore di lingua"
+
+#: header.php:52
+msgid "ES"
+msgstr "ES"
+
+#: header.php:54
+msgid "EN"
+msgstr "EN"
+
+#: header.php:56
+msgid "IT"
+msgstr "IT"
+
+#: header.php:58
+msgid "DE"
+msgstr "DE"
+
+#: header.php:60
+msgid "Explorar"
+msgstr "Esplorare"
+
+#: header.php:63
+msgid "Abrir menú"
+msgstr "Apri menu"
+
+#: footer.php:26
+msgid "Redes sociales"
+msgstr "Social media"
+
+#: front-page.php:87
+msgid "Portada"
+msgstr "Homepage"
+
+#: front-page.php:167
+msgid "Scroll"
+msgstr "Scroll"
+
+#: front-page.php:171
+msgid "Manifiesto"
+msgstr "Manifesto"
+
+#: front-page.php:181
+msgid "Las cinco disciplinas"
+msgstr "Le cinque discipline"
+
+#: front-page.php:185
+msgid "Los territorios"
+msgstr "I territori"
+
+#: front-page.php:186
+msgid "Cinco disciplinas.<br>Un solo proyecto."
+msgstr "Cinque discipline.<br>Un solo progetto."
+
+#: front-page.php:187
+msgid ""
+"Cada disciplina tiene su propia ruta de estudio, sus lecciones y su "
+"bibliografía."
+msgstr ""
+"Ogni disciplina ha il suo percorso di studio, le sue lezioni e la sua "
+"bibliografia."
+
+#: front-page.php:209
+msgid "Artículos y lecciones recientes"
+msgstr "Articoli e lezioni recenti"
+
+#: front-page.php:213
+msgid "Lo más reciente"
+msgstr "Più recente"
+
+#: front-page.php:214
+msgid "Artículos y <em>Lecciones</em>"
+msgstr "Articoli e <em>Lezioni</em>"
+
+#: front-page.php:216
+msgid "Ver todo el archivo"
+msgstr "Vedi tutto l'archivio"
+
+#: front-page.php:220
+msgid "Artículos"
+msgstr "Articoli"
+
+#: front-page.php:221
+msgid "Lecciones"
+msgstr "Lezioni"
+
+#: front-page.php:239
+msgid "El Viaje"
+msgstr "Il Viaggio"
+
+#: front-page.php:240
+msgid "25 de mayo de 2026. Hoy empieza."
+msgstr "25 maggio 2026. Oggi inizia."
+
+#: front-page.php:241
+msgid ""
+"No el día en que llegué a algún destino. El día en que decidí hacer el "
+"camino en público."
+msgstr ""
+"Non il giorno in cui raggiunsi una destinazione. Il giorno in cui decisi di "
+"fare il cammino in pubblico."
+
+#: front-page.php:242 front-page.php:245 front-page.php:248 front-page.php:269
+msgid "Pronto"
+msgstr "Presto"
+
+#: front-page.php:243
+msgid "Economía"
+msgstr "Economia"
+
+#: front-page.php:244
+msgid ""
+"Si te dijeron que la economía es la ciencia de la oferta y la demanda, te "
+"timaron."
+msgstr ""
+"Se ti hanno detto che l'economia è la scienza dell'offerta e della domanda, "
+"ti hanno ingannato."
+
+#: front-page.php:245
+msgid "La economía no empezó con Adam Smith en 1776. Empezó con los griegos."
+msgstr ""
+"L'economia non è iniziata con Adam Smith nel 1776. È iniziata con i greci."
+
+#: front-page.php:246
+msgid "Próximamente"
+msgstr "Prossimamente"
+
+#: front-page.php:246
+msgid "25 mayo 2026"
+msgstr "25 maggio 2026"
+
+#: front-page.php:246
+msgid "Jun 2026"
+msgstr "Giu 2026"
+
+#: front-page.php:247
+msgid "Las tres preguntas que toda economía tiene que responder."
+msgstr "Le tre domande che ogni economia deve rispondere."
+
+#: front-page.php:248
+msgid "Qué producir. Cómo producirlo. Para quién."
+msgstr "Cosa produrre. Come produrlo. Per chi."
+
+#: front-page.php:255
+msgid "¿Qué estudia realmente la economía?"
+msgstr "Cosa studia realmente l'economia?"
+
+#: front-page.php:255
+msgid ""
+"No es la ciencia del dinero. Es la ciencia de las decisiones bajo escasez."
+msgstr ""
+"Non è la scienza del denaro. È la scienza delle decisioni sotto scarsità."
+
+#: front-page.php:256
+msgid "¿Qué es la filosofía y para qué sirve?"
+msgstr "Cos'è la filosofia e a cosa serve?"
+
+#: front-page.php:256
+msgid ""
+"El único instrumento para cuestionar los supuestos que todas las demás "
+"disciplinas dan por sentados."
+msgstr ""
+"L'unico strumento per mettere in discussione i presupposti che tutte le "
+"altre discipline danno per scontati."
+
+#: front-page.php:257
+msgid "Las matemáticas son un lenguaje, no un cálculo."
+msgstr "La matematica è un linguaggio, non un calcolo."
+
+#: front-page.php:257
+msgid "La mayoría aprende a calcular y cree que eso es matemáticas. No lo es."
+msgstr ""
+"La maggior parte impara a calcolare e pensa che sia matematica. Non lo è."
+
+#: front-page.php:258
+msgid "Cómo leer la historia sin que te manipulen."
+msgstr "Come leggere la storia senza essere manipolati."
+
+#: front-page.php:258
+msgid ""
+"Toda historia es una selección. Alguien decidió qué incluir y qué omitir."
+msgstr ""
+"Tutta la storia è una selezione. Qualcuno ha deciso cosa includere e cosa "
+"omettere."
+
+#: front-page.php:259
+msgid "El método científico de verdad."
+msgstr "Il vero metodo scientifico."
+
+#: front-page.php:259
+msgid ""
+"No es el diagrama del libro de secundaria. Es reducir el error sistemático "
+"del pensamiento."
+msgstr ""
+"Non è il diagramma del libro di scuola. È ridurre l'errore sistematico del "
+"pensiero."
+
+#: front-page.php:318
+msgid "El Viaje del Pensamiento"
+msgstr "Il Viaggio del Pensiero"
+
+#: front-page.php:323
+msgid "La serie principal"
+msgstr "La serie principale"
+
+#: front-page.php:324
+msgid "El Viaje del"
+msgstr "Il Viaggio del"
+
+#: front-page.php:333
+msgid "Lógica y Epistemología"
+msgstr "Logica e Epistemologia"
+
+#: front-page.php:334
+msgid ""
+"Cálculo proposicional y de primer orden, falacias formales, la definición "
+"clásica de conocimiento, problemas de justificación (Gettier) y empirismo "
+"frente a racionalismo."
+msgstr ""
+"Calcolo proposizionale e del primo ordine, fallacie formali, la definizione "
+"classica di conoscenza, problemi di giustificazione (Gettier) e empirismo "
+"contro razionalismo."
+
+#: front-page.php:340
+msgid "Historia de las Ideas y Sistemas Sociales"
+msgstr "Storia delle Idee e Sistemi Sociali"
+
+#: front-page.php:341
+msgid ""
+"Genealogía ética y política clásica, idealismo alemán (Hegel) y economía "
+"política basada en la teoría del valor-trabajo, plusvalía y acumulación de "
+"capital."
+msgstr ""
+"Genealogia etica e politica classica, idealismo tedesco (Hegel) ed economia "
+"politica basata sulla teoria del valore-lavoro, plusvalore e accumulazione "
+"di capitale."
+
+#: front-page.php:347
+msgid "El Lenguaje Matemático y Rigor Formal"
+msgstr "Il Linguaggio Matematico e il Rigor Formale"
+
+#: front-page.php:348
+msgid ""
+"Cálculo infinitesimal (diferencial e integral) multivariable, álgebra lineal"
+" (matrices y vectores), optimización estática y leyes de probabilidad "
+"aplicada."
+msgstr ""
+"Calcolo infinitesimale (differenziale e integrale) multivariabile, algebra "
+"lineare (matrici e vettori), ottimizzazione statica e leggi di probabilità "
+"applicata."
+
+#: front-page.php:354
+msgid "Economía y Sistemas Materiales"
+msgstr "Economia e Sistemi Materiali"
+
+#: front-page.php:355
+msgid ""
+"Teoría microeconómica del consumidor y la empresa (utilidad y costos), "
+"equilibrio general macroeconómico (modelos IS-LM y Solow) e inferencia "
+"empírica por Mínimos Cuadrados Ordinarios."
+msgstr ""
+"Teoria microeconomica del consumatore e dell'impresa (utilità e costi), "
+"equilibrio generale macroeconomico (modelli IS-LM e Solow) e inferenza "
+"empirica per Minimi Quadrati Ordinari."
+
+#: front-page.php:361
+msgid "Epistemología de la Ciencia"
+msgstr "Epistemologia della Scienza"
+
+#: front-page.php:362
+msgid ""
+"El método de prueba científica, falsacionismo de Popper, paradigmas de Kuhn "
+"e investigación metodológica."
+msgstr ""
+"Il metodo di prova scientifica, falsificazionismo di Popper, paradigmi di "
+"Kuhn e ricerca metodologica."
+
+#: front-page.php:368
+msgid "Computabilidad y Cómputo Formal"
+msgstr "Computabilità e Calcolo Formale"
+
+#: front-page.php:369
+msgid ""
+"Límites de decidibilidad de sistemas lógicos, máquinas de Turing, teoremas "
+"de Gödel y teoría de la información."
+msgstr ""
+"Limiti di decidibilità di sistemi logici, macchine di Turing, teoremi di "
+"Gödel e teoria dell'informazione."
+
+#: front-page.php:375
+msgid "Síntesis y Fronteras de la IA"
+msgstr "Sintesi e Frontiere dell'IA"
+
+#: front-page.php:376
+msgid ""
+"Modelos de redes neuronales, el problema mente-cuerpo, implicaciones "
+"epistémicas del cómputo y la física contemporánea."
+msgstr ""
+"Modelli di reti neurali, il problema mente-corpo, implicazioni epistemiche "
+"del calcolo e la fisica contemporanea."
+
+#: front-page.php:384
+msgid "Sobre el autor"
+msgstr "Sull'autore"
+
+#: front-page.php:387
+msgid "Quién escribe"
+msgstr "Chi scrive"
+
+#: front-page.php:405
+msgid "Suscripción"
+msgstr "Iscrizione"
+
+#: front-page.php:407
+msgid "El viaje, en tu correo"
+msgstr "Il viaggio, nella tua email"
+
+#: front-page.php:412
+msgid "tu@correo.com"
+msgstr "tua@email.com"
+
+#: front-page.php:412
+msgid "Tu correo"
+msgstr "La tua email"
+
+#: front-page.php:413
+msgid "Suscribirme"
+msgstr "Iscrivimi"
+
+#: archive.php:55
+msgid "Migas de pan"
+msgstr "Briciole di pane"
+
+#: archive.php:56 single.php:42
+msgid "Inicio"
+msgstr "Home"
+
+#: archive.php:45
+msgid "Archivo de %s"
+msgstr ""
+
+#: archive.php:69
+msgid "Lecciones"
+msgstr "Lezioni"
+
+#: archive.php:69
+msgid "Disciplina"
+msgstr "Disciplina"
+
+#: archive.php:87
+msgid "lección"
+msgid_plural "lecciones"
+msgstr[0] "lezione"
+msgstr[1] "lezioni"
+
+#: archive.php:87
+msgid "entrada"
+msgid_plural "entradas"
+msgstr[0] "voce"
+msgstr[1] "voci"
+
+#: archive.php:94
+msgid "Listado de %s"
+msgstr ""
+
+#: archive.php:121 index.php:92
+msgid "← Anterior"
+msgstr "← Precedente"
+
+#: archive.php:122 index.php:93
+msgid "Siguiente →"
+msgstr "Successivo →"
+
+#: archive.php:137
+msgid "← Todas las disciplinas"
+msgstr "← Tutte le discipline"
+
+#: index.php:15
+msgid "El archivo"
+msgstr "L'archivio"
+
+#: index.php:21
+msgid "Resultados para: %s"
+msgstr ""
+
+#: index.php:25
+msgid "Todos los <em>artículos</em>"
+msgstr "Tutti gli <em>articoli</em>"
+
+#: index.php:99
+msgid "Aún no hay artículos publicados.<br>El viaje empieza pronto."
+msgstr "Nessun articolo pubblicato ancora.<br>Il viaggio inizia presto."
+
+#: index.php:100
+msgid "Volver al inicio"
+msgstr "Torna alla home"
+
+#: template-parts/content-none.php:12
+msgid "Todavía no hay contenido aquí"
+msgstr "Ancora nessun contenuto qui"
+
+#: template-parts/content-none.php:15
+msgid "No se encontraron resultados para \"%s\". Prueba con otras palabras."
+msgstr "Nessun risultato trovato per \"%s\". Prova con altre parole."
+
+#: template-parts/content-none.php:17
+msgid ""
+"Esta sección está en construcción. El contenido llega pronto — semana a "
+"semana."
+msgstr ""
+"Questa sezione è in costruzione. Il contenuto arriva presto — settimana per "
+"settimana."
+
+#: template-parts/content-none.php:19
+msgid "El contenido de esta sección llegará pronto. El viaje empieza."
+msgstr "Il contenuto di questa sezione arriverà presto. Il viaggio inizia."
+
+#: functions.php:29
+msgid "Navegación principal"
+msgstr "Navigazione principale"
+
+#: functions.php:30
+msgid "Pie de página"
+msgstr "Piè di pagina"
+
+#: functions.php:137
+msgid "Código de lección (ej: ECO-01)"
+msgstr "Codice lezione (es: ECO-01)"
+
+#: functions.php:139
+msgid "Número de artículo (ej: 00, 01, 02)"
+msgstr "Numero articolo (es: 00, 01, 02)"
+
+#: functions.php:141
+msgid "Tiempo de lectura (ej: 3 min)"
+msgstr "Tempo di lettura (es: 3 min)"
+
+#: functions.php:143
+msgid "Subtítulo o frase de apertura"
+msgstr "Sottotitolo o frase di apertura"
+
+#: functions.php:145
+msgid "Lo esencial — Puntos clave (uno por línea)"
+msgstr "L'essenziale — Punti chiave (uno per riga)"
+
+#: functions.php:147
+msgid "Bibliografía y fuentes (una por línea)"
+msgstr "Bibliografia e fonti (una per riga)"
+
+#: functions.php:155
+msgid "ECO-01"
+msgstr ""
+
+#: functions.php:159
+msgid "00"
+msgstr ""
+
+#: functions.php:163
+msgid "3 min"
+msgstr ""
+
+#: functions.php:165
+msgid "Si se deja vacío, se calcula automáticamente."
+msgstr "Se lasciato vuoto, viene calcolato automaticamente."
+
+#: functions.php:169
+msgid "Frase o subtítulo que aparece bajo el título principal..."
+msgstr "Frase o sottotitolo che appare sotto il titolo principale..."
+
+#: functions.php:173
+msgid ""
+"Escribe un punto por línea. Aparecen en la caja dorada \"Lo esencial\" "
+"dentro de la lección."
+msgstr ""
+"Scrivi un punto per riga. Appaiono nella casella dorata \"L'essenziale\" "
+"all'interno della lezione."
+
+#: functions.php:175
+msgid ""
+"El mercado no es natural, es una institución.\n"
+"Los precios son señales, no verdades.\n"
+"Escasez no significa pobreza."
+msgstr ""
+
+#: functions.php:178
+msgid ""
+"Una referencia por línea. Ej: Mankiw, N.G. (2012). Principles of Economics. "
+"Cengage Learning."
+msgstr ""
+"Un riferimento per riga. Es: Mankiw, N.G. (2012). Principles of Economics. "
+"Cengage Learning."
+
+#: functions.php:180
+msgid "Un libro o fuente por línea..."
+msgstr "Un libro o fonte per riga..."
+
+#: functions.php:239
+msgid "Barra lateral del blog"
+msgstr "Barra laterale del blog"
+
+#: inc/customizer.php:31
+msgid "Nihil Novi — Configuración"
+msgstr "Nihil Novi — Configurazione"
+
+#: inc/customizer.php:39
+msgid "Nihil Novi — Colores"
+msgstr "Nihil Novi — Colori"
+
+#: inc/customizer.php:51
+msgid "Color de acento (dorado)"
+msgstr "Colore accento (oro)"
+
+#: inc/customizer.php:64
+msgid "Color de fondo"
+msgstr "Colore sfondo"
+
+#: inc/customizer.php:77
+msgid "Color de texto principal"
+msgstr "Colore testo principale"
+
+#: inc/customizer.php:86
+msgid "Nihil Novi — Redes Sociales"
+msgstr "Nihil Novi — Social Media"
+
+#: inc/customizer.php:91
+msgid "Twitter / X"
+msgstr "Twitter / X"
+
+#: inc/customizer.php:92
+msgid "Instagram"
+msgstr "Instagram"
+
+#: inc/customizer.php:93
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: inc/customizer.php:94
+msgid "YouTube / NotebookLM"
+msgstr "YouTube / NotebookLM"
+
+#: inc/customizer.php:113
+msgid "Nihil Novi — Footer"
+msgstr "Nihil Novi — Footer"
+
+#: inc/customizer.php:119
+msgid "© 2026 David Legorreta · nihilnovi.xyz"
+msgstr "© 2026 David Legorreta · nihilnovi.xyz"
+
+#: inc/customizer.php:124
+msgid "Texto de copyright"
+msgstr "Testo copyright"
+
+#: inc/customizer.php:227
+msgid "X"
+msgstr "X"
+
+#: inc/customizer.php:228
+msgid "IG"
+msgstr "IG"
+
+#: inc/customizer.php:229
+msgid "LI"
+msgstr "LI"
+
+#: inc/customizer.php:230
+msgid "YT"
+msgstr "YT"
+
+#: inc/acf-fields.php:18
+msgid "① Hero — Portada principal"
+msgstr ""
+
+#: inc/acf-fields.php:22
+msgid "Eyebrow (texto pequeño sobre el título)"
+msgstr "Eyebrow (testo piccolo sopra il titolo)"
+
+#: inc/acf-fields.php:24 inc/acf-fields.php:25
+msgid "David Legorreta — nihilnovi.xyz"
+msgstr "David Legorreta — nihilnovi.xyz"
+
+#: inc/acf-fields.php:28
+msgid "Título — Línea 1"
+msgstr "Titolo — Linea 1"
+
+#: inc/acf-fields.php:30 inc/acf-fields.php:31
+msgid "La historia del pensamiento,"
+msgstr "La storia del pensiero,"
+
+#: inc/acf-fields.php:34
+msgid "Título — Línea 2 (en dorado e itálica)"
+msgstr "Titolo — Linea 2 (oro e corsivo)"
+
+#: inc/acf-fields.php:36 inc/acf-fields.php:37
+msgid "reconstruida en público."
+msgstr "ricostruita in pubblico."
+
+#: inc/acf-fields.php:40
+msgid "Subtítulo"
+msgstr "Sottotitolo"
+
+#: inc/acf-fields.php:42
+msgid "Texto descriptivo bajo el título principal."
+msgstr "Testo descrittivo sotto il titolo principale."
+
+#: inc/acf-fields.php:43 inc/acf-fields.php:44
+msgid ""
+"Filosofía. Economía. Matemáticas. Historia. Ciencia. El mapa de 3,000 años "
+"de intentar entender cómo funciona el mundo — con todo el material, la "
+"bibliografía y las preguntas sin resolver incluidos."
+msgstr ""
+"Filosofia. Economia. Matematica. Storia. Scienza. La mappa di 3.000 anni di "
+"tentativi di capire come funziona il mondo — con tutto il materiale, la "
+"bibliografia e le domande senza risposta incluse."
+
+#: inc/acf-fields.php:47
+msgid "Botón 1 — Texto (dorado)"
+msgstr "Pulsante 1 — Testo (oro)"
+
+#: inc/acf-fields.php:49 inc/acf-fields.php:50
+msgid "Explorar las disciplinas"
+msgstr "Esplora le discipline"
+
+#: inc/acf-fields.php:53
+msgid "Botón 1 — Link"
+msgstr "Pulsante 1 — Link"
+
+#: inc/acf-fields.php:60
+msgid "Botón 2 — Texto (contorno)"
+msgstr "Pulsante 2 — Testo (contorno)"
+
+#: inc/acf-fields.php:62 inc/acf-fields.php:63
+msgid "El Viaje del Economista"
+msgstr "Il Viaggio dell'Economista"
+
+#: inc/acf-fields.php:66
+msgid "Botón 2 — Link"
+msgstr "Pulsante 2 — Link"
+
+#: inc/acf-fields.php:91
+msgid "② Manifiesto — La cita central"
+msgstr "② Manifesto — La citazione centrale"
+
+#: inc/acf-fields.php:95
+msgid "Cita / Blockquote"
+msgstr "Citazione / Blockquote"
+
+#: inc/acf-fields.php:98
+msgid ""
+"La cita central del sitio. Puedes usar <strong>texto</strong> para negritas "
+"y <br> para saltos de línea."
+msgstr ""
+"La citazione centrale del sito. Puoi usare <strong>testo</strong> per il "
+"grassetto e <br> per le interruzioni di riga."
+
+#: inc/acf-fields.php:99 inc/acf-fields.php:100
+msgid ""
+"Los humanos llevamos tres mil años intentando entender cómo funciona el "
+"mundo. Este sitio es el <strong>mapa de ese intento.</strong> No el destino."
+" El camino."
+msgstr ""
+"Noi umani portiamo tremila anni cercando di capire come funziona il mondo. "
+"Questo sito è la <strong>mappa di quel tentativo.</strong> Non la "
+"destinazione. Il cammino."
+
+#: inc/acf-fields.php:103
+msgid "Autor de la cita"
+msgstr "Autore della citazione"
+
+#: inc/acf-fields.php:105 inc/acf-fields.php:106
+msgid "— David Legorreta, nihilnovi.xyz — 2026"
+msgstr "— David Legorreta, nihilnovi.xyz — 2026"
+
+#: inc/acf-fields.php:119
+msgid "③ Disciplinas — Las 5 tarjetas de portales"
+msgstr "③ Discipline — Le 5 carte portale"
+
+#: inc/acf-fields.php:125
+msgid "Instrucción"
+msgstr "Istruzione"
+
+#: inc/acf-fields.php:128
+msgid ""
+"<strong>Edita el nombre, descripción y link de cada una de las 5 "
+"disciplinas.</strong><br>El color y código (FIL, ECO...) se asignan "
+"automáticamente por orden."
+msgstr ""
+"<strong>Modifica il nome, la descrizione e il link di ciascuna delle 5 "
+"discipline.</strong><br>Il colore e il codice (FIL, ECO...) vengono "
+"assegnati automaticamente per ordine."
+
+#: inc/acf-fields.php:131
+msgid "Disciplina 1 — Nombre"
+msgstr "Disciplina 1 — Nome"
+
+#: inc/acf-fields.php:131
+msgid "Filosofía"
+msgstr "Filosofia"
+
+#: inc/acf-fields.php:132
+msgid "Disciplina 1 — Descripción"
+msgstr "Disciplina 1 — Descrizione"
+
+#: inc/acf-fields.php:132
+msgid ""
+"Las preguntas que ninguna otra disciplina se atreve a hacer. El origen de "
+"todo lo demás."
+msgstr ""
+"Le domande che nessun'altra disciplina osa fare. L'origine di tutto il "
+"resto."
+
+#: inc/acf-fields.php:133
+msgid "Disciplina 1 — Código lección"
+msgstr "Disciplina 1 — Codice lezione"
+
+#: inc/acf-fields.php:134
+msgid "Disciplina 1 — Link"
+msgstr "Disciplina 1 — Link"
+
+#: inc/acf-fields.php:137
+msgid "Disciplina 2 — Nombre"
+msgstr "Disciplina 2 — Nome"
+
+#: inc/acf-fields.php:137
+msgid "Economía"
+msgstr "Economia"
+
+#: inc/acf-fields.php:138
+msgid "Disciplina 2 — Descripción"
+msgstr "Disciplina 2 — Descrizione"
+
+#: inc/acf-fields.php:138
+msgid ""
+"Las consecuencias materiales de las ideas. Cómo se distribuye lo que se "
+"produce y por qué."
+msgstr ""
+"Le conseguenze materiali delle idee. Come si distribuisce ciò che si produce"
+" e perché."
+
+#: inc/acf-fields.php:139
+msgid "Disciplina 2 — Código lección"
+msgstr "Disciplina 2 — Codice lezione"
+
+#: inc/acf-fields.php:140
+msgid "Disciplina 2 — Link"
+msgstr "Disciplina 2 — Link"
+
+#: inc/acf-fields.php:143
+msgid "Disciplina 3 — Nombre"
+msgstr "Disciplina 3 — Nome"
+
+#: inc/acf-fields.php:143
+msgid "Matemáticas"
+msgstr "Matematica"
+
+#: inc/acf-fields.php:144
+msgid "Disciplina 3 — Descripción"
+msgstr "Disciplina 3 — Descrizione"
+
+#: inc/acf-fields.php:144
+msgid ""
+"El lenguaje de la precisión. No para calcular — para pensar sin margen de "
+"ambigüedad."
+msgstr ""
+"Il linguaggio della precisione. Non per calcolare — per pensare senza "
+"margine di ambiguità."
+
+#: inc/acf-fields.php:145
+msgid "Disciplina 3 — Código lección"
+msgstr "Disciplina 3 — Codice lezione"
+
+#: inc/acf-fields.php:146
+msgid "Disciplina 3 — Link"
+msgstr "Disciplina 3 — Link"
+
+#: inc/acf-fields.php:149
+msgid "Disciplina 4 — Nombre"
+msgstr "Disciplina 4 — Nome"
+
+#: inc/acf-fields.php:149
+msgid "Historia"
+msgstr "Storia"
+
+#: inc/acf-fields.php:150
+msgid "Disciplina 4 — Descripción"
+msgstr "Disciplina 4 — Descrizione"
+
+#: inc/acf-fields.php:150
+msgid ""
+"El contexto sin el cual las ideas parecen naturales. Nada en el presente es "
+"inevitable."
+msgstr ""
+"Il contesto senza il quale le idee sembrano naturali. Niente nel presente è "
+"inevitabile."
+
+#: inc/acf-fields.php:151
+msgid "Disciplina 4 — Código lección"
+msgstr "Disciplina 4 — Codice lezione"
+
+#: inc/acf-fields.php:152
+msgid "Disciplina 4 — Link"
+msgstr "Disciplina 4 — Link"
+
+#: inc/acf-fields.php:155
+msgid "Disciplina 5 — Nombre"
+msgstr "Disciplina 5 — Nome"
+
+#: inc/acf-fields.php:155
+msgid "Ciencia"
+msgstr "Scienza"
+
+#: inc/acf-fields.php:156
+msgid "Disciplina 5 — Descripción"
+msgstr "Disciplina 5 — Descrizione"
+
+#: inc/acf-fields.php:156
+msgid ""
+"El método. Cómo se construye conocimiento que resiste el error y la "
+"ideología."
+msgstr ""
+"Il metodo. Come si costruisce conoscenza che resiste all'errore e "
+"all'ideologia."
+
+#: inc/acf-fields.php:157
+msgid "Disciplina 5 — Código lección"
+msgstr "Disciplina 5 — Codice lezione"
+
+#: inc/acf-fields.php:158
+msgid "Disciplina 5 — Link"
+msgstr "Disciplina 5 — Link"
+
+#: inc/acf-fields.php:171
+msgid "④ El Viaje del Economista"
+msgstr "④ Il Viaggio dell'Economista"
+
+#: inc/acf-fields.php:175
+msgid "Título de la sección"
+msgstr "Titolo della sezione"
+
+#: inc/acf-fields.php:177 inc/acf-fields.php:178
+msgid "El Viaje del Economista"
+msgstr "Il Viaggio dell'Economista"
+
+#: inc/acf-fields.php:181
+msgid "Párrafo 1"
+msgstr "Paragrafo 1"
+
+#: inc/acf-fields.php:183 inc/acf-fields.php:184
+msgid ""
+"Una ruta de estudio construida en público. Semana a semana, materia a "
+"materia. Con el material real, la bibliografía completa y las preguntas que "
+"cada tema genera."
+msgstr ""
+"Un percorso di studio costruito in pubblico. Settimana per settimana, "
+"materia per materia. Con il materiale reale, la bibliografia completa e le "
+"domande che ogni argomento genera."
+
+#: inc/acf-fields.php:187
+msgid "Párrafo 2"
+msgstr "Paragrafo 2"
+
+#: inc/acf-fields.php:189 inc/acf-fields.php:190
+msgid ""
+"No es un curso. No hay certificado al final. Es el camino que estoy "
+"recorriendo."
+msgstr ""
+"Non è un corso. Non c'è certificato alla fine. È il cammino che sto "
+"percorrendo."
+
+#: inc/acf-fields.php:193
+msgid "Texto del botón"
+msgstr "Testo del pulsante"
+
+#: inc/acf-fields.php:195 inc/acf-fields.php:196
+msgid "Ver el mapa completo"
+msgstr "Vedi la mappa completa"
+
+#: inc/acf-fields.php:199
+msgid "Link del botón"
+msgstr "Link del pulsante"
+
+#: inc/acf-fields.php:220
+msgid "⑤ Sobre — Perfil de autor"
+msgstr "⑤ Chi Siamo — Profilo autore"
+
+#: inc/acf-fields.php:224
+msgid "Nombre — Línea 1"
+msgstr "Nome — Linea 1"
+
+#: inc/acf-fields.php:226 inc/acf-fields.php:227
+msgid "David"
+msgstr "David"
+
+#: inc/acf-fields.php:230
+msgid "Nombre — Línea 2 (en dorado)"
+msgstr "Nome — Linea 2 (oro)"
+
+#: inc/acf-fields.php:232 inc/acf-fields.php:233
+msgid "Legorreta"
+msgstr "Legorreta"
+
+#: inc/acf-fields.php:236
+msgid "Dato 1 — Etiqueta"
+msgstr "Dato 1 — Etichetta"
+
+#: inc/acf-fields.php:238 inc/acf-fields.php:239
+msgid "Base"
+msgstr "Base"
+
+#: inc/acf-fields.php:242
+msgid "Dato 1 — Valor"
+msgstr "Dato 1 — Valore"
+
+#: inc/acf-fields.php:244 inc/acf-fields.php:245
+msgid "México / LATAM"
+msgstr "Messico / LATAM"
+
+#: inc/acf-fields.php:248
+msgid "Dato 2 — Etiqueta"
+msgstr "Dato 2 — Etichetta"
+
+#: inc/acf-fields.php:250 inc/acf-fields.php:251
+msgid "Formación"
+msgstr "Formazione"
+
+#: inc/acf-fields.php:254
+msgid "Dato 2 — Valor"
+msgstr "Dato 2 — Valore"
+
+#: inc/acf-fields.php:256 inc/acf-fields.php:257
+msgid "Filosofía · Economía"
+msgstr "Filosofia · Economia"
+
+#: inc/acf-fields.php:260
+msgid "Dato 3 — Etiqueta"
+msgstr "Dato 3 — Etichetta"
+
+#: inc/acf-fields.php:262 inc/acf-fields.php:263
+msgid "Experiencia"
+msgstr "Esperienza"
+
+#: inc/acf-fields.php:266
+msgid "Dato 3 — Valor"
+msgstr "Dato 3 — Valore"
+
+#: inc/acf-fields.php:268 inc/acf-fields.php:269
+msgid "BPO · Retail · Tech"
+msgstr "BPO · Retail · Tech"
+
+#: inc/acf-fields.php:272
+msgid "Dato 4 — Etiqueta"
+msgstr "Dato 4 — Etichetta"
+
+#: inc/acf-fields.php:274 inc/acf-fields.php:275
+msgid "Idiomas"
+msgstr "Lingue"
+
+#: inc/acf-fields.php:278
+msgid "Dato 4 — Valor"
+msgstr "Dato 4 — Valore"
+
+#: inc/acf-fields.php:280 inc/acf-fields.php:281
+msgid "ES · EN · IT (en curso)"
+msgstr "ES · EN · IT (in corso)"
+
+#: inc/acf-fields.php:284
+msgid "Párrafo 1"
+msgstr "Paragrafo 1"
+
+#: inc/acf-fields.php:286 inc/acf-fields.php:287
+msgid ""
+"Estudié filosofía. Después trabajé catorce años en operaciones — BPO, "
+"retail, logística, tecnología. Cash App, TikTok, Walmart, Avis. Gestión de "
+"equipos, entrega de resultados, problemas estructurales disfrazados de "
+"problemas personales."
+msgstr ""
+"Ho studiato filosofia. Poi ho lavorato quattordici anni in operazioni — BPO,"
+" retail, logistica, tecnologia. Cash App, TikTok, Walmart, Avis. Gestione di"
+" team, consegna di risultati, problemi strutturali travestiti da problemi "
+"personali."
+
+#: inc/acf-fields.php:290
+msgid "Párrafo 2"
+msgstr "Paragrafo 2"
+
+#: inc/acf-fields.php:292 inc/acf-fields.php:293
+msgid ""
+"En algún momento me di cuenta de que las preguntas que me importaban eran "
+"preguntas económicas. La filosofía me enseñó a preguntar. La economía, si se"
+" estudia en serio, enseña a responder con evidencia."
+msgstr ""
+"A un certo punto mi sono reso conto che le domande che mi importavano erano "
+"domande economiche. La filosofia mi ha insegnato a chiedere. L'economia, se "
+"studiata seriamente, insegna a rispondere con evidenza."
+
+#: inc/acf-fields.php:296
+msgid "Párrafo 3"
+msgstr "Paragrafo 3"
+
+#: inc/acf-fields.php:298 inc/acf-fields.php:299
+msgid ""
+"Nihil Novi es donde hago eso en público. Sin pretender que ya llegué. Sin "
+"vender certezas que no tengo."
+msgstr ""
+"Nihil Novi è dove faccio questo in pubblico. Senza pretendere di essere già "
+"arrivato. Senza vendere certezze che non ho."
+
+#: inc/acf-fields.php:302
+msgid "Botón — Texto"
+msgstr "Pulsante — Testo"
+
+#: inc/acf-fields.php:304 inc/acf-fields.php:305
+msgid "Leer más sobre el proyecto"
+msgstr "Leggi di più sul progetto"
+
+#: inc/acf-fields.php:308
+msgid "Botón — Link"
+msgstr "Pulsante — Link"
+
+#: inc/acf-fields.php:341
+msgid "⑥ Newsletter"
+msgstr "⑥ Newsletter"
+
+#: inc/acf-fields.php:345
+msgid "Título — Línea 1"
+msgstr "Titolo — Linea 1"
+
+#: inc/acf-fields.php:347 inc/acf-fields.php:348
+msgid "Una entrega por semana."
+msgstr "Una consegna a settimana."
+
+#: inc/acf-fields.php:351
+msgid "Título — Línea 2 (en dorado)"
+msgstr "Titolo — Linea 2 (oro)"
+
+#: inc/acf-fields.php:353 inc/acf-fields.php:354
+msgid "Sin algoritmos."
+msgstr "Senza algoritmi."
+
+#: inc/acf-fields.php:357
+msgid "Texto descriptivo"
+msgstr "Testo descrittivo"
+
+#: inc/acf-fields.php:359 inc/acf-fields.php:360
+msgid ""
+"Artículos, lecciones y el material de estudio de esa semana. Directo. Sin "
+"curation de plataforma."
+msgstr ""
+"Articoli, lezioni e il materiale di studio di quella settimana. Diretto. "
+"Senza curazione della piattaforma."
+
+#: inc/acf-fields.php:363
+msgid "Nota pequeña bajo el formulario"
+msgstr "Nota piccola sotto il modulo"
+
+#: inc/acf-fields.php:365 inc/acf-fields.php:366
+msgid "Sin spam · Sin venta de datos · Baja cuando quieras"
+msgstr "Niente spam · Nessuna vendita di dati · Disiscriviti quando vuoi"
