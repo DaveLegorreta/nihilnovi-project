@@ -4,7 +4,7 @@ Theme URI: https://nihilnovi.xyz
 Author: David Legorreta
 Author URI: https://nihilnovi.xyz
 Description: Hub intelectual sobre la Historia del Pensamiento Humano (Versión 2.0 con GSAP). Diseño editorial oscuro, tipografía serif, acentos en dorado. Filosofía, Economía, Matemáticas, Historia y Ciencia.
-Version: 2.0.3-2026-07-05
+Version: 2.3.0-2026-07-05
 Requires at least: 6.0
 Tested up to: 6.5
 License: GNU General Public License v2 or later
@@ -242,6 +242,48 @@ button { cursor: pointer; font-family: inherit; }
 .lang-btn.active { color: var(--gold); border-bottom: 1px solid var(--gold); }
 .lang-btn[aria-disabled="true"] { cursor: default; pointer-events: none; }
 .lang-sep { color: var(--border-2); font-size: 0.7rem; }
+
+/* Polylang language switcher - override default list styles */
+.lang-switch .pll-switcher {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.lang-switch .pll-switcher li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+.lang-switch .pll-switcher li a {
+  background: none;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.63rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ivory-3);
+  padding: 0.2rem 0.35rem;
+  transition: color 0.2s;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+.lang-switch .pll-switcher li a:hover {
+  color: var(--gold);
+}
+.lang-switch .pll-switcher li.current-lang a {
+  color: var(--gold);
+  border-bottom: 1px solid var(--gold);
+}
+.lang-switch .pll-switcher li + li::before {
+  content: '·';
+  color: var(--border-2);
+  font-size: 0.7rem;
+  margin-right: 0.4rem;
+}
 
 .nav-cta {
   font-family: 'Inter', sans-serif;
@@ -679,27 +721,122 @@ button { cursor: pointer; font-family: inherit; }
 .post-subtitle { font-family: 'Source Serif 4', serif; font-size: 1.15rem; color: var(--ivory-3); line-height: 1.75; }
 
 /* Reading body */
-.post-body { padding: 5rem 4rem; }
+.post-body { padding: 3rem 4rem 2rem; }
 .post-body-inner { max-width: 720px; margin: 0 auto; }
-.post-body h2 { font-family: 'Playfair Display', serif; font-size: 1.7rem; font-weight: 400; color: var(--ivory); margin: 3rem 0 1.2rem; line-height: 1.3; }
-.post-body h3 { font-family: 'Playfair Display', serif; font-size: 1.25rem; font-weight: 400; color: var(--ivory); margin: 2rem 0 0.8rem; }
-.post-body p { font-family: 'Source Serif 4', serif; font-size: 1.08rem; color: var(--ivory-2); line-height: 1.85; margin-bottom: 1.5rem; }
+.post-body h2 { font-family: 'Playfair Display', serif; font-size: 1.7rem; font-weight: 400; color: var(--ivory); margin: 2rem 0 1.2rem; line-height: 1.3; }
+.post-body h3 { font-family: 'Playfair Display', serif; font-size: 1.25rem; font-weight: 400; color: var(--ivory); margin: 1.5rem 0 0.8rem; }
+.post-body p { font-family: 'Source Serif 4', serif; font-size: 1.08rem; color: var(--ivory-2); line-height: 1.85; margin-bottom: 1rem; }
 .post-body em { font-style: italic; color: var(--ivory); }
 .post-body strong { color: var(--ivory); font-weight: 500; }
 .post-body a { color: var(--gold); border-bottom: 1px solid var(--gold-border); transition: border-color 0.3s; }
 .post-body a:hover { border-color: var(--gold); }
-.post-body blockquote { border-left: 2px solid var(--gold); padding-left: 2rem; margin: 2.5rem 0; }
+.post-body blockquote { border-left: 2px solid var(--gold); padding-left: 2rem; margin: 1.5rem 0; }
 .post-body blockquote p { font-family: 'Playfair Display', serif; font-style: italic; font-size: 1.15rem; color: var(--ivory-2); }
 
-/* Lesson essentials box */
-.lesson-essentials { background: var(--card); border: 1px solid var(--border); border-left: 3px solid var(--gold); padding: 2rem 2.2rem; margin: 3rem 0; }
-.lesson-essentials h4 { font-family: 'Inter', sans-serif; font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.2rem; }
-.lesson-essentials ul { list-style: none; display: flex; flex-direction: column; gap: 0.8rem; }
-.lesson-essentials li { display: flex; gap: 0.8rem; font-family: 'Source Serif 4', serif; font-size: 0.9rem; color: var(--ivory-2); line-height: 1.6; }
-.lesson-essentials li::before { content: '→'; color: var(--gold); flex-shrink: 0; }
+/* ════════════════════════════════════════
+   POST TOC — Índice automático
+════════════════════════════════════════ */
+.post-toc {
+  margin: 1.5rem 0;
+  padding: 1rem 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--card);
+}
+.post-toc details summary {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.post-toc details summary::before {
+  content: '▸';
+  font-size: 0.6rem;
+  transition: transform 0.2s;
+}
+.post-toc details[open] summary::before {
+  content: '▾';
+}
+.post-toc ul {
+  list-style: none;
+  margin-top: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.post-toc li {
+  font-family: 'Source Serif 4', serif;
+  font-size: 0.9rem;
+}
+.post-toc li a {
+  color: var(--ivory-2);
+  text-decoration: none;
+  border-bottom: none;
+  transition: color 0.2s;
+}
+.post-toc li a:hover {
+  color: var(--gold);
+}
+.post-toc .toc-level-2 {
+  padding-left: 0;
+}
+.post-toc .toc-level-3 {
+  padding-left: 1rem;
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+
+/* ════════════════════════════════════════
+   POST ESSENTIALS — "Lo esencial" simplificado
+════════════════════════════════════════ */
+.post-essentials {
+  margin: 2rem 0;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+.post-essentials h4 {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.8rem;
+}
+.post-essentials ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.post-essentials li {
+  font-family: 'Source Serif 4', serif;
+  font-size: 0.85rem;
+  color: var(--ivory-3);
+  line-height: 1.5;
+  padding-left: 1rem;
+  position: relative;
+}
+.post-essentials li::before {
+  content: '•';
+  color: var(--gold);
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 0.6rem;
+  line-height: 1.5;
+}
+
+/* Ocultar lesson-essentials antiguo si aún existe */
+.lesson-essentials { display: none; }
 
 /* Bibliography */
-.post-bibliography { margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--border); }
+.post-bibliography { margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--border); }
 .post-bibliography h4 { font-family: 'Inter', sans-serif; font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.5rem; }
 .post-bibliography ul { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
 .post-bibliography li { font-family: 'Source Serif 4', serif; font-size: 0.85rem; color: var(--ivory-3); line-height: 1.6; padding-left: 1rem; border-left: 1px solid var(--border-2); }
@@ -1493,8 +1630,7 @@ button { cursor: pointer; font-family: inherit; }
   color: var(--ivory-3);
   pointer-events: none;
   user-select: none;
-  filter: blur(0.5px);
-  animation: floatDrift linear infinite;
+  animation: orbitA linear infinite;
   will-change: transform, opacity;
 }
 
@@ -1506,65 +1642,60 @@ button { cursor: pointer; font-family: inherit; }
   color: var(--ivory-3);
   pointer-events: none;
   user-select: none;
-  filter: blur(2px);
-  animation: floatTerm linear infinite;
+  animation: orbitB linear infinite;
   will-change: transform, opacity;
   letter-spacing: 0.05em;
 }
 
-/* Animación de deriva orbital para símbolos */
-@keyframes floatDrift {
+/* Animación de órbita cerrada para símbolos — siempre visible, nunca desaparece */
+@keyframes orbitA {
   0% {
     transform: translate(0, 0) rotate(0deg);
-    opacity: 0;
+    opacity: var(--base-opacity, 0.25);
   }
-  10% {
-    opacity: var(--peak-opacity, 0.1);
+  20% {
+    transform: translate(25px, -15px) rotate(4deg);
+    opacity: calc(var(--base-opacity, 0.25) * 1.2);
   }
-  25% {
-    transform: translate(20px, -30px) rotate(5deg);
+  40% {
+    transform: translate(15px, -35px) rotate(-2deg);
+    opacity: var(--base-opacity, 0.25);
   }
-  50% {
-    transform: translate(-10px, -60px) rotate(-3deg);
-    opacity: var(--peak-opacity, 0.08);
+  60% {
+    transform: translate(-20px, -25px) rotate(6deg);
+    opacity: calc(var(--base-opacity, 0.25) * 0.85);
   }
-  75% {
-    transform: translate(30px, -40px) rotate(8deg);
-  }
-  90% {
-    opacity: var(--peak-opacity, 0.05);
+  80% {
+    transform: translate(-10px, -10px) rotate(-3deg);
+    opacity: calc(var(--base-opacity, 0.25) * 1.1);
   }
   100% {
-    transform: translate(0, -80px) rotate(0deg);
-    opacity: 0;
+    transform: translate(0, 0) rotate(0deg);
+    opacity: var(--base-opacity, 0.25);
   }
 }
 
-/* Animación de deriva lenta para términos alemanes (movimiento horizontal predominante) */
-@keyframes floatTerm {
+/* Animación de órbita cerrada para términos alemanes — deriva lenta horizontal */
+@keyframes orbitB {
   0% {
     transform: translate(0, 0) scale(1);
-    opacity: 0;
+    opacity: var(--base-opacity, 0.2);
   }
-  15% {
-    opacity: var(--peak-opacity, 0.08);
-  }
-  30% {
-    transform: translate(40px, -20px) scale(1.05);
+  25% {
+    transform: translate(35px, -15px) scale(1.03);
+    opacity: calc(var(--base-opacity, 0.2) * 1.15);
   }
   50% {
-    transform: translate(-20px, -50px) scale(0.95);
-    opacity: var(--peak-opacity, 0.06);
+    transform: translate(10px, -40px) scale(0.97);
+    opacity: var(--base-opacity, 0.2);
   }
-  70% {
-    transform: translate(60px, -30px) scale(1.02);
-  }
-  85% {
-    opacity: var(--peak-opacity, 0.04);
+  75% {
+    transform: translate(-25px, -20px) scale(1.02);
+    opacity: calc(var(--base-opacity, 0.2) * 0.9);
   }
   100% {
-    transform: translate(0, -90px) scale(1);
-    opacity: 0;
+    transform: translate(0, 0) scale(1);
+    opacity: var(--base-opacity, 0.2);
   }
 }
 
@@ -1610,3 +1741,131 @@ button { cursor: pointer; font-family: inherit; }
     display: none; /* Ocultar en móvil para rendimiento */
   }
 }
+/* ════════════════════════════════════════
+   POST HERO — SISTEMA SOLAR
+════════════════════════════════════════ */
+
+/* Contenedores de símbolos en post hero */
+.post-symbols,
+.post-terms {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+/* Los floating-symbol y floating-term ya están definidos arriba;
+   aquí solo ajustamos el post-float para que herede bien */
+.post-float {
+  z-index: 0;
+}
+
+/* Responsive: ocultar en móvil */
+@media (max-width: 768px) {
+  .post-symbols,
+  .post-terms {
+    display: none;
+  }
+}
+/* ════════════════════════════════════════
+   POST TOC — Índice automático
+════════════════════════════════════════ */
+.post-toc {
+  margin: 1.5rem 0;
+  padding: 1rem 1.5rem;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: var(--card);
+}
+.post-toc details summary {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.post-toc details summary::before {
+  content: '▸';
+  font-size: 0.6rem;
+  transition: transform 0.2s;
+}
+.post-toc details[open] summary::before {
+  content: '▾';
+}
+.post-toc ul {
+  list-style: none;
+  margin-top: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.post-toc li {
+  font-family: 'Source Serif 4', serif;
+  font-size: 0.9rem;
+}
+.post-toc li a {
+  color: var(--ivory-2);
+  text-decoration: none;
+  border-bottom: none;
+  transition: color 0.2s;
+}
+.post-toc li a:hover {
+  color: var(--gold);
+}
+.post-toc .toc-level-2 {
+  padding-left: 0;
+}
+.post-toc .toc-level-3 {
+  padding-left: 1rem;
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+
+/* ════════════════════════════════════════
+   POST ESSENTIALS — "Lo esencial" simplificado
+════════════════════════════════════════ */
+.post-essentials {
+  margin: 2rem 0;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+.post-essentials h4 {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.8rem;
+}
+.post-essentials ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.post-essentials li {
+  font-family: 'Source Serif 4', serif;
+  font-size: 0.85rem;
+  color: var(--ivory-3);
+  line-height: 1.5;
+  padding-left: 1rem;
+  position: relative;
+}
+.post-essentials li::before {
+  content: '•';
+  color: var(--gold);
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 0.6rem;
+  line-height: 1.5;
+}
+
+/* Ocultar lesson-essentials antiguo si aún existe */
+.lesson-essentials { display: none; }
