@@ -44,7 +44,7 @@ Aristóteles recoge el núcleo de esta argumentación en su *Física* (III, 5, 2
 
 > «Pues hay algunos que hacen de esto [lo ilimitado] el cuerpo... y no aire o agua, para que los otros elementos no sean destruidos por el que sea infinito entre ellos; pues tienen contrariedad entre sí... y si uno de ellos fuera infinito, los otros ya habrían sido destruidos».
 
-Si la *archē* (ἀρχή) fuera húmeda por naturaleza (agua), acabaría con todo principio seco (fuego), rompiendo el equilibrio térmico que observamos en los ciclos estacionales. Por tanto, el principio primordial no puede poseer atributos físicos específicos; debe estar situado un paso atrás en el orden ontológico. Debe ser *apeiron* (ἄπειρον).
+Si la *archē* (ἀρχή) fuera húmeda por naturaleza (agua), acabaría con todo principio seco (fuego), rompiendo el equilibrio térmico que observamos en los ciclos estacionales. Entonces, el principio primordial no puede poseer atributos físicos específicos; debe estar situado un paso atrás en el orden ontológico. Debe ser *apeiron* (ἄπειρον).
 
 ### Análisis filológico del término *apeiron*
 
