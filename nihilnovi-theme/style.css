@@ -244,20 +244,13 @@ button { cursor: pointer; font-family: inherit; }
 .lang-sep { color: var(--border-2); font-size: 0.7rem; }
 
 /* Polylang language switcher - override default list styles */
-.lang-switch .pll-switcher {
-  display: flex;
-  gap: 0.4rem;
-  align-items: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.lang-switch .pll-switcher li {
+.lang-switch .lang-item {
   display: inline-block;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
-.lang-switch .pll-switcher li a {
+.lang-switch .lang-item a {
   background: none;
   border: none;
   font-family: 'Inter', sans-serif;
@@ -271,14 +264,14 @@ button { cursor: pointer; font-family: inherit; }
   text-decoration: none;
   display: inline-block;
 }
-.lang-switch .pll-switcher li a:hover {
+.lang-switch .lang-item a:hover {
   color: var(--gold);
 }
-.lang-switch .pll-switcher li.current-lang a {
+.lang-switch .lang-item.current-lang a {
   color: var(--gold);
   border-bottom: 1px solid var(--gold);
 }
-.lang-switch .pll-switcher li + li::before {
+.lang-switch .lang-item + .lang-item::before {
   content: '·';
   color: var(--border-2);
   font-size: 0.7rem;
