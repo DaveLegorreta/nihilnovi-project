@@ -5,7 +5,7 @@ from pathlib import Path
 def create_theme_zip():
     base_dir = Path('c:/Users/david/OneDrive/Documentos/Skills/Projecto MKT')
     theme_dir = base_dir / 'nihilnovi-theme'
-    output_zip = base_dir / 'nihilnovi-theme-v2.0.7.zip'
+    output_zip = base_dir / 'nihilnovi-theme-v2.3.1.zip'
     
     if not theme_dir.exists():
         print(f"Error: no se encontró {theme_dir}")

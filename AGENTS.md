@@ -28,7 +28,7 @@ El objetivo editorial es publicar contenido riguroso con citación clásica (Ste
 
 - **CMS:** WordPress (requiere al menos 6.0; probado hasta 6.5).
 - **Lenguaje del servidor:** PHP 7.4+ (se recomienda 8.x).
-- **Tema activo:** `nihilnovi-theme/` (versión 2.3.0-2026-07-05 según `style.css`).
+- **Tema activo:** `nihilnovi-theme/` (versión 2.3.1-2026-08-02 según `style.css`).
 - **JavaScript:** Vanilla JS (IIFE), GSAP 3.12.5 + ScrollTrigger vía CDN.
 - **CSS:** Hoja de estilos única (`style.css`, ~1828 líneas) con variables CSS (design tokens) y media queries.
 - **Fuentes:** Google Fonts (Playfair Display, Source Serif 4, Inter, JetBrains Mono).
@@ -252,7 +252,7 @@ Genera/actualiza los archivos `.po` y `.mo` para inglés e italiano a partir del
 python tools/create_zip.py
 ```
 
-Crea `nihilnovi-theme-v2.0.7.zip` listo para subir manualmente.
+Crea `nihilnovi-theme-v2.3.1.zip` listo para subir manualmente. El número debe coincidir con `Version:` en `style.css` (esquema `X.Y.Z-YYYY-MM-DD`).
 
 ### 4.7. Desplegar el tema
 
