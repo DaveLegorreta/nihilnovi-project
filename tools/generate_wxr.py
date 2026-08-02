@@ -531,10 +531,14 @@ def main():
     articles = []
     for root, _, files in os.walk(ARTICLES_DIR):
         for fname in sorted(files):
-            if not fname.endswith(".md"):
+            if not fname.endswith(".md") or fname.endswith(".prompt.md"):
                 continue
             path = Path(root) / fname
             try:
+                # Omitir borradores sin contenido (stubs con placeholder)
+                if "[Contenido en desarrollo" in path.read_text(encoding="utf-8-sig"):
+                    print(f"Omitido (borrador sin contenido): {path.name}")
+                    continue
                 articles.append(parse_article(path))
             except Exception as e:
                 print(f"Error procesando {path}: {e}")
