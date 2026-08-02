@@ -6,6 +6,9 @@
 # Credenciales y archivos sensibles
 # ---------------------------------------------------------------------------
 sftp_credentials.json
+tools/debug/wp-config-remote.php
+tools/debug/*.txt
+tools/debug/*.json
 .env
 .env.*
 *.key

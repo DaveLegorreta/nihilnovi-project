@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nihil Novi — El Isotipo Definitivo y Elemento Doble</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --nihil-black: #1A1A1A; --marble-white: #F9F9F9; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: var(--marble-white); color: var(--nihil-black); line-height: 1.6; }
+        
+        .hero { text-align: center; padding: 60px 20px 30px; }
+        .hero h1 { font-family: 'Cinzel', serif; font-size: 42px; letter-spacing: 0.1em; margin-bottom: 10px; }
+        .hero p { color: #666; font-size: 15px; max-width: 600px; margin: 0 auto; }
+        
+        .showcase { 
+            display: flex; justify-content: center; align-items: center; 
+            padding: 60px 20px; background: #fff; border-top: 1px solid #eaeaea; border-bottom: 1px solid #eaeaea;
+        }
+        
+        .logo-container { display: flex; flex-direction: column; align-items: center; gap: 30px; }
+        .svg-hero { width: 200px; height: 200px; filter: drop-shadow(0 20px 40px rgba(0,0,0,0.08)); }
+        
+        .typography { font-family: 'Cinzel', serif; font-size: 32px; font-weight: 700; letter-spacing: 0.25em; text-align: center; color: var(--nihil-black); }
+
+        .section-header { text-align: center; margin: 60px 0 30px; font-family: 'Cinzel', serif; font-size: 24px; font-weight: 700; border-top: 2px solid #ddd; padding-top: 40px; }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto 60px; padding: 0 20px; }
+        .card { background: #fff; border-radius: 8px; border: 1px solid #eee; text-align: center; overflow: hidden; }
+        .preview { padding: 40px 20px; min-height: 200px; display: flex; justify-content: center; align-items: center; background: #fff; border-bottom: 1px solid #f5f5f5; }
+        .info { padding: 15px; }
+        .info h3 { font-size: 14px; font-weight: 600; margin-bottom: 5px; }
+        .info p { font-size: 11px; color: #777; }
+        .tag { font-size: 10px; background: #e8f0fe; color: #1a73e8; padding: 2px 6px; border-radius: 3px; font-weight: 600; text-transform: uppercase; }
+    </style>
+</head>
+<body>
+
+    <!-- Definición del Isotipo Definitivo para reuso -->
+    <svg width="0" height="0" style="position:absolute">
+        <defs>
+            <path id="n_base" d="M 40,180 L 40,80 C 40,40 100,40 100,80 L 100,180 L 150,180 A 10,10 0 0,0 160,170 L 160,80 C 160,-5 20,-5 20,80 L 20,170 A 10,10 0 0,0 30,180 Z" />
+        </defs>
+    </svg>
+
+    <header class="hero">
+        <p>CONCEPTO APROBADO</p>
+        <h1>NIHIL NOVI</h1>
+        <p>El pilar asimétrico con esquinas exteriores suaves y arco romano estricto.</p>
+    </header>
+
+    <!-- EL ISOTIPO SENCILLO -->
+    <section class="showcase">
+        <div class="logo-container">
+            <svg class="svg-hero" viewBox="0 0 200 200">
+                <use href="#n_base" fill="#1A1A1A" />
+            </svg>
+            <div class="typography">NIHIL NOVI</div>
+        </div>
+    </section>
+
+    <!-- EXPLORACIÓN DEL ELEMENTO DOBLE (nn) -->
+    <div class="section-header">EXPLORACIÓN: EL ELEMENTO DOBLE (nn)</div>
+    <p style="text-align: center; font-size: 14px; color: #666; margin-bottom: 40px;">9 iteraciones utilizando exactamente la forma del isotipo final aprobado.</p>
+    
+    <div class="grid">
+        <!-- 1. Secuencia Natural -->
+        <div class="card">
+            <div class="preview">
+                <svg width="200" height="120" viewBox="0 0 320 200">
+                    <use href="#n_base" transform="translate(0, 10)" fill="#1A1A1A"/>
+                    <use href="#n_base" transform="translate(150, 10)" fill="#1A1A1A"/>
+                </svg>
+            </div>
+            <div class="info"><span class="tag">Doble 1</span><h3>Secuencia Natural</h3><p>Las dos letras separadas por un espacio mínimo de respiración tipográfica.</p></div>
+        </div>
+
+        <!-- 2. Fusión Directa -->
+        <div class="card">
+            <div class="preview">
+                <svg width="200" height="120" viewBox="0 0 320 200">
+                    <use href="#n_base" transform="translate(0, 10)" fill="#1A1A1A"/>
+                    <use href="#n_base" transform="translate(140, 10)" fill="#1A1A1A"/>
+                </svg>
+            </div>
+            <div class="info"><span class="tag">Doble 2</span><h3>Fusión Directa</h3><p>El pilar grueso choca y se funde exactamente con el pilar delgado de la segunda 'n'.</p></div>
+        </div>
+
+        <!-- 3. Espejo (Díptico) -->
+        <div class="card">
+            <div class="preview">
+                <svg width="200" height="120" viewBox="0 0 320 200">
+                    <use href="#n_base" transform="translate(0, 10)" fill="#1A1A1A"/>
+                    <use href="#n_base" transform="translate(320, 10) scale(-1, 1)" fill="#1A1A1A"/>
+                </svg>
+            </div>
+            <div class="info"><span class="tag">Doble 3</span><h3>Simetría de Espejo</h3><p>La segunda 'n' está invertida. Crea un díptico perfecto y muy estable (como dos puertas).</p></div>
+        </div>
+
+        <!-- 4. Desnivel de Progreso -->
+        <div class="card">
+            <div class="preview">
+                <svg width="200" height="120" viewBox="0 0 320 220">
+                    <use href="#n_base" transform="translate(0, 40)" fill="#1A1A1A"/>
+                    <use href="#n_base" transform="translate(150, 0)" fill="#1A1A1A"/>
+                </svg>
+            </div>
+            <div class="info"><span class="tag">Doble 4</span><h3>Desnivel de Progreso</h3><p>Una letra asciende sobre la otra, denotando avance (Novi), crecimiento o dialéctica.</p></div>
+        </div>
+
+        <!-- 5. Solapadas (Vínculo) -->
+        <div class="card">
+            <div class="preview">
+                <svg width="200" height="120" viewBox="0 0 320 200">
+                    <use href="#n_base" transform="translate(20, 10)" fill="#1A1A1A"/>
+                    <use href="#n_base" transform="translate(100, 10)" fill="#1A1A1A" stroke="#fff" stroke-width="6" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <div class="info"><span class="tag">Doble 5</span><h3>Solapamiento (Vínculo)</h3><p>Se cruzan con un contorno de luz. Genera profundidad y representa la unión de dos ideas.</p></div>
+        </div>
+
+        <!-- 6. El Reflejo (Agua) -->
+        <div class="card">
+            <div class="preview">
+                <svg width="120" height="180" viewBox="0 0 200 400">
+                    <use href="#n_base" transform="translate(10, 20)" fill="#1A1A1A"/>
+                    <use href="#n_base" transform="translate(10, 380) scale(1, -1)" fill="#1A1A1A" opacity="0.3"/>
+                </svg>
+            </div>
+            <div class="info"><span class="tag">Doble 6</span><h3>El Reflejo</h3><p>La segunda 'n' actúa como una sombra o reflejo en el agua. Muy poético y profundo.</p></div>
+        </div>
+
+        <!-- 7. Anidada (Matrioska) -->
+        <div class="card">
+            <div class="preview">
+                <svg width="120" height="120" viewBox="0 0 200 200">
+                    <use href="#n_base" transform="translate(10, 10)" fill="#1A1A1A"/>
+                    <use href="#n_base" transform="translate(68, 90) scale(0.45)" fill="#F9F9F9"/>
+                </svg>
+            </div>
+            <div class="info"><span class="tag">Doble 7</span><h3>Anidada (Interior)</h3><p>La segunda 'n' vive en el espacio negativo de la primera (Luz dentro de la oscuridad).</p></div>
+        </div>
+
+        <!-- 8. Ligadura Clásica -->
+        <div class="card">
+            <div class="preview">
+                <svg width="200" height="120" viewBox="0 0 320 200">
+                    <use href="#n_base" transform="translate(0, 10)" fill="#1A1A1A"/>
+                    <!-- Puente curvo de ligadura -->
+                    <path d="M150,190 Q160,190 170,180" fill="none" stroke="#1A1A1A" stroke-width="15" stroke-linecap="round"/>
+                    <use href="#n_base" transform="translate(150, 10)" fill="#1A1A1A"/>
+                </svg>
+            </div>
+            <div class="info"><span class="tag">Doble 8</span><h3>Ligadura Inferior</h3><p>Unidas sutilmente por la base, imitando la ligadura de la escritura caligráfica clásica.</p></div>
+        </div>
+
+        <!-- 9. Tensión Negativa -->
+        <div class="card">
+            <div class="preview">
+                <svg width="200" height="120" viewBox="0 0 340 200">
+                    <rect x="0" y="10" width="160" height="180" fill="#1A1A1A" rx="8"/>
+                    <rect x="170" y="10" width="160" height="180" fill="#1A1A1A" rx="8"/>
+                    <use href="#n_base" transform="translate(0, 10)" fill="#F9F9F9"/>
+                    <use href="#n_base" transform="translate(170, 10)" fill="#F9F9F9"/>
+                </svg>
+            </div>
+            <div class="info"><span class="tag">Doble 9</span><h3>Espacio Negativo (Sellos)</h3><p>El logotipo se aplica sustrayendo el material, como sellos o tablillas de piedra antiguas.</p></div>
+        </div>
+    </div>
+
+</body>
+</html>

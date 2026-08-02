@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Mapa de la Filosofía Occidental — Nihil Novi</title>
+<style>
+  @page { size: A4; margin: 2cm; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Source Serif 4', Georgia, serif;
+    background: #0a0a0f;
+    color: #e8e6e1;
+    line-height: 1.6;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .cover {
+    text-align: center;
+    padding: 4rem 2rem;
+    border: 1px solid #c9a84c;
+    margin-bottom: 2rem;
+  }
+  .cover h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: #c9a84c;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.05em;
+  }
+  .cover .subtitle {
+    font-size: 1rem;
+    color: #8a8a8a;
+    font-style: italic;
+  }
+  .cover .brand {
+    margin-top: 2rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #c9a84c;
+  }
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #c9a84c;
+    margin: 2rem 0 1rem;
+    border-bottom: 1px solid #2a2a35;
+    padding-bottom: 0.5rem;
+  }
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+  }
+  .era {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  .era-year {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8rem;
+    color: #c9a84c;
+    min-width: 100px;
+    text-align: right;
+    padding-top: 0.2rem;
+  }
+  .era-content {
+    flex: 1;
+    border-left: 2px solid #c9a84c;
+    padding-left: 1rem;
+  }
+  .era-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    color: #e8e6e1;
+    margin-bottom: 0.3rem;
+  }
+  .era-authors {
+    font-size: 0.85rem;
+    color: #8a8a8a;
+  }
+  .disciplines {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.5rem;
+    margin: 1.5rem 0;
+  }
+  .disc {
+    text-align: center;
+    padding: 0.8rem 0.3rem;
+    border: 1px solid #2a2a35;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.65rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .disc.fil { border-color: #c9a84c; color: #c9a84c; }
+  .disc.eco { border-color: #8a8a8a; color: #8a8a8a; }
+  .disc.mat { border-color: #6b8cae; color: #6b8cae; }
+  .disc.his { border-color: #a67c52; color: #a67c52; }
+  .disc.cie { border-color: #7a9a7a; color: #7a9a7a; }
+  .footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid #2a2a35;
+    text-align: center;
+    font-size: 0.75rem;
+    color: #5a5a5a;
+  }
+  .footer a { color: #c9a84c; text-decoration: none; }
+  @media print {
+    body { background: #0a0a0f; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  }
+</style>
+</head>
+<body>
+
+<div class="cover">
+  <div class="brand">Nihil Novi</div>
+  <h1>Mapa de la Filosofía Occidental</h1>
+  <p class="subtitle">De Tales de Mileto a Ludwig Wittgenstein</p>
+  <p class="subtitle" style="margin-top:1rem;font-size:0.85rem;">Una guía visual para navegar 2.500 años de pensamiento</p>
+</div>
+
+<h2>Las Cinco Disciplinas del Pensamiento</h2>
+<div class="disciplines">
+  <div class="disc fil">Filosofía</div>
+  <div class="disc eco">Economía</div>
+  <div class="disc mat">Matemáticas</div>
+  <div class="disc his">Historia</div>
+  <div class="disc cie">Ciencia</div>
+</div>
+
+<h2>Línea del Tiempo</h2>
+<div class="timeline">
+  <div class="era">
+    <div class="era-year">c. 600–300 a.C.</div>
+    <div class="era-content">
+      <div class="era-title">Presocráticos y Clásicos</div>
+      <div class="era-authors">Tales, Anaximandro, Heráclito, Parménides, Empédocles, Demócrito, Sócrates, Platón, Aristóteles</div>
+    </div>
+  </div>
+  <div class="era">
+    <div class="era-year">c. 300 a.C.–500 d.C.</div>
+    <div class="era-content">
+      <div class="era-title">Helenismo y Patrística</div>
+      <div class="era-authors">Epicuro, los Estoicos, Plotino, Agustín de Hipona</div>
+    </div>
+  </div>
+  <div class="era">
+    <div class="era-year">500–1400</div>
+    <div class="era-content">
+      <div class="era-title">Edad Media</div>
+      <div class="era-authors">Boecio, Anselmo, Averroes, Maimónides, Tomás de Aquino, Duns Scoto, Guillermo de Ockham</div>
+    </div>
+  </div>
+  <div class="era">
+    <div class="era-year">1400–1600</div>
+    <div class="era-content">
+      <div class="era-title">Renacimiento</div>
+      <div class="era-authors">Maquiavelo, Erasmo, Montaigne, Francisco de Vitoria, Tomás Moro</div>
+    </div>
+  </div>
+  <div class="era">
+    <div class="era-year">1600–1800</div>
+    <div class="era-content">
+      <div class="era-title">Modernidad Temprana</div>
+      <div class="era-authors">Descartes, Hobbes, Spinoza, Locke, Leibniz, Berkeley, Hume, Rousseau, Kant</div>
+    </div>
+  </div>
+  <div class="era">
+    <div class="era-year">1800–1900</div>
+    <div class="era-content">
+      <div class="era-title">Idealismo y Positivismo</div>
+      <div class="era-authors">Hegel, Schopenhauer, Marx, Kierkegaard, Nietzsche, Frege, Mill</div>
+    </div>
+  </div>
+  <div class="era">
+    <div class="era-year">1900–1950</div>
+    <div class="era-content">
+      <div class="era-title">Siglo XX</div>
+      <div class="era-authors">Russell, Wittgenstein, Heidegger, Husserl, Popper, Sartre, Camus, Arendt</div>
+    </div>
+  </div>
+</div>
+
+<h2>Obras Esenciales para Comenzar</h2>
+<div class="timeline">
+  <div class="era">
+    <div class="era-year">Platón</div>
+    <div class="era-content">
+      <div class="era-title">La República · El Banquete · La Apología de Sócrates</div>
+    </div>
+  </div>
+  <div class="era">
+    <div class="era-year">Aristóteles</div>
+    <div class="era-content">
+      <div class="era-title">Ética a Nicómaco · Metafísica · Política</div>
+    </div>
+  </div>
+  <div class="era">
+    <div class="era-year">Descartes</div>
+    <div class="era-content">
+      <div class="era-title">Meditaciones sobre la Filosofía Primera</div>
+    </div>
+  </div>
+  <div class="era">
+    <div class="era-year">Kant</div>
+    <div class="era-content">
+      <div class="era-title">Crítica de la Razón Pura · Fundamentación de la Metafísica de las Costumbres</div>
+    </div>
+  </div>
+  <div class="era">
+    <div class="era-year">Nietzsche</div>
+    <div class="era-content">
+      <div class="era-title">Así habló Zaratustra · Más allá del Bien y del Mal</div>
+    </div>
+  </div>
+  <div class="era">
+    <div class="era-year">Wittgenstein</div>
+    <div class="era-content">
+      <div class="era-title">Tractatus Logico-Philosophicus · Investigaciones Filosóficas</div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>Descarga más material de estudio en <a href="https://nihilnovi.xyz">nihilnovi.xyz</a></p>
+  <p style="margin-top:0.5rem;font-size:0.65rem;">© 2026 Nihil Novi · David Legorreta</p>
+</div>
+
+</body>
+</html>

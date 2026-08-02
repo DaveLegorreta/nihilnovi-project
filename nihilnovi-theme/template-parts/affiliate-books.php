@@ -17,22 +17,22 @@ if ( ! is_array( $args ) ) {
 
 $books = $args['books'] ?? [
 	[
-		'title'  => __( 'La República', 'nihilnovi' ),
-		'author' => __( 'Platón', 'nihilnovi' ),
-		'cover'  => '', // Dejar vacío para placeholder.
-		'asin'   => 'B0XXXXPLATO',
-	],
-	[
-		'title'  => __( 'Ética a Nicómaco', 'nihilnovi' ),
-		'author' => __( 'Aristóteles', 'nihilnovi' ),
+		'title'  => __( 'The Republic', 'nihilnovi' ),
+		'author' => __( 'Plato', 'nihilnovi' ),
 		'cover'  => '',
-		'asin'   => 'B0XXXXARIST',
+		'asin'   => '0140449142',
 	],
 	[
-		'title'  => __( 'Crítica de la Razón Pura', 'nihilnovi' ),
+		'title'  => __( 'Nicomachean Ethics', 'nihilnovi' ),
+		'author' => __( 'Aristotle', 'nihilnovi' ),
+		'cover'  => '',
+		'asin'   => '0872204642',
+	],
+	[
+		'title'  => __( 'Critique of Pure Reason', 'nihilnovi' ),
 		'author' => __( 'Immanuel Kant', 'nihilnovi' ),
 		'cover'  => '',
-		'asin'   => 'B0XXXXKANT1',
+		'asin'   => '0140447474',
 	],
 ];
 
@@ -41,7 +41,7 @@ if ( empty( $books ) ) {
 	return;
 }
 
-$associate_tag = apply_filters( 'nihilnovi_amazon_associate_tag', 'YOUR-ASSOCIATE-TAG' );
+$associate_tag = apply_filters( 'nihilnovi_amazon_associate_tag', 'nihilnovi-20' );
 ?>
 
 <!-- ══════════ LIBROS RECOMENDADOS (AFILIADOS) ══════════ -->

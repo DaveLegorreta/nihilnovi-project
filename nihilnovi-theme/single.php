@@ -26,14 +26,66 @@ $disc_class = nihilnovi_get_disc_class( $post_id );
 
 // Código visible (lección o número de artículo)
 $display_code = $lesson_code ?: ( $article_num ? str_pad( $article_num, 2, '0', STR_PAD_LEFT ) : '' );
+
+// ── Extraer headings para índice automático ──
+$content_html = apply_filters( 'the_content', get_the_content() );
+$toc_items = [];
+if ( ! empty( $content_html ) ) {
+    $dom = new DOMDocument();
+    libxml_use_internal_errors( true );
+    $dom->loadHTML( '<meta charset="UTF-8">' . $content_html );
+    libxml_clear_errors();
+    $headings = $dom->getElementsByTagName( 'h2' );
+    foreach ( $headings as $h ) {
+        $text = trim( $h->textContent );
+        if ( ! empty( $text ) ) {
+            $id = 'toc-' . sanitize_title( $text );
+            $toc_items[] = [ 'text' => $text, 'id' => $id, 'level' => 2 ];
+        }
+    }
+}
+$has_toc = count( $toc_items ) >= 3;
+
+// ── Símbolos para animación de fondo (sistema solar) ──
+$philosophy_symbols = ['α','β','γ','δ','ε','ζ','η','θ','λ','μ','ξ','π','ρ','σ','τ','φ','χ','ψ','ω','∴','∵','⊥','∧','∨','¬','∀','∃','∈','∉','⊂','⊃','∪','∩','∅','∞','∂','∇','∫','∑','∏','√','±','∓','×','÷','·','°','∠','∟','⊾','⊿','⋮','⋯','⋰','⋱','§','¶','†','‡','‖','‽','¿','¡','«','»','‹','›','„','"','"','\'','\'','‚','‘','’','…','–','—','‐','‑','‒','‾','_','·','•','◦','‣','⁃','-','*','†','‡','•','·','▪','▫','◾','◽','◆','◇','◈','▣','▤','▥','▦','▧','▨','▩','▬','▭','▮','▯','▰','▱','▲','△','▴','▵','▸','▹','►','▻','▼','▽','▾','▿','◀','◁','◂','◃','◄','◅','◆','◇','◈','◉','◊','○','◌','◍','◎','●','◐','◑','◒','◓','◔','◕','◖','◗','◘','◙','◚','◛','◜','◝','◞','◟','◠','◡','◢','◣','◤','◥','◦','◧','◨','◩','◪','◫','◬','◭','◮','◯','◰','◱','◲','◳','◴','◵','◶','◷','◸','◹','◺','◻','◼','◽','◾','◿'];
+$german_terms = ['Sein','Dasein','Weltanschauung','Erkenntnis','Vernunft','Aufhebung','Gestalt','Zeit','Raum','Ursache','Wirkung','Begriff','Wahrheit','Freiheit','Gewissen','Sittlichkeit','Schönheit','Erscheinung','Wesen','Grund','Existenz','Transzendenz','Immanenz','Ontologie','Phänomenologie','Hermeneutik','Dialektik','Subjekt','Objekt','Synthesis','Analyse','Thesis','Antithesis','Kategorisch','Apriori','Aposteriori','Synthetic','Analytisch','Deduktion','Induktion','Abduktion','Pragmatik','Semantik','Syntax','Logik','Ethik','Ästhetik','Metaphysik','Epistemologie','Teleologie','Kausalität','Noumenon','Phänomenon','Monadologie','Leibniz','Kant','Hegel','Heidegger','Husserl','Wittgenstein','Nietzsche','Schopenhauer','Fichte','Schelling','Marx','Engels','Adorno','Horkheimer','Marcuse','Habermas','Gadamer','Ricoeur','Derrida','Foucault','Deleuze','Guattari','Lyotard','Baudrillard','Vattimo','Agamben','Negri','Zizek','Badiou','Ranciere','Balibar','Laclau','Mouffe','Butler','Spivak','Said','Chakrabarty','Bhabha','Glissant','Césaire','Fanon','Memmi','Sartre','Camus','Merleau-Ponty','Beauvoir','Arendt','Strauss','Voegelin','Oakeshott','Berlin','Popper','Kuhn','Feyerabend','Lakatos','Laudan','Putnam','Quine','Davidson','Rawls','Nozick','Dworkin','Hart','Kelsen','Schmitt'];
 ?>
 
 <!-- ══════════ POST HERO ══════════ -->
 <section class="post-hero" aria-label="<?php echo esc_attr__( 'Encabezado del artículo', 'nihilnovi' ); ?>">
 
-  <!-- Partículas de fondo -->
-  <div class="blob blob-1" aria-hidden="true"></div>
-  <div class="hero-grid" aria-hidden="true"></div>
+  <!-- Sistema solar animado de fondo -->
+  <div class="post-symbols" aria-hidden="true">
+    <?php 
+    $total_symbols = count($philosophy_symbols);
+    for ($i = 0; $i < 30; $i++) : 
+      $symbol = $philosophy_symbols[$i % $total_symbols];
+      $left = rand(5, 95);
+      $top = rand(5, 90);
+      $size = rand(12, 28);
+      $delay = $i * 0.7;
+      $duration = rand(15, 35);
+      $opacity = rand(18, 35) / 100;
+    ?>
+      <span class="floating-symbol post-float" style="left:<?php echo $left; ?>%;top:<?php echo $top; ?>%;font-size:<?php echo $size; ?>px;animation-delay:<?php echo $delay; ?>s;animation-duration:<?php echo $duration; ?>s;opacity:<?php echo $opacity; ?>;"><?php echo $symbol; ?></span>
+    <?php endfor; ?>
+  </div>
+
+  <div class="post-terms" aria-hidden="true">
+    <?php 
+    $total_terms = count($german_terms);
+    for ($i = 0; $i < 15; $i++) : 
+      $term = $german_terms[$i % $total_terms];
+      $left = rand(2, 98);
+      $top = rand(5, 85);
+      $size = rand(14, 22);
+      $delay = $i * 1.2 + 2;
+      $duration = rand(40, 70);
+      $opacity = rand(12, 22) / 100;
+    ?>
+      <span class="floating-term post-float" style="left:<?php echo $left; ?>%;top:<?php echo $top; ?>%;font-size:<?php echo $size; ?>px;animation-delay:<?php echo $delay; ?>s;animation-duration:<?php echo $duration; ?>s;opacity:<?php echo $opacity; ?>;"><?php echo $term; ?></span>
+    <?php endfor; ?>
+  </div>
 
   <div class="post-hero-inner">
 
@@ -95,12 +147,30 @@ $display_code = $lesson_code ?: ( $article_num ? str_pad( $article_num, 2, '0', 
   <div class="post-body-inner">
 
     <?php
-    // ── "Lo esencial" para LECCIONES (antes del contenido) ──
-    if ( $is_lesson && $essentials ) :
+    // ── ÍNDICE AUTOMÁTICO (TOC) ──
+    if ( $has_toc ) :
+    ?>
+    <nav class="post-toc" aria-label="<?php echo esc_attr__( 'Índice del artículo', 'nihilnovi' ); ?>">
+      <details open>
+        <summary><?php echo esc_html__( 'Índice', 'nihilnovi' ); ?></summary>
+        <ul>
+          <?php foreach ( $toc_items as $item ) : ?>
+            <li class="toc-level-<?php echo esc_attr( $item['level'] ); ?>">
+              <a href="#<?php echo esc_attr( $item['id'] ); ?>"><?php echo esc_html( $item['text'] ); ?></a>
+            </li>
+          <?php endforeach; ?>
+        </ul>
+      </details>
+    </nav>
+    <?php endif; ?>
+
+    <?php
+    // ── "Lo esencial" (para todos los posts que tengan essentials) ──
+    if ( $essentials ) :
       $points = nihilnovi_lines( $essentials );
       if ( ! empty( $points ) ) :
     ?>
-    <aside class="lesson-essentials" aria-label="<?php echo esc_attr__( 'Lo esencial de esta lección', 'nihilnovi' ); ?>">
+    <aside class="post-essentials" aria-label="<?php echo esc_attr__( 'Lo esencial', 'nihilnovi' ); ?>">
       <h4><?php echo esc_html__( 'Lo esencial', 'nihilnovi' ); ?></h4>
       <ul>
         <?php foreach ( $points as $point ) : ?>
@@ -112,7 +182,26 @@ $display_code = $lesson_code ?: ( $article_num ? str_pad( $article_num, 2, '0', 
 
     <!-- Contenido principal escrito en el editor de WordPress -->
     <div class="post-content" itemprop="articleBody">
-      <?php the_content(); ?>
+      <?php
+        // Inyectar IDs ancla en los headings del contenido
+        $content = apply_filters( 'the_content', get_the_content() );
+        if ( $has_toc ) {
+          $dom = new DOMDocument();
+          libxml_use_internal_errors( true );
+          $dom->loadHTML( '<meta charset="UTF-8">' . $content );
+          libxml_clear_errors();
+          $headings = $dom->getElementsByTagName( 'h2' );
+          $idx = 0;
+          foreach ( $headings as $h ) {
+            if ( isset( $toc_items[$idx] ) ) {
+              $h->setAttribute( 'id', $toc_items[$idx]['id'] );
+              $idx++;
+            }
+          }
+          $content = preg_replace( '/<meta charset="UTF-8">/', '', $dom->saveHTML() );
+        }
+        echo $content;
+      ?>
     </div>
 
     <!-- Paginación de contenido largo (nextpage) -->

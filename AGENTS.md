@@ -1,20 +1,22 @@
+<!-- AGENTS.md — Nihil Novi -->
 # AGENTS.md — Nihil Novi
 
-Este documento resume la arquitectura, convenciones y flujo de trabajo del proyecto **Nihil Novi** (nihilnovi.xyz), un hub editorial y académico construido sobre WordPress, centrado en la Historia del Pensamiento Humano (Filosofía, Economía, Matemáticas, Historia y Ciencia).
-
-> **Nota para agentes:** La documentación, los comentarios del código y los metadatos del tema están principalmente en **español**. Se prefiere mantener ese idioma para cualquier comentario, mensaje de commit o documentación que se añada.
+> **Nota para agentes:** Este documento, los comentarios del código y los metadatos del tema están principalmente en **español**. Se prefiere mantener ese idioma para cualquier comentario, mensaje de commit o documentación que se añada.
 
 ---
 
 ## 1. Resumen del proyecto
 
-Nihil Novi es un sitio de publicación a largo plazo que combina:
+**Nihil Novi** (nihilnovi.xyz) es un hub editorial y académico construido sobre WordPress, centrado en la Historia del Pensamiento Humano (Filosofía, Economía, Matemáticas, Historia y Ciencia).
 
-- Un **tema de WordPress** personalizado (`nihilnovi-theme`) con diseño editorial oscuro, tipografía serif y acentos dorados.
-- **Artículos y lecciones** redactados en Markdown bajo plantillas académicas propias (`templates/`).
+El proyecto combina:
+
+- Un **tema de WordPress** personalizado (`nihilnovi-theme/`) con diseño editorial oscuro, tipografía serif y acentos dorados.
+- **Artículos y lecciones** redactados en Markdown bajo plantillas académicas propias (`templates/`, `articulos_publicacion/`).
 - Una **biblioteca digital** de fuentes primarias (PDFs clásicos de Gredos) y su conversión a Markdown (`data/`).
 - **Guiones para TikTok** (`tiktok_scripts/`) derivados de los contenidos filosóficos.
-- Herramientas Python locales para descargar, extraer y formatear PDFs académicos (`tools/`).
+- **Lead magnets** (`lead-magnet/`) en HTML imprimible (mapa de la filosofía occidental).
+- Herramientas Python locales para descargar, extraer, formatear y desplegar (`tools/`).
 
 El objetivo editorial es publicar contenido riguroso con citación clásica (Stephanus, Bekker, Akademie-Ausgabe, APA 7) y material de estudio accesible.
 
@@ -24,22 +26,18 @@ El objetivo editorial es publicar contenido riguroso con citación clásica (Ste
 
 ### 2.1. Frontend y tema
 
-- **CMS:** WordPress (tema requiere al menos WordPress 6.0; probado hasta 6.5).
+- **CMS:** WordPress (requiere al menos 6.0; probado hasta 6.5).
 - **Lenguaje del servidor:** PHP 7.4+ (se recomienda 8.x).
-- **Tema activo:** `nihilnovi-theme/` (versión 2.0.0-2026-06-28).
-- **Snapshots/legado (guardados como tags de Git):**
-  - `theme-v2.0.0-2026-06-28` — estado inicial del tema activo en `main`.
-  - `theme-v2.0.0-2026-06-27` — versión anterior congelada.
-  - `theme-v1.0.0-legacy` — versión 1.0.0, ya no se usa en producción.
+- **Tema activo:** `nihilnovi-theme/` (versión 2.3.0-2026-07-05 según `style.css`).
 - **JavaScript:** Vanilla JS (IIFE), GSAP 3.12.5 + ScrollTrigger vía CDN.
-- **CSS:** Hoja de estilos única (`style.css`) con variables CSS (design tokens) y media queries.
+- **CSS:** Hoja de estilos única (`style.css`, ~1828 líneas) con variables CSS (design tokens) y media queries.
 - **Fuentes:** Google Fonts (Playfair Display, Source Serif 4, Inter, JetBrains Mono).
 
 ### 2.2. Plugins esperados en producción
 
 - **Advanced Custom Fields (ACF):** opcional pero recomendado. Define los campos editables del homepage (`inc/acf-fields.php`). Si no está activo, el tema usa valores por defecto.
 - **Mailchimp for WordPress (mc4wp_show_form):** opcional para el formulario de newsletter. Si no está, se muestra un formulario HTML estático.
-- **Polylang (gratuito):** recomendado para la versión multilingüe. Gestiona los idiomas, las traducciones de contenido y el selector de idioma.
+- **Polylang (gratuito):** recomendado para la versión multilingüe. Gestiona los idiomas, las traducciones de contenido y el selector de idioma. El código fuente del plugin está copiado en `polylang/` para despliegue manual.
 
 ### 2.3. Multilingüe e internacionalización (i18n)
 
@@ -48,6 +46,7 @@ El tema está preparado para soportar varios idiomas mediante el mecanismo está
 - **Textdomain:** `nihilnovi`.
 - **Carpeta de traducciones:** `nihilnovi-theme/languages/`.
 - **Idiomas objetivo:** español (idioma base), inglés, italiano y alemán.
+- **Archivos actuales:** `nihilnovi.pot` (plantilla), `nihilnovi-en_US.po/.mo`, `nihilnovi-it_IT.po/.mo`.
 - **Plugin recomendado:** [Polylang](https://wordpress.org/plugins/polylang/) (versión gratuita).
 
 #### Añadir nuevas cadenas traducibles
@@ -63,7 +62,7 @@ El tema está preparado para soportar varios idiomas mediante el mecanismo está
 #### Dónde van las traducciones
 
 - La plantilla maestra de cadenas está en `nihilnovi-theme/languages/nihilnovi.pot`.
-- Los archivos `.po` y `.mo` de cada idioma (p. ej. `nihilnovi-en_US.po`, `nihilnovi-it_IT.po`, `nihilnovi-de_DE.po`) deben guardarse en `nihilnovi-theme/languages/`.
+- Los archivos `.po` y `.mo` de cada idioma deben guardarse en `nihilnovi-theme/languages/`.
 - Polylang también gestiona las traducciones de posts, páginas, categorías y menús desde el panel de administración de WordPress.
 
 #### Selector de idioma
@@ -99,22 +98,27 @@ El `header.php` incluye un marcador visual deshabilitado con los códigos de idi
 │   │   ├── acf-fields.php        ← Campos ACF del homepage
 │   │   └── customizer.php        ← Colores, redes sociales, footer
 │   ├── template-parts/
-│   │   ├── content-article.php
-│   │   ├── content-lesson.php
-│   │   └── content-none.php
+│   │   ├── content-article.php   ← Tarjeta de artículo reutilizable
+│   │   ├── content-lesson.php    ← Tarjeta de lección reutilizable
+│   │   ├── content-none.php      ← Estado vacío
+│   │   ├── card-playlist.php     ← Tarjeta tipo playlist (archive padre)
+│   │   ├── cta-consulting.php    ← CTA de consultoría
+│   │   ├── cta-newsletter.php    ← CTA de newsletter
+│   │   └── affiliate-books.php   ← Libros recomendados (Amazon Associates)
 │   ├── languages/                ← Traducciones del tema (.pot, .po, .mo)
 │   │   └── nihilnovi.pot         ← Plantilla de cadenas traducibles
 │   └── js/main.js                ← Interacciones vanilla + GSAP
 │
 ├── articulos_publicacion/        ← Contenidos listos para publicar en WP
-│   ├── Modulo_I_Mito_al_Logos/   ← Lecciones del módulo I
-│   ├── base_datos_personajes/    ← Directorio reservado (vacío actualmente)
+│   ├── Modulo_I_Mito_al_Logos/ ← Lecciones del módulo I (Presocráticos)
+│   ├── base_datos_personajes/  ← Directorio reservado (vacío actualmente)
 │   └── FIL_*.md, ECO_*.md, etc.  ← Artículos y lecciones en Markdown
 │
 ├── data/
-│   ├── pdfs/                     ← PDFs de fuentes académicas (Gredos)
+│   ├── pdfs/                     ← PDFs de fuentes académicas (Gredos) — gitignored
 │   ├── academic_md/              ← PDFs convertidos a Markdown
-│   └── gredos_pdfs_list.txt      ← Lista tabulada nombre<TAB>url
+│   ├── gredos_pdfs_list.txt      ← Lista tabulada nombre<TAB>url
+│   └── nihilnovi_articles_import.xml ← WXR para importación masiva a WP
 │
 ├── templates/
 │   ├── philosophy_template.md    ← Plantilla de citado y frontmatter
@@ -122,23 +126,53 @@ El `header.php` incluye un marcador visual deshabilitado con los códigos de idi
 │
 ├── tiktok_scripts/               ← Guiones de video verticales
 │
+├── lead-magnet/                  ← Lead magnets imprimibles (HTML)
+│   ├── mapa-filosofia-es.html
+│   └── mapa-filosofia-en.html
+│
+├── polylang/                     ← Copia del plugin Polylang (despliegue manual)
+│
+├── prototypes/                   ← Prototipos HTML/CSS/JS estáticos
+│   └── nihilnovi-theme/
+│       ├── live_home.html
+│       ├── live_home_new.html
+│       ├── live_main.js
+│       ├── live_style.css
+│       ├── live_style_new.css
+│       ├── preview_antigravity.html
+│       └── timeline_presocratics.html
+│
 ├── tools/                        ← Scripts Python de soporte
 │   ├── deploy.py                 ← Despliegue FTP/FTPS del tema
-│   ├── batch_convert_all.py      ← Convierte PDFs académicos a Markdown
+│   ├── deploy_polylang.py        ← Despliegue del plugin Polylang
+│   ├── deploy_posts.py           ← Despliegue de posts vía FTP
+│   ├── create_zip.py             ← Empaqueta el tema en .zip
+│   ├── batch_convert_all.py    ← Convierte PDFs académicos a Markdown
 │   ├── pdf_extractor.py          ← Extrae texto plano de un PDF
 │   ├── format_any_book.py        ← Limpia y formatea PDF → Markdown
 │   ├── format_entire_book.py     ← Diálogos I de Platón (específico)
 │   ├── format_dialogue.py        ← Apología de Sócrates (específico)
 │   ├── download_helper.py        ← Buscador/descargador interactivo Gredos
 │   ├── download_all.py           ← Descarga masiva de la lista Gredos
-│   └── download_single.py        ← Descarga directa de una URL
+│   ├── download_single.py        ← Descarga directa de una URL
+│   ├── generate_wxr.py           ← Genera WXR para importar artículos a WP
+│   ├── update_wxr_categories.py  ← Asigna subcategorías en el WXR
+│   ├── add_subcategory_definitions.py ← Añade definiciones de subcategorías al WXR
+│   ├── generate_translations.py  ← Genera archivos .po/.mo para EN e IT
+│   ├── compile_po.py             ← Compila .po a .mo básico (sin gettext)
+│   └── debug/                    ← Scripts PHP ad-hoc de depuración/operaciones
+│                                   contra producción (fix_*, check_*, purge_*).
+│                                   wp-config-remote.php y los .txt/.json de
+│                                   trabajo están excluidos por .gitignore
 │
 ├── nihilnovi-homepage-template.php  ← Plantilla de página WP standalone (prototipo)
 ├── nihilnovi_homepage.html       ← Prototipo HTML estático anterior
 ├── nihilnovi_v2.html             ← Prototipo HTML estático más reciente
 ├── Nihilnovi-theme.zip           ← Empaquetado del tema (despliegue manual)
-├── nihilnovi-theme-v2.0-deploy.zip
-└── sftp_credentials.json         ← Credenciales de despliegue (SECRETO)
+├── nihilnovi-theme-v2.0.*.zip    ← Versiones empaquetadas del tema
+├── polylang.zip                  ← Empaquetado del plugin Polylang
+├── sftp_credentials.json         ← Credenciales de despliegue (SECRETO)
+└── .gitignore                    ← Excluye pdfs, zips, credenciales, __pycache__
 ```
 
 ---
@@ -196,7 +230,31 @@ Descarga masiva (puede tardar y consumir decenas de GB):
 python tools/download_all.py
 ```
 
-### 4.4. Desplegar el tema
+### 4.4. Generar WXR para importar artículos a WordPress
+
+```bash
+python tools/generate_wxr.py
+```
+
+Genera `data/nihilnovi_articles_import.xml` a partir de los Markdown en `articulos_publicacion/`. Se puede importar desde WordPress → Herramientas → Importar → WordPress.
+
+### 4.5. Generar traducciones del tema
+
+```bash
+python tools/generate_translations.py
+```
+
+Genera/actualiza los archivos `.po` y `.mo` para inglés e italiano a partir del `.pot` maestro.
+
+### 4.6. Empaquetar el tema
+
+```bash
+python tools/create_zip.py
+```
+
+Crea `nihilnovi-theme-v2.0.7.zip` listo para subir manualmente.
+
+### 4.7. Desplegar el tema
 
 ```bash
 python tools/deploy.py
@@ -287,11 +345,23 @@ También se puede desplegar manualmente subiendo `Nihilnovi-theme.zip` o `nihiln
 
 El proyecto usa **Git** para rastrear cambios. La rama principal es `main` y contiene el estado de trabajo actual.
 
+### Ramas activas
+
+- `main` — desarrollo y despliegue del tema.
+- `editorial` — trabajo en curso de artículos, prompts, protocolos y formatos de Antigravity.
+- `deploy-prep` — preparación de despliegues.
+- `legacy-snapshot` — snapshot de versiones antiguas.
+- `v2-2026-06-27-snapshot` — snapshot congelado de la versión anterior.
+
 ### Tags de versiones del tema
 
 - `theme-v2.0.0-2026-06-28` — tema activo actual (`nihilnovi-theme/`).
 - `theme-v2.0.0-2026-06-27` — snapshot congelado de la versión anterior.
 - `theme-v1.0.0-legacy` — versión 1.0.0 del tema.
+- `theme-v2.0.1-2026-07-04` a `theme-v2.0.3-2026-07-04` — versiones intermedias.
+- `theme-v2.0.2-pre-cleanup-2026-07-05` — pre-limpieza de código.
+- `wxr-v2.0.4-2026-07-04`, `wxr-v2.0.5-2026-07-04` — versiones del exportador WXR.
+- `antigravity-v1` — versión estable del flujo editorial.
 
 Para ver todas las versiones:
 
@@ -312,9 +382,14 @@ git archive theme-v1.0.0-legacy | tar -x -C /tmp/nihilnovi-legacy
 El archivo `.gitignore` excluye:
 
 - `data/pdfs/` — PDFs académicos grandes (5.2 GB+).
-- `*.zip` — artefactos de despliegue.
+- `*.zip` — artefactos de build.
 - `sftp_credentials.json` — credenciales de producción.
+- `tools/debug/wp-config-remote.php` — wp-config remoto con credenciales de BD.
+- `tools/debug/*.txt`, `tools/debug/*.json` — artefactos de trabajo de depuración.
 - `__pycache__/`, `*.pyc`, `.env`, etc.
+- `.vscode/`, `.idea/` — configuración de editores.
+- `node_modules/` — por si se usa en el futuro.
+- `.kimi/` — planes locales de agentes.
 
 ### Conexión con GitHub
 
@@ -386,6 +461,8 @@ La rama `editorial` es el lugar idóneo para desarrollar y validar traducciones 
 - **Tags del tema:** `theme-VERSION-YYYY-MM-DD`.
 - **Tags editoriales:** `antigravity-vN` (ej. `antigravity-v1`, `antigravity-v2`).
 
+---
+
 ## 10. Recursos y contexto adicional
 
 - `templates/philosophy_template.md` — estándares de citado y plantilla de artículo.
@@ -393,5 +470,6 @@ La rama `editorial` es el lugar idóneo para desarrollar y validar traducciones 
 - `nihilnovi-theme/preview_antigravity.html` — preview estática del diseño usada para validar artículos formateados.
 - `tiktok_scripts/TIKTOK_*.md` — ejemplos de formato y tono para contenido corto.
 - `data/gredos_pdfs_list.txt` — catálogo de fuentes disponibles para descarga.
+- `lead-magnet/mapa-filosofia-*.html` — lead magnets imprimibles (mapa de la filosofía occidental).
 
 Si llegas a un archivo sin contexto, recuerda que el español es el idioma principal del proyecto y que las cinco disciplinas (`fil`, `eco`, `mat`, `his`, `cie`) son el eje organizador de todo el contenido.

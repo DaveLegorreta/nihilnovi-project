@@ -59,14 +59,14 @@ $german_terms = ['Sein','Dasein','Weltanschauung','Erkenntnis','Vernunft','Aufhe
   <div class="archive-symbols" aria-hidden="true">
     <?php 
     $total_symbols = count($philosophy_symbols);
-    for ($i = 0; $i < 24; $i++) : 
+    for ($i = 0; $i < 36; $i++) : 
       $symbol = $philosophy_symbols[$i % $total_symbols];
       $left = rand(5, 95);
       $top = rand(5, 90);
       $size = rand(12, 28);
       $delay = $i * 0.8;
       $duration = rand(15, 35);
-      $opacity = rand(3, 12) / 100;
+      $opacity = rand(20, 40) / 100;
     ?>
       <span class="floating-symbol" style="left:<?php echo $left; ?>%;top:<?php echo $top; ?>%;font-size:<?php echo $size; ?>px;animation-delay:<?php echo $delay; ?>s;animation-duration:<?php echo $duration; ?>s;opacity:<?php echo $opacity; ?>;"><?php echo $symbol; ?></span>
     <?php endfor; ?>
@@ -76,14 +76,14 @@ $german_terms = ['Sein','Dasein','Weltanschauung','Erkenntnis','Vernunft','Aufhe
   <div class="archive-terms" aria-hidden="true">
     <?php 
     $total_terms = count($german_terms);
-    for ($i = 0; $i < 12; $i++) : 
+    for ($i = 0; $i < 18; $i++) : 
       $term = $german_terms[$i % $total_terms];
       $left = rand(2, 98);
       $top = rand(5, 85);
       $size = rand(14, 22);
       $delay = $i * 1.5 + 2;
       $duration = rand(40, 70);
-      $opacity = rand(4, 10) / 100;
+      $opacity = rand(15, 30) / 100;
     ?>
       <span class="floating-term" style="left:<?php echo $left; ?>%;top:<?php echo $top; ?>%;font-size:<?php echo $size; ?>px;animation-delay:<?php echo $delay; ?>s;animation-duration:<?php echo $duration; ?>s;opacity:<?php echo $opacity; ?>;"><?php echo $term; ?></span>
     <?php endfor; ?>
