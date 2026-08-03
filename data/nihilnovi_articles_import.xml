@@ -10,17 +10,987 @@
     <title>Nihil Novi</title>
     <link>https://nihilnovi.xyz</link>
     <description>Hub editorial y académico</description>
-    <pubDate>Sun, 02 Aug 2026 23:09:04 +0000</pubDate>
+    <pubDate>Mon, 03 Aug 2026 04:00:42 +0000</pubDate>
     <language>es</language>
     <wp:wxr_version>1.2</wp:wxr_version>
     <wp:base_site_url>https://nihilnovi.xyz</wp:base_site_url>
     <wp:base_blog_url>https://nihilnovi.xyz</wp:base_blog_url>
+  <wp:category><wp:category_nicename>economia</wp:category_nicename><wp:cat_name><![CDATA[Economía]]></wp:cat_name></wp:category>
   <wp:category><wp:category_nicename>filosofia</wp:category_nicename><wp:cat_name><![CDATA[Filosofía]]></wp:cat_name></wp:category>
   <wp:category><wp:category_nicename>lecciones</wp:category_nicename><wp:cat_name><![CDATA[Lecciones]]></wp:cat_name></wp:category>
     <item>
+      <title>ECO-01-A: Economía Antigua - Grecia, Roma y Escolástica</title>
+      <link>https://nihilnovi.xyz/pensamiento-economico-antiguedad/</link>
+      <pubDate>Mon, 03 Aug 2026 04:00:42 +0000</pubDate>
+      <dc:creator><![CDATA[davidlegorreta]]></dc:creator>
+      <guid isPermaLink="false">https://nihilnovi.xyz/?p=24068</guid>
+      <description></description>
+      <content:encoded><![CDATA[<h1>ECO-01-A: El Pensamiento Económico en la Antigüedad</h1>
+
+<p><blockquote>
+«De aquí resulta manifiesto cuál es el lugar que ocupan entre todas las artes adquisitivas las que conciernen a la alimentación; en efecto, éstas, a diferencia de las otras, son naturales y por consiguiente estimables. En cambio la crematística comercial es justamente censurada, porque no es natural sino que proviene las unas de las otras; y con toda razón se detesta la usura, pues nace del dinero mismo y no le destina al fin para el que fue inventado. Pues se creó para el intercambio, mientras que el interés lo multiplica. De ahí que haya recibido el nombre de "cría", porque lo engendrado es semejante al ser que lo engendra; el interés es dinero de dinero, y por tanto es de todas la adquisición más antinatural.»<br/>
+— Aristóteles, <em>Política</em> I, 10, 1258a38-b8 (trad. M. García Valdés, Gredos, 1988)<br/>
+</blockquote></p>
+
+<hr class="section-divider" />
+
+<h2>Génesis y Conexión Histórica</h2>
+
+<p>Antes de que existiera la «economía» como disciplina, existió la reflexión sobre la riqueza, el trabajo y el intercambio. Esta lección inaugural recorre los dos mil años que van de la Grecia clásica a la escolástica medieval: el largo periodo en que los problemas económicos se pensaron <strong>dentro de la ética y la política</strong>, no como un ámbito autónomo del saber.</p>
+
+<p>El punto de partida es una advertencia metodológica. Buscar en Aristóteles o en Santo Tomás una «teoría económica» en el sentido moderno —un sistema del mercado, de los precios o del crecimiento— sería un anacronismo. Lo que encontramos es algo distinto y, en cierto modo, más interesante: <strong>juicios normativos sobre cómo debe organizarse la vida material de la comunidad</strong>. La pregunta antigua y medieval no es «¿cómo funciona la economía?» sino «¿cuál es el lugar justo de la riqueza en una vida buena?».</p>
+
+<p>Esta lección conecta directamente con el bloque de filosofía política del sitio: la distinción aristotélica entre <em>oikonomía</em> y crematística, que aquí ocupará el centro, fue analizada en su contexto político en <strong>FIL-04-01</strong> (Aristóteles, <em>Política</em> I: la comunidad natural). Allí vimos la ciudad como comunidad suprema; aquí veremos cómo se administra su base material. Y las semillas que plantaron Grecia y la escolástica —el problema del valor, la legitimidad del interés, la función del dinero— no desaparecerán: reaparecerán transformadas en el mercantilismo (<strong>ECO-02-A</strong>), en Smith (<strong>ECO-03-A</strong>) y en Marx (<strong>ECO-04-A</strong>).</p>
+
+<hr class="section-divider" />
+
+<h2>1. La palabra y el oficio: <em>oikonomía</em></h2>
+
+<p>La palabra «economía» desciende del griego <em>oikonomía</em> (οἰκονομία), compuesta de <em>oikos</em> (οἶκος, «casa», «hogar», en el sentido amplio de patrimonio familiar) y <em>nomos</em> (νόμος, «regla», «ley»): literalmente, <strong>el arte de administrar la casa</strong>. El <em>oikos</em> griego no era el hogar nuclear moderno, sino una unidad de producción y consumo que integraba tierras, esclavos, ganado, talleres y la familia extensa.</p>
+
+<p>El tratado más antiguo sobre la materia que se conserva es el <em>Económico</em> (Οἰκονομικός) de <strong>Jenofonte</strong> (ca. 430-354 a. C.), discípulo de Sócrates. Escrito como diálogo socrático, presenta al terrateniente Iscomaco instruyendo a su joven esposa en la administración del patrimonio: la división del trabajo doméstico, la supervisión de los esclavos, la agricultura como actividad paradigmática. Dos ideas del texto tendrán larga posteridad:</p>
+
+<p>- <strong>La riqueza es relativa al uso.</strong> Un bien solo es riqueza para quien sabe usarlo: una flauta es riqueza para el flautista, no para quien la posee sin saber tocarla. Es un primer esbozo, rudimentario pero real, de la distinción entre valor de uso y valor de cambio que obsesionará a Smith y a Marx.
+- <strong>La administración es un saber práctico</strong> (<em>epistēmē</em>), ordenado a un fin: el buen gobierno de la casa para el bienestar de sus miembros. La abundancia no es el fin; es el medio.</p>
+
+<p>El sesgo agrícola de Jenofonte —la tierra como fuente legítima de riqueza y el comercio como actividad menor— refleja la ideología de la aristocracia terrateniente griega y anticipa prejuicios que reaparecerán en los fisiócratas del siglo XVIII.</p>
+
+<h2>2. Platón: la división del trabajo y la ciudad «auténtica»</h2>
+
+<p>Platón no escribió tratados económicos, pero la fundación de la ciudad en la <em>República</em> contiene una de las intuiciones más fecundas de toda la historia del pensamiento económico. Cuando Sócrates reconstruye el origen de la <em>polis</em>, la respuesta es material:</p>
+
+<p><blockquote>
+«Una ciudad —creo— se constituye porque ninguno de nosotros es autosuficiente, sino que necesita de muchas cosas.» (<em>Rep.</em> 369b)<br/>
+</blockquote></p>
+
+<p>De la pluralidad de necesidades nace la cooperación, y de la cooperación, <strong>la división del trabajo</strong>: cada cual produce más y mejor si se dedica a un solo oficio conforme a su naturaleza (<em>Rep.</em> 370a-c). El campesino no fabricará su arado; el herrero no cultivará su trigo. El intercambio, el mercado (<em>agora</em>) y finalmente el dinero aparecen como consecuencias necesarias de esta especialización (<em>Rep.</em> 371b-d). En pocas páginas, Platón esboza el argumento que Adam Smith convertirá, veintidós siglos después, en el fundamento de la <em>Riqueza de las Naciones</em> (ECO-03-A): <strong>la prosperidad nace de la división del trabajo, y ésta del intercambio</strong>.</p>
+
+<p>Pero en Platón esta lógica queda subordinada a la justicia política. La primera ciudad, sencilla y autosuficiente, es la «ciudad auténtica y sana»; la ciudad «purulenta», con lujos y comercio extendido, introduce deseos innecesarios, guerra y enfermedad moral (<em>Rep.</em> 372e-373e). La ambivalencia es característica: el comercio es funcionalmente necesario, pero moralmente sospechoso. En las <em>Leyes</em>, Platón relega la actividad mercantil a los metecos (extranjeros residentes) y la prohíbe a los ciudadanos, para quienes la propiedad del suelo y la virtud cívica deben bastar.</p>
+
+<h2>3. Aristóteles: <em>oikonomía</em> contra crematística</h2>
+
+<p>Es Aristóteles quien lleva esta reflexión a su máxima sistematicidad antigua. En el Libro I de la <em>Política</em> —cuya arquitectura general estudiamos en <strong>FIL-04-01</strong>—, al tratar la administración del hogar, introduce la distinción que gobernará el debate económico occidental durante dos milenios.</p>
+
+<h3>1. Las dos formas de adquisición</h3>
+
+<p>Aristóteles distingue dos artes de adquirir bienes (<em>Pol.</em> I, 8-11, 1256a-1259a):</p>
+
+<p>- <strong>La crematística natural o doméstica</strong>, parte de la <em>oikonomía</em>: procurar los bienes necesarios y útiles para la vida de la casa y de la ciudad. Tiene un <strong>límite natural</strong>, fijado por las necesidades de la vida buena. Conseguir trigo para alimentar a la familia, telas para vestirla, herramientas para trabajar: todo ello es legítimo y tiene un <em>telos</em> (τέλος) claro.
+- <strong>La crematística comercial</strong>: el arte de ganar dinero mediante el intercambio. Su rasgo definitorio es la <strong>ausencia de límite</strong>: quien acumula dinero por el dinero mismo no encuentra un punto de saturación, porque el dinero no satisface por sí mismo ninguna necesidad. «De este tipo de riqueza no hay límite» (<em>Pol.</em> I, 9, 1257b23).</p>
+
+<p>El análisis se apoya en una observación famosa: todo bien tiene <strong>dos usos</strong>. Un zapato sirve para calzar y para intercambiar (<em>Pol.</em> I, 9, 1257a5-13). El primer uso es propio y natural; el segundo, derivado. Cuando el intercambio se hace para satisfacer necesidades (trueque primero, compraventa con dinero después), permanece dentro de lo natural; cuando se hace para ganar —comprar para vender más caro—, ha degenerado en crematística pura.</p>
+
+<h3>2. La condena de la usura</h3>
+
+<p>De esta distinción se sigue la condena más influyente de la historia económica: la de la <strong>usura</strong> (<em>obolostatikē</em>), reproducida en la cita inaugural de esta lección. El dinero (<em>nomisma</em> / νόμισμα) fue inventado para facilitar el intercambio; prestarlo a interés es hacer «cría de dinero», engendrar dinero de dinero —en griego, <em>tokos</em> (τόκος) significa a la vez «interés» y «cría»—, lo cual pervierte su función y es «de todas la adquisición más antinatural» (<em>Pol.</em> I, 10, 1258b2-8).</p>
+
+<p>No se trata de una excentricidad personal: esta argumentación, tomada tal cual por los teólogos medievales, fundamentará la prohibición canónica del préstamo a interés que regirá —con crecientes distinciones casuísticas— hasta el Renacimiento.</p>
+
+<h3>3. El primer análisis del intercambio: <em>Ética a Nicómaco</em> V, 5</h3>
+
+<p>Si la <em>Política</em> aporta la norma, la <em>Ética a Nicómaco</em> aporta el análisis. En el tratamiento de la <strong>justicia conmutativa</strong> (<em>EN</em> V, 5, 1132b21-1133b28), Aristóteles se pregunta qué hace posible el intercambio justo entre productores de bienes heterogéneos: ¿cómo intercambiar equitativamente tantas casas por tantos zapatos?</p>
+
+<p>Su respuesta encadena tres ideas de enorme posteridad:</p>
+
+<p>1. El intercambio existe porque las <strong>necesidades</strong> (<em>chreia</em> / χρεία) de los hombres son recíprocas y complementarias: es la necesidad la que «mantiene unida» a la comunidad de intercambio.
+2. Para que el intercambio sea justo, los bienes deben hacerse de algún modo <strong>conmensurables</strong>, equiparados en proporción.
+3. El <strong>dinero</strong> es la convención (<em>nomisma</em> deriva de <em>nomos</em>, convención/ley) que hace posible esa medida: «el dinero hace conmensurables las cosas al equipararlas, pues todo se mide por el dinero» (<em>EN</em> V, 5, 1133a20-22).</p>
+
+<p>Aristóteles no resuelve —ni pretende resolver— el problema de <em>qué</em> hace valer a las cosas (¿el trabajo?, ¿la utilidad?, ¿la necesidad?). Pero plantea con precisión la cuestión que aguijoneará a Smith, a Ricardo, a Marx y a los marginalistas: <strong>el enigma del valor de cambio</strong>. En ese sentido, <em>EN</em> V, 5 es el texto fundacional de toda la teoría del valor posterior (cf. ECO-03-A y ECO-05-A).</p>
+
+<h2>4. Roma: la economía del derecho</h2>
+
+<p>El genio romano no fue especulativo sino jurídico y organizativo. Roma no produjo un Aristóteles de la economía, pero construyó el <strong>armazón institucional</strong> sin el cual ninguna vida económica compleja es posible.</p>
+
+<p>- <strong>El derecho de propiedad y de contratos.</strong> La jurisprudencia romana —que culminará en el <em>Corpus Iuris Civilis</em> de Justiniano (siglo VI d. C.)— define con precisión la propiedad (<em>dominium</em>), la posesión, las formas del contrato (compraventa, <em>emptio venditio</em>; arrendamiento; mutuo; sociedad, <em>societas</em>) y las vías de su ejecución. Buena parte de las categorías jurídicas del capitalismo moderno son refinamientos de figuras romanas.
+- <strong>La literatura agronómica.</strong> Catón el Viejo (<em>De agri cultura</em>, ca. 160 a. C.), Varrón y Columela escriben manuales de administración de <em>villae</em> esclavistas: costes, rendimientos, compra de esclavos, rotación de cultivos. Es el heredero directo —y empresarialmente endurecido— del <em>Económico</em> de Jenofonte.
+- <strong>El debate moral sobre la riqueza.</strong> Cicerón, en <em>De officiis</em> (I, 42, 150-151), jerarquiza las fuentes de ganancia según su dignidad: el comercio menudo es «sórdido»; el gran comercio internacional, más respetable; pero nada es superior a la agricultura. Y Séneca, desde el estoicismo, denuncia la <em>avaritia</em> como enfermedad del alma. Roma hereda así la ambivalencia griega: una economía esclavista y monetaria inmensamente desarrollada, pensada con categorías morales que la desconfían.</p>
+
+<p>Conviene subrayar, con Moses Finley, que la economía antigua estuvo «encastrada» (<em>embedded</em>) en las estructuras sociales y políticas: no existía una esfera «económica» diferenciada con sus propias leyes percibidas como tales. Los mercados existían —y el imperio romano fue una formidable zona de intercambio—, pero el estatus, la ciudadanía y la tierra, no el mercado, asignaban la riqueza y el honor.</p>
+
+<h2>5. La escolástica: el precio justo y la usura</h2>
+
+<p>La cristianización del imperio y luego la Europa medieval transforman el marco, no los problemas. La economía sigue subordinada a la ética, pero la ética es ahora teología: la cuestión es la <strong>salvación</strong>, y la riqueza se juzga ante Dios.</p>
+
+<h3>1. El <em>justum pretium</em></h3>
+
+<p>Cuando en los siglos XII-XIII la Europa de las ferias y las ciudades italianas reactiva el comercio monetario, los teólogos deben responder a preguntas prácticas urgentes: ¿a qué precio es lícito vender? ¿Puede el mercader enriquecerse? ¿Es lícito cobrar interés?</p>
+
+<strong>Santo Tomás de Aquino</strong> (1225-1274), en la <em>Suma de Teología</em> (II-II, q. 77, a. 1), plantea la cuestión de si es lícito vender una cosa por más de lo que vale. Su respuesta: vender por encima del <strong>precio justo</strong> (<em>justum pretium</em>) o comprar por debajo de él es «en sí mismo ilícito», porque defrauda al prójimo. ¿Y qué fija el precio justo? Tomás no da una fórmula —no hay una teoría del valor en sentido moderno—, pero sus indicaciones apuntan a lo que <strong>comúnmente se estima</strong> en el lugar y el tiempo, es decir, al precio corriente del mercado libre de fraude y de coacción. La justicia conmutativa aristotélica (<em>EN</em> V, 5), recibida a través del comentario al que el propio Tomás dedicó años, sigue siendo la matriz: el intercambio debe respetar la igualdad proporcional entre lo dado y lo recibido.
+
+<p>La novedad tomista, frente a un puritanismo que condenaría todo comercio, es la <strong>legitimación condicionada del mercader</strong>: el lucro mercantil no es malo en sí; puede ser licitud cuando remunera el trabajo, el riesgo y el servicio de acercar los bienes a quien los necesita (<em>ST</em> II-II, q. 77, a. 4). Malo es solo el lucro buscado como fin último, la codicia (<em>turpe lucrum</em>). Es un paso decisivo respecto a Aristóteles: la actividad comercial comienza a tener una justificación propia.</p>
+
+<h3>2. La usura, de nuevo</h3>
+
+<p>Sobre el interés, la escolástica hereda y radicaliza la posición aristotélica, reforzada por el Evangelio (<em>mutuum date nihil inde sperantes</em>, «prestad sin esperar nada a cambio», Lc 6,35) y por los concilios. En la <em>Suma</em> (II-II, q. 78), Tomás argumenta que el dinero es un bien <strong>fungible</strong>: su uso consiste en su consumo, es decir, en su gasto. Cobrar por el uso del dinero prestado es, por tanto, cobrar dos veces por lo mismo: una vez por la restitución del capital y otra por un «uso» que no existe separado de la cosa. La usura es, formalmente, una venta de lo inexistente.</p>
+
+<p>La historia posterior de esta doctrina es la historia de sus distinciones: los canonistas admitirán compensaciones por <em>lucrum cessans</em> (ganancia que cesa) y <em>damnum emergens</em> (pérdida emergente), los montes de piedad, las letras de cambio... Cuando el capitalismo comercial del siglo XVI exija crédito a gran escala, el edificio casuístico estará ya lleno de puertas laterales, y Calvino acabará de normalizar el interés moderado. Pero la forma misma del debate —¿qué es justo cobrar?— revela la continuidad profunda con el <em>Política</em> I.</p>
+
+<h3>3. La escolástica tardía: hacia el mercado</h3>
+
+<p>Como epílogo anticipado: los últimos escolásticos de la <strong>Escuela de Salamanca</strong> (siglo XVI) —Luis de Molina, Domingo de Soto, Martín de Azpilcueta—, enfrentados al comercio atlántico y a la inflación americana, darán pasos sorprendentes: defensa del precio de mercado libre, primera formulación de la teoría cuantitativa del dinero (Azpilcueta, 1556, observando que la afluencia de metales preciosos de Indias encarecía los precios) y análisis del cambio de monedas. La escolástica, a menudo caricaturizada como obstáculo, fue también —por sus propios medios— el laboratorio donde se templaron conceptos que la economía clásica heredaría.</p>
+
+<hr class="section-divider" />
+
+<h2>Ecos y Semillas para el Futuro</h2>
+
+<p>El pensamiento económico antiguo y medieval deja tres legados que estructurarán todo lo que sigue en este curso:</p>
+
+<p>1. <strong>El problema del valor.</strong> ¿Qué determina por qué unas cosas valen más que otras? Aristóteles lo planteó sin resolverlo; Smith y Ricardo lo intentarán con el trabajo (ECO-03-A), Marx lo radicalizará (ECO-04-A) y los marginalistas darán la vuelta a la tortilla con la utilidad (ECO-05-A).
+2. <strong>La legitimidad del interés y del lucro.</strong> La condena de la usura dominará quince siglos de moral económica; su desmoronamiento es uno de los hilos conductores del paso al mundo moderno, y el mercantilismo (ECO-02-A) será la primera doctrina que piense la acumulación monetaria como objetivo positivo del Estado.
+3. <strong>La subordinación normativa.</strong> Que la economía deba servir a la vida buena de la comunidad —y no al revés— es la tesis antigua y medieval por excelencia. La economía moderna se definirá precisamente por emanciparse de esa subordinación; y gran parte de las críticas contemporáneas (incluida la economía conductual de ECO-08-A, que cuestiona al agente puramente calculador) pueden leerse como un retorno, con otros medios, a las preguntas de Aristóteles.</p>
+
+<hr class="section-divider" />
+
+<h2>Referencias Bibliográficas</h2>
+
+<em> Aristóteles (1988). </em>Política* (M. García Valdés, Trad.). Editorial Gredos. (Obra original del siglo IV a. C.)
+<em> Aristóteles (1998). </em>Ética a Nicómaco* (J. Pallí Bonet, Trad.). Editorial Gredos. (Obra original del siglo IV a. C.)
+<em> Jenofonte (1987). </em>Económico* (C. Viano, Trad.). Editorial Gredos. (Obra original del siglo IV a. C.)
+<em> Platón (1988). </em>República* (C. Eggers Lan, Trad.). Editorial Gredos. (Obra original del siglo IV a. C.)
+<em> Cicerón (1972). </em>De los deberes* (A. Medina, Trad.). Editorial Gredos. (Obra original publicada en 44 a. C.)
+<em> Tomás de Aquino (2001). </em>Suma de Teología* (Edición bilingüe latino-española). Biblioteca de Autores Cristianos. (Obra original publicada ca. 1265-1274)
+<em> Finley, M. I. (1984). </em>La economía antigua* (R. García Iglesias, Trad.). Fondo de Cultura Económica. (Obra original publicada en 1973)
+<em> Schumpeter, J. A. (1994). </em>Historia del análisis económico* (M. Saborido, Trad.). Ariel. (Obra original publicada en 1954)
+<em> Noonan, J. T. (1957). </em>The Scholastic Analysis of Usury*. Harvard University Press.]]></content:encoded>
+      <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+      <wp:post_id>24068</wp:post_id>
+      <wp:post_date>2023-01-01 12:00:00</wp:post_date>
+      <wp:post_date_gmt>2023-01-01 12:00:00</wp:post_date_gmt>
+      <wp:post_name>pensamiento-economico-antiguedad</wp:post_name>
+      <wp:status>publish</wp:status>
+      <wp:post_type>post</wp:post_type>
+      <category domain="category" nicename="economia"><![CDATA[Economía]]></category>
+      <meta_json><![CDATA[{"_article_num": "1", "_lesson_code": "ECO-01-A", "_read_time": "14 min", "_post_subtitle": "Lecci\u00f3n de Historia del Pensamiento Econ\u00f3mico", "_lesson_essentials": "La palabra \u00abeconom\u00eda\u00bb nace del griego oikonom\u00eda (\u03bf\u1f30\u03ba\u03bf\u03bd\u03bf\u03bc\u03af\u03b1): el arte de administrar el hogar, no una ciencia del mercado.\nArist\u00f3teles distingue la adquisici\u00f3n natural de bienes (oikonom\u00eda) de la acumulaci\u00f3n monetaria sin l\u00edmite (cremat\u00edstica), y condena la usura como contraria a la naturaleza del dinero.\nEn la \u00c9tica a Nic\u00f3maco V, 5, Arist\u00f3teles ofrece el primer an\u00e1lisis del intercambio justo: el dinero (nomisma) como medida que hace conmensurables bienes heterog\u00e9neos.\nRoma aporta el marco jur\u00eddico de la vida econ\u00f3mica: propiedad, contratos, sociedades y el debate ciceroniano sobre la honestidad del comercio.\nLa escol\u00e1stica medieval, con Santo Tom\u00e1s, formula el justum pretium (precio justo) y mantiene la condena de la usura, subordinando lo econ\u00f3mico a la \u00e9tica teol\u00f3gica.", "_bibliography": "Arist\u00f3teles (1988). Pol\u00edtica (M. Garc\u00eda Vald\u00e9s, Trad.). Editorial Gredos. (Obra original del siglo IV a. C.)\nArist\u00f3teles (1998). \u00c9tica a Nic\u00f3maco (J. Pall\u00ed Bonet, Trad.). Editorial Gredos. (Obra original del siglo IV a. C.)\nJenofonte (1987). Econ\u00f3mico (C. Viano, Trad.). Editorial Gredos. (Obra original del siglo IV a. C.)\nPlat\u00f3n (1988). Rep\u00fablica (C. Eggers Lan, Trad.). Editorial Gredos. (Obra original del siglo IV a. C.)\nTom\u00e1s de Aquino (2001). Suma de Teolog\u00eda (Edici\u00f3n biling\u00fce, Biblioteca de Autores Cristianos). (Obra original publicada ca. 1265-1274)\nSchumpeter, J. A. (1994). Historia del an\u00e1lisis econ\u00f3mico (M. Saborido, Trad.). Ariel. (Obra original publicada en 1954)\nFinley, M. I. (1984). La econom\u00eda antigua (R. Garc\u00eda Iglesias, Trad.). Fondo de Cultura Econ\u00f3mica. (Obra original publicada en 1973)", "_yoast_wpseo_focuskw": "pensamiento econ\u00f3mico antiguo", "_yoast_wpseo_title": "Econom\u00eda Antigua - Grecia, Roma y Escol\u00e1stica | Nihil Novi", "_yoast_wpseo_metadesc": "De la oikonom\u00eda griega al justum pretium escol\u00e1stico: c\u00f3mo Grecia, Roma y la Edad Media pensaron la riqueza, el dinero y el intercambio justo.", "_nihilnovi_import_source": "ECO_01_A.md"}]]></meta_json>
+    </item>
+    <item>
+      <title>ECO-02-A: Mercantilismo - Acumulación y Comercio Exterior</title>
+      <link>https://nihilnovi.xyz/mercantilismo-acumulacion/</link>
+      <pubDate>Mon, 03 Aug 2026 04:00:42 +0000</pubDate>
+      <dc:creator><![CDATA[davidlegorreta]]></dc:creator>
+      <guid isPermaLink="false">https://nihilnovi.xyz/?p=567277</guid>
+      <description></description>
+      <content:encoded><![CDATA[<h1>ECO-02-A: El Mercantilismo y la Acumulación</h1>
+
+<p><blockquote>
+«El único medio ordinario de aumentar nuestra riqueza y nuestro tesoro es el Comercio Exterior, en el cual debemos observar siempre esta regla: vender cada año a los extranjeros más valor del que consumimos de lo suyo.»<br/>
+— Thomas Mun, <em>England's Treasure by Forraign Trade</em>, cap. 2 (publicado póstumamente, 1664)<br/>
+</blockquote></p>
+
+<hr class="section-divider" />
+
+<h2>Génesis y Conexión Histórica</h2>
+
+<p>Entre la Europa de Santo Tomás y la de Adam Smith media una transformación colosal: la formación de los <strong>Estados nacionales modernos</strong>. La caída de Constantinopla, los descubrimientos atlánticos, la Reforma, las guerras de religión y la revolución militar de la pólvora crearon un mundo de monarquías competitivas, permanentemente endeudadas y permanentemente en guerra. En ese mundo, la pregunta económica cambió de signo. Ya no es la pregunta escolástica —¿qué intercambio es justo ante Dios? (ECO-01-A)—, sino la pregunta del consejero real: <strong>¿cómo financia el Estado su poder?</strong></p>
+
+<p>El mercantilismo es la respuesta a esa pregunta. Conviene precisar desde el inicio, con los historiadores, que el «mercantilismo» —término popularizado precisamente por su crítico, Adam Smith, que habló del «sistema mercantil» o «comercial»— <strong>no fue una escuela doctrinaria unificada</strong> con manifiesto y fundador. Fue, más bien, una constelación de panfletos, memoriales de comerciantes, ordenanzas reales y prácticas administrativas, extendida por Europa entre los siglos XVI y XVIII, unida por algunas convicciones compartidas. Eli Heckscher, en su gran estudio clásico (<em>Mercantilism</em>, 1931), lo definió como un sistema de <strong>poder</strong>: la política económica como instrumento de la unificación y fortaleza del Estado nacional.</p>
+
+<p>Esta lección examina esa constelación: su premisa bullonista, su doctrina de la balanza comercial, sus dos grandes variantes prácticas (la inglesa y la francesa) y su demoledora refutación interna a manos de David Hume —la cual no impidió que el mercantilismo, como tentación política, siga reapareciendo hasta hoy.</p>
+
+<hr class="section-divider" />
+
+<h2>1. La premisa bullonista: la riqueza es el tesoro</h2>
+
+<p>La primera intuición mercantilista es también la más antigua y la más persistente: <strong>la riqueza de una nación consiste en su acumulación de metales preciosos</strong>, oro y plata. En un mundo donde el dinero era literalmente metal acuñado, y donde el metal era además la materia prima de los ejércitos —los soldados se pagaban en moneda sonante—, la identificación entre «tesoro nacional» y «poder estatal» parecía de sentido común.</p>
+
+<p>España ofrecía el espejo más visible: el imperio que recibía los galeones cargados de plata de Potosí y Zacatecas era, a ojos de Europa, el modelo de la riqueza nacional. Que esa misma España se declarara en bancarrota repetidas veces (1557, 1560, 1575, 1596...) y que la afluencia de metal americano hubiera desatado la «revolución de los precios» —una inflación secular que los escolásticos de Salamanca ya analizaban (cf. ECO-01-A, §5.3)— era una lección que Europa tardaría en digerir: <strong>el metal abundante no enriquece si no hay producción real detrás</strong>.</p>
+
+<p>Los primeros mercantilistas, los llamados «bullonistas» (como los españoles del arbitriismo o los primeros ingleses), extrajeron de aquí la consecuencia más cruda: si la riqueza es el metal, hay que <strong>prohibir su salida</strong>. De ahí las leyes de <em>estanco</em> y las severísimas penas —en Castilla, la muerte— contra la exportación de moneda y de metales preciosos.</p>
+
+<h2>2. La doctrina madura: la balanza comercial favorable</h2>
+
+<p>El mercantilismo maduro supera el bullonismo ingenuo con un razonamiento más fino. Si un país sin minas propias quiere acumular metales —argumentan los teóricos ingleses—, prohibir su salida es insuficiente y contraproducente: el comercio exige que el dinero circule. El camino correcto es otro: <strong>vender más de lo que se compra</strong>. La diferencia, la «balanza comercial favorable», volverá al país en metálico.</p>
+
+<p>La formulación canónica es de <strong>Thomas Mun</strong> (1571-1641), comerciante de la Compañía de las Indias Orientales, en su obra póstuma <em>England's Treasure by Forraign Trade</em> (1664). Mun había defendido ya en 1621 el derecho de su compañía a exportar moneda para financiar el comercio con Asia, con un argumento que se volvió clásico: el dinero exportado es como el trigo sembrado —se aparta para multiplicarse—, pues los bienes reexportados desde Inglaterra devuelven mucho más de lo que salió. En la <em>Treasure</em>, Mun sistematiza los medios de lograr la balanza favorable:</p>
+
+<p>- <strong>Exportar manufacturas, no materias primas</strong>: el valor añadido del trabajo nacional es lo que engorda la balanza.
+- <strong>Reducir el consumo de productos extranjeros</strong>, fomentando los sustitutivos nacionales.
+- <strong>Desarrollar la marina mercante y los servicios</strong> (fletes, seguros, comisión), los «ingresos invisibles».
+- <strong>Reexportar</strong>: convertir al país en el entrepost (<em>staple</em>) del comercio mundial, como Holanda.</p>
+
+<p>Detrás de la receta hay una visión del mundo económico como <strong>juego de suma cero</strong>: el stock mundial de riqueza es fijo; lo que una nación gana, otra lo pierde. El comercio internacional es, en el fondo, una guerra continuada por otros medios —y los mercantilistas lo decían sin rubor. De esta premisa se derivan los rasgos políticos del sistema: aranceles protectores, monopolios por compañías privilegiadas, legislación de navegación (las <em>Navigation Acts</em> inglesas de 1651 y 1660, dirigidas contra el transporte holandés) y colonias concebidas como fuentes cautivas de materias primas y mercados cerrados.</p>
+
+<h2>3. Las variantes nacionales: Colbert y el cameralismo</h2>
+
+<p>El mercantilismo fue una doctrina de gabinete, y cada Estado le dio su forma.</p>
+
+<h3>1. Francia: el colbertismo</h3>
+
+<strong>Jean-Baptiste Colbert</strong> (1619-1683), ministro de Luis XIV durante casi dos décadas, ejecutó el programa mercantilista más completo de la historia. Su obra no fue teórica sino administrativa, y abarcó:
+
+<p>- <strong>Las manufacturas reales</strong> (<em>manufactures royales</em>): fábricas estatales o subvencionadas de lujo —los Gobelinos para tapices, Saint-Gobain para espejos (creada para romper el monopolio veneciano)— destinadas a sustituir importaciones y a exportar prestigio.
+- <strong>La reglamentación industrial</strong>: cientos de ordenanzas que fijaban el número de hilos por pulgada de cada tejido, con inspectores (<em>contrôleurs</em>) para hacerlas cumplir. La calidad uniforme era, a sus ojos, una ventaja exportadora.
+- <strong>La infraestructura</strong>: el Canal del Mediodía (Canal du Midi, 1666-1681), que unió el Atlántico con el Mediterráneo, y la reconstrucción de la flota mercante y de guerra.
+- <strong>Los aranceles de 1664 y 1667</strong>, que gravaron duramente las manufacturas importadas, desencadenando guerras comerciales con Holanda.</p>
+
+<p>El balance es ambivalente: Francia ganó industria y prestigio, pero a costa de una fiscalidad aplastante sobre el campo y de la expulsión de los hugonotes (1685), que llevó a sus rivales a miles de artesanos cualificados —prueba de que el dirigismo puede construir y destruir con la misma mano.</p>
+
+<h3>2. El mundo germánico: el cameralismo</h3>
+
+<p>En los principados alemanes y en la Austria de los Habsburgo, el mercantilismo tomó forma académica: el <strong>cameralismo</strong> (<em>Kameralwissenschaft</em>, la «ciencia de la cámara» o erario príncipe). Autores como <strong>Philipp Wilhelm von Hörnigk</strong> —cuyo <em>Österreich über alles, wann es nur will</em> (1684) ofrece nueve reglas de economía nacional, incluida la de trabajar las materias primas «dentro del país» y prohibir los artículos de lujo extranjeros—, Johann Joachim Becher y posteriormente von Justi elaboraron manuales de administración para maximizar los ingresos del príncipe. El cameralismo, con su énfasis en la población (el «pobladismo»: más súbditos, más contribuyentes y soldados) y en la eficiencia fiscal, es un ancestro directo tanto de la administración pública moderna como de la <em>Nationalökonomie</em> alemana del siglo XIX.</p>
+
+<h2>4. La refutación interna: Hume y el mecanismo flujo especie-precio</h2>
+
+<p>El mercantilismo no fue derrotado por sus enemigos políticos, sino por su propia lógica. En el ensayo <em>Of the Balance of Trade</em> (1752), <strong>David Hume</strong> demostró que el objetivo mercantilista —acumular metal de forma permanente mediante superávits comerciales continuados— era <strong>autodestructivo</strong>.</p>
+
+<p>El argumento, conocido como mecanismo <strong>flujo especie-precio</strong> (<em>price-specie-flow mechanism</em>), es de una elegancia implacable:</p>
+
+<p>1. Supongamos que Inglaterra logra un superávit comercial sostenido: entra más oro y plata del que sale.
+2. La cantidad de moneda en circulación dentro del país aumenta. Pero —y aquí Hume aplica una intuición que ya esbozaran los salmantinos del siglo XVI— el nivel general de precios depende de la cantidad de dinero en relación con los bienes disponibles.
+3. Con más dinero y los mismos bienes, <strong>los precios internos suben</strong>.
+4. Los productos ingleses se vuelven más caros en el exterior y los extranjeros más baratos en Inglaterra: las exportaciones caen, las importaciones suben.
+5. La balanza se invierte, el metal refluye hacia fuera, y el sistema tiende por sí solo a un <strong>equilibrio</strong> en el que ningún país retiene ventaja permanente.</p>
+
+<p><blockquote>
+«¿Puede uno imaginarse que, por cualquier cuidado del gobierno, sería posible conservar para siempre en una nación esa ventaja monetaria? [...] El agua, en todas partes, se mantiene nivelada.» (Hume, <em>Of the Balance of Trade</em>, 1752)<br/>
+</blockquote></p>
+
+<p>La conclusión subvierte la premisa suma-cero: el comercio entre naciones prósperas no es guerra sino <strong>ganancia mutua</strong>, y una nación no puede desear la pobreza de sus vecinos, porque vecinos ricos son clientes ricos. Veinticuatro años después, el Libro IV de la <em>Riqueza de las Naciones</em> de Smith (1776) —que estudiaremos en ECO-03-A— asestará el golpe final: la riqueza de una nación no es su tesoro, sino la producción anual de su trabajo; y la política mercantil no sirve a la nación, sino a los comerciantes que la capturan para sus privilegios.</p>
+
+<h2>5. Valoración: ¿qué queda del mercantilismo?</h2>
+
+<p>La historiografía moderna ha matizado la caricatura smithiana. Los mercantilistas:</p>
+
+<p>- <strong>No confundían del todo riqueza y metal.</strong> Mun y otros distinguían entre la riqueza «natural» (bienes) y la «artificial» (moneda), y su obsesión monetaria tenía una lógica en un mundo sin banca central: el metal era liquidez, crédito y poder de movilización militar.
+- <strong>Vieron correctamente la importancia de la industria.</strong> La intuición de que exportar manufacturas vale más que exportar materias primas —el germen de la teoría de la ventaja y de las políticas de industrialización— fue recuperada por List, por Hamilton y por todo el desarrollismo del siglo XX.
+- <strong>Construyeron el Estado moderno.</strong> Catastro, estadística, administración fiscal, infraestructura: buena parte de la capacidad estatal sobre la que opera hoy cualquier economía es herencia mercantilista.</p>
+
+<p>Y, sin embargo, su error de fondo era real: confundir la <strong>riqueza con un activo particular</strong> (el metal), concebir el comercio como rapiña, y sacrificar el consumo —la vida material de la población— al poder del príncipe. Cada vez que un gobierno contemporáneo persigue el superávit comercial como fin en sí mismo, acumula reservas más allá de toda prudencia o subordina el bienestar interno a la «competitividad» entendida como guerra, los economistas evocan el mismo nombre: <strong>neomercantilismo</strong>. El mercantilismo, más que una época, es una tentación permanente.</p>
+
+<hr class="section-divider" />
+
+<h2>Ecos y Semillas para el Futuro</h2>
+
+<p>El mercantilismo es el eslabón entre el mundo moral de la escolástica y el mundo analítico de la economía clásica:</p>
+
+<p>1. <strong>Hacia Smith (ECO-03-A):</strong> la <em>Riqueza de las Naciones</em> se construye, en gran parte, <em>contra</em> el sistema mercantil. El Libro IV es la crítica sistemática de la balanza comercial, los monopolios y las compañías privilegiadas. Entender el mercantilismo es entender contra qué —y por tanto a favor de qué— escribió Smith.
+2. <strong>Hacia la teoría monetaria:</strong> el mecanismo de Hume y la intuición salmantina sobre cantidad de dinero y precios son los antepasados remotos de la teoría cuantitativa que resucitará el monetarismo (ECO-07-A).
+3. <strong>Hacia los debates vivos:</strong> proteccionismo, guerra comercial, acumulación de reservas, política industrial. Los argumentos de Mun y Colbert no han muerto; solo han cambiado de idioma. Saber reconocerlos —y reconocer la refutación de Hume— es una herramienta de lectura del presente.</p>
+
+<hr class="section-divider" />
+
+<h2>Referencias Bibliográficas</h2>
+
+<em> Mun, T. (1664). </em>England's Treasure by Forraign Trade*. Thomas Clark.
+<em> Hume, D. (1988). </em>Ensayos morales, políticos y literarios* (F. J. Martín Gil, Trad.). Tecnos. (Obra original publicada en 1741-1777)
+<em> Smith, A. (1994). </em>Investigación sobre la naturaleza y causas de la riqueza de las naciones* (C. Rodríguez Braun, Trad.). Alianza Editorial. (Obra original publicada en 1776)
+<em> Heckscher, E. (1943). </em>Mercantilismo* (G. Bergmann, Trad.). Fondo de Cultura Económica. (Obra original publicada en 1931)
+<em> Schumpeter, J. A. (1994). </em>Historia del análisis económico* (M. Saborido, Trad.). Ariel. (Obra original publicada en 1954)
+<em> Viner, J. (1937). </em>Studies in the Theory of International Trade*. Harper & Brothers.
+<em> Magnússon, L. (2015). </em>The Political Economy of Mercantilism*. Routledge.]]></content:encoded>
+      <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+      <wp:post_id>567277</wp:post_id>
+      <wp:post_date>2023-01-08 12:00:00</wp:post_date>
+      <wp:post_date_gmt>2023-01-08 12:00:00</wp:post_date_gmt>
+      <wp:post_name>mercantilismo-acumulacion</wp:post_name>
+      <wp:status>publish</wp:status>
+      <wp:post_type>post</wp:post_type>
+      <category domain="category" nicename="economia"><![CDATA[Economía]]></category>
+      <meta_json><![CDATA[{"_article_num": "1", "_lesson_code": "ECO-02-A", "_read_time": "10 min", "_post_subtitle": "Lecci\u00f3n de Historia del Pensamiento Econ\u00f3mico", "_lesson_essentials": "El mercantilismo no fue una escuela unificada sino un conjunto de pr\u00e1cticas y escritos (siglos XVI-XVIII) orientados a un fin: el poder del Estado mediante la acumulaci\u00f3n de riqueza.\nSu principio central: la riqueza de una naci\u00f3n se mide por sus metales preciosos, y el comercio exterior es un juego de suma cero que exige una balanza favorable.\nThomas Mun (England's Treasure by Forraign Trade, 1664) es su te\u00f3rico can\u00f3nico: la exportaci\u00f3n neta como \u00fanica fuente de tesoro nacional.\nColbert llev\u00f3 la doctrina a la pr\u00e1ctica estatal en la Francia de Luis XIV: manufacturas reales, aranceles, infraestructura y control de calidad.\nDavid Hume (1752) demostr\u00f3 su contradicci\u00f3n interna con el mecanismo flujo especie-precio: la acumulaci\u00f3n de metales encarece los precios y destruye la propia balanza favorable.", "_bibliography": "Mun, T. (1664). England's Treasure by Forraign Trade. Londres: Thomas Clark. (Ed. espa\u00f1ola: El tesoro del comercio exterior de Inglaterra, en antolog\u00edas de historia del pensamiento econ\u00f3mico)\nHume, D. (1988). Ensayos morales, pol\u00edticos y literarios (F. J. Mart\u00edn Gil, Trad.). Tecnos. (Obra original publicada en 1741-1777)\nSmith, A. (1994). Investigaci\u00f3n sobre la naturaleza y causas de la riqueza de las naciones (C. Rodr\u00edguez Braun, Trad.). Alianza Editorial. Libro IV. (Obra original publicada en 1776)\nHeckscher, E. (1943). Mercantilismo (G. Bergmann, Trad.). Fondo de Cultura Econ\u00f3mica. (Obra original publicada en 1931)\nSchumpeter, J. A. (1994). Historia del an\u00e1lisis econ\u00f3mico (M. Saborido, Trad.). Ariel. (Obra original publicada en 1954)\nViner, J. (1937). Studies in the Theory of International Trade. Harper & Brothers.", "_yoast_wpseo_focuskw": "mercantilismo", "_yoast_wpseo_title": "Mercantilismo - Acumulaci\u00f3n y Comercio Exterior | Nihil Novi", "_yoast_wpseo_metadesc": "Qu\u00e9 fue el mercantilismo: la doctrina de la balanza comercial, la acumulaci\u00f3n de metales preciosos y el poder del Estado, de Thomas Mun a Colbert.", "_nihilnovi_import_source": "ECO_02_A.md"}]]></meta_json>
+    </item>
+    <item>
+      <title>ECO-03-A: Adam Smith - La Riqueza de las Naciones</title>
+      <link>https://nihilnovi.xyz/adam-smith-riqueza-naciones/</link>
+      <pubDate>Mon, 03 Aug 2026 04:00:42 +0000</pubDate>
+      <dc:creator><![CDATA[davidlegorreta]]></dc:creator>
+      <guid isPermaLink="false">https://nihilnovi.xyz/?p=433031</guid>
+      <description></description>
+      <content:encoded><![CDATA[<h1>ECO-03-A: Adam Smith y la Riqueza de las Naciones</h1>
+
+<p><blockquote>
+«No es de la benevolencia del carnicero, del cervecero o del panadero de donde esperamos nuestra cena, sino de su propio interés. No nos dirigimos a su humanidad sino a su amor propio, y nunca les hablamos de nuestras necesidades sino de sus ventajas.»<br/>
+— Adam Smith, <em>Riqueza de las Naciones</em> I.ii.2 (trad. C. Rodríguez Braun, Alianza, 1994)<br/>
+</blockquote></p>
+
+<hr class="section-divider" />
+
+<h2>Génesis y Conexión Histórica</h2>
+
+<p>Con Adam Smith (1723-1790) la reflexión sobre la riqueza se convierte en <strong>ciencia</strong>. Lo que en Grecia y la escolástica fue un capítulo de la ética (ECO-01-A) y en los mercantilistas un arte de gobierno (ECO-02-A), se transforma en 1776 en un sistema analítico: la <em>Investigación sobre la naturaleza y causas de la riqueza de las naciones</em> no pregunta qué debe hacer el príncipe, sino <strong>cómo funciona</strong> —qué produce la prosperidad material de una sociedad y qué la obstruye.</p>
+
+<p>El contexto es la Escocia de la Ilustración: el país más pobre de Gran Bretaña que, en dos generaciones, produjo a Hume, Ferguson, Reid y al propio Smith. El profesor de filosofía moral de Glasgow —la economía no existía aún como cátedra independiente— pudo observar de cerca la pobreza de los Highlands, el auge mercantil del Clyde y las primeras fábricas de la revolución industrial. Y pudo discutirlo todo con su amigo David Hume, cuya refutación del mercantilismo monetario (cf. ECO-02-A, §4) es uno de los cimientos sobre los que se alza el libro.</p>
+
+<p>Dos precisiones antes de entrar en materia. Primera: Smith no inventó la economía de la nada —fisiócratas franceses, Hutcheson, Hume y los propios escolásticos le suministraron materiales—, pero fue él quien los organizó en un edificio coherente que dominó el siglo siguiente. Segunda, y más importante para leerlo bien: la <em>Riqueza de las Naciones</em> es la segunda parte de un proyecto cuya primera parte es la <em>Teoría de los Sentimientos Morales</em> (1759). El «Adam Smith unidimensional» de los manuales —el profeta del egoísmo— es una caricatura que el propio Smith desautoriza desde su primera página.</p>
+
+<hr class="section-divider" />
+
+<h2>1. Los dos Smith: simpatía e interés</h2>
+
+<p>La <em>Teoría de los Sentimientos Morales</em> se abre con una afirmación que desconcierta a quien solo conoce al Smith de manual:</p>
+
+<p><blockquote>
+«Por egoísta que se suponga al hombre, hay evidentemente algunos principios en su naturaleza que le interesan en la fortuna de otros y hacen que su felicidad le sea necesaria, aunque no derive de ello nada más que el placer de presenciarla.» (<em>TMS</em> I.i.1)<br/>
+</blockquote></p>
+
+<p>La moralidad humana se funda, para Smith, en la <strong>simpatía</strong> (<em>sympathy</em>): nuestra capacidad imaginativa de ponernos en el lugar del otro, y en la figura del <strong>espectador imparcial</strong> (<em>impartial spectator</em>), el juez interior ante el que contrastamos nuestras acciones. La sociedad humana es posible porque nos importa cómo nos ven los demás.</p>
+
+<p>¿Contradice esto la <em>Riqueza de las Naciones</em>, con su apología del interés propio? No: son planos distintos del mismo edificio. La vida moral en general exige simpatía; el ámbito estrecho del <strong>intercambio mercantil entre extraños</strong> se organiza mejor mediante el interés propio mutuamente disciplinado. Cuando el carnicero nos vende la carne (cita inaugural), no fingimos que nos ame ni pretendemos amarlo: el mercado es el mecanismo que permite cooperar a millones de personas que jamás se conocerán. La llamada «cuestión Adam Smith» (<em>Das Adam-Smith-Problem</em>) que los alemanes del XIX creyeron ver —dos libros incompatibles— se disuelve en cuanto se leen ambos: la búsqueda del interés propio opera <strong>dentro</strong> del marco de justicia y de reglas que la teoría moral describe.</p>
+
+<h2>2. El motor de la riqueza: la división del trabajo</h2>
+
+<p>La <em>Riqueza de las Naciones</em> comienza con su tesis central, anunciada ya en el título del Libro I: la riqueza de una nación es la producción anual de su trabajo, y su mejora depende, sobre todo, de <strong>la división del trabajo</strong> (WN I.i-iii).</p>
+
+<h3>1. La fábrica de alfileres</h3>
+
+<p>El ejemplo es célebre. Un trabajador solo, no adiestrado, difícilmente fabricaría un alfiler al día; pero en una pequeña manufactura donde la producción se descompone en unas dieciocho operaciones —estirar el alambre, enderezarlo, cortarlo, afilar la punta, aplastar la cabeza...—, diez personas producen más de 48.000 alfileres diarios (WN I.i.3). La productividad se multiplica por miles por tres razones: la <strong>destreza</strong> ganada con la especialización, el <strong>tiempo ahorrado</strong> al no cambiar de tarea y de herramienta, y la invención de <strong>máquinas</strong> que la especialización misma sugiere.</p>
+
+<p>Nótese la continuidad y la ruptura con Platón (<em>Rep.</em> 369b-370c, cf. ECO-01-A, §2): para Platón la división del trabajo fundaba la ciudad y respondía a las diferencias naturales entre los hombres; para Smith es el motor del crecimiento, y las diferencias de talento son más bien <strong>efecto</strong> que causa de la especialización (WN I.ii.4). La distancia entre un filósofo y un mozo de cuerda —observa con audacia igualitaria— se debe más al hábito, la costumbre y la educación que a la naturaleza.</p>
+
+<h3>2. La extensión del mercado</h3>
+
+<p>La división del trabajo tiene, sin embargo, un freno preciso: <strong>está limitada por la extensión del mercado</strong> (WN I.iii.1). En las tierras altas de Escocia, dispersas y solitarias, cada campesino debe ser carnicero, panadero y cervecero de su propia familia; solo en las grandes concentraciones urbanas y comerciales puede existir el fabricante especializado de alfileres... o el portero. De aquí la importancia decisiva del transporte y de la navegación: el agua abarata el mercado, y con él la especialización y la riqueza.</p>
+
+<p>Esta «teorema de Smith» —división del trabajo limitada por la extensión del mercado— es quizá la proposición más fecunda del libro: contiene en germen la teoría del comercio internacional, la explicación de la industrialización y, todavía hoy, el argumento central a favor de los mercados amplios e integrados.</p>
+
+<h3>3. El origen: la propensión al intercambio</h3>
+
+<p>¿De dónde nace la división del trabajo? No de la sabiduría humana, responde Smith, sino de «una cierta propensión de la naturaleza humana [...]: la propensión a permutar, trocar e intercambiar una cosa por otra» (WN I.ii.1). Nadie ha visto a dos perros intercambiar huesos; el animal que quiere algo de otro solo puede adular. El hombre, en cambio, puede apelar al interés del otro: es el pasaje del carnicero. El intercambio voluntario es, así, la forma humana por excelencia de la cooperación: <strong>gana-gana por construcción</strong>, porque ninguna de las partes aceptaría si no mejorara su situación.</p>
+
+<h2>3. La mano invisible</h2>
+
+<p>La metáfora más famosa de Smith aparece una sola vez en toda la <em>Riqueza de las Naciones</em> (y otra en la <em>Teoría de los Sentimientos Morales</em>). El contexto exacto importa. En el Libro IV, capítulo ii, Smith discute si el Estado debe dirigir la inversión hacia las industrias «más útiles». Su respuesta: cada individuo, buscando emplear su capital de la manera más ventajosa, prefiere naturalmente la industria doméstica a la extranjera (por seguridad y cercanía), y dentro de ella la más productiva:</p>
+
+<p><blockquote>
+«Así, al dirigir esa industria de modo que su producto tenga el mayor valor posible, no pretende más que su propia ganancia, y en esto, como en otros muchos casos, es conducido por una mano invisible (<em>invisible hand</em>) a promover un fin que no formaba parte de su intención. [...] Al perseguir su propio interés promueve frecuentemente el de la sociedad más eficazmente que cuando realmente pretende promoverlo.» (WN IV.ii.9)<br/>
+</blockquote></p>
+
+<p>Tres precisiones contra los usos posteriores. Primera: la mano invisible no es una ley universal de que todo interés egoísta beneficia a la sociedad —Smith enumera docenas de casos en que no es así, empezando por los mercaderes que conspiran contra el público—; es la descripción de un mecanismo que funciona <strong>bajo condiciones institucionales</strong>: competencia, justicia, libertad de entrada. Segunda: el pasaje defiende la preferencia espontánea por la inversión local <em>frente al dirigismo</em>, no el laissez-faire absoluto. Tercera: el mecanismo descrito no es magia sino <strong>precios</strong>: en un mercado competitivo, el beneficio señala dónde escasean los bienes y el esfuerzo, y la búsqueda de beneficio reasigna recursos hacia allí. Lo que el burócrata no puede saber —dónde es más útil cada capital—, el sistema de precios lo computa a diario, descentralizadamente. Es la primera formulación del problema del conocimiento económico que los austríacos harán central (ECO-07-A).</p>
+
+<h2>4. El enigma del valor: el agua y los diamantes</h2>
+
+<p>¿Qué determina el precio de las cosas? Smith formula el problema con una paradoja que hereda toda la tradición desde Aristóteles (<em>EN</em> V, 5):</p>
+
+<p><blockquote>
+«Nada hay más útil que el agua; pero difícilmente se puede comprar algo con ella [...]. Un diamante, por el contrario, apenas tiene valor de uso alguno; pero a menudo se puede intercambiar por una gran cantidad de otros bienes.» (WN I.iv.13)<br/>
+</blockquote></p>
+
+<p>Su respuesta distingue <strong>valor de uso</strong> y <strong>valor de cambio</strong>, y concentra la explicación de este último en el trabajo: en el «estado primitivo» anterior a la acumulación de capital y la propiedad de la tierra, «la proporción entre las cantidades de trabajo necesarias para adquirir los diferentes objetos parece ser la única circunstancia que puede servir de regla para intercambiarlos» (WN I.vi.4): si matar un castor cuesta el doble de trabajo que matar un ciervo, un castor valdrá dos ciervos. Es la formulación clásica de la <strong>teoría del valor-trabajo</strong>.</p>
+
+<p>Pero Smith es consciente de que, en la economía avanzada, el precio se resuelve en tres componentes —<strong>salario, beneficio y renta</strong>— que corresponden a las tres grandes clases de la sociedad comercial: trabajadores, capitalistas y terratenientes (WN I.vi). Aquí su teoría se vuelve inestable: ¿el trabajo <em>mide</em> el valor o <em>lo produce</em>? ¿El beneficio es una deducción del producto del trabajo o un rendimiento independiente del capital? En esa ambigüedad trabajará Ricardo para endurecer la teoría del valor-trabajo, y Marx encontrará el punto de apoyo de su teoría de la plusvalía (ECO-04-A). Y la paradoja misma del agua y los diamantes solo recibirá solución satisfactoria un siglo después, cuando los marginalistas desplacen el foco del coste de producción a la utilidad en el margen (ECO-05-A).</p>
+
+<h2>5. La crítica del sistema mercantil</h2>
+
+<p>El Libro IV —casi un tercio de la obra— es un alegato demoledor contra el mercantilismo (ECO-02-A), al que Smith llama, con deliberada rebaja, «el sistema mercantil o comercial». Sus cargos:</p>
+
+<p>1. <strong>La confusión de la riqueza con el oro.</strong> La riqueza consiste en bienes consumibles y capacidad productiva, no en metal; el dinero es «la gran rueda de la circulación», un instrumento, no el fin (WN IV.i).
+2. <strong>La futilidad de la balanza comercial.</strong> Perseguir superávits con aranceles y monopolios perjudica a los consumidores nacionales, desvía el capital hacia usos artificiales y provoca represalias (WN IV.ii-iii).
+3. <strong>La captura del Estado.</strong> El sistema no sirve a la nación sino a «los comerciantes y fabricantes», que son sus verdaderos arquitectos: «el monopolio de uno u otro tipo parece ser el único motor de todo el sistema mercantil» (WN IV.vii.c). La observación política es permanente: «la propuesta de cualquier ley o regulación nueva del comercio que proceda de este orden de hombres debe escucharse siempre con la mayor precaución [...], pues procede de un orden cuyo interés nunca es exactamente el mismo que el del público» (WN I.xi.p.10).
+4. <strong>El contramodelo.</strong> Frente al sistema de preferencias, el «sistema obvio y sencillo de la libertad natural» (<em>obvious and simple system of natural liberty</em>): todo hombre libre de perseguir su interés a su manera, mientras no viole las leyes de la justicia (WN IV.ix.51).</p>
+
+<h2>6. Los tres deberes del Estado</h2>
+
+<p>Sería un error concluir que Smith deja al Estado sin funciones. En el mismo pasaje asigna al soberano <strong>tres deberes</strong> (WN IV.ix.51, desarrollados en el Libro V):</p>
+
+<p>1. <strong>La defensa</strong> de la sociedad frente a la violencia e invasión de otras sociedades (WN V.i.a).
+2. <strong>La justicia</strong>: proteger a cada miembro de la sociedad de la injusticia y la opresión de los demás, con una administración judicial exacta (WN V.i.b).
+3. <strong>Las obras e instituciones públicas</strong> que no puede interesar a ningún particular erigir y mantener, porque el beneficio no cubriría el gasto: caminos, puentes, canales, puertos (WN V.i.c) —y, notablemente, <strong>la instrucción pública del pueblo</strong>, a la que Smith dedica páginas apasionadas: la división del trabajo embrutece al obrero atrapado en operaciones repetitivas, y solo la educación general puede remediarlo (WN V.i.f).</p>
+
+<p>A esto se añaden las célebres <strong>cuatro máximas fiscales</strong> (WN V.ii.b.3-6): los impuestos deben ser <strong>equitativos</strong> (proporcionados a la capacidad), <strong>ciertos</strong> (no arbitrarios), <strong>convenientes</strong> (cobrables en el momento y modo más cómodo para el contribuyente) y <strong>económicos</strong> (que no cuesten de recaudar mucho más de lo que ingresan). Siguen figurando, con otros nombres, en todo manual de hacienda pública.</p>
+
+<hr class="section-divider" />
+
+<h2>Ecos y Semillas para el Futuro</h2>
+
+<p>1. <strong>La teoría del valor queda abierta.</strong> La indecisión smithiana entre trabajo-medida y trabajo-fuente será el campo de batalla del siglo XIX: Ricardo la endurece, Marx la convierte en teoría de la explotación (ECO-04-A), hasta que la revolución marginalista de 1871-1874 cambia por completo la pregunta (ECO-05-A).
+2. <strong>El orden espontáneo.</strong> La mano invisible es el primer esbozo de la idea de que los órdenes sociales complejos pueden ser «resultado de la acción humana, pero no del designio humano» (Ferguson): la línea que conduce a Hayek y a la Escuela Austríaca (ECO-07-A).
+3. <strong>La crítica institucional.</strong> La advertencia de Smith sobre la captura del regulador por los regulados anticipa la economía pública del siglo XX (<em>public choice</em>) y sigue siendo la herramienta básica para leer cualquier debate sobre aranceles, subsidios o licencias.
+4. <strong>El Smith completo.</strong> La relectura conjunta de la <em>Teoría de los Sentimientos Morales</em> y la <em>Riqueza de las Naciones</em> —simpatía, espectador imparcial, justicia e interés propio disciplinado— es hoy uno de los frentes más vivos de la historia del pensamiento, y conecta sorprendentemente con la economía conductual (ECO-08-A): el agente real de Smith nunca fue el <em>homo economicus</em> de manual.</p>
+
+<hr class="section-divider" />
+
+<h2>Referencias Bibliográficas</h2>
+
+<em> Smith, A. (1994). </em>Investigación sobre la naturaleza y causas de la riqueza de las naciones* (C. Rodríguez Braun, Trad.). Alianza Editorial. (Obra original publicada en 1776)
+<em> Smith, A. (1997). </em>Teoría de los sentimientos morales* (C. Rodríguez Braun, Trad.). Alianza Editorial. (Obra original publicada en 1759)
+<em> Ricardo, D. (1985). </em>Principios de economía política y tributación* (J. A. Gimeno, Trad.). Fondo de Cultura Económica. (Obra original publicada en 1817)
+<em> Schumpeter, J. A. (1994). </em>Historia del análisis económico* (M. Saborido, Trad.). Ariel. (Obra original publicada en 1954)
+<em> Heilbroner, R. L. (1987). </em>Los grandes economistas* (M. Márquez, Trad.). Argos Vergara. (Obra original publicada en 1953)
+<em> Rothschild, E. (2001). </em>Economic Sentiments: Adam Smith, Condorcet, and the Enlightenment*. Harvard University Press.]]></content:encoded>
+      <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+      <wp:post_id>433031</wp:post_id>
+      <wp:post_date>2023-01-15 12:00:00</wp:post_date>
+      <wp:post_date_gmt>2023-01-15 12:00:00</wp:post_date_gmt>
+      <wp:post_name>adam-smith-riqueza-naciones</wp:post_name>
+      <wp:status>publish</wp:status>
+      <wp:post_type>post</wp:post_type>
+      <category domain="category" nicename="economia"><![CDATA[Economía]]></category>
+      <meta_json><![CDATA[{"_article_num": "1", "_lesson_code": "ECO-03-A", "_read_time": "12 min", "_post_subtitle": "Lecci\u00f3n de Historia del Pensamiento Econ\u00f3mico", "_lesson_essentials": "Smith escribi\u00f3 dos libros inseparables: la Teor\u00eda de los Sentimientos Morales (1759), sobre la simpat\u00eda y el espectador imparcial, y la Riqueza de las Naciones (1776), sobre la producci\u00f3n de la prosperidad.\nLa riqueza de una naci\u00f3n no es su tesoro sino la producci\u00f3n anual de su trabajo; y su motor es la divisi\u00f3n del trabajo, limitada por la extensi\u00f3n del mercado.\nLa \u00abmano invisible\u00bb: buscando su propio inter\u00e9s, el individuo promueve a menudo el inter\u00e9s de la sociedad m\u00e1s eficazmente que si pretendiera promoverlo (WN IV.ii.9).\nLa paradoja del agua y los diamantes (WN I.iv.13) formula el problema del valor de uso frente a valor de cambio que dominar\u00e1 la teor\u00eda econ\u00f3mica durante un siglo.\nLa cr\u00edtica del sistema mercantil (Libro IV) es una cr\u00edtica de la captura del Estado por los intereses comerciales; el Estado leg\u00edtimo tiene tres deberes: defensa, justicia y obras p\u00fablicas.", "_bibliography": "Smith, A. (1994). Investigaci\u00f3n sobre la naturaleza y causas de la riqueza de las naciones (C. Rodr\u00edguez Braun, Trad.). Alianza Editorial. (Obra original publicada en 1776)\nSmith, A. (1997). Teor\u00eda de los sentimientos morales (C. Rodr\u00edguez Braun, Trad.). Alianza Editorial. (Obra original publicada en 1759)\nRicardo, D. (1985). Principios de econom\u00eda pol\u00edtica y tributaci\u00f3n (J. A. Gimeno, Trad.). Fondo de Cultura Econ\u00f3mica. (Obra original publicada en 1817)\nSchumpeter, J. A. (1994). Historia del an\u00e1lisis econ\u00f3mico (M. Saborido, Trad.). Ariel. (Obra original publicada en 1954)\nHeilbroner, R. L. (1987). Los grandes economistas (M. M\u00e1rquez, Trad.). Argos Vergara. (Obra original publicada en 1953)", "_yoast_wpseo_focuskw": "Adam Smith", "_yoast_wpseo_title": "Adam Smith - La Riqueza de las Naciones | Nihil Novi", "_yoast_wpseo_metadesc": "La divisi\u00f3n del trabajo, la mano invisible y la cr\u00edtica al mercantilismo: c\u00f3mo Adam Smith fund\u00f3 la econom\u00eda pol\u00edtica moderna en 1776.", "_nihilnovi_import_source": "ECO_03_A.md"}]]></meta_json>
+    </item>
+    <item>
+      <title>ECO-04-A: Karl Marx - El Capital y la Plusvalía</title>
+      <link>https://nihilnovi.xyz/karl-marx-el-capital/</link>
+      <pubDate>Mon, 03 Aug 2026 04:00:42 +0000</pubDate>
+      <dc:creator><![CDATA[davidlegorreta]]></dc:creator>
+      <guid isPermaLink="false">https://nihilnovi.xyz/?p=383112</guid>
+      <description></description>
+      <content:encoded><![CDATA[<h1>ECO-04-A: Karl Marx y El Capital</h1>
+
+<p><blockquote>
+«La riqueza de las sociedades en las que impera el modo de producción capitalista se presenta como una "enorme acumulación de mercancías", y la mercancía individual como su forma elemental. Por eso nuestra investigación comienza con el análisis de la mercancía.»<br/>
+— Karl Marx, <em>El Capital</em>, Libro I, cap. 1 (trad. P. Scaron, Siglo XXI, 2010)<br/>
+</blockquote></p>
+
+<hr class="section-divider" />
+
+<h2>Génesis y Conexión Histórica</h2>
+
+<p>Karl Marx (1818-1883) llega a la economía desde la filosofía, y a la economía inglesa desde la revolución francesa y el socialismo alemán. Formado en la izquierda hegeliana —la escuela que, tras la muerte de Hegel, convirtió la dialéctica en arma de crítica de la religión y del Estado prusiano—, su trayectoria lo lleva del periodismo disidente en Renania al exilio de París y Bruselas, y finalmente, en 1849, a Londres: la capital del capitalismo industrial, donde pasará treinta y cuatro años entre la sala de lectura del British Museum y la miseria del Soho.</p>
+
+<em>El Capital</em> (primer tomo, 1867; los tomos II y III los publicará Engels póstumamente, en 1885 y 1894, a partir de los manuscritos) se subtitula con precisión: <strong>Crítica de la economía política</strong>. No pretende añadir una economía más, sino <strong>criticar la existente</strong> —la de Smith (ECO-03-A) y sobre todo la de Ricardo— mostrando que sus categorías (valor, dinero, salario, beneficio) describen correctamente los hechos pero los <em>presentan</em> de un modo que oculta su naturaleza histórica y social. Marx toma la teoría del valor-trabajo en su forma más rigurosa, la ricardiana, y demuestra que, llevada con coherencia hasta el final, conduce a una conclusión que los clásicos no quisieron ver: <strong>el beneficio capitalista es trabajo no pagado</strong>.
+
+<p>Esta lección analiza ese argumento en sus piezas esenciales: la mercancía y el doble carácter del trabajo, la fuerza de trabajo como mercancía, la plusvalía absoluta y relativa, el fetichismo y la acumulación. El propósito no es filiar ni refutar —es entender uno de los análisis más influyentes jamás escritos, del que ningún debate posterior sobre capitalismo, trabajo o desigualdad ha podido prescindir.</p>
+
+<hr class="section-divider" />
+
+<h2>1. La mercancía y el doble carácter del trabajo</h2>
+
+<em>El Capital</em> se abre, deliberadamente, donde terminaba Smith: con la mercancía. Toda mercancía presenta un <strong>doble aspecto</strong> (Libro I, cap. 1):
+
+<p>- <strong>Valor de uso</strong> (<em>Gebrauchswert</em>): satisface una necesidad; es la cualidad que hace al trigo alimento y al abrigo, abrigo. Es el soporte material de todo intercambio.
+- <strong>Valor</strong> (<em>Wert</em>), que se manifiesta como <strong>valor de cambio</strong>: la proporción en que una mercancía se intercambia por otras. Detrás de la proporción —tantas fanegas de trigo por tantas varas de lienzo— debe haber algo común que las hace comparables.</p>
+
+<p>¿Qué es ese algo común? No puede ser una propiedad física —trigo y lienzo no comparten ninguna—; solo queda que ambos son <strong>productos del trabajo humano</strong>. Pero no de los trabajos concretos, distintos entre sí (agricultor, tejedor), sino del <strong>trabajo abstracto</strong>: gasto de fuerza humana de trabajo en general, sin más cualidad. La magnitud del valor se mide por la <strong>cantidad de trabajo socialmente necesario</strong> para producir la mercancía en condiciones normales y con destreza media.</p>
+
+<p>La tesis decisiva de Marx —que él mismo reivindicaba como «lo mejor de mi libro»— es que el trabajo tiene el mismo <strong>doble carácter</strong> que la mercancía: trabajo <strong>concreto</strong> (útil, cualitativo, productor de valores de uso) y trabajo <strong>abstracto</strong> (cuantitativo, sustancia del valor). Esta distinción es la llave de todo lo que sigue, porque permitirá explicar cómo un mismo proceso de producción transfiere valores antiguos (medios de producción) y crea valor nuevo al mismo tiempo.</p>
+
+<p>Conviene registrar aquí la deuda y la diferencia con los clásicos. Smith ya había hecho del trabajo la medida del valor en el «estado primitivo» (WN I.vi, cf. ECO-03-A §4); Ricardo la había generalizado. Marx radicaliza: el valor no es una relación natural entre cosas y esfuerzo, sino una <strong>relación social específica</strong> de la sociedad mercantil —los productores privados e independientes solo se relacionan entre sí <em>a través</em> del intercambio de sus productos, y es esa relación la que impone la forma valor. Lo cual conduce directamente al fetichismo.</p>
+
+<h2>2. El fetichismo de la mercancía</h2>
+
+<p>Al final del capítulo 1 (sección 4) aparece uno de los análisis más originales de Marx. ¿Por qué las relaciones sociales entre los productores —el tejedor depende del agricultor, que depende del herrero— <strong>aparecen</strong> ante nosotros como relaciones entre cosas, como si el valor fuera una propiedad natural del lienzo como su peso o su color?</p>
+
+<p><blockquote>
+«[En el mundo de las mercancías] las relaciones sociales entre los trabajos privados [...] no se les presentan a los hombres como relaciones directamente sociales entre las personas en sus trabajos mismos, sino como lo que son en verdad: relaciones materiales entre personas y relaciones sociales entre cosas.» (<em>El Capital</em> I, cap. 1, sec. 4)<br/>
+</blockquote></p>
+
+<p>A esta inversión —por la cual atribuimos a las cosas poderes que provienen de nuestras propias relaciones sociales— Marx la llama <strong>fetichismo de la mercancía</strong>, por analogía con la religión, donde «los productos del cerebro humano se aparecen como figuras autónomas dotadas de vida propia». El fetichismo no es una ilusión subjetiva que se disipe con buena voluntad: es la <strong>forma objetiva</strong> en que se presenta la realidad en la sociedad mercantil. Y es también el primer ariete contra la «economía vulgar»: si el valor, el dinero, el salario y el beneficio parecen propiedades naturales de las cosas, el orden capitalista parece natural y eterno, cuando es histórico y superable.</p>
+
+<h2>3. De la circulación simple al capital: la fórmula general</h2>
+
+<p>¿Cómo se transforma el dinero en capital? Marx contrapone dos circuitos (cap. 4):</p>
+
+<p>- <strong>M-D-M</strong> (mercancía–dinero–mercancía): vender para comprar. El campesino vende trigo para comprar ropa: el dinero es puro intermediario, el circuito tiene un fin cualitativo (un valor de uso) y se cierra en él.
+- <strong>D-M-D'</strong> (dinero–mercancía–dinero incrementado): comprar para vender más caro. Aquí el punto de partida y el de llegada son cualitativamente idénticos —dinero—, de modo que el circuito solo tiene sentido si el dinero final <strong>supera</strong> al inicial: D' = D + ΔD. Ese incremento (ΔD) es la <strong>plusvalía</strong> (<em>Mehrwert</em>), y el dinero que se arroja a este ciclo autoexpansivo es <strong>capital</strong>: «valor que se valoriza».</p>
+
+<p>La fórmula condensa el problema teórico central: <strong>¿de dónde sale ΔD?</strong> No puede salir del intercambio mismo: en el mercado se intercambian equivalentes (si se intercambiaran no-equivalentes, lo que unos ganan otros lo pierden; la suma no crece). Y sin embargo el capital existe. La solución exige encontrar <strong>en el mercado</strong> una mercancía cuyo consumo —cuyo valor de uso— sea a la vez fuente de valor nuevo. Esa mercancía existe y tiene nombre: la fuerza de trabajo.</p>
+
+<h2>4. La fuerza de trabajo: la mercancía singular</h2>
+
+<p>El trabajador del modo de producción capitalista es «libre» en un doble sentido (cap. 6): libre de vínculos personales (no es esclavo ni siervo: puede vender su capacidad de trabajar a quien quiera) y «libre» de medios de producción (no posee tierra ni herramientas: <em>debe</em> venderla). Esta doble libertad es la condición histórica del capital, y su génesis violenta se narrará en el capítulo sobre la acumulación originaria.</p>
+
+<p>Como toda mercancía, la <strong>fuerza de trabajo</strong> tiene un valor, determinado por el trabajo socialmente necesario para reproducirla: el valor de los medios de subsistencia del trabajador y su familia, con un componente histórico-moral variable según épocas y países. Pero su valor de uso es único: <strong>al consumirla —hacerla trabajar— se crea valor</strong>.</p>
+
+<p>Aquí se resuelve el enigma de D-M-D'. Supongamos que el valor diario de la fuerza de trabajo son 3 libras (6 horas de trabajo) y que en la jornada el obrero produce valor durante 12 horas (6 libras). El capitalista paga el valor íntegro de la mercancía —3 libras, el intercambio es de equivalentes, no hay engaño— y recibe a cambio 6 libras de valor producido. Los 3 de diferencia son la <strong>plusvalía</strong>:</p>
+
+<p><blockquote>
+«El truco ha funcionado por fin. [...] Las condiciones del problema se han respetado: el intercambio de mercancías se ha realizado a su valor.» (<em>El Capital</em> I, cap. 5)<br/>
+</blockquote></p>
+
+<p>El beneficio capitalista no nace, pues, de comprar barato y vender caro, sino de la <strong>diferencia entre el valor de la fuerza de trabajo y el valor que ésta crea</strong>. El intercambio libre e igualitario del mercado y la explotación en la producción no se contradicen: se implican.</p>
+
+<h2>5. Las dos estrategias: plusvalía absoluta y relativa</h2>
+
+<p>¿Cómo aumentar la cuota de plusvalía? Marx distingue dos vías que corresponden, en bruto, a dos épocas del capitalismo.</p>
+
+<h3>1. Plusvalía absoluta: la lucha por la jornada laboral (cap. 10)</h3>
+
+<p>Alargar el día de trabajo por encima del punto en que el obrero ya ha repuesto el valor de su salario. El capítulo 10 —«La jornada laboral», uno de los grandes textos de denuncia social del siglo XIX, alimentado por los informes azules de los inspectores de fábrica británicos— documenta la tendencia del capital a estirar la jornada hasta el límite fisiológico y más allá (los catorce, dieciséis horas de la primera industrialización, el trabajo infantil), y la contratendencia obrera que culmina en la jornada legal de diez horas (1847). La jornada laboral no es un dato técnico: es el resultado histórico de una <strong>lucha de clases</strong>.</p>
+
+<h3>2. Plusvalía relativa: la revolución de la productividad (cap. 12)</h3>
+
+<p>La vía propia del capitalismo maduro: no alargar la jornada, sino <strong>abaratar la fuerza de trabajo</strong>. Si la productividad en las industrias que producen bienes de subsistencia aumenta, el obrero repone su salario en 4 horas en lugar de 6, y el trabajo excedente crece sin tocar el reloj. De aquí la compulsión permanente del capital a innovar —máquinas, organización, cooperación, manufactura, gran industria (caps. 13-15)—, esa energía revolucionaria que el <em>Manifiesto</em> (1848) había celebrado con admiración literal: la burguesía «ha sido la primera en mostrar lo que la actividad humana es capaz de producir».</p>
+
+<p>La maquinaria, sin embargo, tiene en el sistema un empleo paradójico: introducida para ahorrar trabajo, se convierte en medio de intensificarlo y de someterlo; el obrero, de sujeto de la herramienta, pasa a ser «apéndice de la máquina» (cap. 15). La descripción marxiana del taller fabril —el trabajador incorporado a un mecanismo cuyo ritmo no controla— es la matriz de toda la sociología posterior del trabajo, de Ford a la plataforma digital.</p>
+
+<h2>6. La acumulación: origen y ley</h2>
+
+<em>El Capital</em> se cierra con dos movimientos.
+
+<strong>La llamada acumulación primitiva u originaria</strong> (cap. 24): ¿de dónde salieron el primer capitalista y el primer obrero «libre»? No del ahorro diligente de los industriales, como en la idílica leyenda clásica, sino de la <strong>expropiación</strong>: los cercamientos (<em>enclosures</em>) que expulsaron al campesinado inglés de la tierra comunal, la colonización, la trata de esclavos, la deuda pública y el sistema fiscal: «la conquista, el sometimiento, el robo y el asesinato, en suma, la violencia». El capital nace, escribe Marx en la frase más citada del capítulo, «chorreando sangre y lodo por todos los poros, desde la cabeza hasta los pies».
+
+<strong>La ley general de la acumulación capitalista</strong> (cap. 25): con el progreso de la acumulación, la composición del capital cambia —crece la parte invertida en máquinas y materias (capital constante) respecto a la invertida en salarios (capital variable)—; la demanda de trabajo crece más despacio que el capital, y el sistema produce su propio excedente de trabajadores: el <strong>ejército industrial de reserva</strong>, cuya existencia disciplina los salarios. La acumulación de riqueza en un polo es, al mismo tiempo, «acumulación de miseria, tormentos de trabajo, esclavitud, ignorancia, embrutecimiento y degradación moral en el polo opuesto». La tendencia a la concentración y centralización del capital, y a la agudización de las contradicciones del sistema, prepara —en la célebre hipótesis final del capítulo 24— su propia negación.
+
+<h2>7. Valoración crítica</h2>
+
+<p>Ninguna obra de la historia económica ha sido a la vez tan influyente y tan discutida. En el debe analítico figuran, sobre todo, dos problemas: la <strong>transformación de valores en precios de producción</strong> (el tomo III no logra demostrar con rigor la coherencia cuantitativa entre el sistema de valores del tomo I y los precios con beneficio uniforme, objeción que Böhm-Bawerk formuló ya en 1896 y que la economía matemática del siglo XX —Bortkiewicz, Sraffa— ha reelaborado sin clausurar), y la dependencia del edificio respecto a la teoría del valor-trabajo, abandonada por la corriente principal tras la revolución marginalista (ECO-05-A). En el haber: la primera teoría sistemática de las <strong>crisis</strong> como fenómeno endógeno (no accidentes exteriores sino producto de la propia dinámica acumulativa), el análisis de la innovación compulsiva, la concentración del capital, la reserva de mano de obra y la dimensión irreductiblemente <strong>histórica e institucional</strong> de las categorías económicas. Keynes escribirá desde coordenadas opuestas, pero el problema de la demanda efectiva (ECO-06-A) sería incomprensible sin el siglo de debates que <em>El Capital</em> puso en marcha.</p>
+
+<hr class="section-divider" />
+
+<h2>Ecos y Semillas para el Futuro</h2>
+
+<p>1. <strong>La teoría del valor en crisis.</strong> La objeción marginalista al valor-trabajo (ECO-05-A) desplazará el eje del análisis del coste a la utilidad; el debate marxismo–marginalismo es el gran duelo teórico de 1870-1930.
+2. <strong>El cálculo económico.</strong> Del proyecto de una economía post-mercantil nacerá, por reacción, uno de los grandes problemas del siglo XX: ¿puede funcionar una economía sin precios de mercado? El debate del cálculo socialista (Mises, Hayek contra Lange) estructura buena parte de ECO-07-A.
+3. <strong>Las crisis y el Estado.</strong> La lectura de las crisis como endógenas alimentará, por vías diversas, tanto a los teóricos del ciclo austríacos como a Keynes (ECO-06-A), cuya demanda efectiva responde a la misma pregunta que Marx se hacía: ¿por qué un mercado libre puede producir paro masivo?
+4. <strong>El fetichismo y la crítica cultural.</strong> La idea de que el mercado presenta relaciones sociales como propiedades de las cosas sigue operando en la teoría crítica, la sociología del consumo y el análisis de la economía digital.</p>
+
+<hr class="section-divider" />
+
+<h2>Referencias Bibliográficas</h2>
+
+<em> Marx, K. (2010). </em>El Capital. Crítica de la economía política. Libro I* (P. Scaron, Trad.). Siglo XXI Editores. (Obra original publicada en 1867)
+<em> Marx, K., & Engels, F. (2010). </em>Manifiesto del Partido Comunista<em>. En C. Aulet (Ed.), </em>Karl Marx: escritos políticos y filosóficos*. Alianza Editorial. (Obra original publicada en 1848)
+<em> Ricardo, D. (1985). </em>Principios de economía política y tributación* (J. A. Gimeno, Trad.). Fondo de Cultura Económica. (Obra original publicada en 1817)
+<em> Smith, A. (1994). </em>Investigación sobre la naturaleza y causas de la riqueza de las naciones* (C. Rodríguez Braun, Trad.). Alianza Editorial. (Obra original publicada en 1776)
+<em> Böhm-Bawerk, E. von (1998). </em>Capital e interés* (E. L. Corral, Trad.). Fondo de Cultura Económica. (Obra original publicada en 1884-1889)
+<em> Schumpeter, J. A. (1994). </em>Historia del análisis económico* (M. Saborido, Trad.). Ariel. (Obra original publicada en 1954)
+<em> Heilbroner, R. L. (1987). </em>Los grandes economistas* (M. Márquez, Trad.). Argos Vergara. (Obra original publicada en 1953)]]></content:encoded>
+      <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+      <wp:post_id>383112</wp:post_id>
+      <wp:post_date>2023-01-22 12:00:00</wp:post_date>
+      <wp:post_date_gmt>2023-01-22 12:00:00</wp:post_date_gmt>
+      <wp:post_name>karl-marx-el-capital</wp:post_name>
+      <wp:status>publish</wp:status>
+      <wp:post_type>post</wp:post_type>
+      <category domain="category" nicename="economia"><![CDATA[Economía]]></category>
+      <meta_json><![CDATA[{"_article_num": "1", "_lesson_code": "ECO-04-A", "_read_time": "12 min", "_post_subtitle": "Lecci\u00f3n de Historia del Pensamiento Econ\u00f3mico", "_lesson_essentials": "Marx hereda la teor\u00eda del valor-trabajo de Smith y Ricardo y la convierte en una cr\u00edtica del capitalismo: la cr\u00edtica de la econom\u00eda pol\u00edtica.\nLa mercanc\u00eda tiene doble car\u00e1cter \u2014valor de uso y valor de cambio\u2014 y el trabajo que la produce es igualmente doble: trabajo concreto y trabajo abstracto (El Capital I, cap. 1).\nEl capitalista no se enriquece enga\u00f1ando en el intercambio, sino comprando una mercanc\u00eda singular, la fuerza de trabajo, cuyo uso produce m\u00e1s valor del que ella misma cuesta: la plusval\u00eda.\nPlusval\u00eda absoluta (alargar la jornada) y plusval\u00eda relativa (abaratar la fuerza de trabajo mediante la productividad) son las dos estrategias hist\u00f3ricas del capital (caps. 10 y 12).\nEl fetichismo de la mercanc\u00eda: las relaciones sociales entre productores aparecen en el mercado como relaciones entre cosas; la econom\u00eda vulgar toma esa apariencia por realidad.", "_bibliography": "Marx, K. (2010). El Capital. Cr\u00edtica de la econom\u00eda pol\u00edtica. Libro I (P. Scaron, Trad.). Siglo XXI Editores. (Obra original publicada en 1867)\nMarx, K., & Engels, F. (2010). Manifiesto del Partido Comunista. En C. Aulet (Ed.), Karl Marx: escritos pol\u00edticos y filos\u00f3ficos. Alianza Editorial. (Obra original publicada en 1848)\nRicardo, D. (1985). Principios de econom\u00eda pol\u00edtica y tributaci\u00f3n (J. A. Gimeno, Trad.). Fondo de Cultura Econ\u00f3mica. (Obra original publicada en 1817)\nSmith, A. (1994). Investigaci\u00f3n sobre la naturaleza y causas de la riqueza de las naciones (C. Rodr\u00edguez Braun, Trad.). Alianza Editorial. (Obra original publicada en 1776)\nSchumpeter, J. A. (1994). Historia del an\u00e1lisis econ\u00f3mico (M. Saborido, Trad.). Ariel. (Obra original publicada en 1954)\nHeilbroner, R. L. (1987). Los grandes economistas (M. M\u00e1rquez, Trad.). Argos Vergara. (Obra original publicada en 1953)", "_yoast_wpseo_focuskw": "Karl Marx El Capital", "_yoast_wpseo_title": "Karl Marx - El Capital y la Plusval\u00eda | Nihil Novi", "_yoast_wpseo_metadesc": "La mercanc\u00eda, la plusval\u00eda y el fetichismo: el an\u00e1lisis de El Capital de Marx, sus fuentes cl\u00e1sicas y su lugar en la historia del pensamiento econ\u00f3mico.", "_nihilnovi_import_source": "ECO_04_A.md"}]]></meta_json>
+    </item>
+    <item>
+      <title>ECO-05-A: Marginalismo - La Revolución de la Utilidad</title>
+      <link>https://nihilnovi.xyz/revolucion-marginalista/</link>
+      <pubDate>Mon, 03 Aug 2026 04:00:42 +0000</pubDate>
+      <dc:creator><![CDATA[davidlegorreta]]></dc:creator>
+      <guid isPermaLink="false">https://nihilnovi.xyz/?p=889979</guid>
+      <description></description>
+      <content:encoded><![CDATA[<h1>ECO-05-A: La Revolución Marginalista</h1>
+
+<p><blockquote>
+«El análisis repetido y la reflexión me han llevado a la opinión, algo novedosa, de que el valor depende enteramente de la utilidad.»<br/>
+— William Stanley Jevons, <em>The Theory of Political Economy</em>, Prefacio a la primera edición (1871)<br/>
+</blockquote></p>
+
+<hr class="section-divider" />
+
+<h2>Génesis y Conexión Histórica</h2>
+
+<p>La economía clásica legó a la segunda mitad del siglo XIX un edificio imponente y una grieta en los cimientos. El edificio: la teoría del valor por el coste de producción —en su versión fuerte, el trabajo— de Smith y Ricardo (ECO-03-A), que Marx acababa de radicalizar en <em>El Capital</em> (1867; ECO-04-A). La grieta: la teoría no lograba explicar los casos más comunes. Si el valor lo fija el trabajo, ¿por qué una botella de vino añejo vale más que una nueva con el mismo trabajo? ¿Por qué un diamante encontrado por casualidad vale una fortuna? ¿Y cómo resolverse la vieja paradoja smithiana del agua y los diamantes (WN I.iv.13), que la propia tradición clásica reconocía sin resolver?</p>
+
+<p>La respuesta llegó, curiosamente, por triplicado y casi simultáneo. En 1871, <strong>William Stanley Jevons</strong> (1835-1882) publicó en Manchester su <em>Theory of Political Economy</em>; ese mismo año, en Viena, <strong>Carl Menger</strong> (1840-1921) publicó sus <em>Grundsätze der Volkswirtschaftslehre</em> (<em>Principios de economía política</em>); y en 1874, en Lausana, <strong>Léon Walras</strong> (1834-1910) publicó sus <em>Éléments d'économie politique pure</em>. Sin conocerse, en tres tradiciones distintas —la inglesa utilitarista, la alemana y la francesa de ingenieros—, los tres llegaron a la misma idea central: <strong>el valor no viene del pasado (los costes), sino del presente y del futuro (las satisfacciones esperadas); y lo relevante no es la utilidad total, sino la utilidad de la última unidad: la utilidad marginal</strong>.</p>
+
+<p>Esta «revolución marginalista» no fue solo una nueva teoría del valor: fue la refundación de la economía como ciencia del <strong>agente que elige bajo escasez</strong>, con herramientas matemáticas, y el origen directo de la tradición neoclásica que, a través de Marshall, dominará el siglo XX. De Viena, además, saldrá una rama peculiar —la Escuela Austríaca— que volverá a encontrarnos en ECO-07-A.</p>
+
+<hr class="section-divider" />
+
+<h2>1. La intuición que lo cambia todo: el margen</h2>
+
+<p>El descubrimiento común puede enunciarse en una frase: <strong>las decisiones económicas no se toman entre «todo o nada», sino en el margen</strong>. Nadie elige entre «toda el agua del mundo» y «todos los diamantes del mundo»; elige entre <em>un vaso más</em> de agua y <em>un diamante más</em>. Y el valor de una unidad adicional depende de cuántas unidades se tienen ya.</p>
+
+<h3>1. La ley de Gossen</h3>
+
+<p>El primero en formularlo con claridad fue un oscuro funcionario prusiano, <strong>Hermann Heinrich Gossen</strong>, en un libro de 1854 ignorado por completo hasta que Jevons lo redescubrió y lo proclamó precursor. La <strong>primera ley de Gossen</strong> —hoy, ley de la <strong>utilidad marginal decreciente</strong>— dice: la intensidad del placer que proporciona el consumo de un bien decrece a medida que se consume más, hasta el punto de saturación. El primer pan sacia el hambre extrema; el quinto, casi nada; el décimo, molesta.</p>
+
+<p>La <strong>segunda ley de Gossen</strong> completa el sistema: un consumidor que reparte un recurso escaso (renta, tiempo) entre varios bienes alcanza el máximo de satisfacción cuando <strong>iguala las utilidades marginales por unidad de gasto</strong> en todos los usos. Si el último ducado gastado en pan da más satisfacción que el último ducado gastado en vino, conviene comprar más pan y menos vino, hasta que ambos se igualen. En esta regla está contenido, completo, el modelo del equilibrio del consumidor que hoy abre cualquier manual de microeconomía.</p>
+
+<h3>2. Jevons: el cálculo del placer y el dolor</h3>
+
+<p>Jevons, formado en química y en lógica, discípulo intelectual de Bentham, planteó el programa con radicalidad: la economía debe ser «el cálculo del placer y del dolor», y por tanto una ciencia matemática. En su <em>Theory</em> define el concepto operativo: el <strong>grado final de utilidad</strong> (<em>final degree of utility</em>) es «el grado de utilidad de la última adición, o de la próxima adición posible, de una cantidad muy pequeña, o infinitamente pequeña, a la provisión existente». Sobre esa base formula su <strong>ecuación de intercambio</strong>: dos personas que intercambian dos bienes llegan al equilibrio cuando el cociente de sus grados finales de utilidad iguala al cociente de los precios. La teoría clásica del coste no desaparece, pero queda subordinada: el coste solo afecta al precio <em>a través</em> de la oferta, y la oferta solo afecta al precio <em>a través</em> de la utilidad final. «El coste de producción determina la oferta; la oferta determina el grado final de utilidad; el grado final de utilidad determina el valor» (<em>Theory</em>, cap. 4, resumen de Jevons).</p>
+
+<h3>3. Menger: la imputación y los bienes de orden superior</h3>
+
+<p>Menger llegó al mismo núcleo por un camino distinto y en algunos aspectos más profundo. En sus <em>Grundsätze</em> reconstruye la economía desde el individuo con necesidades y los bienes aptos para satisfacerlas, y añade dos piezas duraderas:</p>
+
+<p>- <strong>La escala de necesidades</strong>: cada individuo ordena sus necesidades por urgencia; las sucesivas unidades de un bien se destinan a satisfacciones decrecientemente importantes. El valor de una unidad cualquiera del stock es el de la <em>menos importante</em> de las satisfacciones que el stock alcanza a cubrir.
+- <strong>Los bienes de orden superior y la imputación</strong> (<em>Zurechnung</em>): el pan (bien de primer orden) vale por su utilidad; la harina, el horno y el trabajo del panadero (bienes de órdenes superiores) valen <strong>porque contribuyen</strong> a producir pan. El valor fluye «hacia atrás», de la satisfacción esperada a los factores productivos: es la teoría de la imputación, que responde a la pregunta clásica sobre la renta, el salario y el beneficio sin recurrir al trabajo como sustancia del valor. De esta raíz crecerán Böhm-Bawerk, Wieser y toda la Escuela Austríaca (ECO-07-A), con su énfasis en la subjetividad, el tiempo y el proceso.</p>
+
+<h3>4. Walras: el equilibrio general</h3>
+
+<p>Walras aportó la tercera pieza: la <strong>interdependencia de todos los mercados</strong>. En los <em>Éléments</em> construye la primera teoría matemática del <strong>equilibrio general</strong>: una economía de <em>n</em> mercados queda descrita por un sistema de <em>n</em> ecuaciones (demandas y ofertas de cada bien, que dependen de <em>todos</em> los precios), y existe un vector de precios que vacía simultáneamente todos los mercados. ¿Cómo se alcanza? Mediante el <strong>tanteo</strong> (<em>tâtonnement</em>): el mercado «grita» precios de prueba; si hay exceso de demanda, el precio sube; si hay exceso de oferta, baja; hasta converger en el equilibrio. El subastador walrasiano es la primera formalización de la mano invisible de Smith (WN IV.ii.9, cf. ECO-03-A §3) como mecanismo computacional descentralizado —y el ancestro directo del modelo Arrow-Debreu (1954), la cúspide formal de esta tradición.</p>
+
+<h2>2. La paradoja resuelta</h2>
+
+<p>Con la lente marginal, la paradoja del agua y los diamantes deja de ser paradójica. El <strong>valor de uso total</strong> del agua es inmenso —sin ella morimos—, pero su <strong>utilidad marginal</strong> es ínfima porque es abundante: un vaso más no satisface casi nada. Los diamantes apenas sirven para nada, pero son tan escasos que su unidad marginal satisface deseos intensísimos de ostentación o de corte industrial. El precio refleja la utilidad <strong>en el margen, condicionada por la escasez</strong>, no la utilidad total:</p>
+
+<p><blockquote>
+«Solo tenemos que rastrear cuidadosamente las leyes de la variación de la utilidad en función de la cantidad para llegar a una teoría satisfactoria del intercambio, de la que las leyes ordinarias de la oferta y la demanda son una consecuencia necesaria.» (Jevons, <em>Theory</em>, cap. 1)<br/>
+</blockquote></p>
+
+<p>El valor ya no es un misterio ontológico (¿dónde reside?, ¿el trabajo?, ¿la cosa misma?), sino una relación entre la mente del agente, la escasez y la última unidad. Con ello se cierra la disputa inaugurada por Aristóteles en <em>EN</em> V, 5 (ECO-01-A, §3.3) y se abre otra: si el valor es subjetivo, ¿qué garantiza el orden y la coordinación? — la pregunta que habitará el siglo XX.</p>
+
+<h2>3. La síntesis de Marshall: las dos hojas de las tijeras</h2>
+
+<p>La revolución podría haber degenerado en una nueva unilateralidad —utilidad contra coste, como antes coste contra utilidad—. Lo evitó <strong>Alfred Marshall</strong> (1842-1924), profesor en Cambridge, cuyos <em>Principles of Economics</em> (1890) dominaron la enseñanza de la economía durante medio siglo. Su imagen es la síntesis misma:</p>
+
+<p><blockquote>
+«Podríamos discutir razonablemente si es la hoja superior o la inferior de unas tijeras la que corta un pedazo de papel, como si el valor estuviera gobernado por la utilidad o por el coste de producción.» (Marshall, <em>Principles</em>, Libro V, cap. 3, sec. 7)<br/>
+</blockquote></p>
+
+<p>La <strong>demanda</strong> desciende: a menor precio, mayor cantidad demandada, porque la utilidad marginal decreciente solo justifica comprar más si el precio baja. La <strong>oferta</strong> asciende: producir más cuesta más en el margen (coste marginal creciente), y solo un precio mayor lo remunera. El precio de equilibrio es el punto de cruce —la gráfica oferta-demanda que todo el mundo reconoce hoy es marshalliana—, con el tiempo como variable de ajuste (corto plazo, largo plazo) y el consumidor capturando un <strong>excedente</strong>: la diferencia entre lo que habría estado dispuesto a pagar y lo que paga.</p>
+
+<p>Con Marshall, la revolución se institucionaliza: la «economía política» pasa a llamarse, en su propuesta, simplemente <strong>economía</strong> (<em>economics</em>); el análisis marginal se convierte en el lenguaje común; y Cambridge se convierte en la capital de la profesión —la misma facultad desde la que, cuarenta años después, su alumno rebelde John Maynard Keynes declarará una nueva revolución (ECO-06-A).</p>
+
+<h2>4. Qué cambió y qué no</h2>
+
+<p>La revolución marginalista transformó la economía en tres sentidos duraderos:</p>
+
+<p>1. <strong>Método</strong>: la economía se matematiza y se reconstruye como ciencia de la elección individual bajo restricciones —maximizar una función objetivo sujeta a escasez—, formato que conserva hasta hoy.
+2. <strong>Objeto</strong>: del crecimiento y la distribución entre clases (Smith, Ricardo, Marx) se pasa a la <strong>asignación de recursos dados</strong> entre fines alternativos. Robbins lo formulará en 1932: la economía es «la ciencia que estudia la conducta humana como una relación entre fines y medios escasos susceptibles de usos alternativos».
+3. <strong>Política</strong>: la teoría del valor-trabajo deja de sostener la teoría de la explotación; el salario y el beneficio pasan a explicarse por productividades marginales (J. B. Clark), y el debate sobre el capitalismo se traslada a otros terrenos.</p>
+
+<p>Pero el precio de la victoria fue la abstracción: el <em>homo economicus</em> —agente aislado, con preferencias dadas y cálculo perfecto— nace como herramienta analítica y acabará, un siglo después, siendo puesto en cuestión empíricamente por la economía conductual (ECO-08-A). Y la pregunta que Walras resolvió en el pizarrón —¿cómo coordinan los precios a millones de desconocidos?— adquirirá dramatismo político cuando Mises y Hayek la conviertan en el argumento central contra la planificación socialista (ECO-07-A).</p>
+
+<hr class="section-divider" />
+
+<h2>Ecos y Semillas para el Futuro</h2>
+
+<p>1. <strong>La Escuela Austríaca (ECO-07-A):</strong> la rama de Menger —Böhm-Bawerk, Wieser, y luego Mises y Hayek— llevará las intuiciones subjetivistas y temporal-procesales del marginalismo vienés hasta convertirlas en una tradición completa: teoría del capital, del ciclo y del cálculo económico.
+2. <strong>La macroeconomía keynesiana (ECO-06-A):</strong> Keynes se formó en el Marshall de Cambridge y contra él se rebeló; entender el equilibrio parcial y el supuesto de pleno empleo es condición para entender qué negó la <em>Teoría General</em>.
+3. <strong>La economía del bienestar:</strong> el excedente del consumidor y el equilibrio general fundan el análisis moderno de la eficiencia (Pareto, óptimos, teoremas del bienestar) que aún estructura el debate sobre mercados y Estado.
+4. <strong>La economía conductual (ECO-08-A):</strong> todo el edificio descansa en un agente que maximiza utilidad con coherencia; cuando Kahneman y Tversky midan cómo decide de verdad la gente, el margen volverá a temblar.</p>
+
+<hr class="section-divider" />
+
+<h2>Referencias Bibliográficas</h2>
+
+<em> Jevons, W. S. (1998). </em>La teoría de la economía política* (J. Zabalza, Trad.). Pirámide. (Obra original publicada en 1871)
+<em> Menger, C. (1985). </em>Principios de economía política* (M. J. Segador, Trad.). Fondo de Cultura Económica. (Obra original publicada en 1871)
+<em> Walras, L. (1987). </em>Elementos de economía política pura* (J. A. Domínguez Martín, Trad.). Alianza Editorial. (Obra original publicada en 1874)
+<em> Marshall, A. (1948). </em>Principios de economía* (Edición variorum, G. J. Stigler, Ed.). Aguilar. (Obra original publicada en 1890)
+<em> Gossen, H. H. (1983). </em>The Laws of Human Relations* (R. C. Blitz, Trad.). MIT Press. (Obra original publicada en 1854)
+<em> Schumpeter, J. A. (1994). </em>Historia del análisis económico* (M. Saborido, Trad.). Ariel. (Obra original publicada en 1954)
+<em> Blaug, M. (1985). </em>Teoría económica en retrospectiva* (J. M. García de la Torre, Trad.). Fondo de Cultura Económica. (Obra original publicada en 1962)]]></content:encoded>
+      <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+      <wp:post_id>889979</wp:post_id>
+      <wp:post_date>2023-01-29 12:00:00</wp:post_date>
+      <wp:post_date_gmt>2023-01-29 12:00:00</wp:post_date_gmt>
+      <wp:post_name>revolucion-marginalista</wp:post_name>
+      <wp:status>publish</wp:status>
+      <wp:post_type>post</wp:post_type>
+      <category domain="category" nicename="economia"><![CDATA[Economía]]></category>
+      <meta_json><![CDATA[{"_article_num": "1", "_lesson_code": "ECO-05-A", "_read_time": "10 min", "_post_subtitle": "Lecci\u00f3n de Historia del Pensamiento Econ\u00f3mico", "_lesson_essentials": "Entre 1871 y 1874, Jevons, Menger y Walras \u2014independientemente y en tres pa\u00edses\u2014 desplazaron la explicaci\u00f3n del valor desde el coste de producci\u00f3n hacia la utilidad marginal.\nLa ley de la utilidad marginal decreciente (ley de Gossen): cada unidad adicional de un bien satisface una necesidad menos urgente que la anterior.\nLa paradoja del agua y los diamantes se disuelve: el precio no depende de la utilidad total del bien, sino de la utilidad de la \u00faltima unidad disponible.\nWalras funda la teor\u00eda del equilibrio general: todos los mercados se determinan simult\u00e1neamente mediante el sistema de precios (\u00c9l\u00e9ments, 1874).\nMarshall (Principles, 1890) integra la herencia cl\u00e1sica y la marginalista: el precio es el resultado de las dos hojas de las tijeras, oferta y demanda.", "_bibliography": "Jevons, W. S. (1998). La teor\u00eda de la econom\u00eda pol\u00edtica (J. Zabalza, Trad.). Pir\u00e1mide. (Obra original publicada en 1871)\nMenger, C. (1985). Principios de econom\u00eda pol\u00edtica (M. J. Segador, Trad.). Fondo de Cultura Econ\u00f3mica. (Obra original publicada en 1871)\nWalras, L. (1987). Elementos de econom\u00eda pol\u00edtica pura (J. A. Dom\u00ednguez Mart\u00edn, Trad.). Alianza Editorial. (Obra original publicada en 1874)\nMarshall, A. (1948). Principios de econom\u00eda (G. J. Stigler, Ed. y notas). Aguilar. (Obra original publicada en 1890)\nSchumpeter, J. A. (1994). Historia del an\u00e1lisis econ\u00f3mico (M. Saborido, Trad.). Ariel. (Obra original publicada en 1954)\nBlaug, M. (1985). Teor\u00eda econ\u00f3mica en retrospectiva (J. M. Garc\u00eda de la Torre, Trad.). Fondo de Cultura Econ\u00f3mica. (Obra original publicada en 1962)", "_yoast_wpseo_focuskw": "revoluci\u00f3n marginalista", "_yoast_wpseo_title": "Marginalismo - La Revoluci\u00f3n de la Utilidad | Nihil Novi", "_yoast_wpseo_metadesc": "Jevons, Menger y Walras: la revoluci\u00f3n marginalista de 1871 resolvi\u00f3 la paradoja del valor y refund\u00f3 la econom\u00eda sobre la utilidad en el margen.", "_nihilnovi_import_source": "ECO_05_A.md"}]]></meta_json>
+    </item>
+    <item>
+      <title>ECO-06-A: Keynes - La Demanda Agregada y el Empleo</title>
+      <link>https://nihilnovi.xyz/keynes-demanda-agregada/</link>
+      <pubDate>Mon, 03 Aug 2026 04:00:42 +0000</pubDate>
+      <dc:creator><![CDATA[davidlegorreta]]></dc:creator>
+      <guid isPermaLink="false">https://nihilnovi.xyz/?p=738893</guid>
+      <description></description>
+      <content:encoded><![CDATA[<h1>ECO-06-A: John Maynard Keynes y la Demanda Agregada</h1>
+
+<p><blockquote>
+«Los hombres prácticos, que se creen completamente libres de toda influencia intelectual, son generalmente esclavos de algún economista difunto. Los locos de la autoridad, que oyen voces en el aire, destilan su frenesí de algún escriba académico de años atrás.»<br/>
+— John Maynard Keynes, <em>Teoría general de la ocupación, el interés y el dinero</em>, cap. 24 (trad. FCE, 2006)<br/>
+</blockquote></p>
+
+<hr class="section-divider" />
+
+<h2>Génesis y Conexión Histórica</h2>
+
+<p>Entre 1929 y 1933 la producción industrial de Estados Unidos cayó casi a la mitad y el desempleo superó el veinticinco por ciento; en Alemania y Gran Bretaña, cifras comparables. El mundo rico se hundía en la <strong>Gran Depresión</strong> mientras la teoría económica dominante —la síntesis marshalliana heredera de la revolución marginalista (ECO-05-A)— aseguraba que tal cosa era imposible: los mercados, dejados a sí mismos, tienden al pleno empleo; el paro masivo solo podía ser fricción pasajera o salarios rígidos a la baja que tarde o temprano cederían.</p>
+
+<p>John Maynard Keynes (1883-1946) era la autoridad misma de esa tradición: alumno de Marshall y Pigou en Cambridge, autor del <em>Tract on Monetary Reform</em> (1923) y del <em>Treatise on Money</em> (1930), negociador del Tesoro británico en Versalles —donde dimitió y escribió en tres meses el panfleto más certero del siglo, <em>Las consecuencias económicas de la paz</em> (1919), que vaticinó la catástrofe que las reparaciones impuestas a Alemania preparaban—. Ningún hombre encarnaba mejor el establishment. Y ninguno lo demolería con más eficacia.</p>
+
+<p>La <em>Teoría general de la ocupación, el interés y el dinero</em> (1936) es el resultado de lo que su autor llamó «una larga lucha para escapar» de las ideas en las que había sido educado. Su tesis central puede enunciarse en una línea: <strong>una economía de mercado no tiene ningún mecanismo que garantice el pleno empleo; el nivel de actividad lo determina la demanda agregada, y ésta puede quedarse —y quedarse mucho tiempo— por debajo de la capacidad productiva</strong>. De ahí se sigue la revolución práctica: si el mercado no se corrige solo, el Estado debe hacerlo. Esta lección recorre el argumento en sus cuatro piezas maestras: la demanda efectiva, el multiplicador, la preferencia por la liquidez y los espíritus animales.</p>
+
+<hr class="section-divider" />
+
+<h2>1. La refutación de la ley de Say: la demanda efectiva</h2>
+
+<p>La economía clásica descansaba en la llamada <strong>ley de Say</strong>: la oferta crea su propia demanda. Producir es generar, en el mismo acto, la renta con que se comprará lo producido; puede haber desajustes sectoriales, pero no una <strong>escasez general de demanda</strong>. Del ahorro tampoco hay que preocuparse: lo ahorrado se presta en el mercado de fondos, y el tipo de interés —el precio de ese mercado— equilibra ahorro e inversión. En el mercado de trabajo ocurre lo mismo: el salario ajusta hasta emplear a todos los que quieren trabajar. El paro masivo persistente es, en este esquema, una contradicción.</p>
+
+<p>Keynes invierte el orden causal en el capítulo 3, «El principio de la demanda efectiva». El nivel de empleo no se fija en el mercado de trabajo: se fija en la <strong>demanda efectiva</strong>, es decir, en la demanda agregada que los empresarios <em>esperan</em> recibir al decidir cuánto producir. Si la demanda esperada (consumo más inversión) solo justifica producir para emplear al 75 % de la fuerza laboral, la economía se estabilizará ahí: un <strong>equilibrio de subempleo</strong> —equilibrio, porque nada en el sistema tiende a moverlo de ese punto. Los salarios pueden caer indefinidamente sin curar el paro: bajar los salarios baja también la renta y con ella la demanda, de modo que la cura clásica agrava la enfermedad.</p>
+
+<p>El giro es sutil y radical. Los clásicos razonaban como si la economía fuera un trueque sofisticado; Keynes subraya que vivimos en una <strong>economía monetaria de producción</strong>, donde las decisiones de gastar y de ahorrar las toman personas distintas, en momentos distintos, sobre un futuro desconocido. El ahorro no se transforma automáticamente en inversión: <strong>el ahorro es un residuo de la renta no gastada; la inversión, una decisión autónoma de los empresarios</strong>. Cuando la segunda flaquea, el primero no la rescata —la acompaña a la baja, vía caída de la renta. Es la <strong>paradoja de la frugalidad</strong>: si todos deciden ahorrar más simultáneamente, la demanda se desploma, la renta cae, y la sociedad acaba ahorrando lo mismo o menos que antes. Lo que es virtud en el individuo puede ser catástrofe en el agregado: la falacia de composición que recorre todo el libro.</p>
+
+<h2>2. El multiplicador</h2>
+
+<p>Si la demanda manda, ¿en cuánto aumenta la renta cuando alguien —el Estado, un inversor— gasta una unidad adicional? La respuesta de Keynes (cap. 10, tomada de su discípulo Richard Kahn) es el <strong>multiplicador</strong>.</p>
+
+<p>El eslabón es la <strong>propensión marginal a consumir</strong> (<em>marginal propensity to consume</em>): de cada unidad adicional de renta, la gente gasta una fracción (digamos, 0.8) y ahorra el resto. Un gasto autónomo de 100 se convierte en renta de otros; esos otros gastan 80, que se convierten en renta de otros, que gastan 64... La suma de la cadena es 100 / (1 − 0.8) = <strong>500</strong>. El multiplicador es tanto mayor cuanto mayor es la propensión a consumir; y en las depresiones —con capacidad ociosa y trabajadores disponibles— ese gasto adicional se traduce en producción y empleo reales, no en precios.</p>
+
+<p>La consecuencia política es inmediata y se formula sin florituras: en una depresión, el gasto público se autofinancia en gran parte vía renta y recaudación, y hasta proyectos de dudosa utilidad son preferibles al paro:</p>
+
+<p><blockquote>
+«Si el Tesoro llenara de billetes unas botellas viejas, las enterrara [...] y dejara a la iniciativa privada desenterrarlas [...] la renta real de la comunidad [...] probablemente llegaría a ser mucho mayor de lo que es.» (<em>Teoría general</em>, cap. 10, sec. 6)<br/>
+</blockquote></p>
+
+<p>La boutade tiene su seriedad: lo irracional no es cavar pozos para rellenarlos, sino <strong>dejar ociosos a millones de personas</strong> que podrían estar produciendo bienes útiles, solo porque nadie ha organizado el gasto que los emplee. El famoso «keynesianismo de obras públicas» —el New Deal, el rearme, los planes de estímulo de 2008 y 2020— desciende de este capítulo.</p>
+
+<h2>3. El dinero y el interés: la preferencia por la liquidez</h2>
+
+<p>La economía clásica trataba el dinero como un velo: un intermediario neutro cuya cantidad fijaba los precios pero no tocaba las variables reales (la dicotomía clásica). Keynes —economista monetario de formación— hace del dinero el corazón del problema. El tipo de interés, sostiene, <strong>no es el precio que equilibra ahorro e inversión</strong>: es el precio que equilibra la cantidad de dinero existente con el deseo de la gente de <strong>mantener riqueza en forma líquida</strong> (caps. 13 y 15). A ese deseo lo llama <strong>preferencia por la liquidez</strong> (<em>liquidity preference</em>), y lo descompone en tres motivos:</p>
+
+<p>- <strong>Motivo transacción</strong>: mantener dinero para los pagos corrientes.
+- <strong>Motivo precaución</strong>: para imprevistos.
+- <strong>Motivo especulación</strong>: para apostar a la baja de los bonos (cuando se espera que el interés suba, conviene quedarse líquido para comprar después más barato).</p>
+
+<p>El motivo especulación conecta el interés con las <strong>expectativas</strong>, y de ahí nace un fenómeno decisivo: la <strong>trampa de la liquidez</strong> (cap. 15, sec. 2). Cuando el pánico se apodera de los mercados, todo el mundo quiere liquidez y nadie quiere bonos; el banco central puede emitir todo el dinero que quiera que el público lo absorberá sin que el tipo de interés baje más. La política monetaria —el instrumento favorito de la ortodoxia— se vuelve entonces «empujar una cuerda»: inútil precisamente cuando más se necesita. Es la explicación teórica de por qué la Gran Depresión no se resolvió con dinero barato, y el argumento que consagra la <strong>primacía de la política fiscal</strong> en las crisis profundas. (El término exacto «trampa de la liquidez» es de la posteridad keynesiana —Hicks, Krugman—, pero el fenómeno y su análisis son del capítulo 15.)</p>
+
+<h2>4. La inversión y los espíritus animales</h2>
+
+<p>Si la inversión es la pieza autónoma y oscilante de la demanda, ¿de qué depende? De la <strong>eficiencia marginal del capital</strong> —el rendimiento esperado de la inversión— comparada con el tipo de interés (cap. 11). Hasta aquí, ortodoxia. Pero Keynes da el paso que la ortodoxia no podía dar: los rendimientos esperados no son datos objetivos, porque el futuro no es calculable. Distingue —como hará de modo explícito en su artículo de 1921 sobre probabilidad y repetirá en 1937— entre <strong>riesgo</strong> (probabilidades conocidas: la ruleta) e <strong>incertidumbre</strong> genuina: no sabemos y <em>no podemos</em> saber qué rendirá una fábrica dentro de diez años.</p>
+
+<p>Bajo incertidumbre, la inversión no puede ser un acto de cálculo: es un acto de <strong>confianza</strong>, sostenido por convenciones frágiles (suponer que el presente se prolonga, imitar a los demás) y por algo más elemental:</p>
+
+<p><blockquote>
+«La mayor parte de nuestras decisiones positivas [...] solo pueden tomarse como resultado de los espíritus animales (<em>animal spirits</em>), de un impulso espontáneo a la acción en lugar de la inacción, y no como el resultado de un promedio ponderado de beneficios cuantitativos multiplicados por probabilidades cuantitativas.» (<em>Teoría general</em>, cap. 12, sec. 7)<br/>
+</blockquote></p>
+
+<p>De ahí la volatilidad estructural de la economía de mercado: cuando los espíritus animales decaen, la inversión se paraliza, el multiplicador opera a la inversa y la espiral de pesimismo se autorrealiza. El mercado de valores —esa actividad en la que «anticipamos lo que la opinión media espera que sea la opinión media» (el célebre símil del concurso de belleza, cap. 12, sec. 5)— amplifica el vaivén. La conclusión institucional del capítulo es sorprendente incluso hoy: la <strong>socialización de la inversión</strong>, es decir, que el Estado asuma la responsabilidad de estabilizar el volumen de inversión, porque dejarla al humor privado es dejar el empleo de todos al vaivén de unos pocos.</p>
+
+<h2>5. Las «notas sociales»: el capítulo 24</h2>
+
+<p>El libro se cierra con una reflexión filosófica que sus admiradores suelen omitir y sus detractores exageran. Keynes declara dos defectos de la sociedad de su tiempo: el paro masivo y la distribución arbitraria e injusta de la renta y la riqueza. Su remedio no es la abolición del mercado —el individualismo, escribe, es la mejor salvaguarda de la variedad y de la libertad personal—, sino su <strong>complemento</strong>: una gestión pública de la demanda agregada y del tipo de interés que, manteniendo el pleno empleo, haría además caer la recompensa del capital escaso hasta, quizá, la «eutanasia del rentista» —la desaparición del poder del propietario financiero que vive de la escasez del capital que él mismo contribuye a mantener escaso—.</p>
+
+<p>Y la advertencia final, la de la cita inaugural: las ideas de los economistas y de los filósofos políticos, «tanto cuando tienen razón como cuando están equivocadas, son más poderosas de lo que comúnmente se entiende. En verdad, el mundo está gobernado por poca cosa más». La <em>Teoría general</em> es la mejor prueba: en treinta años, su esquema —demanda agregada, multiplicador, estabilización fiscal— pasó de herejía a ortodoxia de todos los gobiernos occidentales, hasta que la estanflación de los setenta y el monetarismo de Friedman le disputaron el trono (ECO-07-A). El debate entre ambos es, todavía, el esqueleto de la política macroeconómica contemporánea.</p>
+
+<hr class="section-divider" />
+
+<h2>Ecos y Semillas para el Futuro</h2>
+
+<p>1. <strong>Hacia el monetarismo (ECO-07-A):</strong> Friedman aceptará el instrumental keynesiano para darle la vuelta: el dinero sí importa, y mucho; la Depresión fue ante todo un fracaso monetario. El duelo Keynes–Friedman ordena la macroeconomía desde 1950 hasta hoy.
+2. <strong>Hacia la economía conductual (ECO-08-A):</strong> los <em>animal spirits</em> y la incertidumbre radical son el reconocimiento, por uno de los fundadores de la economía moderna, de que los agentes no calculan como el <em>homo economicus</em>: medio siglo después, la psicología experimental vendrá a documentarlo (Akerlof y Shiller titularon en 2009 un libro simplemente <em>Animal Spirits</em>).
+3. <strong>Las síntesis y las crisis:</strong> la «síntesis neoclásica» (Hicks, Samuelson) domesticó a Keynes en el modelo IS-LM; las crisis de 1970 y 2008 lo desenterraron dos veces. Cada recesión importante reaviva la pregunta que la <em>Teoría general</em> formuló: ¿quién estabiliza la demanda cuando los espíritus animales huyen?
+4. <strong>El hilo largo:</strong> la crítica a la ley de Say cierra el arco abierto por Smith (ECO-03-A): el orden espontáneo del mercado es real pero incompleto; la pregunta por lo que el mercado no puede hacer solo —ya presente en los tres deberes del Estado smithiano— encuentra en Keynes su formulación macroeconómica definitiva.</p>
+
+<hr class="section-divider" />
+
+<h2>Referencias Bibliográficas</h2>
+
+<em> Keynes, J. M. (2006). </em>Teoría general de la ocupación, el interés y el dinero* (D. Hornes y G. Feliu, Trads.). Fondo de Cultura Económica. (Obra original publicada en 1936)
+<em> Keynes, J. M. (2004). </em>Las consecuencias económicas de la paz*. Crítica. (Obra original publicada en 1919)
+<em> Hicks, J. R. (1937). Mr. Keynes and the "Classics": A Suggested Interpretation. </em>Econometrica*, 5(2), 147-159.
+<em> Akerlof, G. A., & Shiller, R. J. (2009). </em>Animal Spirits: How Human Psychology Drives the Economy*. Princeton University Press.
+<em> Schumpeter, J. A. (1994). </em>Historia del análisis económico* (M. Saborido, Trad.). Ariel. (Obra original publicada en 1954)
+<em> Skidelsky, R. (2003). </em>John Maynard Keynes: 1883-1946. Economist, Philosopher, Statesman*. Macmillan.
+<em> Blaug, M. (1985). </em>Teoría económica en retrospectiva* (J. M. García de la Torre, Trad.). Fondo de Cultura Económica. (Obra original publicada en 1962)]]></content:encoded>
+      <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+      <wp:post_id>738893</wp:post_id>
+      <wp:post_date>2023-02-05 12:00:00</wp:post_date>
+      <wp:post_date_gmt>2023-02-05 12:00:00</wp:post_date_gmt>
+      <wp:post_name>keynes-demanda-agregada</wp:post_name>
+      <wp:status>publish</wp:status>
+      <wp:post_type>post</wp:post_type>
+      <category domain="category" nicename="economia"><![CDATA[Economía]]></category>
+      <meta_json><![CDATA[{"_article_num": "1", "_lesson_code": "ECO-06-A", "_read_time": "11 min", "_post_subtitle": "Lecci\u00f3n de Historia del Pensamiento Econ\u00f3mico", "_lesson_essentials": "La Gran Depresi\u00f3n refut\u00f3 en los hechos la creencia cl\u00e1sica en el equilibrio autom\u00e1tico de pleno empleo; Keynes construy\u00f3 la teor\u00eda que faltaba.\nLa demanda efectiva (cap. 3): el nivel de empleo lo determina la demanda agregada esperada, no la oferta; la econom\u00eda puede equilibrarse con desempleo masivo.\nEl multiplicador (cap. 10): cada unidad de gasto aut\u00f3nomo \u2014inversi\u00f3n o gasto p\u00fablico\u2014 genera una cadena de renta y consumo amplificada por la propensi\u00f3n marginal a consumir.\nLa preferencia por la liquidez (caps. 13-15): el tipo de inter\u00e9s es el premio por desprenderse de la liquidez; en situaciones de p\u00e1nico puede caer en la trampa de liquidez y volverse in\u00fatil la pol\u00edtica monetaria.\nLos esp\u00edritus animales (cap. 12): la inversi\u00f3n descansa sobre expectativas fr\u00e1giles ante un futuro incierto, no sobre c\u00e1lculo racional de rendimientos.", "_bibliography": "Keynes, J. M. (2006). Teor\u00eda general de la ocupaci\u00f3n, el inter\u00e9s y el dinero (D. Hornes y G. Feliu, Trads.). Fondo de Cultura Econ\u00f3mica. (Obra original publicada en 1936)\nKeynes, J. M. (2004). Las consecuencias econ\u00f3micas de la paz. Cr\u00edtica. (Obra original publicada en 1919)\nSchumpeter, J. A. (1994). Historia del an\u00e1lisis econ\u00f3mico (M. Saborido, Trad.). Ariel. (Obra original publicada en 1954)\nHeilbroner, R. L. (1987). Los grandes economistas (M. M\u00e1rquez, Trad.). Argos Vergara. (Obra original publicada en 1953)\nBlaug, M. (1985). Teor\u00eda econ\u00f3mica en retrospectiva (J. M. Garc\u00eda de la Torre, Trad.). Fondo de Cultura Econ\u00f3mica. (Obra original publicada en 1962)\nSkidelsky, R. (2003). John Maynard Keynes: 1883-1946. Economist, Philosopher, Statesman. Macmillan.", "_yoast_wpseo_focuskw": "Keynes demanda agregada", "_yoast_wpseo_title": "Keynes - La Demanda Agregada y el Empleo | Nihil Novi", "_yoast_wpseo_metadesc": "La Teor\u00eda General de Keynes (1936): demanda efectiva, multiplicador, preferencia por la liquidez y la refutaci\u00f3n de la ley de Say en la Gran Depresi\u00f3n.", "_nihilnovi_import_source": "ECO_06_A.md"}]]></meta_json>
+    </item>
+    <item>
+      <title>ECO-07-A: Escuela Austríaca y Monetarismo - Teoría del Ciclo</title>
+      <link>https://nihilnovi.xyz/escuela-austriaca-monetarismo/</link>
+      <pubDate>Mon, 03 Aug 2026 04:00:42 +0000</pubDate>
+      <dc:creator><![CDATA[davidlegorreta]]></dc:creator>
+      <guid isPermaLink="false">https://nihilnovi.xyz/?p=67335</guid>
+      <description></description>
+      <content:encoded><![CDATA[<h1>ECO-07-A: La Escuela Austríaca y el Monetarismo</h1>
+
+<p><blockquote>
+«Lo curioso de la tarea de demostrar la existencia del orden espontáneo es que consiste en convencer a los hombres de que lo que les rodea, y que no han creado, es ordenado y tiene propósito. [...] El conocimiento del que nos servimos nunca existió en forma concentrada o integrada, sino únicamente como fragmentos dispersos de conocimiento incompleto y frecuentemente contradictorio que poseen todos los individuos por separado.»<br/>
+— F. A. Hayek, <em>The Use of Knowledge in Society</em> (1945)<br/>
+</blockquote></p>
+
+<hr class="section-divider" />
+
+<h2>Génesis y Conexión Histórica</h2>
+
+<p>Esta lección reúne dos tradiciones emparentadas pero distintas que protagonizaron la <strong>contrarrevolución</strong> frente al keynesianismo dominante de la posguerra: la Escuela Austríaca y el monetarismo de Chicago. Ambas defendieron el mercado frente a la planificación y al intervencionismo, pero con argumentos diferentes: los austríacos, desde la naturaleza del conocimiento y el tiempo; los monetaristas, desde la evidencia empírica sobre el dinero.</p>
+
+<p>Su punto de partida común está en la lección anterior: cuando Keynes publicó la <em>Teoría general</em> (1936; ECO-06-A), la economía parecía haberse convertido en la ciencia de la gestión estatal de la demanda. Los treinta gloriosos años de posguerra consagraron esa ortodoxia. Pero ya en los años veinte, desde Viena, <strong>Ludwig von Mises</strong> había planteado una objeción más profunda que cualquier disputa sobre multiplicadores: no es que la planificación funcione mal, es que <strong>no puede funcionar</strong>, porque el conocimiento que la coordinación económica requiere no existe disponible para ninguna mente central. Y en los años sesenta, desde Chicago, <strong>Milton Friedman</strong> demostraría con datos que el mayor desastre que el keynesianismo había aprendido a conjurar —la Gran Depresión— no fue un fallo del mercado, sino de la política monetaria.</p>
+
+<p>Para entender a ambos hay que volver a la fuente: la rama vienesa de la revolución marginalista (ECO-05-A, §1.3), la única que nunca aceptó la síntesis marshalliana de equilibrio.</p>
+
+<hr class="section-divider" />
+
+<h2>1. La vena vienesa: de Menger a Mises</h2>
+
+<strong>Carl Menger</strong> (1840-1921) había fundado en 1871 una variante peculiar del marginalismo: frente al formalismo de Jevons y Walras, Menger insistió en la <strong>subjetividad radical</strong> del valor, en la <strong>causalidad temporal</strong> de la producción (los bienes de orden superior, cf. ECO-05-A) y en los <strong>órdenes espontáneos</strong> —instituciones como el dinero, que nadie inventó y que emergen de la interacción de individuos que persiguen sus fines—. Sus herederos —Böhm-Bawerk con la teoría del capital y el interés, Wieser con la imputación— consolidaron una tradición con tres rasgos permanentes: el individuo que actúa como punto de partida (individualismo metodológico), el tiempo y la ignorancia como condiciones reales de la acción, y la desconfianza hacia los agregados y el equilibrio estático.
+
+<strong>Ludwig von Mises</strong> (1881-1973) llevó estos rasgos a su sistema: <em>La acción humana</em> (<em>Human Action</em>, 1949), que subtituló «tratado de economía», reconstruye toda la disciplina como <strong>praxeología</strong> —la lógica de la acción humana—: todo agente actúa para sustituir un estado menos satisfactorio por uno más satisfactorio, eligiendo medios para fines, bajo incertidumbre y en el tiempo. Del individualismo metodológico se sigue una consecuencia polémica: no existen entidades colectivas que «decidan»; «la sociedad» o «la nación» son abreviaturas de interacciones entre individuos. La macroeconomía keynesiana, con sus agregados (demanda agregada, consumo nacional), es para Mises una categoría equivocada desde la raíz.
+
+<h2>2. El debate del cálculo socialista</h2>
+
+<p>En 1920, en plena efervescencia posrevolucionaria, Mises publicó un artículo en el <em>Archiv für Sozialwissenschaft</em> con un título anodino y una bomba dentro: <em>Die Wirtschaftsrechnung im sozialistischen Gemeinwesen</em> («El cálculo económico en la comunidad socialista»). El argumento:</p>
+
+<p>1. La producción moderna exige comparar infinitas combinaciones de factores: ¿acero o aluminio?, ¿aquí o allá?, ¿ahora o después? Comparar exige una unidad común.
+2. En el socialismo, los medios de producción son públicos: <strong>no se intercambian, luego no hay precios de mercado</strong> para ellos.
+3. Sin precios de mercado para los factores, no hay forma de saber qué combinación economiza recursos y cuál los derrocha. La planificación central —por sabios que sean los planificadores— opera a ciegas: «donde no hay mercado libre no hay mecanismo de precios; sin mecanismo de precios no hay cálculo económico» (Mises, 1920).</p>
+
+<p>Los socialistas respondieron con ingenio —sobre todo <strong>Oskar Lange</strong> (1936-1937): el planificador puede <em>simular</em> el mercado, fijando precios de prueba y ajustándolos por tanteo, como el subastador de Walras (cf. ECO-05-A §1.4)—. Pero la respuesta de <strong>Friedrich Hayek</strong> (1899-1992), alumno de Wieser y colaborador de Mises, elevó el debate a otro plano: el modelo de Lange supone que el planificador <strong>conoce</strong> los datos (funciones de producción, disponibilidades, preferencias) que el tanteo necesita. Y ese es exactamente el problema.</p>
+
+<h2>3. Hayek: el conocimiento y los precios</h2>
+
+<p>El artículo de Hayek <em>The Use of Knowledge in Society</em> (1945, <em>American Economic Review</em>) es quizá el texto más citado de la economía del siglo XX. Su tesis: el problema económico de la sociedad <strong>no es</strong> la asignación óptima de recursos <em>dados</em>, como enseñan los manuales. Es el problema de <strong>utilizar un conocimiento que no está dado a nadie en su totalidad</strong>: el conocimiento de las circunstancias particulares de tiempo y lugar —el camión vacío que vuelve a la ciudad, el carpintero que sabe dónde hay madera barata, la oportunidad que solo dura un día—, conocimiento práctico, tácito, disperso en millones de cabezas y, en gran parte, <strong>imposible de transmitir</strong> a una autoridad central en forma estadística.</p>
+
+<p>¿Cómo lo resuelve el mercado? Mediante el <strong>sistema de precios</strong>, que Hayek describe como un mecanismo de telecomunicaciones: el precio condensa en una cifra la información relevante. Si desaparece una fuente de estaño, no hace falta que nadie sepa por qué escasea: basta que suba su precio para que millones de usuarios lo economien, busquen sustitutos o resignen usos. La «maravilla» del mercado —escribe— es que puede funcionar un orden cuya magnitud nadie comprende, y que «si hubiera sido construido deliberadamente, se contaría entre las mayores creaciones de la mente humana».</p>
+
+<p>De aquí se derivan dos corolarios políticos. El primero, contra la planificación: sustituir los precios por órdenes supone destruir el único sistema conocido de procesar conocimiento disperso. El segundo, más general y conservador: las instituciones que han evolucionado —derecho consuetudinario, lenguaje, mercado— encarnan más información de la que cualquier constructor racional puede manejar; es la defensa hayekiana del <strong>orden espontáneo</strong> (<em>spontaneous order</em>, o <em>catallaxia</em> para el orden del mercado), heredera directa de la mano invisible de Smith (WN IV.ii.9, cf. ECO-03-A §3) y de Ferguson («resultado de la acción humana, pero no del designio humano»).</p>
+
+<h2>4. <em>Camino de servidumbre</em> y la teoría del ciclo</h2>
+
+<p>En plena guerra, Hayek publicó <em>The Road to Serfdom</em> (1944), dedicado «a los socialistas de todos los partidos»: la tesis de que la planificación económica integral, aunque se inicie con intenciones democráticas, exige crecientemente decidir los fines de los individuos, y acaba requiriendo la coacción total. El libro —un éxito editorial mundial, condensado por <em>Reader's Digest</em>— le costó el ostracismo académico y lo convirtió en referente del liberalismo de posguerra (la Sociedad Mont Pèlerin, fundada por él en 1947, reunirá a Mises, Friedman y a toda la futura derecha económica).</p>
+
+<p>Paralelamente, la tradición austríaca había elaborado su propia teoría de las crisis, alternativa a la keynesiana. La <strong>teoría austríaca del ciclo económico</strong> (Mises, 1912; Hayek, <em>Prices and Production</em>, 1931): la producción es una <strong>estructura temporal</strong> —bienes de orden alejado del consumo (máquinas, acero) y cercano (pan, ropa)— coordinada por el tipo de interés, que refleja la preferencia temporal de la sociedad (cuánto presente sacrifica por futuro). Si el banco central expande el crédito y deprime artificialmente el interés, los empresarios reciben la señal falsa de que hay más ahorro real disponible: se inician proyectos largos e intensivos en capital que la sociedad no está dispuesta a financiar con ahorro genuino. El auge es, desde el principio, <strong>malinversión</strong> (<em>malinvestment</em>); la crisis no es el problema, sino la <strong>corrección inevitable</strong> del desajuste. Contra la receta keynesiana —sostener la demanda en la recesión—, los austríacos recetan lo contrario: dejar liquidar las malas inversiones; prolongar el estímulo solo pospone y agrava el ajuste. La década de 2008-2020, con sus tipos de interés cero y sus debates sobre burbujas de crédito, ha devuelto esta teoría una y otra vez al debate público.</p>
+
+<h2>5. El monetarismo de Friedman</h2>
+
+<p>Si los austríacos combatieron el keynesianismo desde la teoría, <strong>Milton Friedman</strong> (1912-2006) lo hizo desde los datos, y con más éxito académico inmediato. Su programa tiene cuatro pilares.</p>
+
+<h3>1. La teoría cuantitativa refundada</h3>
+
+<p>En <em>The Quantity Theory of Money: A Restatement</em> (1956), Friedman reconvierte la vieja intuición cuantitativa —de los salmantinos del XVI (ECO-01-A §5.3) a Hume (ECO-02-A §4)— en una teoría moderna de la <strong>demanda de dinero</strong>: la cantidad de dinero que la gente desea mantener es una función estable de unas pocas variables (renta permanente, rendimientos alternativos). Si la demanda es estable, las perturbaciones vienen del lado de la oferta: <strong>la inflación es siempre y en todo lugar un fenómeno monetario</strong>, producido por un crecimiento de la cantidad de dinero superior al de la producción. La receta de política: renunciar a la discrecionalidad y adoptar una <strong>regla fija</strong> —la regla del k por ciento: aumentar la oferta monetaria a un ritmo constante y anunciado, igual al crecimiento tendencial de la economía.</p>
+
+<h3>2. La <em>Historia monetaria</em> con Anna Schwartz</h3>
+
+<em>A Monetary History of the United States, 1867-1960</em> (1963) es el ariete empírico: capítulo a capítulo, los autores documentan que cada gran contracción económica fue precedida por una contracción monetaria. Y el caso central es la propia Gran Depresión: entre 1929 y 1933 la Reserva Federal <strong>permitió que la cantidad de dinero de EE. UU. cayera un tercio</strong>, con miles de quiebras bancarias no atendidas. La Depresión no fue —contra la lectura keynesiana— el fracaso terminal del capitalismo y la prueba de que la política monetaria era impotente (la trampa de liquidez, cf. ECO-06-A §3): fue, al contrario, «la Gran Contracción», un desastre <strong>de política monetaria</strong> que la prueba de su potencia. En el cumpleaños 90 de Friedman, el gobernador de la Fed Ben Bernanke lo reconocería con una frase célebre: «Tenían ustedes razón. Lo hicimos nosotros. Lo sentimos mucho. Pero no volverá a ocurrir».
+
+<h3>3. La tasa natural de desempleo (1968)</h3>
+
+<p>El discurso presidencial de Friedman ante la American Economic Association en diciembre de 1967 (<em>The Role of Monetary Policy</em>, 1968) es el argumento que desalojó al keynesianismo de su trono. La política de los sesenta se fundaba en la <strong>curva de Phillips</strong>: una relación estable y explotable entre inflación y desempleo —más inflación, menos paro—. Friedman demostró que esa relación es un espejismo: existe una <strong>tasa natural de desempleo</strong>, determinada por factores reales (fricciones, información, instituciones), y cualquier intento de mantener el paro por debajo de ella mediante inflación solo funciona mientras la gente no ajuste sus expectativas. Cuando los trabajadores anticipan la inflación, exigen salarios acordes y el paro vuelve a su tasa natural —con la inflación ya instalada. Mantener el empeño exige inflación <strong>acelerada</strong>: la espiral. La predicción se cumplió con precisión de relojero en la <strong>estanflación</strong> de los setenta —inflación y desempleo <em>creciendo juntos</em>—, fenómeno imposible en el modelo keynesiano estándar. Friedman recibió el Nobel en 1976; el consenso macroeconómico había cambiado de bando.</p>
+
+<h3>4. Libertad y mercado</h3>
+
+<p>Como Hayek, Friedman fue también un filósofo público: <em>Capitalism and Freedom</em> (1962) —certificado de retención militar, escuelas con vale, tipo de cambio flotante, impuesto negativo sobre la renta— y la serie televisiva <em>Free to Choose</em> (1980) lo convirtieron en el intelectual más influyente de la derecha económica de Reagan y Thatcher. Su liberalismo, sin embargo, era instrumental más que de principios: el mercado no es bueno por naturaleza, sino porque es el mecanismo que mejor coordina a personas libres y disidentes sin obligarlas a ponerse de acuerdo.</p>
+
+<h2>6. Dos tradiciones, un legado</h2>
+
+<p>Conviene no fundir lo que la historia juntó. Austríacos y monetaristas comparten la defensa del mercado y la crítica del activismo estatal, pero difieren en lo esencial: para Friedman la ciencia económica es <strong>empírica y predictiva</strong> (la metodología de su ensayo de 1953: las hipótesis se juzgan por sus predicciones, no por el realismo de sus supuestos); para Mises es una <strong>deducción praxeológica</strong> que ningún dato puede refutar. Para los austríacos, la banca central es la fuente misma del ciclo; para Friedman, es una institución necesaria que debe regirse por reglas. Y sin embargo, el legado conjunto es el que estructura nuestro presente: bancos centrales independientes con metas de inflación, desconfianza hacia la discrecionalidad, y la convicción —renovada tras cada crisis— de que el dinero y las expectativas mandan.</p>
+
+<hr class="section-divider" />
+
+<h2>Ecos y Semillas para el Futuro</h2>
+
+<p>1. <strong>Cierre del arco del curso:</strong> la pregunta por el orden sin ordenador —inaugurada por Smith y la mano invisible (ECO-03-A)— recibe en Hayek su formulación más profunda; el curso entero puede leerse como la historia de esa idea y de sus críticos (Marx, ECO-04-A; Keynes, ECO-06-A).
+2. <strong>Las expectativas racionales:</strong> la tasa natural de Friedman abrió la puerta a Lucas, Sargent y la nueva macroeconomía clásica de los setenta-ochenta, que llevará el argumento de las expectativas a su forma matemática radical.
+3. <strong>Hacia la economía conductual (ECO-08-A):</strong> la última palabra del siglo no la tendrán ni el planificador ni el calculador perfecto: la psicología experimental mostrará que el agente real decide con atajos y sesgos, dando la razón, curiosamente, tanto a Keynes (espíritus animales) como a los austríacos (ignorancia radical), y planteando una nueva pregunta: si erramos sistemáticamente, ¿quién debe decidir por nosotros?
+4. <strong>El debate del cálculo, actualizado:</strong> big data, inteligencia artificial y planificación algorítmica han resucitado la pregunta de 1920: ¿puede una máquina con toda la información sustituir al mercado? La respuesta de Hayek —el conocimiento tácito no es <em>big data</em>— sigue siendo el argumento a batir.</p>
+
+<hr class="section-divider" />
+
+<h2>Referencias Bibliográficas</h2>
+
+<em> Menger, C. (1985). </em>Principios de economía política* (M. J. Segador, Trad.). Fondo de Cultura Económica. (Obra original publicada en 1871)
+<em> Mises, L. von (1968). </em>La acción humana: tratado de economía* (J. R. Sarasqueta, Trad.). Unión Editorial. (Obra original publicada en 1949)
+<em> Mises, L. von (1935). Economic Calculation in the Socialist Commonwealth. En F. A. Hayek (Ed.), </em>Collectivist Economic Planning*. Routledge. (Obra original publicada en 1920)
+<em> Hayek, F. A. (2001). </em>Camino de servidumbre* (J. R. Sarasqueta, Trad.). Alianza Editorial. (Obra original publicada en 1944)
+<em> Hayek, F. A. (1945). The Use of Knowledge in Society. </em>The American Economic Review*, 35(4), 519-530.
+<em> Friedman, M. (1992). </em>Capitalismo y libertad* (J. Díaz, Trad.). Rialp. (Obra original publicada en 1962)
+<em> Friedman, M. (1968). The Role of Monetary Policy. </em>The American Economic Review*, 58(1), 1-17.
+<em> Friedman, M., & Schwartz, A. J. (1963). </em>A Monetary History of the United States, 1867-1960*. Princeton University Press.
+<em> Schumpeter, J. A. (1994). </em>Historia del análisis económico* (M. Saborido, Trad.). Ariel. (Obra original publicada en 1954)]]></content:encoded>
+      <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+      <wp:post_id>67335</wp:post_id>
+      <wp:post_date>2023-02-12 12:00:00</wp:post_date>
+      <wp:post_date_gmt>2023-02-12 12:00:00</wp:post_date_gmt>
+      <wp:post_name>escuela-austriaca-monetarismo</wp:post_name>
+      <wp:status>publish</wp:status>
+      <wp:post_type>post</wp:post_type>
+      <category domain="category" nicename="economia"><![CDATA[Economía]]></category>
+      <meta_json><![CDATA[{"_article_num": "1", "_lesson_code": "ECO-07-A", "_read_time": "12 min", "_post_subtitle": "Lecci\u00f3n de Historia del Pensamiento Econ\u00f3mico", "_lesson_essentials": "La Escuela Austr\u00edaca desciende de Menger (1871): el valor es subjetivo, la econom\u00eda es un proceso en el tiempo y el mercado, un procedimiento de descubrimiento.\nMises (1920) abri\u00f3 el debate del c\u00e1lculo socialista: sin precios de mercado para los bienes de producci\u00f3n, la planificaci\u00f3n central carece de br\u00fajula racional.\nHayek (1945): el problema econ\u00f3mico es el uso del conocimiento disperso e inarticulable; los precios son un sistema de telecomunicaciones que ning\u00fan planificador puede sustituir.\nLa teor\u00eda austr\u00edaca del ciclo: el cr\u00e9dito barato artificial alarga insosteniblemente la estructura productiva; la crisis es la correcci\u00f3n inevitable de la malinversi\u00f3n.\nFriedman refund\u00f3 la teor\u00eda cuantitativa del dinero, demostr\u00f3 con Schwartz el origen monetario de la Gran Depresi\u00f3n y predijo la estanflaci\u00f3n con la tasa natural de desempleo (1968).", "_bibliography": "Menger, C. (1985). Principios de econom\u00eda pol\u00edtica (M. J. Segador, Trad.). Fondo de Cultura Econ\u00f3mica. (Obra original publicada en 1871)\nMises, L. von (1968). La acci\u00f3n humana: tratado de econom\u00eda (J. R. Sarasqueta, Trad.). Uni\u00f3n Editorial. (Obra original publicada en 1949)\nHayek, F. A. (2001). Camino de servidumbre (J. R. Sarasqueta, Trad.). Alianza Editorial. (Obra original publicada en 1944)\nHayek, F. A. (1945). The Use of Knowledge in Society. The American Economic Review, 35(4), 519-530.\nFriedman, M. (1968). The Role of Monetary Policy. The American Economic Review, 58(1), 1-17.\nFriedman, M., & Schwartz, A. J. (1963). A Monetary History of the United States, 1867-1960. Princeton University Press.\nSchumpeter, J. A. (1994). Historia del an\u00e1lisis econ\u00f3mico (M. Saborido, Trad.). Ariel. (Obra original publicada en 1954)", "_yoast_wpseo_focuskw": "escuela austr\u00edaca monetarismo", "_yoast_wpseo_title": "Escuela Austr\u00edaca y Monetarismo - Teor\u00eda del Ciclo | Nihil Novi", "_yoast_wpseo_metadesc": "De Menger a Mises y Hayek, y de Friedman a la estanflaci\u00f3n: la Escuela Austr\u00edaca, el debate del c\u00e1lculo socialista y la contrarrevoluci\u00f3n monetarista.", "_nihilnovi_import_source": "ECO_07_A.md"}]]></meta_json>
+    </item>
+    <item>
+      <title>ECO-08-A: Economía Conductual - Racionalidad Limitada</title>
+      <link>https://nihilnovi.xyz/economia-conductual-institucional/</link>
+      <pubDate>Mon, 03 Aug 2026 04:00:42 +0000</pubDate>
+      <dc:creator><![CDATA[davidlegorreta]]></dc:creator>
+      <guid isPermaLink="false">https://nihilnovi.xyz/?p=64231</guid>
+      <description></description>
+      <content:encoded><![CDATA[<h1>ECO-08-A: La Economía Conductual</h1>
+
+<p><blockquote>
+«Las suposiciones sobre agentes que fundamentan el análisis económico [...] no son las de un psicólogo. De hecho, a menudo son exactamente lo contrario. Mi hipótesis de trabajo es que los agentes económicos son humanos, y que los modelos económicos han de incorporarlo.»<br/>
+— Richard H. Thaler, discurso del Premio Nobel (2017)<br/>
+</blockquote></p>
+
+<hr class="section-divider" />
+
+<h2>Génesis y Conexión Histórica</h2>
+
+<p>Toda la economía que hemos recorrido descansa, en última instancia, en una figura antropológica: el agente que <strong>elige</strong>. Los clásicos lo imaginaron movido por el interés propio (ECO-03-A); los marginalistas lo formalizaron como maximizador de utilidad (ECO-05-A); los neoclásicos del siglo XX lo endurecieron hasta convertirlo en <em>homo economicus</em>: preferencias completas, coherentes y estables, información procesada sin coste, cálculo perfecto de probabilidades, autocontrol absoluto. Los austríacos y Keynes habían objetado la ignorancia y la incertidumbre (ECO-06-A, ECO-07-A), pero lo hacían desde la filosofía. Faltaba algo más incómodo: <strong>datos</strong>.</p>
+
+<p>La economía conductual (<em>behavioral economics</em>) es el movimiento que, desde mediados del siglo XX, se propuso medir cómo decide de verdad la gente —en el laboratorio, con experimentos replicables— y reconstruir la teoría sobre esa base. Su historia es la de tres generaciones: <strong>Herbert Simon</strong>, que formuló la disidencia conceptual en los años cuarenta; <strong>Daniel Kahneman y Amos Tversky</strong>, que en los setenta documentaron los sesgos sistemáticos del juicio y construyeron una teoría alternativa de la decisión; y <strong>Richard Thaler</strong>, que trasladó esos hallazgos a la economía financiera y a la política pública, convirtiendo la herejía en ortodoxia premiada con tres Nobel (Simon 1978, Kahneman 2002, Thaler 2017). Esta lección, que cierra el módulo, recorre ese arco: de la racionalidad limitada a los <em>nudges</em>, y termina preguntándose qué queda del <em>homo economicus</em> —y de nosotros.</p>
+
+<hr class="section-divider" />
+
+<h2>1. Herbert Simon: la racionalidad limitada</h2>
+
+<p>La primera grieta la abrió un politólogo de Carnegie Mellon. En <em>Administrative Behavior</em> (1947) y en sus artículos de los cincuenta, <strong>Herbert A. Simon</strong> (1916-2001) observó que la teoría de la decisión que usaban los economistas no describía ninguna organización real. Las personas y las empresas no pueden <strong>maximizar</strong> —encontrar la opción óptima entre todas— por tres limitaciones constitutivas: disponen de <strong>información incompleta</strong>, de <strong>capacidad de cálculo finita</strong> y de <strong>tiempo limitado</strong>. La decisión óptima, computada con rigor, requeriría recursos que la propia decisión consumiría por completo.</p>
+
+<p>¿Qué hacemos entonces? Simon acuñó dos conceptos gemelos:</p>
+
+<p>- <strong>Racionalidad limitada</strong> (<em>bounded rationality</em>): la racionalidad humana es real, pero opera «dentro de los límites» del conocimiento y del cómputo disponibles.
+- <strong>Satisfacer</strong> (<em>satisficing</em>, fusión de <em>satisfy</em> y <em>suffice</em>): en lugar de buscar lo óptimo, el agente fija un <strong>nivel de aspiración</strong> y elige la primera opción que lo alcanza. No buscamos la aguja más afilada del pajar: buscamos una aguja con la que se pueda coser.</p>
+
+<p>El modelo no era una denuncia de la irracionalidad humana —Simon insistía en lo contrario: satisfacer es <em>racional</em> cuando el cálculo cuesta—, sino una reconstrucción realista. Y llevaba en germen una pregunta empírica: si la gente no calcula como el modelo, ¿<strong>cómo</strong> calcula? La respuesta la darían dos psicólogos israelíes.</p>
+
+<h2>2. Kahneman y Tversky: las heurísticas y los sesgos</h2>
+
+<p>A partir de 1971, <strong>Daniel Kahneman</strong> (1934-2024) y <strong>Amos Tversky</strong> (1937-1996) sometieron a cientos de sujetos —incluidos estadísticos profesionales— a pequeños experimentos de juicio bajo incertidumbre. El resultado, recogido en su programa de «heurísticas y sesgos» (<em>Judgment under Uncertainty</em>, 1974, y la antología de 1982), fue demoledor: la intuición humana no comete errores aleatorios alrededor del cálculo correcto, sino <strong>errores sistemáticos y predecibles</strong>, porque no calcula: usa atajos mentales (<strong>heurísticas</strong>) que suelen funcionar bien en la vida cotidiana pero fallan de formas detectables. Los tres clásicos:</p>
+
+<p>- <strong>Disponibilidad</strong> (<em>availability</em>): estimamos la probabilidad de un suceso por la facilidad con que nos vienen ejemplos a la mente. Tras un accidente aéreo muy cubierto, volar parece más peligroso que conducir, aunque las estadísticas digan lo contrario.
+- <strong>Representatividad</strong> (<em>representativeness</em>): juzgamos la probabilidad por el parecido con el estereotipo, ignorando las tasas de base. Descrito un perfil «ordenado, detallista, amante de los libros», la mayoría cree más probable que sea bibliotecario que camionero —aunque haya cien veces más camioneros que bibliotecarios—. Es el mecanismo de la falacia del jugador y de buena parte de los prejuicios.
+- <strong>Anclaje y ajuste</strong> (<em>anchoring</em>): las estimaciones numéricas se «anclan» a cualquier cifra presente en el contexto, por absurda que sea. En el experimento célebre, una ruleta amañada que salía en 10 o en 65 arrastraba las estimaciones de los sujetos sobre el porcentaje de países africanos en la ONU: quienes vieron el 65 dieron cifras casi dobles que quienes vieron el 10.</p>
+
+<p>El patrón importa más que cada caso: los sesgos son <strong>sistemáticos</strong>, luego no se cancelan en promedio, como exigiría la defensa estándar del <em>homo economicus</em> («los errores se compensan»). Y son <strong>predecibles</strong>, luego una teoría mejor es posible. Esa teoría llegó en 1979.</p>
+
+<h2>3. La teoría de las perspectivas</h2>
+
+<p>El artículo <em>Prospect Theory: An Analysis of Decision under Risk</em> (<em>Econometrica</em>, 1979) es el más citado de la historia de la economía. Kahneman y Tversky propusieron una alternativa a la <strong>teoría de la utilidad esperada</strong> —el modelo vigente desde Bernoulli y von Neumann— basada en cuatro regularidades experimentales:</p>
+
+<p>1. <strong>Punto de referencia.</strong> No evaluamos resultados en términos de riqueza final, sino como <strong>ganancias y pérdidas</strong> respecto a un punto de referencia (normalmente, el statu quo). Perder 1.000 euros tras tener 10.000 no se siente como tener 9.000: se siente como una pérdida.
+2. <strong>Aversión a las pérdidas</strong> (<em>loss aversion</em>). Las pérdidas duelen aproximadamente <strong>el doble</strong> de lo que alegran las ganancias equivalentes. Por eso rechazamos apuestas justas (50 % de ganar 110 o perder 100) que la teoría estándar aconsejaría aceptar, y por eso vender lo que perdemos nos resulta tan difícil.
+3. <strong>Sensibilidad marginal decreciente</strong> en ambos dominios: los primeros 100 euros de ganancia importan más que los segundos; y la primera pérdida duele más que la misma cantidad añadida a una pérdida mayor. La función de valor resultante tiene forma de S y un codo en el punto de referencia, más pronunciado en pérdidas.
+4. <strong>Ponderación no lineal de probabilidades.</strong> Las probabilidades muy pequeñas se <strong>sobreponderan</strong> (de ahí el atractivo conjunto de loterías y seguros) y las certezas casi completas se tratan como si fueran completas (<em>efecto certeza</em>).</p>
+
+<p>Con estas piezas se explican de un golpe docenas de anomalías que la utilidad esperada no podía digerir —las paradojas de <strong>Allais</strong> (1953) y de <strong>Ellsberg</strong> (1961), que ya habían mostrado que la gente viola los axiomas de coherencia cuando las decisiones se enmarcan de formas distintas—, y sobre todo el <strong>efecto marco</strong> (<em>framing</em>): la misma decisión, descrita en términos de vidas salvadas o de vidas perdidas, produce elecciones opuestas. Las preferencias no solo se tienen: <strong>se construyen</strong> en el acto de decidir.</p>
+
+<h2>4. Thaler: del laboratorio a la economía</h2>
+
+<p>La tercera figura del movimiento, <strong>Richard Thaler</strong> (n. 1945), hizo de puente entre la psicología y la economía académica. Sus contribuciones muestran el estilo del programa: tomar una anomalía, nombrarla, demostrarla y cambiar la disciplina.</p>
+
+<p>- <strong>El efecto dotación</strong> (<em>endowment effect</em>, 1980): la teoría estándar exige que el precio máximo que pagarías por un bien coincida con el precio mínimo al que lo venderías si fuera tuyo. Los experimentos muestran lo contrario: quienes reciben una taza exigen por venderla el <strong>doble</strong> de lo que quienes no la tienen pagarían por ella. Poseer algo lo revaloriza —la aversión a las pérdidas aplicada a la propiedad—, con consecuencias enormes para la teoría del intercambio y del derecho (el teorema de Coase supone justamente esa simetría).
+- <strong>La contabilidad mental</strong> (<em>mental accounting</em>, 1985): la gente no gestiona un único presupuesto fungible, sino «cuentas» psíquicas separadas —el dinero «de la casa», el «de las vacaciones», el «premio»—, y gasta distinto según la etiqueta del dinero, violando la fungibilidad que la teoría supone.
+- <strong>Las anomalías financieras:</strong> con Werner De Bondt documentó la <strong>sobrerreacción</strong> de los mercados (las carteras de «perdedores» acaban batiendo a las de «ganadores»), abriendo las finanzas conductuales: si los agentes tienen sesgos, los precios de los activos pueden alejarse de los fundamentales de forma persistente —la herejía frente a la hipótesis de mercados eficientes de su colega (y co-Nobel 2013) Eugene Fama.
+- <strong>Los «casos límite» del <em>homo economicus</em>:</strong> su columna <em>Anomalies</em> en el <em>Journal of Economic Perspectives</em> (1987-2001) catalogó, trimestre a trimestre, los fallos de la teoría estándar hasta hacerlos imposibles de ignorar.</p>
+
+<h2>5. El <em>nudge</em>: la política de los sesgos</h2>
+
+<p>Si la gente decide con atajos y el contexto determina las elecciones (anclajes, marcos, opciones por defecto), entonces <strong>todo diseño de una decisión influye en su resultado</strong>: no existe una «arquitectura de la elección» neutra. De este hecho nace la propuesta política de Thaler y <strong>Cass Sunstein</strong> en <em>Nudge</em> (2008): el <strong>paternalismo libertario</strong>. Mantener la libertad de elección intacta (nadie prohíbe nada) pero <strong>diseñar el entorno</strong> para que la opción más probable de ser buena sea la más fácil:</p>
+
+<p>- <strong>Opciones por defecto</strong>: la inscripción automática (con salida libre) en los planes de pensiones multiplicó el ahorro de jubilación en varios países; la donación de órganos varía del 4 % al 99 % según el país use <em>opt-in</em> u <em>opt-out</em>.
+- <strong>Simplificación y recordatorios</strong>: formularios cortos, alertas de plazos, comparaciones claras de precios.
+- <strong>Información en el punto de decisión</strong>: etiquetados nutricionales de semáforo, huella de consumo en la factura.</p>
+
+<p>La «economía del empujoncito» se institucionalizó con rapidez inédita: la <em>Behavioural Insights Team</em> británica (2010), la unidad homóloga de la Casa Blanca (2015) y decenas de «unidades de nudge» en gobiernos y organismos. También suscitó las críticas esperables: ¿quién decide cuál es la opción «buena» y con qué legitimación empuja el Estado? ¿No son los <em>nudges</em> manipulación, solo que barata? ¿Y no esconden, tras la psicología amable, la renuncia a políticas estructurales más costosas? El debate —legitimidad del diseño de la elección— es hoy un capítulo estándar de la filosofía política aplicada.</p>
+
+<h2>6. Valoración: ¿muerte del <em>homo economicus</em>?</h2>
+
+<p>¿Qué ha cambiado realmente? La economía conductual no demostró que la gente sea «irracional» —sus sesgos son atajos adaptativos que funcionan en la mayoría de los contextos, como Kahneman y su crítico amistoso Gerd Gigerenzer convinieron en reconocer—, sino que <strong>la racionalidad perfecta no es una buena aproximación cuando las decisiones importan y son difíciles</strong>. La réplica profesional ha sido triple: incorporación (los modelos con sesgos —aversión a las pérdidas, descuento hiperbólico de Laibson sobre el autocontrol— ya son herramienta estándar), reducción de daños (en mercados competitivos y decisiones repetidas, las desviaciones se atenúan) y replicación (la «crisis de replicación» de la psicología de 2010-2015 obligó a depurar hallazgos frágiles, empezando por algunos <em>priming</em>; el núcleo —aversión a las pérdidas, anclaje, efecto dotación— sobrevivió).</p>
+
+<p>Para la historia del pensamiento que cierra este curso, la ironía es delicada: la economía conductual no destruyó la tradición iniciada por Smith, sino que la <strong>completó</strong>. El Smith de la <em>Teoría de los Sentimientos Morales</em> (ECO-03-A §1) ya describía un agente social, mimético y gobernado por la opinión; Keynes ya hablaba de <em>animal spirits</em> (ECO-06-A §4); los austríacos ya insistían en la ignorancia radical (ECO-07-A). Lo que Simon, Kahneman, Tversky y Thaler aportaron fue el instrumento que a todos ellos les faltó: <strong>el experimento</strong>. Con él, el agente económico volvió a ser lo que nunca debió dejar de ser: un animal humano.</p>
+
+<hr class="section-divider" />
+
+<h2>Ecos y Semillas para el Futuro</h2>
+
+<p>1. <strong>Cierre del módulo:</strong> el curso termina donde empezó —en la antropología. Aristóteles preguntaba qué lugar tiene la riqueza en la vida buena (ECO-01-A); la economía conductual pregunta cómo decidimos de verdad la vida cotidiana. La economía ha vuelto a ser, por esta vía, una rama del estudio del hombre.
+2. <strong>Hacia la economía digital:</strong> sesgos, marcos y arquitecturas de la elección son hoy el material de las plataformas: los <em>dark patterns</em> son <em>nudges</em> al servicio del vendedor. Entender la conductual es condición de defensa del consumidor contemporáneo.
+3. <strong>Hacia la política pública:</strong> impuestos, salud, ahorro, energía: casi todo programa moderno de gobierno incorpora ya equipos conductuales; el debate pendiente es su control democrático.
+4. <strong>La pregunta abierta:</strong> si los individuos yerran sistemáticamente y los mercados amplifican o corrigen esos errores de forma imperfecta, ¿qué instituciones deben decidir? Es la vieja pregunta de Hayek (ECO-07-A) con psicología experimental de por medio —y sigue sin respuesta cerrada.</p>
+
+<hr class="section-divider" />
+
+<h2>Referencias Bibliográficas</h2>
+
+<em> Simon, H. A. (1982). </em>Models of Bounded Rationality* (Vols. 1-2). MIT Press.
+<em> Kahneman, D., & Tversky, A. (1979). Prospect Theory: An Analysis of Decision under Risk. </em>Econometrica*, 47(2), 263-291.
+<em> Tversky, A., & Kahneman, D. (1974). Judgment under Uncertainty: Heuristics and Biases. </em>Science*, 185(4157), 1124-1131.
+<em> Kahneman, D. (2012). </em>Pensar rápido, pensar despacio* (J. C. Gómez Borrero, Trad.). Debate. (Obra original publicada en 2011)
+<em> Thaler, R. H., & Sunstein, C. R. (2009). </em>Un pequeño empujón (Nudge)* (A. Rodríguez, Trad.). Taurus. (Obra original publicada en 2008)
+<em> Thaler, R. H. (2016). </em>Todo lo que he aprendido con la psicología económica* (A. Marín, Trad.). Deusto. (Obra original publicada en 2015)
+<em> Akerlof, G. A., & Shiller, R. J. (2009). </em>Animal Spirits: How Human Psychology Drives the Economy*. Princeton University Press.
+<em> Gigerenzer, G. (2008). </em>Rationality for Mortals: How People Cope with Uncertainty*. Oxford University Press.]]></content:encoded>
+      <excerpt:encoded><![CDATA[]]></excerpt:encoded>
+      <wp:post_id>64231</wp:post_id>
+      <wp:post_date>2023-02-19 12:00:00</wp:post_date>
+      <wp:post_date_gmt>2023-02-19 12:00:00</wp:post_date_gmt>
+      <wp:post_name>economia-conductual-institucional</wp:post_name>
+      <wp:status>publish</wp:status>
+      <wp:post_type>post</wp:post_type>
+      <category domain="category" nicename="economia"><![CDATA[Economía]]></category>
+      <meta_json><![CDATA[{"_article_num": "1", "_lesson_code": "ECO-08-A", "_read_time": "11 min", "_post_subtitle": "Lecci\u00f3n de Historia del Pensamiento Econ\u00f3mico", "_lesson_essentials": "Herbert Simon (1947) acu\u00f1\u00f3 la racionalidad limitada (bounded rationality): los agentes no maximizan, satisfacen, porque su informaci\u00f3n y su capacidad de c\u00e1lculo son finitas.\nKahneman y Tversky documentaron experimentalmente heur\u00edsticas sistem\u00e1ticas \u2014disponibilidad, representatividad, anclaje\u2014 que producen sesgos predecibles en el juicio.\nLa teor\u00eda de las perspectivas (1979) sustituy\u00f3 a la utilidad esperada: evaluamos resultados como ganancias y p\u00e9rdidas respecto a un punto de referencia, y las p\u00e9rdidas pesan el doble.\nEl efecto dotaci\u00f3n y la aversi\u00f3n a las p\u00e9rdidas (Thaler) refutan la simetr\u00eda entre disponibilidad a pagar y a aceptar que exige la teor\u00eda est\u00e1ndar.\nLos nudges (Thaler y Sunstein, 2008) aplican estos hallazgos a la pol\u00edtica p\u00fablica: dise\u00f1ar la arquitectura de la elecci\u00f3n sin prohibir opciones (paternalismo libertario), no sin debate cr\u00edtico.", "_bibliography": "Simon, H. A. (1982). Models of Bounded Rationality (Vols. 1-2). MIT Press.\nKahneman, D., & Tversky, A. (1979). Prospect Theory: An Analysis of Decision under Risk. Econometrica, 47(2), 263-291.\nKahneman, D. (2012). Pensar r\u00e1pido, pensar despacio (J. C. G\u00f3mez Borrero, Trad.). Debate. (Obra original publicada en 2011)\nThaler, R. H., & Sunstein, C. R. (2009). Un peque\u00f1o empuj\u00f3n (Nudge) (A. Rodr\u00edguez, Trad.). Taurus. (Obra original publicada en 2008)\nThaler, R. H. (2016). Todo lo que he aprendido con la psicolog\u00eda econ\u00f3mica (A. Mar\u00edn, Trad.). Deusto. (Obra original publicada en 2015)\nAkerlof, G. A., & Shiller, R. J. (2009). Animal Spirits: How Human Psychology Drives the Economy. Princeton University Press.", "_yoast_wpseo_focuskw": "econom\u00eda conductual", "_yoast_wpseo_title": "Econom\u00eda Conductual - Racionalidad Limitada | Nihil Novi", "_yoast_wpseo_metadesc": "Simon, Kahneman, Tversky y Thaler: c\u00f3mo la econom\u00eda conductual demostr\u00f3 experimentalmente que decidimos con racionalidad limitada, sesgos y aversi\u00f3n a las", "_nihilnovi_import_source": "ECO_08_A.md"}]]></meta_json>
+    </item>
+    <item>
       <title>FIL-02-A: Sócrates - El Método Dialéctico y la Ética</title>
       <link>https://nihilnovi.xyz/socrates-el-giro-antropologico-la-mayeutica-y-el-intelectualismo-moral/</link>
-      <pubDate>Sun, 02 Aug 2026 23:09:04 +0000</pubDate>
+      <pubDate>Mon, 03 Aug 2026 04:00:42 +0000</pubDate>
       <dc:creator><![CDATA[davidlegorreta]]></dc:creator>
       <guid isPermaLink="false">https://nihilnovi.xyz/?p=533716</guid>
       <description></description>
@@ -106,8 +1076,8 @@
 </div>]]></content:encoded>
       <excerpt:encoded><![CDATA[]]></excerpt:encoded>
       <wp:post_id>533716</wp:post_id>
-      <wp:post_date>2023-01-01 12:00:00</wp:post_date>
-      <wp:post_date_gmt>2023-01-01 12:00:00</wp:post_date_gmt>
+      <wp:post_date>2023-02-26 12:00:00</wp:post_date>
+      <wp:post_date_gmt>2023-02-26 12:00:00</wp:post_date_gmt>
       <wp:post_name>socrates-el-giro-antropologico-la-mayeutica-y-el-intelectualismo-moral</wp:post_name>
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
@@ -117,7 +1087,7 @@
     <item>
       <title>FIL-03-01: Platón - Apología de Sócrates: Defensa y Muerte</title>
       <link>https://nihilnovi.xyz/apologia-de-socrates/</link>
-      <pubDate>Sun, 02 Aug 2026 23:09:04 +0000</pubDate>
+      <pubDate>Mon, 03 Aug 2026 04:00:42 +0000</pubDate>
       <dc:creator><![CDATA[davidlegorreta]]></dc:creator>
       <guid isPermaLink="false">https://nihilnovi.xyz/?p=187899</guid>
       <description></description>
@@ -715,8 +1685,8 @@
 </div>]]></content:encoded>
       <excerpt:encoded><![CDATA[]]></excerpt:encoded>
       <wp:post_id>187899</wp:post_id>
-      <wp:post_date>2023-01-08 12:00:00</wp:post_date>
-      <wp:post_date_gmt>2023-01-08 12:00:00</wp:post_date_gmt>
+      <wp:post_date>2023-03-05 12:00:00</wp:post_date>
+      <wp:post_date_gmt>2023-03-05 12:00:00</wp:post_date_gmt>
       <wp:post_name>apologia-de-socrates</wp:post_name>
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
@@ -726,7 +1696,7 @@
     <item>
       <title>FIL-03-02: Platón - Critón: El Deber y las Leyes</title>
       <link>https://nihilnovi.xyz/criton/</link>
-      <pubDate>Sun, 02 Aug 2026 23:09:04 +0000</pubDate>
+      <pubDate>Mon, 03 Aug 2026 04:00:42 +0000</pubDate>
       <dc:creator><![CDATA[davidlegorreta]]></dc:creator>
       <guid isPermaLink="false">https://nihilnovi.xyz/?p=926932</guid>
       <description></description>
@@ -1236,8 +2206,8 @@
 </section>]]></content:encoded>
       <excerpt:encoded><![CDATA[]]></excerpt:encoded>
       <wp:post_id>926932</wp:post_id>
-      <wp:post_date>2023-01-15 12:00:00</wp:post_date>
-      <wp:post_date_gmt>2023-01-15 12:00:00</wp:post_date_gmt>
+      <wp:post_date>2023-03-12 12:00:00</wp:post_date>
+      <wp:post_date_gmt>2023-03-12 12:00:00</wp:post_date_gmt>
       <wp:post_name>criton</wp:post_name>
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
@@ -1247,7 +2217,7 @@
     <item>
       <title>FIL-03-03: Platón - Eutifrón: La Paradoja de la Piedad</title>
       <link>https://nihilnovi.xyz/eutifron/</link>
-      <pubDate>Sun, 02 Aug 2026 23:09:04 +0000</pubDate>
+      <pubDate>Mon, 03 Aug 2026 04:00:42 +0000</pubDate>
       <dc:creator><![CDATA[davidlegorreta]]></dc:creator>
       <guid isPermaLink="false">https://nihilnovi.xyz/?p=752206</guid>
       <description></description>
@@ -1693,8 +2663,8 @@
 </section>]]></content:encoded>
       <excerpt:encoded><![CDATA[]]></excerpt:encoded>
       <wp:post_id>752206</wp:post_id>
-      <wp:post_date>2023-01-22 12:00:00</wp:post_date>
-      <wp:post_date_gmt>2023-01-22 12:00:00</wp:post_date_gmt>
+      <wp:post_date>2023-03-19 12:00:00</wp:post_date>
+      <wp:post_date_gmt>2023-03-19 12:00:00</wp:post_date_gmt>
       <wp:post_name>eutifron</wp:post_name>
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
@@ -1704,7 +2674,7 @@
     <item>
       <title>FIL-03-04: Platón - Cármides: La Templanza y el Autoconocimiento</title>
       <link>https://nihilnovi.xyz/carmides/</link>
-      <pubDate>Sun, 02 Aug 2026 23:09:04 +0000</pubDate>
+      <pubDate>Mon, 03 Aug 2026 04:00:42 +0000</pubDate>
       <dc:creator><![CDATA[davidlegorreta]]></dc:creator>
       <guid isPermaLink="false">https://nihilnovi.xyz/?p=426219</guid>
       <description></description>
@@ -2272,8 +3242,8 @@
 </section>]]></content:encoded>
       <excerpt:encoded><![CDATA[]]></excerpt:encoded>
       <wp:post_id>426219</wp:post_id>
-      <wp:post_date>2023-01-29 12:00:00</wp:post_date>
-      <wp:post_date_gmt>2023-01-29 12:00:00</wp:post_date_gmt>
+      <wp:post_date>2023-03-26 12:00:00</wp:post_date>
+      <wp:post_date_gmt>2023-03-26 12:00:00</wp:post_date_gmt>
       <wp:post_name>carmides</wp:post_name>
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
@@ -2283,7 +3253,7 @@
     <item>
       <title>FIL-03-05: Platón - Laques: El Valor y la Prudencia</title>
       <link>https://nihilnovi.xyz/laques/</link>
-      <pubDate>Sun, 02 Aug 2026 23:09:04 +0000</pubDate>
+      <pubDate>Mon, 03 Aug 2026 04:00:42 +0000</pubDate>
       <dc:creator><![CDATA[davidlegorreta]]></dc:creator>
       <guid isPermaLink="false">https://nihilnovi.xyz/?p=874244</guid>
       <description></description>
@@ -2866,8 +3836,8 @@
 </section>]]></content:encoded>
       <excerpt:encoded><![CDATA[]]></excerpt:encoded>
       <wp:post_id>874244</wp:post_id>
-      <wp:post_date>2023-02-05 12:00:00</wp:post_date>
-      <wp:post_date_gmt>2023-02-05 12:00:00</wp:post_date_gmt>
+      <wp:post_date>2023-04-02 12:00:00</wp:post_date>
+      <wp:post_date_gmt>2023-04-02 12:00:00</wp:post_date_gmt>
       <wp:post_name>laques</wp:post_name>
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
@@ -2877,7 +3847,7 @@
     <item>
       <title>FIL-03-06: Platón - Lisis: La Amistad y el Amor</title>
       <link>https://nihilnovi.xyz/lisis/</link>
-      <pubDate>Sun, 02 Aug 2026 23:09:04 +0000</pubDate>
+      <pubDate>Mon, 03 Aug 2026 04:00:42 +0000</pubDate>
       <dc:creator><![CDATA[davidlegorreta]]></dc:creator>
       <guid isPermaLink="false">https://nihilnovi.xyz/?p=8612</guid>
       <description></description>
@@ -3473,8 +4443,8 @@
 </section>]]></content:encoded>
       <excerpt:encoded><![CDATA[]]></excerpt:encoded>
       <wp:post_id>8612</wp:post_id>
-      <wp:post_date>2023-02-12 12:00:00</wp:post_date>
-      <wp:post_date_gmt>2023-02-12 12:00:00</wp:post_date_gmt>
+      <wp:post_date>2023-04-09 12:00:00</wp:post_date>
+      <wp:post_date_gmt>2023-04-09 12:00:00</wp:post_date_gmt>
       <wp:post_name>lisis</wp:post_name>
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
@@ -3484,7 +4454,7 @@
     <item>
       <title>FIL-03-07: Platón - Protágoras: ¿Se puede enseñar la Virtud?</title>
       <link>https://nihilnovi.xyz/protagoras/</link>
-      <pubDate>Sun, 02 Aug 2026 23:09:04 +0000</pubDate>
+      <pubDate>Mon, 03 Aug 2026 04:00:42 +0000</pubDate>
       <dc:creator><![CDATA[davidlegorreta]]></dc:creator>
       <guid isPermaLink="false">https://nihilnovi.xyz/?p=138749</guid>
       <description></description>
@@ -4073,8 +5043,8 @@
 </section>]]></content:encoded>
       <excerpt:encoded><![CDATA[]]></excerpt:encoded>
       <wp:post_id>138749</wp:post_id>
-      <wp:post_date>2023-02-19 12:00:00</wp:post_date>
-      <wp:post_date_gmt>2023-02-19 12:00:00</wp:post_date_gmt>
+      <wp:post_date>2023-04-16 12:00:00</wp:post_date>
+      <wp:post_date_gmt>2023-04-16 12:00:00</wp:post_date_gmt>
       <wp:post_name>protagoras</wp:post_name>
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
@@ -4084,7 +5054,7 @@
     <item>
       <title>FIL-03-08: Platón - Ion: La Inspiración Poética Divina</title>
       <link>https://nihilnovi.xyz/ion/</link>
-      <pubDate>Sun, 02 Aug 2026 23:09:04 +0000</pubDate>
+      <pubDate>Mon, 03 Aug 2026 04:00:42 +0000</pubDate>
       <dc:creator><![CDATA[davidlegorreta]]></dc:creator>
       <guid isPermaLink="false">https://nihilnovi.xyz/?p=200838</guid>
       <description></description>
@@ -4677,8 +5647,8 @@
 </section>]]></content:encoded>
       <excerpt:encoded><![CDATA[]]></excerpt:encoded>
       <wp:post_id>200838</wp:post_id>
-      <wp:post_date>2023-02-26 12:00:00</wp:post_date>
-      <wp:post_date_gmt>2023-02-26 12:00:00</wp:post_date_gmt>
+      <wp:post_date>2023-04-23 12:00:00</wp:post_date>
+      <wp:post_date_gmt>2023-04-23 12:00:00</wp:post_date_gmt>
       <wp:post_name>ion</wp:post_name>
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
@@ -4688,7 +5658,7 @@
     <item>
       <title>FIL-03-09: Platón - Hipias Mayor: La Búsqueda de lo Bello</title>
       <link>https://nihilnovi.xyz/hipias-mayor/</link>
-      <pubDate>Sun, 02 Aug 2026 23:09:04 +0000</pubDate>
+      <pubDate>Mon, 03 Aug 2026 04:00:42 +0000</pubDate>
       <dc:creator><![CDATA[davidlegorreta]]></dc:creator>
       <guid isPermaLink="false">https://nihilnovi.xyz/?p=653941</guid>
       <description></description>
@@ -5282,8 +6252,8 @@
 </section>]]></content:encoded>
       <excerpt:encoded><![CDATA[]]></excerpt:encoded>
       <wp:post_id>653941</wp:post_id>
-      <wp:post_date>2023-03-05 12:00:00</wp:post_date>
-      <wp:post_date_gmt>2023-03-05 12:00:00</wp:post_date_gmt>
+      <wp:post_date>2023-04-30 12:00:00</wp:post_date>
+      <wp:post_date_gmt>2023-04-30 12:00:00</wp:post_date_gmt>
       <wp:post_name>hipias-mayor</wp:post_name>
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
@@ -5293,7 +6263,7 @@
     <item>
       <title>FIL-03-10: Platón - Hipias Menor: La Paradoja de la Mentira</title>
       <link>https://nihilnovi.xyz/hipias-menor/</link>
-      <pubDate>Sun, 02 Aug 2026 23:09:04 +0000</pubDate>
+      <pubDate>Mon, 03 Aug 2026 04:00:42 +0000</pubDate>
       <dc:creator><![CDATA[davidlegorreta]]></dc:creator>
       <guid isPermaLink="false">https://nihilnovi.xyz/?p=744338</guid>
       <description></description>
@@ -5855,8 +6825,8 @@
 </section>]]></content:encoded>
       <excerpt:encoded><![CDATA[]]></excerpt:encoded>
       <wp:post_id>744338</wp:post_id>
-      <wp:post_date>2023-03-12 12:00:00</wp:post_date>
-      <wp:post_date_gmt>2023-03-12 12:00:00</wp:post_date_gmt>
+      <wp:post_date>2023-05-07 12:00:00</wp:post_date>
+      <wp:post_date_gmt>2023-05-07 12:00:00</wp:post_date_gmt>
       <wp:post_name>hipias-menor</wp:post_name>
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
@@ -5866,7 +6836,7 @@
     <item>
       <title>FIL-03-14: Platón - Eutidemo: La Crítica a la Erística</title>
       <link>https://nihilnovi.xyz/eutidemo/</link>
-      <pubDate>Sun, 02 Aug 2026 23:09:04 +0000</pubDate>
+      <pubDate>Mon, 03 Aug 2026 04:00:42 +0000</pubDate>
       <dc:creator><![CDATA[davidlegorreta]]></dc:creator>
       <guid isPermaLink="false">https://nihilnovi.xyz/?p=143954</guid>
       <description></description>
@@ -5960,8 +6930,8 @@
 </section>]]></content:encoded>
       <excerpt:encoded><![CDATA[]]></excerpt:encoded>
       <wp:post_id>143954</wp:post_id>
-      <wp:post_date>2023-03-19 12:00:00</wp:post_date>
-      <wp:post_date_gmt>2023-03-19 12:00:00</wp:post_date_gmt>
+      <wp:post_date>2023-05-14 12:00:00</wp:post_date>
+      <wp:post_date_gmt>2023-05-14 12:00:00</wp:post_date_gmt>
       <wp:post_name>eutidemo</wp:post_name>
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
@@ -5971,7 +6941,7 @@
     <item>
       <title>FIL-03-15: Platón - Menexeno: La Oración Fúnebre Patriótica</title>
       <link>https://nihilnovi.xyz/menexeno/</link>
-      <pubDate>Sun, 02 Aug 2026 23:09:04 +0000</pubDate>
+      <pubDate>Mon, 03 Aug 2026 04:00:42 +0000</pubDate>
       <dc:creator><![CDATA[davidlegorreta]]></dc:creator>
       <guid isPermaLink="false">https://nihilnovi.xyz/?p=628190</guid>
       <description></description>
@@ -6064,8 +7034,8 @@ En la era actual, el gobernante ya no es un dios o pastor absoluto, sino un ser 
 </section>]]></content:encoded>
       <excerpt:encoded><![CDATA[]]></excerpt:encoded>
       <wp:post_id>628190</wp:post_id>
-      <wp:post_date>2023-03-26 12:00:00</wp:post_date>
-      <wp:post_date_gmt>2023-03-26 12:00:00</wp:post_date_gmt>
+      <wp:post_date>2023-05-21 12:00:00</wp:post_date>
+      <wp:post_date_gmt>2023-05-21 12:00:00</wp:post_date_gmt>
       <wp:post_name>menexeno</wp:post_name>
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
@@ -6075,7 +7045,7 @@ En la era actual, el gobernante ya no es un dios o pastor absoluto, sino un ser 
     <item>
       <title>FIL-03-16: Platón - Fedón: La Inmortalidad del Alma</title>
       <link>https://nihilnovi.xyz/fedon/</link>
-      <pubDate>Sun, 02 Aug 2026 23:09:04 +0000</pubDate>
+      <pubDate>Mon, 03 Aug 2026 04:00:42 +0000</pubDate>
       <dc:creator><![CDATA[davidlegorreta]]></dc:creator>
       <guid isPermaLink="false">https://nihilnovi.xyz/?p=432002</guid>
       <description></description>
@@ -6174,8 +7144,8 @@ Esta reducción geométrica permite a Platón explicar la transmutación de la m
 </section>]]></content:encoded>
       <excerpt:encoded><![CDATA[]]></excerpt:encoded>
       <wp:post_id>432002</wp:post_id>
-      <wp:post_date>2023-04-02 12:00:00</wp:post_date>
-      <wp:post_date_gmt>2023-04-02 12:00:00</wp:post_date_gmt>
+      <wp:post_date>2023-05-28 12:00:00</wp:post_date>
+      <wp:post_date_gmt>2023-05-28 12:00:00</wp:post_date_gmt>
       <wp:post_name>fedon</wp:post_name>
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
@@ -6185,7 +7155,7 @@ Esta reducción geométrica permite a Platón explicar la transmutación de la m
     <item>
       <title>FIL-03-17: Platón - Banquete: La Dialéctica del Amor</title>
       <link>https://nihilnovi.xyz/banquete-el-simposio/</link>
-      <pubDate>Sun, 02 Aug 2026 23:09:04 +0000</pubDate>
+      <pubDate>Mon, 03 Aug 2026 04:00:42 +0000</pubDate>
       <dc:creator><![CDATA[davidlegorreta]]></dc:creator>
       <guid isPermaLink="false">https://nihilnovi.xyz/?p=665237</guid>
       <description></description>
@@ -6285,8 +7255,8 @@ Al observar esta degeneración en una estirpe originalmente excelente, Zeus deci
 </section>]]></content:encoded>
       <excerpt:encoded><![CDATA[]]></excerpt:encoded>
       <wp:post_id>665237</wp:post_id>
-      <wp:post_date>2023-04-09 12:00:00</wp:post_date>
-      <wp:post_date_gmt>2023-04-09 12:00:00</wp:post_date_gmt>
+      <wp:post_date>2023-06-04 12:00:00</wp:post_date>
+      <wp:post_date_gmt>2023-06-04 12:00:00</wp:post_date_gmt>
       <wp:post_name>banquete-el-simposio</wp:post_name>
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
@@ -6296,7 +7266,7 @@ Al observar esta degeneración en una estirpe originalmente excelente, Zeus deci
     <item>
       <title>FIL-04-01: Aristóteles - Política I: Comunidad y Oikonomía</title>
       <link>https://nihilnovi.xyz/aristoteles-politica-libro-i-la-comunidad-natural-y-la-oikonomia/</link>
-      <pubDate>Sun, 02 Aug 2026 23:09:04 +0000</pubDate>
+      <pubDate>Mon, 03 Aug 2026 04:00:42 +0000</pubDate>
       <dc:creator><![CDATA[davidlegorreta]]></dc:creator>
       <guid isPermaLink="false">https://nihilnovi.xyz/?p=238605</guid>
       <description></description>
@@ -6663,8 +7633,8 @@ Es el arte de intercambiar bienes con el único propósito de acumular dinero (<
 - Marx, K. (2018). <em>El Capital</em> (W. Roces, Trad.). México: Fondo de Cultura Económica.</p>]]></content:encoded>
       <excerpt:encoded><![CDATA[]]></excerpt:encoded>
       <wp:post_id>238605</wp:post_id>
-      <wp:post_date>2023-04-16 12:00:00</wp:post_date>
-      <wp:post_date_gmt>2023-04-16 12:00:00</wp:post_date_gmt>
+      <wp:post_date>2023-06-11 12:00:00</wp:post_date>
+      <wp:post_date_gmt>2023-06-11 12:00:00</wp:post_date_gmt>
       <wp:post_name>aristoteles-politica-libro-i-la-comunidad-natural-y-la-oikonomia</wp:post_name>
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
@@ -6674,7 +7644,7 @@ Es el arte de intercambiar bienes con el único propósito de acumular dinero (<
     <item>
       <title>FIL-04-02: Aristóteles - Política II: Examen de Constituciones</title>
       <link>https://nihilnovi.xyz/aristoteles-politica-libro-ii-examen-critico-de-constituciones/</link>
-      <pubDate>Sun, 02 Aug 2026 23:09:04 +0000</pubDate>
+      <pubDate>Mon, 03 Aug 2026 04:00:42 +0000</pubDate>
       <dc:creator><![CDATA[davidlegorreta]]></dc:creator>
       <guid isPermaLink="false">https://nihilnovi.xyz/?p=945016</guid>
       <description></description>
@@ -6997,8 +7967,8 @@ Aristóteles sorprende a su audiencia griega al elogiar el régimen político de
 - Platón. (1999). <em>Leyes</em> (F. Lisi, Trad.). Madrid: Editorial Gredos. <a href="https://amzn.to/4v4liOB">Comprar en Amazon</a></p>]]></content:encoded>
       <excerpt:encoded><![CDATA[]]></excerpt:encoded>
       <wp:post_id>945016</wp:post_id>
-      <wp:post_date>2023-04-23 12:00:00</wp:post_date>
-      <wp:post_date_gmt>2023-04-23 12:00:00</wp:post_date_gmt>
+      <wp:post_date>2023-06-18 12:00:00</wp:post_date>
+      <wp:post_date_gmt>2023-06-18 12:00:00</wp:post_date_gmt>
       <wp:post_name>aristoteles-politica-libro-ii-examen-critico-de-constituciones</wp:post_name>
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
@@ -7008,7 +7978,7 @@ Aristóteles sorprende a su audiencia griega al elogiar el régimen político de
     <item>
       <title>FIL-04-03: Aristóteles - Política III: El Ciudadano y el Estado</title>
       <link>https://nihilnovi.xyz/aristoteles-politica-libro-iii-el-ciudadano-y-los-regimenes-politicos/</link>
-      <pubDate>Sun, 02 Aug 2026 23:09:04 +0000</pubDate>
+      <pubDate>Mon, 03 Aug 2026 04:00:42 +0000</pubDate>
       <dc:creator><![CDATA[davidlegorreta]]></dc:creator>
       <guid isPermaLink="false">https://nihilnovi.xyz/?p=382701</guid>
       <description></description>
@@ -7421,8 +8391,8 @@ Aristóteles refuta ambas posturas de forma contundente:
 - Copleston, F. (2011). <em>Historia de la Filosofía (Vol. 1: Grecia y Roma)</em>. Barcelona: Ariel. <a href="https://amzn.to/4gQHI26">Comprar en Amazon</a></p>]]></content:encoded>
       <excerpt:encoded><![CDATA[]]></excerpt:encoded>
       <wp:post_id>382701</wp:post_id>
-      <wp:post_date>2023-04-30 12:00:00</wp:post_date>
-      <wp:post_date_gmt>2023-04-30 12:00:00</wp:post_date_gmt>
+      <wp:post_date>2023-06-25 12:00:00</wp:post_date>
+      <wp:post_date_gmt>2023-06-25 12:00:00</wp:post_date_gmt>
       <wp:post_name>aristoteles-politica-libro-iii-el-ciudadano-y-los-regimenes-politicos</wp:post_name>
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
@@ -7432,7 +8402,7 @@ Aristóteles refuta ambas posturas de forma contundente:
     <item>
       <title>FIL-04-04: Aristóteles - Política IV: Variedades de Regímenes</title>
       <link>https://nihilnovi.xyz/aristoteles-politica-libro-iv-tipologia-real-de-las-politeiai/</link>
-      <pubDate>Sun, 02 Aug 2026 23:09:04 +0000</pubDate>
+      <pubDate>Mon, 03 Aug 2026 04:00:42 +0000</pubDate>
       <dc:creator><![CDATA[davidlegorreta]]></dc:creator>
       <guid isPermaLink="false">https://nihilnovi.xyz/?p=687671</guid>
       <description></description>
@@ -7757,8 +8727,8 @@ El poder está completamente concentrado en manos de una sola familia o de unas 
 - Dahl, R. A. (1989). <em>La Poliarquía: Participación y Oposición</em>. Madrid: Tecnos.</p>]]></content:encoded>
       <excerpt:encoded><![CDATA[]]></excerpt:encoded>
       <wp:post_id>687671</wp:post_id>
-      <wp:post_date>2023-05-07 12:00:00</wp:post_date>
-      <wp:post_date_gmt>2023-05-07 12:00:00</wp:post_date_gmt>
+      <wp:post_date>2023-07-02 12:00:00</wp:post_date>
+      <wp:post_date_gmt>2023-07-02 12:00:00</wp:post_date_gmt>
       <wp:post_name>aristoteles-politica-libro-iv-tipologia-real-de-las-politeiai</wp:post_name>
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
@@ -7768,7 +8738,7 @@ El poder está completamente concentrado en manos de una sola familia o de unas 
     <item>
       <title>FIL-04-05: Aristóteles - Política V: Sedición y Cambio Político</title>
       <link>https://nihilnovi.xyz/aristoteles-politica-libro-v-las-revoluciones-y-la-estabilidad/</link>
-      <pubDate>Sun, 02 Aug 2026 23:09:04 +0000</pubDate>
+      <pubDate>Mon, 03 Aug 2026 04:00:42 +0000</pubDate>
       <dc:creator><![CDATA[davidlegorreta]]></dc:creator>
       <guid isPermaLink="false">https://nihilnovi.xyz/?p=35912</guid>
       <description></description>
@@ -8049,8 +9019,8 @@ Aristóteles describe el método tradicional de los tiranos para perpetuarse: <s
 - Skocpol, T. (1984). <em>Los Estados y las Revoluciones Sociales</em>. México: Fondo de Cultura Económica.</p>]]></content:encoded>
       <excerpt:encoded><![CDATA[]]></excerpt:encoded>
       <wp:post_id>35912</wp:post_id>
-      <wp:post_date>2023-05-14 12:00:00</wp:post_date>
-      <wp:post_date_gmt>2023-05-14 12:00:00</wp:post_date_gmt>
+      <wp:post_date>2023-07-09 12:00:00</wp:post_date>
+      <wp:post_date_gmt>2023-07-09 12:00:00</wp:post_date_gmt>
       <wp:post_name>aristoteles-politica-libro-v-las-revoluciones-y-la-estabilidad</wp:post_name>
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
@@ -8060,7 +9030,7 @@ Aristóteles describe el método tradicional de los tiranos para perpetuarse: <s
     <item>
       <title>FIL-04-06: Aristóteles - Política VI: Estabilidad de Regímenes</title>
       <link>https://nihilnovi.xyz/aristoteles-politica-libro-vi-el-diseno-de-las-instituciones/</link>
-      <pubDate>Sun, 02 Aug 2026 23:09:04 +0000</pubDate>
+      <pubDate>Mon, 03 Aug 2026 04:00:42 +0000</pubDate>
       <dc:creator><![CDATA[davidlegorreta]]></dc:creator>
       <guid isPermaLink="false">https://nihilnovi.xyz/?p=954502</guid>
       <description></description>
@@ -8311,8 +9281,8 @@ function toggleAri6Step(el) {
 - Van Reybrouck, D. (2017). <em>Contra las Elecciones: Cómo salvar la democracia</em>. Barcelona: Taurus.</p>]]></content:encoded>
       <excerpt:encoded><![CDATA[]]></excerpt:encoded>
       <wp:post_id>954502</wp:post_id>
-      <wp:post_date>2023-05-21 12:00:00</wp:post_date>
-      <wp:post_date_gmt>2023-05-21 12:00:00</wp:post_date_gmt>
+      <wp:post_date>2023-07-16 12:00:00</wp:post_date>
+      <wp:post_date_gmt>2023-07-16 12:00:00</wp:post_date_gmt>
       <wp:post_name>aristoteles-politica-libro-vi-el-diseno-de-las-instituciones</wp:post_name>
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
@@ -8322,7 +9292,7 @@ function toggleAri6Step(el) {
     <item>
       <title>FIL-04-07: Aristóteles - Política VII: El Estado Ideal</title>
       <link>https://nihilnovi.xyz/aristoteles-politica-libro-vii-el-estado-ideal-y-la-geografia-humana/</link>
-      <pubDate>Sun, 02 Aug 2026 23:09:04 +0000</pubDate>
+      <pubDate>Mon, 03 Aug 2026 04:00:42 +0000</pubDate>
       <dc:creator><![CDATA[davidlegorreta]]></dc:creator>
       <guid isPermaLink="false">https://nihilnovi.xyz/?p=683573</guid>
       <description></description>
@@ -8681,8 +9651,8 @@ function toggleAri6Step(el) {
 - Arendt, H. (2016). <em>La Condición Humana</em>. Barcelona: Paidós.</p>]]></content:encoded>
       <excerpt:encoded><![CDATA[]]></excerpt:encoded>
       <wp:post_id>683573</wp:post_id>
-      <wp:post_date>2023-05-28 12:00:00</wp:post_date>
-      <wp:post_date_gmt>2023-05-28 12:00:00</wp:post_date_gmt>
+      <wp:post_date>2023-07-23 12:00:00</wp:post_date>
+      <wp:post_date_gmt>2023-07-23 12:00:00</wp:post_date_gmt>
       <wp:post_name>aristoteles-politica-libro-vii-el-estado-ideal-y-la-geografia-humana</wp:post_name>
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
@@ -8692,7 +9662,7 @@ function toggleAri6Step(el) {
     <item>
       <title>FIL-04-08: Aristóteles - Política VIII: Educación y Música</title>
       <link>https://nihilnovi.xyz/aristoteles-politica-libro-viii-la-pedagogia-y-la-musica-en-la-polis/</link>
-      <pubDate>Sun, 02 Aug 2026 23:09:04 +0000</pubDate>
+      <pubDate>Mon, 03 Aug 2026 04:00:42 +0000</pubDate>
       <dc:creator><![CDATA[davidlegorreta]]></dc:creator>
       <guid isPermaLink="false">https://nihilnovi.xyz/?p=595925</guid>
       <description></description>
@@ -8938,8 +9908,8 @@ function toggleAri6Step(el) {
 - Humboldt, W. von. (1991). <em>Escritos sobre educación y filosofía de la historia</em>. Madrid: Tecnos.</p>]]></content:encoded>
       <excerpt:encoded><![CDATA[]]></excerpt:encoded>
       <wp:post_id>595925</wp:post_id>
-      <wp:post_date>2023-06-04 12:00:00</wp:post_date>
-      <wp:post_date_gmt>2023-06-04 12:00:00</wp:post_date_gmt>
+      <wp:post_date>2023-07-30 12:00:00</wp:post_date>
+      <wp:post_date_gmt>2023-07-30 12:00:00</wp:post_date_gmt>
       <wp:post_name>aristoteles-politica-libro-viii-la-pedagogia-y-la-musica-en-la-polis</wp:post_name>
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
@@ -8949,7 +9919,7 @@ function toggleAri6Step(el) {
     <item>
       <title>FIL-04-A: Aristóteles - Introducción a la Política</title>
       <link>https://nihilnovi.xyz/aristoteles-la-politica-introduccion/</link>
-      <pubDate>Sun, 02 Aug 2026 23:09:04 +0000</pubDate>
+      <pubDate>Mon, 03 Aug 2026 04:00:42 +0000</pubDate>
       <dc:creator><![CDATA[davidlegorreta]]></dc:creator>
       <guid isPermaLink="false">https://nihilnovi.xyz/?p=211894</guid>
       <description></description>
@@ -9173,8 +10143,8 @@ function toggleAri6Step(el) {
 - Copleston, F. (2011). <em>Historia de la Filosofía (Vol. 1: Grecia y Roma)</em>. Editorial Ariel.</p>]]></content:encoded>
       <excerpt:encoded><![CDATA[]]></excerpt:encoded>
       <wp:post_id>211894</wp:post_id>
-      <wp:post_date>2023-06-11 12:00:00</wp:post_date>
-      <wp:post_date_gmt>2023-06-11 12:00:00</wp:post_date_gmt>
+      <wp:post_date>2023-08-06 12:00:00</wp:post_date>
+      <wp:post_date_gmt>2023-08-06 12:00:00</wp:post_date_gmt>
       <wp:post_name>aristoteles-la-politica-introduccion</wp:post_name>
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
@@ -9184,7 +10154,7 @@ function toggleAri6Step(el) {
     <item>
       <title>FIL-01-A: El Paso del Mito al Logos - Origen de la Razón</title>
       <link>https://nihilnovi.xyz/el-salto-del-mito-al-logos/</link>
-      <pubDate>Sun, 02 Aug 2026 23:09:04 +0000</pubDate>
+      <pubDate>Mon, 03 Aug 2026 04:00:42 +0000</pubDate>
       <dc:creator><![CDATA[davidlegorreta]]></dc:creator>
       <guid isPermaLink="false">https://nihilnovi.xyz/?p=692207</guid>
       <description></description>
@@ -9637,8 +10607,8 @@ function toggleAri6Step(el) {
 </section>]]></content:encoded>
       <excerpt:encoded><![CDATA[]]></excerpt:encoded>
       <wp:post_id>692207</wp:post_id>
-      <wp:post_date>2023-06-18 12:00:00</wp:post_date>
-      <wp:post_date_gmt>2023-06-18 12:00:00</wp:post_date_gmt>
+      <wp:post_date>2023-08-13 12:00:00</wp:post_date>
+      <wp:post_date_gmt>2023-08-13 12:00:00</wp:post_date_gmt>
       <wp:post_name>el-salto-del-mito-al-logos</wp:post_name>
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
@@ -9649,7 +10619,7 @@ function toggleAri6Step(el) {
     <item>
       <title>FIL-01-B: Tales de Mileto - El Agua y el Hilozoísmo</title>
       <link>https://nihilnovi.xyz/la-escuela-milesia-el-agua/</link>
-      <pubDate>Sun, 02 Aug 2026 23:09:04 +0000</pubDate>
+      <pubDate>Mon, 03 Aug 2026 04:00:42 +0000</pubDate>
       <dc:creator><![CDATA[davidlegorreta]]></dc:creator>
       <guid isPermaLink="false">https://nihilnovi.xyz/?p=777792</guid>
       <description></description>
@@ -9976,8 +10946,8 @@ En contraste directo con la anécdota platónica, Aristóteles presenta en la <e
 </section>]]></content:encoded>
       <excerpt:encoded><![CDATA[]]></excerpt:encoded>
       <wp:post_id>777792</wp:post_id>
-      <wp:post_date>2023-06-25 12:00:00</wp:post_date>
-      <wp:post_date_gmt>2023-06-25 12:00:00</wp:post_date_gmt>
+      <wp:post_date>2023-08-20 12:00:00</wp:post_date>
+      <wp:post_date_gmt>2023-08-20 12:00:00</wp:post_date_gmt>
       <wp:post_name>la-escuela-milesia-el-agua</wp:post_name>
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
@@ -9988,7 +10958,7 @@ En contraste directo con la anécdota platónica, Aristóteles presenta en la <e
     <item>
       <title>FIL-01-C: Anaximandro - El Apeiron y lo Infinito</title>
       <link>https://nihilnovi.xyz/la-escuela-milesia-el-apeiron/</link>
-      <pubDate>Sun, 02 Aug 2026 23:09:04 +0000</pubDate>
+      <pubDate>Mon, 03 Aug 2026 04:00:42 +0000</pubDate>
       <dc:creator><![CDATA[davidlegorreta]]></dc:creator>
       <guid isPermaLink="false">https://nihilnovi.xyz/?p=367895</guid>
       <description></description>
@@ -10608,8 +11578,8 @@ En la electrodinámica cuántica, el vacío no representa la ausencia absoluta d
 </section>]]></content:encoded>
       <excerpt:encoded><![CDATA[]]></excerpt:encoded>
       <wp:post_id>367895</wp:post_id>
-      <wp:post_date>2023-07-02 12:00:00</wp:post_date>
-      <wp:post_date_gmt>2023-07-02 12:00:00</wp:post_date_gmt>
+      <wp:post_date>2023-08-27 12:00:00</wp:post_date>
+      <wp:post_date_gmt>2023-08-27 12:00:00</wp:post_date_gmt>
       <wp:post_name>la-escuela-milesia-el-apeiron</wp:post_name>
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
@@ -10620,7 +11590,7 @@ En la electrodinámica cuántica, el vacío no representa la ausencia absoluta d
     <item>
       <title>FIL-01-D: Anaxímenes - El Aire y la Condensación</title>
       <link>https://nihilnovi.xyz/la-escuela-milesia-el-aire/</link>
-      <pubDate>Sun, 02 Aug 2026 23:09:04 +0000</pubDate>
+      <pubDate>Mon, 03 Aug 2026 04:00:42 +0000</pubDate>
       <dc:creator><![CDATA[davidlegorreta]]></dc:creator>
       <guid isPermaLink="false">https://nihilnovi.xyz/?p=237049</guid>
       <description></description>
@@ -11043,8 +12013,8 @@ En la electrodinámica cuántica, el vacío no representa la ausencia absoluta d
 </section>]]></content:encoded>
       <excerpt:encoded><![CDATA[]]></excerpt:encoded>
       <wp:post_id>237049</wp:post_id>
-      <wp:post_date>2023-07-09 12:00:00</wp:post_date>
-      <wp:post_date_gmt>2023-07-09 12:00:00</wp:post_date_gmt>
+      <wp:post_date>2023-09-03 12:00:00</wp:post_date>
+      <wp:post_date_gmt>2023-09-03 12:00:00</wp:post_date_gmt>
       <wp:post_name>la-escuela-milesia-el-aire</wp:post_name>
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
@@ -11055,7 +12025,7 @@ En la electrodinámica cuántica, el vacío no representa la ausencia absoluta d
     <item>
       <title>FIL-01-E: Pitágoras - La Ontología del Número</title>
       <link>https://nihilnovi.xyz/pitagoras-pitagoricos-numero-secta-irracional/</link>
-      <pubDate>Sun, 02 Aug 2026 23:09:04 +0000</pubDate>
+      <pubDate>Mon, 03 Aug 2026 04:00:42 +0000</pubDate>
       <dc:creator><![CDATA[davidlegorreta]]></dc:creator>
       <guid isPermaLink="false">https://nihilnovi.xyz/?p=37340</guid>
       <description></description>
@@ -11371,8 +12341,8 @@ La consecuencia más estética de esta cosmología fue la doctrina de la <em>Arm
 </section>]]></content:encoded>
       <excerpt:encoded><![CDATA[]]></excerpt:encoded>
       <wp:post_id>37340</wp:post_id>
-      <wp:post_date>2023-07-16 12:00:00</wp:post_date>
-      <wp:post_date_gmt>2023-07-16 12:00:00</wp:post_date_gmt>
+      <wp:post_date>2023-09-10 12:00:00</wp:post_date>
+      <wp:post_date_gmt>2023-09-10 12:00:00</wp:post_date_gmt>
       <wp:post_name>pitagoras-pitagoricos-numero-secta-irracional</wp:post_name>
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
@@ -11383,7 +12353,7 @@ La consecuencia más estética de esta cosmología fue la doctrina de la <em>Arm
     <item>
       <title>FIL-01-F: Heráclito - El Devenir y el Logos</title>
       <link>https://nihilnovi.xyz/heraclito-de-efeso/</link>
-      <pubDate>Sun, 02 Aug 2026 23:09:04 +0000</pubDate>
+      <pubDate>Mon, 03 Aug 2026 04:00:42 +0000</pubDate>
       <dc:creator><![CDATA[davidlegorreta]]></dc:creator>
       <guid isPermaLink="false">https://nihilnovi.xyz/?p=743256</guid>
       <description></description>
@@ -11804,8 +12774,8 @@ La consecuencia más estética de esta cosmología fue la doctrina de la <em>Arm
 </section>]]></content:encoded>
       <excerpt:encoded><![CDATA[]]></excerpt:encoded>
       <wp:post_id>743256</wp:post_id>
-      <wp:post_date>2023-07-23 12:00:00</wp:post_date>
-      <wp:post_date_gmt>2023-07-23 12:00:00</wp:post_date_gmt>
+      <wp:post_date>2023-09-17 12:00:00</wp:post_date>
+      <wp:post_date_gmt>2023-09-17 12:00:00</wp:post_date_gmt>
       <wp:post_name>heraclito-de-efeso</wp:post_name>
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
@@ -11816,7 +12786,7 @@ La consecuencia más estética de esta cosmología fue la doctrina de la <em>Arm
     <item>
       <title>FIL-01-G: Parménides - La Ontología del Ser</title>
       <link>https://nihilnovi.xyz/la-escuela-eleatica-parmenides/</link>
-      <pubDate>Sun, 02 Aug 2026 23:09:04 +0000</pubDate>
+      <pubDate>Mon, 03 Aug 2026 04:00:42 +0000</pubDate>
       <dc:creator><![CDATA[davidlegorreta]]></dc:creator>
       <guid isPermaLink="false">https://nihilnovi.xyz/?p=554945</guid>
       <description></description>
@@ -12245,8 +13215,8 @@ La consecuencia más estética de esta cosmología fue la doctrina de la <em>Arm
 </section>]]></content:encoded>
       <excerpt:encoded><![CDATA[]]></excerpt:encoded>
       <wp:post_id>554945</wp:post_id>
-      <wp:post_date>2023-07-30 12:00:00</wp:post_date>
-      <wp:post_date_gmt>2023-07-30 12:00:00</wp:post_date_gmt>
+      <wp:post_date>2023-09-24 12:00:00</wp:post_date>
+      <wp:post_date_gmt>2023-09-24 12:00:00</wp:post_date_gmt>
       <wp:post_name>la-escuela-eleatica-parmenides</wp:post_name>
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
@@ -12257,7 +13227,7 @@ La consecuencia más estética de esta cosmología fue la doctrina de la <em>Arm
     <item>
       <title>FIL-01-H: Zenón - Las Paradojas del Movimiento</title>
       <link>https://nihilnovi.xyz/la-escuela-eleatica-zeno/</link>
-      <pubDate>Sun, 02 Aug 2026 23:09:04 +0000</pubDate>
+      <pubDate>Mon, 03 Aug 2026 04:00:42 +0000</pubDate>
       <dc:creator><![CDATA[davidlegorreta]]></dc:creator>
       <guid isPermaLink="false">https://nihilnovi.xyz/?p=710550</guid>
       <description></description>
@@ -13052,8 +14022,8 @@ La consecuencia más estética de esta cosmología fue la doctrina de la <em>Arm
 </section>]]></content:encoded>
       <excerpt:encoded><![CDATA[]]></excerpt:encoded>
       <wp:post_id>710550</wp:post_id>
-      <wp:post_date>2023-08-06 12:00:00</wp:post_date>
-      <wp:post_date_gmt>2023-08-06 12:00:00</wp:post_date_gmt>
+      <wp:post_date>2023-10-01 12:00:00</wp:post_date>
+      <wp:post_date_gmt>2023-10-01 12:00:00</wp:post_date_gmt>
       <wp:post_name>la-escuela-eleatica-zeno</wp:post_name>
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
@@ -13064,7 +14034,7 @@ La consecuencia más estética de esta cosmología fue la doctrina de la <em>Arm
     <item>
       <title>FIL-01-I: Empédocles - Las Cuatro Raíces y el Cosmos</title>
       <link>https://nihilnovi.xyz/los-pluralistas-empedocles/</link>
-      <pubDate>Sun, 02 Aug 2026 23:09:04 +0000</pubDate>
+      <pubDate>Mon, 03 Aug 2026 04:00:42 +0000</pubDate>
       <dc:creator><![CDATA[davidlegorreta]]></dc:creator>
       <guid isPermaLink="false">https://nihilnovi.xyz/?p=600613</guid>
       <description></description>
@@ -13206,8 +14176,8 @@ graph TD
 </section>]]></content:encoded>
       <excerpt:encoded><![CDATA[]]></excerpt:encoded>
       <wp:post_id>600613</wp:post_id>
-      <wp:post_date>2023-08-13 12:00:00</wp:post_date>
-      <wp:post_date_gmt>2023-08-13 12:00:00</wp:post_date_gmt>
+      <wp:post_date>2023-10-08 12:00:00</wp:post_date>
+      <wp:post_date_gmt>2023-10-08 12:00:00</wp:post_date_gmt>
       <wp:post_name>los-pluralistas-empedocles</wp:post_name>
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
@@ -13218,7 +14188,7 @@ graph TD
     <item>
       <title>FIL-01-J: Anaxágoras - Las Homeomerías y el Nous</title>
       <link>https://nihilnovi.xyz/los-pluralistas-anaxagoras/</link>
-      <pubDate>Sun, 02 Aug 2026 23:09:04 +0000</pubDate>
+      <pubDate>Mon, 03 Aug 2026 04:00:42 +0000</pubDate>
       <dc:creator><![CDATA[davidlegorreta]]></dc:creator>
       <guid isPermaLink="false">https://nihilnovi.xyz/?p=793062</guid>
       <description></description>
@@ -13327,8 +14297,8 @@ graph TD
 </section>]]></content:encoded>
       <excerpt:encoded><![CDATA[]]></excerpt:encoded>
       <wp:post_id>793062</wp:post_id>
-      <wp:post_date>2023-08-20 12:00:00</wp:post_date>
-      <wp:post_date_gmt>2023-08-20 12:00:00</wp:post_date_gmt>
+      <wp:post_date>2023-10-15 12:00:00</wp:post_date>
+      <wp:post_date_gmt>2023-10-15 12:00:00</wp:post_date_gmt>
       <wp:post_name>los-pluralistas-anaxagoras</wp:post_name>
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
@@ -13339,7 +14309,7 @@ graph TD
     <item>
       <title>FIL-01-K: Demócrito y Leucipo - El Atomismo Primitivo</title>
       <link>https://nihilnovi.xyz/la-escuela-atomista/</link>
-      <pubDate>Sun, 02 Aug 2026 23:09:04 +0000</pubDate>
+      <pubDate>Mon, 03 Aug 2026 04:00:42 +0000</pubDate>
       <dc:creator><![CDATA[davidlegorreta]]></dc:creator>
       <guid isPermaLink="false">https://nihilnovi.xyz/?p=15460</guid>
       <description></description>
@@ -13468,8 +14438,8 @@ graph TD
 </section>]]></content:encoded>
       <excerpt:encoded><![CDATA[]]></excerpt:encoded>
       <wp:post_id>15460</wp:post_id>
-      <wp:post_date>2023-08-27 12:00:00</wp:post_date>
-      <wp:post_date_gmt>2023-08-27 12:00:00</wp:post_date_gmt>
+      <wp:post_date>2023-10-22 12:00:00</wp:post_date>
+      <wp:post_date_gmt>2023-10-22 12:00:00</wp:post_date_gmt>
       <wp:post_name>la-escuela-atomista</wp:post_name>
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
@@ -13480,7 +14450,7 @@ graph TD
     <item>
       <title>FIL-01-L: Los Sofistas - Protágoras, Gorgias y la Retórica</title>
       <link>https://nihilnovi.xyz/el-giro-sofista/</link>
-      <pubDate>Sun, 02 Aug 2026 23:09:04 +0000</pubDate>
+      <pubDate>Mon, 03 Aug 2026 04:00:42 +0000</pubDate>
       <dc:creator><![CDATA[davidlegorreta]]></dc:creator>
       <guid isPermaLink="false">https://nihilnovi.xyz/?p=574435</guid>
       <description></description>
@@ -13585,8 +14555,8 @@ graph TD
 </section>]]></content:encoded>
       <excerpt:encoded><![CDATA[]]></excerpt:encoded>
       <wp:post_id>574435</wp:post_id>
-      <wp:post_date>2023-09-03 12:00:00</wp:post_date>
-      <wp:post_date_gmt>2023-09-03 12:00:00</wp:post_date_gmt>
+      <wp:post_date>2023-10-29 12:00:00</wp:post_date>
+      <wp:post_date_gmt>2023-10-29 12:00:00</wp:post_date_gmt>
       <wp:post_name>el-giro-sofista</wp:post_name>
       <wp:status>publish</wp:status>
       <wp:post_type>post</wp:post_type>
